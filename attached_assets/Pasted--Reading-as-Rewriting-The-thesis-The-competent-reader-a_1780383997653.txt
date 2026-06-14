@@ -1,0 +1,29 @@
+# Reading as Rewriting
+
+## The thesis
+
+The competent reader and the productive writer are not two kinds of person engaged in two activities. They are one kind of person engaged in one activity, observed from opposite ends. To read a text well is to regenerate the moves that produced it; to write is to make those moves in the first place. The difference is one of direction, not of kind. This is why the people who go on to produce work of their own tend, when they read, to read as though they were rewriting—and why the ordinary reader, who treats a book as a finished object to be absorbed, comes away with nothing that travels.
+
+## Two operations that share a name
+
+Call the first operation *transfer*. The reader takes in the sentences, forms a paraphrase, and can, if asked, report what the book "said." Comprehension here is measured by fidelity of output to input: a good paraphrase means good reading. Nothing is built, because nothing needs to be built. The text arrives finished and departs finished, slightly compressed.
+
+Call the second operation *reconstruction*. The reconstructive reader treats the text not as an object but as a *record*—a trace of decisions someone made under constraints. To follow it, he has to re-make those decisions himself: why this premise is introduced here and not later, why this example and not a cleaner one, where the argument is load-bearing and where it is merely decorative, what would break if a given step were removed. He is not receiving the conclusions; he is re-deriving the reasons. The two operations share the word "reading," which conceals that they are almost unrelated. One ends in a summary. The other ends in a capacity.
+
+## Why only one of them leaves residue
+
+The conclusions of a book are inert. They are answers to questions the author already settled, and as such they apply only to the cases the author was looking at. What is portable—what can be carried to a problem the author never considered—is the inferential machinery that generated those conclusions. Reasons generalize; results do not.
+
+This explains the asymmetry of effort and outcome that any honest reader notices. Suppose two people read the same dense book. One finishes in an hour and retains a serviceable précis that fades within the week. The other takes ten hours, stopping to test each inference, rebuilding the strong paragraphs several times until he can produce them rather than merely recognize them—and what he retains is not a summary but a working copy of the author's method, available for use on new material indefinitely. The hour spent on transfer leaves no residue because transfer deposits nothing structural. The ten hours spent on reconstruction leave residue because the reader has, in effect, installed the engine. The slowness is not a defect of the reconstructive reader's comprehension. It is the signature of comprehension doing real work.
+
+## The paradox of the elementary book
+
+Here the case of the elementary text becomes instructive. It is tempting to assume that the strongest reader reaches for the densest, most advanced material. The opposite is often true, and Feynman is the standing example: as a boy he taught himself trigonometry and calculus not by memorizing identities but by rebuilding them from a thin, elementary book, deriving each consequence until the subject was his rather than the author's.
+
+Why prefer the elementary book? Because it is *compressible in the right way*. An elementary treatment is a small number of generative principles followed by a large number of their consequences. For the reconstructive reader this is ideal: once he can regenerate the consequences from the principles, he has effectively memorized the entire book by memorizing almost none of it. The thousand theorems collapse into the handful of moves that produce them. The book becomes, for him, very small and very powerful at once.
+
+A dense, advanced book offers the reconstructive reader less, not more, precisely because it is already near the limit of compression. Someone else has done the reconstructing; the gaps have been filled, the moves elided, the generative principles buried under their own elaboration. There is little surface left to rebuild. The elementary book, by contrast, is almost all surface—almost all consequence waiting to be re-derived—and surface is exactly what the reconstructive mind feeds on. The choice of the elementary book is therefore not a humble choice. It is a power move. It maximizes the amount of regeneration available to the reader, and regeneration is the activity that converts a reader into a producer.
+
+## Conclusion
+
+The upshot reverses the usual picture of expertise. We imagine the expert as someone who has read more and harder books than the rest of us. But the relevant difference is not how much he has read or how difficult the material; it is *what he does* while reading. He does not receive the text. He reruns it. He treats every book, however elementary, as a set of decisions to be re-made under their original constraints, and in re-making them he acquires not the author's conclusions but the author's powers. This is why the next Freud, reading Freud, is already half-writing the work that will succeed him: he is not learning what Freud believed. He is learning to do what Freud did. The reader who only reads will always remain a reader. The reader who rewrites is already a writer who has not yet started his own page.
