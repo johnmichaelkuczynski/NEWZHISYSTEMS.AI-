@@ -14,7 +14,7 @@ export default function NavBar() {
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <a
-            href="mailto:contact@zhisystems.ai"
+            href="mailto:zhi@zhisystems.org"
             className="text-blue-600 hover:text-blue-800 font-medium"
           >
             Contact Us
