@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavBar from "@/components/NavBar";
 import aiFundamentalsBadge from "@assets/ZHI_AI_FUNDAMENTALS_BADGE_1781725917586.png";
+import aiMathFundamentalsBadge from "@assets/ZHI_AI_MATH_FUNDAMENTALS_BADGE_1781730555335.png";
 
 interface Section {
   emoji: string;
@@ -766,7 +767,15 @@ export default function BabyLivingCourses() {
         label: "AI Fundamentals -- Course Completed (issued to Douglas Zhi)",
       },
     },
-    { title: "Baby AI Math", url: "https://babyaimath.xyz" },
+    {
+      title: "Baby AI Math",
+      url: "https://babyaimath.xyz",
+      badge: {
+        image: aiMathFundamentalsBadge,
+        url: "https://credsverse.com/credentials/57cebc9f-f4aa-4ef5-a05d-47bd0bf26c0d",
+        label: "AI Math Fundamentals -- Course Completed (issued to Douglas Zhi)",
+      },
+    },
     { title: "Cognitive Science 101", url: "https://babycognitivescience101.xyz" },
     { title: "Baby Infinite Series", url: "https://babyinfiniteseries.xyz" },
     { title: "Constructive Critical Reasoning", url: "https://babyconstructivereasoning.xyz" },
