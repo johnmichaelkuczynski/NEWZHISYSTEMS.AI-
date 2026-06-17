@@ -749,7 +749,7 @@ function renderSectionBody(body: string) {
 export default function BabyLivingCourses() {
   const courses: Course[] = [
     { title: "Evolutionary Psychology for Children", url: "https://babyevopsych.xyz" },
-    { title: "Baby AI", url: "https://babyartificialintellience.xyz" },
+    { title: "Baby AI", url: "https://babyartificialintelligence.xyz" },
     { title: "Baby AI Math", url: "https://babyaimath.xyz" },
     { title: "Cognitive Science 101", url: "https://babycognitivescience101.xyz" },
     { title: "Baby Infinite Series", url: "https://babyinfiniteseries.xyz" },
