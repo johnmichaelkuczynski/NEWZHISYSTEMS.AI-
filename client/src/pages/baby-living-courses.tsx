@@ -1,5 +1,6 @@
 import { useState } from "react";
 import NavBar from "@/components/NavBar";
+import aiFundamentalsBadge from "@assets/ZHI_AI_FUNDAMENTALS_BADGE_1781725917586.png";
 
 interface Section {
   emoji: string;
@@ -13,9 +14,16 @@ interface CourseDescription {
   sections: Section[];
 }
 
+interface Badge {
+  image: string;
+  url: string;
+  label: string;
+}
+
 interface Course {
   title: string;
   url: string;
+  badge?: Badge;
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
@@ -749,7 +757,15 @@ function renderSectionBody(body: string) {
 export default function BabyLivingCourses() {
   const courses: Course[] = [
     { title: "Evolutionary Psychology for Children", url: "https://babyevopsych.xyz" },
-    { title: "Baby AI", url: "https://babyartificialintelligence.xyz" },
+    {
+      title: "Baby AI",
+      url: "https://babyartificialintelligence.xyz",
+      badge: {
+        image: aiFundamentalsBadge,
+        url: "https://credsverse.com/credentials/dc3dd4b6-52d9-4468-b39a-acaf50c76352",
+        label: "AI Fundamentals -- Course Completed (issued to Douglas Zhi)",
+      },
+    },
     { title: "Baby AI Math", url: "https://babyaimath.xyz" },
     { title: "Cognitive Science 101", url: "https://babycognitivescience101.xyz" },
     { title: "Baby Infinite Series", url: "https://babyinfiniteseries.xyz" },
@@ -823,6 +839,21 @@ export default function BabyLivingCourses() {
                         >
                           {isOpen ? "Hide" : "Details"}
                         </button>
+                      )}
+                      {course.badge && (
+                        <a
+                          href={course.badge.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={course.badge.label}
+                          className="shrink-0"
+                        >
+                          <img
+                            src={course.badge.image}
+                            alt={course.badge.label}
+                            className="w-12 h-12 object-contain hover:scale-105 transition-transform"
+                          />
+                        </a>
                       )}
                       <a
                         href={course.url}
