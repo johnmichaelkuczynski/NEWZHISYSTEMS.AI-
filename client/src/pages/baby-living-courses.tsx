@@ -817,10 +817,10 @@ export default function BabyLivingCourses() {
                   key={course.title}
                   className="border border-gray-200 rounded-lg bg-white"
                 >
-                  <div className="flex items-center justify-between p-4">
-                    <div className="flex items-center gap-3">
+                  <div className="flex items-center justify-between gap-4 p-4">
+                    <div className="flex items-center gap-3 min-w-0">
                       {desc && <span className="text-2xl">{desc.emoji}</span>}
-                      <div>
+                      <div className="min-w-0">
                         <h2 className="text-lg font-semibold text-gray-900">
                           {course.title}
                         </h2>
@@ -829,7 +829,7 @@ export default function BabyLivingCourses() {
                         )}
                       </div>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 shrink-0">
                       {desc && (
                         <button
                           onClick={() =>
