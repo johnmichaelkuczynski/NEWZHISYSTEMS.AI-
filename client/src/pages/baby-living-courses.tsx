@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import aiFundamentalsBadge from "@assets/ZHI_AI_FUNDAMENTALS_BADGE_1781725917586.png";
 import aiMathFundamentalsBadge from "@assets/ZHI_AI_MATH_FUNDAMENTALS_BADGE_1781730555335.png";
 import infiniteSeriesBadge from "@assets/BABY_INFINITE_SERIES_1781731315533.png";
+import cognitiveScienceBadge from "@assets/COGNITIVE_SCIENCE_1781747749673.png";
 
 interface Section {
   emoji: string;
@@ -777,7 +778,15 @@ export default function BabyLivingCourses() {
         label: "AI Math Fundamentals -- Course Completed (issued to Douglas Zhi)",
       },
     },
-    { title: "Cognitive Science 101", url: "https://babycognitivescience101.xyz" },
+    {
+      title: "Cognitive Science 101",
+      url: "https://babycognitivescience101.xyz",
+      badge: {
+        image: cognitiveScienceBadge,
+        url: "https://credsverse.com/credentials/a2c4a47b-23d5-4e11-b7ff-346e89b2a6ff",
+        label: "Cognitive Science Fundamentals -- Course Completed (issued to Douglas Zhi)",
+      },
+    },
     {
       title: "Baby Infinite Series",
       url: "https://babyinfiniteseries.xyz",
