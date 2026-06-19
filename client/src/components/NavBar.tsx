@@ -2,7 +2,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Living Courses" },
   { href: "/johnson-wales", label: "Johnson & Wales" },
-  { href: "/baby-living-courses", label: "Baby Living Courses" },
+  { href: "/baby-living-courses", label: "Basic Living Courses" },
   { href: "/journal", label: "Investor Notes" },
   { href: "/podcasts", label: "Investor Briefings" },
   { href: "/office-use", label: "Office Use" },

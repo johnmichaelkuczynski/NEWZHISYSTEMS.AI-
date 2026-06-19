@@ -1237,7 +1237,7 @@ export default function BabyLivingCourses() {
       <div className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Baby Living Courses
+            Basic Living Courses
           </h1>
           <p className="text-gray-700 text-lg">
             Short courses for children and for anyone who wants quick exposure
