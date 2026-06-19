@@ -33,16 +33,16 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
-  "Psychodynamic Treatment of BPD 101": {
+  "Basic Psychodynamic Treatment of BPD 101": {
     emoji: "🧭",
     tagline:
-      "A One-Unit Baby Course on the Psychodynamic Treatment of BPD -- Taught, Tutored, Drilled, and Graded by AI",
+      "A One-Unit Basic Course on the Psychodynamic Treatment of BPD -- Taught, Tutored, Drilled, and Graded by AI",
     sections: [
       {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Psychodynamic Treatment of BPD 101 is a self-paced, single-user web course -- a plain-language \"baby course\" on the psychodynamic treatment of BPD (borderline personality disorder): a depth-oriented approach to the meaning beneath the instability of emotion, identity, and relationships in BPD -- how overwhelming affect, splitting, and unstable self-image can carry meaning, how impulsive behaviors work as ways to regulate unbearable feeling and ward off abandonment, and how reading the conflict beneath the behavior complements the evidence-based treatments that help. No clinical background or jargon required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom or behavior earns top credit; the cautious \"we can't really conclude anything / the mind is too complex / everyone has mood swings\" dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats (e.g. \"she's just manipulative / attention-seeking\") also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 Understanding BPD: Emotion, Identity, and Unstable Relationships; 1.2 Splitting and the Black-and-White World; 1.3 Object Relations: How Early Bonds Become Inner Templates; 1.4 Identity Diffusion: The Unstable Sense of Self; 1.5 Mentalization: Learning to Read Minds, Including One's Own (MBT); 1.6 Transference-Focused Psychotherapy: Healing Through the Relationship (TFP); 1.7 The Evidence: Where Psychodynamic Treatment Genuinely Shines; and 1.8 A Treatment Arc, Start to Finish.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Psychodynamic Treatment of BPD 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic Psychodynamic Treatment of BPD 101 is a self-paced, single-user web course -- a plain-language \"basic course\" on the psychodynamic treatment of BPD (borderline personality disorder): a depth-oriented approach to the meaning beneath the instability of emotion, identity, and relationships in BPD -- how overwhelming affect, splitting, and unstable self-image can carry meaning, how impulsive behaviors work as ways to regulate unbearable feeling and ward off abandonment, and how reading the conflict beneath the behavior complements the evidence-based treatments that help. No clinical background or jargon required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom or behavior earns top credit; the cautious \"we can't really conclude anything / the mind is too complex / everyone has mood swings\" dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats (e.g. \"she's just manipulative / attention-seeking\") also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 Understanding BPD: Emotion, Identity, and Unstable Relationships; 1.2 Splitting and the Black-and-White World; 1.3 Object Relations: How Early Bonds Become Inner Templates; 1.4 Identity Diffusion: The Unstable Sense of Self; 1.5 Mentalization: Learning to Read Minds, Including One's Own (MBT); 1.6 Transference-Focused Psychotherapy: Healing Through the Relationship (TFP); 1.7 The Evidence: Where Psychodynamic Treatment Genuinely Shines; and 1.8 A Treatment Arc, Start to Finish.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Basic Psychodynamic Treatment of BPD 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🧠",
@@ -66,20 +66,20 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Psychodynamic Treatment of BPD 101 makes \"learning to read the meaning beneath a symptom or behavior\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom or behavior and naming the cheapest observation that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nPsychodynamic Treatment of BPD 101 -- where the strongest honest interpretation of the conflict beneath the symptom or behavior, not the safest hedge, earns the grade.",
+          "Basic Psychodynamic Treatment of BPD 101 makes \"learning to read the meaning beneath a symptom or behavior\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom or behavior and naming the cheapest observation that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nBasic Psychodynamic Treatment of BPD 101 -- where the strongest honest interpretation of the conflict beneath the symptom or behavior, not the safest hedge, earns the grade.",
       },
     ],
   },
-  "Psychodynamic Treatment of OCD 101": {
+  "Basic Psychodynamic Treatment of OCD 101": {
     emoji: "🧭",
     tagline:
-      "A One-Unit Baby Course on the Psychodynamic Treatment of OCD -- Taught, Tutored, Drilled, and Graded by AI",
+      "A One-Unit Basic Course on the Psychodynamic Treatment of OCD -- Taught, Tutored, Drilled, and Graded by AI",
     sections: [
       {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Psychodynamic Treatment of OCD 101 is a self-paced, single-user web course -- a plain-language \"baby course\" on the psychodynamic treatment of OCD: how obsessions and compulsions can carry meaning, how rituals work as defenses that bind unbearable anxiety, and how reading the conflict beneath the symptom complements the evidence-based treatments that relieve it. No clinical background or jargon required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom earns top credit; the cautious \"we can't really conclude anything / the mind is too complex / rituals are random\" dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 Understanding OCD: Obsessions, Compulsions, and the Cycle; 1.2 The Psychodynamic View: What the Symptom Might Be \"Saying\"; 1.3 The Function of the Ritual: Anxiety, Control, and Defense; 1.4 Conflict and Ambivalence: The Engine Beneath the Symptom; 1.5 The Therapeutic Relationship in OCD Treatment; 1.6 Where Psychodynamic Meets the Evidence: ERP, CBT, and Integration; 1.7 Working Through: Insight Alongside Symptom Relief; and 1.8 A Treatment Arc, Start to Finish.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Psychodynamic Treatment of OCD 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic Psychodynamic Treatment of OCD 101 is a self-paced, single-user web course -- a plain-language \"basic course\" on the psychodynamic treatment of OCD: how obsessions and compulsions can carry meaning, how rituals work as defenses that bind unbearable anxiety, and how reading the conflict beneath the symptom complements the evidence-based treatments that relieve it. No clinical background or jargon required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom earns top credit; the cautious \"we can't really conclude anything / the mind is too complex / rituals are random\" dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 Understanding OCD: Obsessions, Compulsions, and the Cycle; 1.2 The Psychodynamic View: What the Symptom Might Be \"Saying\"; 1.3 The Function of the Ritual: Anxiety, Control, and Defense; 1.4 Conflict and Ambivalence: The Engine Beneath the Symptom; 1.5 The Therapeutic Relationship in OCD Treatment; 1.6 Where Psychodynamic Meets the Evidence: ERP, CBT, and Integration; 1.7 Working Through: Insight Alongside Symptom Relief; and 1.8 A Treatment Arc, Start to Finish.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Basic Psychodynamic Treatment of OCD 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🧠",
@@ -103,11 +103,11 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Psychodynamic Treatment of OCD 101 makes \"learning to read the meaning beneath a symptom\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom and naming the cheapest observation that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nPsychodynamic Treatment of OCD 101 -- where the strongest honest interpretation of the conflict beneath the symptom, not the safest hedge, earns the grade.",
+          "Basic Psychodynamic Treatment of OCD 101 makes \"learning to read the meaning beneath a symptom\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom and naming the cheapest observation that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nBasic Psychodynamic Treatment of OCD 101 -- where the strongest honest interpretation of the conflict beneath the symptom, not the safest hedge, earns the grade.",
       },
     ],
   },
-  "Workforce Analytics": {
+  "Basic Workforce Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to workforce analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -116,13 +116,13 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Workforce Analytics is a self-paced, single-user web course that delivers a plain-language introduction to workforce analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how organizations use data about the people who work for them to make better, fairer decisions and how to do it honestly, never technical or jargon-heavy.",
+          "Basic Workforce Analytics is a self-paced, single-user web course that delivers a plain-language introduction to workforce analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how organizations use data about the people who work for them to make better, fairer decisions and how to do it honestly, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
         title: "Features",
         body:
-          "**One unit, 8 topics** -- a complete plain-language syllabus: what workforce analytics is; the cost of turnover; predicting who will leave (retention); hiring analytics; scheduling and labor optimization; productivity and performance; engagement and fairness; from people data to people decisions.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Workforce Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
+          "**One unit, 8 topics** -- a complete plain-language syllabus: what workforce analytics is; the cost of turnover; predicting who will leave (retention); hiring analytics; scheduling and labor optimization; productivity and performance; engagement and fairness; from people data to people decisions.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Basic Workforce Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
       },
       {
         emoji: "🏗️",
@@ -152,7 +152,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nWorkforce Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Workforce Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -205,7 +205,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Foundations of Data Analytics (Short Course)": {
+  "Basic Foundations of Data Analytics (Short Course)": {
     emoji: "📊",
     tagline:
       "Data 101 -- A One-Unit Foundations of Data Analytics Course, From the Analytics Workflow to SQL, pandas, and Dashboards",
@@ -242,7 +242,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Baby Discrete Math": {
+  "Basic Discrete Math": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to discrete math that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -251,7 +251,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Baby Discrete Math is a self-paced, single-user web course that delivers a plain-language introduction to discrete mathematics -- the math of separate, distinct things (whole numbers, statements, sets, networks), the natural math of computers -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: why an \"if-then\" is false only when the 'if' is true and the 'then' is false, why a hundred examples still don't prove a rule, why {1,2,3} equals {3,2,1}, why 13 people must share a birth month, how a road map and a friendship network are the same dots-and-lines model, and how stepping onto the bottom rung and always reaching the next one lets you climb forever.",
+          "Basic Discrete Math is a self-paced, single-user web course that delivers a plain-language introduction to discrete mathematics -- the math of separate, distinct things (whole numbers, statements, sets, networks), the natural math of computers -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: why an \"if-then\" is false only when the 'if' is true and the 'then' is false, why a hundred examples still don't prove a rule, why {1,2,3} equals {3,2,1}, why 13 people must share a birth month, how a road map and a friendship network are the same dots-and-lines model, and how stepping onto the bottom rung and always reaching the next one lets you climb forever.",
       },
       {
         emoji: "✨",
@@ -291,7 +291,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Baby Lambda Calculus": {
+  "Basic Lambda Calculus": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to the lambda calculus that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -300,7 +300,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Baby Lambda Calculus is a self-paced, single-user web course that delivers a plain-language introduction to the lambda calculus -- the tiny language where everything is a function and computation is just substitution -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how a function with a placeholder computes by substitution, how renaming variables avoids confusion, how to build numbers and booleans out of pure functions, how recursion appears out of nowhere, and why this little language is exactly as powerful as any computer.",
+          "Basic Lambda Calculus is a self-paced, single-user web course that delivers a plain-language introduction to the lambda calculus -- the tiny language where everything is a function and computation is just substitution -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how a function with a placeholder computes by substitution, how renaming variables avoids confusion, how to build numbers and booleans out of pure functions, how recursion appears out of nowhere, and why this little language is exactly as powerful as any computer.",
       },
       {
         emoji: "✨",
@@ -389,7 +389,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Marketing Analytics": {
+  "Basic Marketing Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to marketing analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -398,13 +398,13 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Marketing Analytics is a self-paced, single-user web course that delivers a plain-language introduction to marketing analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how we use data on what customers actually do to understand them and act and how to do it honestly, never technical or jargon-heavy.",
+          "Basic Marketing Analytics is a self-paced, single-user web course that delivers a plain-language introduction to marketing analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how we use data on what customers actually do to understand them and act and how to do it honestly, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
         title: "Features",
         body:
-          "**One unit, 8 topics** -- a complete plain-language syllabus: what marketing analytics is; why \"the average customer\" doesn't exist (segmentation); the funnel, from stranger to buyer; customer lifetime value; churn; A/B testing; attribution and personalization; from insight to campaign.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Marketing Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
+          "**One unit, 8 topics** -- a complete plain-language syllabus: what marketing analytics is; why \"the average customer\" doesn't exist (segmentation); the funnel, from stranger to buyer; customer lifetime value; churn; A/B testing; attribution and personalization; from insight to campaign.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Basic Marketing Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
       },
       {
         emoji: "🏗️",
@@ -487,7 +487,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Baby Diagonalization and Incompleteness": {
+  "Basic Diagonalization and Incompleteness": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to diagonalization and incompleteness that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -496,7 +496,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Baby Diagonalization and Incompleteness is a self-paced, single-user web course that delivers a plain-language introduction to diagonalization and incompleteness -- the single trick behind the deepest \"impossible\" results in math and computing -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how one cheeky move builds something guaranteed to differ from everything on a list, why some infinities are bigger than others, how sentences and programs can talk about themselves, and why no machine, proof system, or language can ever do everything -- from Cantor's reals and self-printing programs to the halting problem, Gödel, Tarski, and Rice.",
+          "Basic Diagonalization and Incompleteness is a self-paced, single-user web course that delivers a plain-language introduction to diagonalization and incompleteness -- the single trick behind the deepest \"impossible\" results in math and computing -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how one cheeky move builds something guaranteed to differ from everything on a list, why some infinities are bigger than others, how sentences and programs can talk about themselves, and why no machine, proof system, or language can ever do everything -- from Cantor's reals and self-printing programs to the halting problem, Gödel, Tarski, and Rice.",
       },
       {
         emoji: "✨",
@@ -532,11 +532,11 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to diagonalization and incompleteness with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBaby Diagonalization and Incompleteness -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to diagonalization and incompleteness with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Diagonalization and Incompleteness -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
-  "Baby Finite Math": {
+  "Basic Finite Math": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to finite math that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -545,7 +545,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Baby Finite Math is a self-paced, single-user web course that delivers a plain-language introduction to finite math -- the practical math of counting, chance, and decisions you can actually finish -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how to organize the world into sets, count possibilities without listing them all, measure how likely something is, and make the most of limited resources -- from club overlaps and card decks to interest, loans, and growth.",
+          "Basic Finite Math is a self-paced, single-user web course that delivers a plain-language introduction to finite math -- the practical math of counting, chance, and decisions you can actually finish -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how to organize the world into sets, count possibilities without listing them all, measure how likely something is, and make the most of limited resources -- from club overlaps and card decks to interest, loans, and growth.",
       },
       {
         emoji: "✨",
@@ -581,11 +581,11 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to finite math with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBaby Finite Math -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to finite math with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Finite Math -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
-  "Baby Infinite Series": {
+  "Basic Infinite Series": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to infinite series that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -594,7 +594,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Baby Infinite Series is a self-paced, single-user web course that delivers a plain-language introduction to infinite series -- the math of adding forever and still getting an answer -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how a sum of infinitely many shrinking pieces, like 1/2 + 1/4 + 1/8 + ..., can settle on a single, finite total.",
+          "Basic Infinite Series is a self-paced, single-user web course that delivers a plain-language introduction to infinite series -- the math of adding forever and still getting an answer -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how a sum of infinitely many shrinking pieces, like 1/2 + 1/4 + 1/8 + ..., can settle on a single, finite total.",
       },
       {
         emoji: "✨",
@@ -630,7 +630,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to infinite series with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBaby Infinite Series -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to infinite series with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Infinite Series -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -683,16 +683,16 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Psychodynamic Therapy 101": {
+  "Basic Psychodynamic Therapy 101": {
     emoji: "🧭",
     tagline:
-      "A One-Unit Baby Course on the Mind Beneath the Surface -- Taught, Tutored, Drilled, and Graded by AI",
+      "A One-Unit Basic Course on the Mind Beneath the Surface -- Taught, Tutored, Drilled, and Graded by AI",
     sections: [
       {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Psychodynamic Therapy 101 is a self-paced, single-user web course -- a plain-language \"baby course\" on the mind beneath the surface: how out-of-awareness patterns, defenses, transference, and the therapeutic relationship shape how we struggle and how we change. No clinical background or jargon required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable interpretation the clinical evidence supports about the hidden dynamic earns top credit; the cautious \"we can't really conclude anything / the psyche is too complex\" dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats also earns zero. Every item rewards committing to the richest supported interpretation while naming the cleanest disconfirming test.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 What Psychodynamic Therapy Is; 1.2 The Unconscious, Reconsidered; 1.3 Defense Mechanisms; 1.4 Transference; 1.5 The Therapeutic Relationship; 1.6 Insight and Working Through; 1.7 Does It Work? The Evidence; and 1.8 A Session, Start to Finish.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Psychodynamic Therapy 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic Psychodynamic Therapy 101 is a self-paced, single-user web course -- a plain-language \"basic course\" on the mind beneath the surface: how out-of-awareness patterns, defenses, transference, and the therapeutic relationship shape how we struggle and how we change. No clinical background or jargon required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable interpretation the clinical evidence supports about the hidden dynamic earns top credit; the cautious \"we can't really conclude anything / the psyche is too complex\" dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats also earns zero. Every item rewards committing to the richest supported interpretation while naming the cleanest disconfirming test.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 What Psychodynamic Therapy Is; 1.2 The Unconscious, Reconsidered; 1.3 Defense Mechanisms; 1.4 Transference; 1.5 The Therapeutic Relationship; 1.6 Insight and Working Through; 1.7 Does It Work? The Evidence; and 1.8 A Session, Start to Finish.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Basic Psychodynamic Therapy 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🧠",
@@ -716,7 +716,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Psychodynamic Therapy 101 makes \"learning how the mind works beneath the surface\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest interpretation the clinical evidence supports about the hidden dynamic and naming the cheapest observation that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nPsychodynamic Therapy 101 -- where the strongest honest interpretation of what's happening beneath the surface, not the safest hedge, earns the grade.",
+          "Basic Psychodynamic Therapy 101 makes \"learning how the mind works beneath the surface\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest interpretation the clinical evidence supports about the hidden dynamic and naming the cheapest observation that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nBasic Psychodynamic Therapy 101 -- where the strongest honest interpretation of what's happening beneath the surface, not the safest hedge, earns the grade.",
       },
     ],
   },
@@ -769,16 +769,16 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Cognitive Science 101": {
+  "Basic Cognitive Science 101": {
     emoji: "🧭",
     tagline:
-      "A One-Unit Baby Course on How the Mind Works -- Taught, Tutored, Drilled, and Graded by AI",
+      "A One-Unit Basic Course on How the Mind Works -- Taught, Tutored, Drilled, and Graded by AI",
     sections: [
       {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Cognitive Science 101 is a self-paced, single-user web course -- a plain-language \"baby course\" on how the mind works: perception, memory, language, reasoning, machine minds, and consciousness. No math, coding, or technical background required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable conclusion the evidence supports about how the mind works earns top credit; the cautious \"we can't really conclude anything / the brain is too complex\" dodge earns near-zero; florid padding that binds no evidence scores low; and a bold claim the evidence actively defeats also earns zero. Every question rewards committing to the richest supported conclusion while naming the cleanest disconfirming test.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 What Cognitive Science Is; 1.2 The Big Idea: Mind as Information Processing; 1.3 Perception; 1.4 Memory; 1.5 Language and Thought; 1.6 Reasoning and Bias; 1.7 Brains and Machines; and 1.8 Consciousness.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Cognitive Science 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic Cognitive Science 101 is a self-paced, single-user web course -- a plain-language \"basic course\" on how the mind works: perception, memory, language, reasoning, machine minds, and consciousness. No math, coding, or technical background required.\n\nThe course teaches reasoning about the mind on an inverted grading scale. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The strongest, most-falsifiable conclusion the evidence supports about how the mind works earns top credit; the cautious \"we can't really conclude anything / the brain is too complex\" dodge earns near-zero; florid padding that binds no evidence scores low; and a bold claim the evidence actively defeats also earns zero. Every question rewards committing to the richest supported conclusion while naming the cleanest disconfirming test.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 What Cognitive Science Is; 1.2 The Big Idea: Mind as Information Processing; 1.3 Perception; 1.4 Memory; 1.5 Language and Thought; 1.6 Reasoning and Bias; 1.7 Brains and Machines; and 1.8 Consciousness.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Basic Cognitive Science 101 pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🧠",
@@ -802,11 +802,11 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Cognitive Science 101 makes \"learning how the mind works\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest conclusion the evidence supports about the mind and naming the cleanest test that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nCognitive Science 101 -- where the strongest honest conclusion about how the mind works, not the safest hedge, earns the grade.",
+          "Basic Cognitive Science 101 makes \"learning how the mind works\" an act of committed reasoning.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the strongest conclusion the evidence supports about the mind and naming the cleanest test that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nBasic Cognitive Science 101 -- where the strongest honest conclusion about how the mind works, not the safest hedge, earns the grade.",
       },
     ],
   },
-  "Baby AI Math": {
+  "Basic AI Math": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to the math behind AI that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -815,7 +815,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Baby AI Math is a self-paced, single-user web course that delivers a plain-language introduction to the math behind artificial intelligence -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how AI is really just numbers and arithmetic at huge scale, from turning words into vectors to teaching a network through backpropagation.",
+          "Basic AI Math is a self-paced, single-user web course that delivers a plain-language introduction to the math behind artificial intelligence -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: how AI is really just numbers and arithmetic at huge scale, from turning words into vectors to teaching a network through backpropagation.",
       },
       {
         emoji: "✨",
@@ -851,7 +851,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to the math behind AI with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBaby AI Math -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to the math behind AI with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic AI Math -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -904,7 +904,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Constructive Critical Reasoning": {
+  "Basic Constructive Critical Reasoning": {
     emoji: "🧭",
     tagline:
       "A One-Unit Course That Trains You to Draw the Strongest Conclusion the Data Actually Supports -- Taught, Tutored, Drilled, and Graded by AI",
@@ -913,7 +913,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Constructive Critical Reasoning (CCR) is a self-paced, single-user web course that teaches the discipline of committing to the richest, most-falsifiable conclusion a body of evidence will bear -- the opposite of reflexive skepticism. No math, coding, or technical background required.\n\nCCR inverts the usual grading instinct. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The richest, most-falsifiable, most-committed model earns top credit; the cautious \"you can't really conclude anything\" dodge earns near-zero; florid padding that binds no data scores low; and a bold claim the data actively defeats also earns zero. Every question rewards committing harder to the most, while exposing the cleanest disconfirming test.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 The Fecund Lead; 1.2 Model Selection by Explanatory Yield; 1.3 Parsimony as a Live Constraint; 1.4 Abductive Commitment; 1.5 From Correlation to Mechanism; 1.6 The Anomaly Cluster; 1.7 The Cheap Decisive Test; and 1.8 Calibrated Boldness.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, CCR pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic Constructive Critical Reasoning (CCR) is a self-paced, single-user web course that teaches the discipline of committing to the richest, most-falsifiable conclusion a body of evidence will bear -- the opposite of reflexive skepticism. No math, coding, or technical background required.\n\nCCR inverts the usual grading instinct. Most \"critical thinking\" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The richest, most-falsifiable, most-committed model earns top credit; the cautious \"you can't really conclude anything\" dodge earns near-zero; florid padding that binds no data scores low; and a bold claim the data actively defeats also earns zero. Every question rewards committing harder to the most, while exposing the cleanest disconfirming test.\n\nThe curriculum is organized into one unit and 8 sections: 1.1 The Fecund Lead; 1.2 Model Selection by Explanatory Yield; 1.3 Parsimony as a Live Constraint; 1.4 Abductive Commitment; 1.5 From Correlation to Mechanism; 1.6 The Anomaly Cluster; 1.7 The Cheap Decisive Test; and 1.8 Calibrated Boldness.\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, CCR pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🧠",
@@ -937,7 +937,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Constructive Critical Reasoning reframes \"critical thinking\" as a constructive act.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the richest model the evidence supports and naming the cleanest test that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nConstructive Critical Reasoning -- where the strongest honest conclusion, not the safest hedge, earns the grade.",
+          "Basic Constructive Critical Reasoning reframes \"critical thinking\" as a constructive act.\n\nIt doesn't reward the student for finding reasons to doubt -- it rewards them for committing to the richest model the evidence supports and naming the cleanest test that could prove them wrong. The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.\n\nBasic Constructive Critical Reasoning -- where the strongest honest conclusion, not the safest hedge, earns the grade.",
       },
     ],
   },
@@ -1033,7 +1033,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Baby AI": {
+  "Basic AI": {
     emoji: "🤖",
     tagline:
       "A Friendly, One-Unit Intro to Artificial Intelligence That Teaches, Tutors, Drills, and Grades Itself -- No Math, Coding, or Prior Science Required",
@@ -1042,7 +1042,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Baby AI is a self-paced, single-user web course that delivers a friendly, plain-language introduction to artificial intelligence -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, or prior science required.\n\nIt turns one big idea -- that modern AI is a pattern-finding machine that learns from data and predicts likely answers, not a thinking, all-knowing mind -- into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.\n\nThe curriculum is one unit -- \"Baby AI for Everyone\" -- across 8 connected topics:\n\n**What AI is (and isn't)**\n\n**Rules vs. learning (the two paradigms)**\n\n**Data and training (what \"learning\" actually means)**\n\n**Pattern recognition (the core idea behind it all)**\n\n**Neural networks and deep learning**\n\n**Language models (how AI predicts text, and what \"generative\" means)**\n\n**Strengths, limits, and hallucination**\n\n**Using AI well, and where it's headed**\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Baby AI pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic AI is a self-paced, single-user web course that delivers a friendly, plain-language introduction to artificial intelligence -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, or prior science required.\n\nIt turns one big idea -- that modern AI is a pattern-finding machine that learns from data and predicts likely answers, not a thinking, all-knowing mind -- into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.\n\nThe curriculum is one unit -- \"Basic AI for Everyone\" -- across 8 connected topics:\n\n**What AI is (and isn't)**\n\n**Rules vs. learning (the two paradigms)**\n\n**Data and training (what \"learning\" actually means)**\n\n**Pattern recognition (the core idea behind it all)**\n\n**Neural networks and deep learning**\n\n**Language models (how AI predicts text, and what \"generative\" means)**\n\n**Strengths, limits, and hallucination**\n\n**Using AI well, and where it's headed**\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Basic AI pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🤖",
@@ -1060,7 +1060,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🏗️",
         title: "Architecture",
         body:
-          "This project is a pnpm monorepo with path-routed artifacts behind a shared reverse proxy:\n\n**artifacts/qr-course** -- the student-facing web app (React + Vite), served at /. This is Baby AI.\n\n**artifacts/api-server** -- the shared Express backend (lessons, tutor streaming, practice, grading, detection, diagnostics, analytics).\n\n**lib/api-spec** -- the OpenAPI source of truth plus generated React Query hooks and Zod schemas.\n\n**lib/db** -- the database schema and client (PostgreSQL via the project's DATABASE_URL).\n\n**artifacts/course-promo, artifacts/qr-course-demo, artifacts/diagnostics-demo** -- standalone demo/promo-video artifacts that showcase the product.",
+          "This project is a pnpm monorepo with path-routed artifacts behind a shared reverse proxy:\n\n**artifacts/qr-course** -- the student-facing web app (React + Vite), served at /. This is Basic AI.\n\n**artifacts/api-server** -- the shared Express backend (lessons, tutor streaming, practice, grading, detection, diagnostics, analytics).\n\n**lib/api-spec** -- the OpenAPI source of truth plus generated React Query hooks and Zod schemas.\n\n**lib/db** -- the database schema and client (PostgreSQL via the project's DATABASE_URL).\n\n**artifacts/course-promo, artifacts/qr-course-demo, artifacts/diagnostics-demo** -- standalone demo/promo-video artifacts that showcase the product.",
       },
       {
         emoji: "📊",
@@ -1072,7 +1072,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Baby AI reframes an AI-taught course as a closed accountability loop.\n\nIt doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.\n\nBaby AI -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "Basic AI reframes an AI-taught course as a closed accountability loop.\n\nIt doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.\n\nBasic AI -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -1144,7 +1144,7 @@ export default function BabyLivingCourses() {
   const courses: Course[] = [
     { title: "Basic Evolutionary Psychology", url: "https://babyevopsych.xyz" },
     {
-      title: "Baby AI",
+      title: "Basic AI",
       url: "https://babyartificialintelligence.xyz",
       badge: {
         image: aiFundamentalsBadge,
@@ -1153,7 +1153,7 @@ export default function BabyLivingCourses() {
       },
     },
     {
-      title: "Baby AI Math",
+      title: "Basic AI Math",
       url: "https://babyaimath.xyz",
       badge: {
         image: aiMathFundamentalsBadge,
@@ -1162,7 +1162,7 @@ export default function BabyLivingCourses() {
       },
     },
     {
-      title: "Baby Diagonalization and Incompleteness",
+      title: "Basic Diagonalization and Incompleteness",
       url: "https://diagonalization.xyz",
       badge: {
         image: diagonalizationBadge,
@@ -1171,7 +1171,7 @@ export default function BabyLivingCourses() {
       },
     },
     {
-      title: "Baby Finite Math",
+      title: "Basic Finite Math",
       url: "https://babyfinitemath.xyz",
       badge: {
         image: finiteMathBadge,
@@ -1180,7 +1180,7 @@ export default function BabyLivingCourses() {
       },
     },
     {
-      title: "Cognitive Science 101",
+      title: "Basic Cognitive Science 101",
       url: "https://babycognitivescience101.xyz",
       badge: {
         image: cognitiveScienceBadge,
@@ -1189,7 +1189,7 @@ export default function BabyLivingCourses() {
       },
     },
     {
-      title: "Baby Infinite Series",
+      title: "Basic Infinite Series",
       url: "https://babyinfiniteseries.xyz",
       badge: {
         image: infiniteSeriesBadge,
@@ -1198,7 +1198,7 @@ export default function BabyLivingCourses() {
       },
     },
     {
-      title: "Constructive Critical Reasoning",
+      title: "Basic Constructive Critical Reasoning",
       url: "https://babyconstructivereasoning.xyz",
       badge: {
         image: constructiveReasoningBadge,
@@ -1210,18 +1210,18 @@ export default function BabyLivingCourses() {
     { title: "Basic Data Analytics", url: "https://babyanalytics.xyz" },
     { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz" },
     { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz" },
-    { title: "Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
-    { title: "Baby Discrete Math", url: "https://babydiscretemath.xyz" },
-    { title: "Baby Lambda Calculus", url: "https://babylambdacalculus.xyz" },
-    { title: "Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
+    { title: "Basic Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
+    { title: "Basic Discrete Math", url: "https://babydiscretemath.xyz" },
+    { title: "Basic Lambda Calculus", url: "https://babylambdacalculus.xyz" },
+    { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
     { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz" },
     { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz" },
-    { title: "Psychodynamic Therapy 101", url: "https://babypsychodynamictherapy.xyz" },
-    { title: "Psychodynamic Treatment of BPD 101", url: "https://psychodynamicbpdtherapy.xyz" },
-    { title: "Psychodynamic Treatment of OCD 101", url: "https://psychodynamicocdtherapy.xyz" },
+    { title: "Basic Psychodynamic Therapy 101", url: "https://babypsychodynamictherapy.xyz" },
+    { title: "Basic Psychodynamic Treatment of BPD 101", url: "https://psychodynamicbpdtherapy.xyz" },
+    { title: "Basic Psychodynamic Treatment of OCD 101", url: "https://psychodynamicocdtherapy.xyz" },
     { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz" },
-    { title: "Workforce Analytics", url: "https://babyworkforceanalytics.xyz" },
+    { title: "Basic Workforce Analytics", url: "https://babyworkforceanalytics.xyz" },
   ];
 
   const sortedCourses = [...courses].sort((a, b) =>
