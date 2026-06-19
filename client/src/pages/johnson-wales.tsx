@@ -19,7 +19,7 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
-  "Workforce Analytics": {
+  "Basic Workforce Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to workforce analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -28,13 +28,13 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Workforce Analytics is a self-paced, single-user web course that delivers a plain-language introduction to workforce analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how organizations use data about the people who work for them to make better, fairer decisions and how to do it honestly, never technical or jargon-heavy.",
+          "Basic Workforce Analytics is a self-paced, single-user web course that delivers a plain-language introduction to workforce analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how organizations use data about the people who work for them to make better, fairer decisions and how to do it honestly, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
         title: "Features",
         body:
-          "**One unit, 8 topics** -- a complete plain-language syllabus: what workforce analytics is; the cost of turnover; predicting who will leave (retention); hiring analytics; scheduling and labor optimization; productivity and performance; engagement and fairness; from people data to people decisions.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Workforce Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
+          "**One unit, 8 topics** -- a complete plain-language syllabus: what workforce analytics is; the cost of turnover; predicting who will leave (retention); hiring analytics; scheduling and labor optimization; productivity and performance; engagement and fairness; from people data to people decisions.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Basic Workforce Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
       },
       {
         emoji: "🏗️",
@@ -64,7 +64,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nWorkforce Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Workforce Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -166,7 +166,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Marketing Analytics": {
+  "Basic Marketing Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to marketing analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -175,13 +175,13 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Marketing Analytics is a self-paced, single-user web course that delivers a plain-language introduction to marketing analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how we use data on what customers actually do to understand them and act and how to do it honestly, never technical or jargon-heavy.",
+          "Basic Marketing Analytics is a self-paced, single-user web course that delivers a plain-language introduction to marketing analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how we use data on what customers actually do to understand them and act and how to do it honestly, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
         title: "Features",
         body:
-          "**One unit, 8 topics** -- a complete plain-language syllabus: what marketing analytics is; why \"the average customer\" doesn't exist (segmentation); the funnel, from stranger to buyer; customer lifetime value; churn; A/B testing; attribution and personalization; from insight to campaign.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Marketing Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
+          "**One unit, 8 topics** -- a complete plain-language syllabus: what marketing analytics is; why \"the average customer\" doesn't exist (segmentation); the funnel, from stranger to buyer; customer lifetime value; churn; A/B testing; attribution and personalization; from insight to campaign.\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning assessments** -- two instruments (Basic Marketing Analytics subject reasoning and general reasoning), each in three formats and three lengths, takeable at four points in the journey. Ungraded practice with freshly generated items every attempt; coursework is 100% of the grade.\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
       },
       {
         emoji: "🏗️",
@@ -405,7 +405,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Foundations of Data Analytics (Short Course)": {
+  "Basic Foundations of Data Analytics (Short Course)": {
     emoji: "📊",
     tagline:
       "Data 101 -- A One-Unit Foundations of Data Analytics Course, From the Analytics Workflow to SQL, pandas, and Dashboards",
@@ -465,15 +465,15 @@ function renderSectionBody(body: string) {
 
 export default function JohnsonWales() {
   const courses: Course[] = [
-    { title: "Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
+    { title: "Basic Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
     { title: "Basic Data Analytics", url: "https://babyanalytics.xyz" },
     { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz" },
-    { title: "Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
+    { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
     { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz" },
     { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz" },
     { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz" },
-    { title: "Workforce Analytics", url: "https://babyworkforceanalytics.xyz" },
+    { title: "Basic Workforce Analytics", url: "https://babyworkforceanalytics.xyz" },
   ];
 
   const sortedCourses = [...courses].sort((a, b) =>
