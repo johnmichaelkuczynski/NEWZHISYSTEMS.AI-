@@ -107,6 +107,55 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Baby Discrete Math": {
+    emoji: "🔎",
+    tagline:
+      "A friendly, one-unit intro to discrete math that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
+    sections: [
+      {
+        emoji: "🧩",
+        title: "Overview",
+        body:
+          "Baby Discrete Math is a self-paced, single-user web course that delivers a plain-language introduction to discrete mathematics -- the math of separate, distinct things (whole numbers, statements, sets, networks), the natural math of computers -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No prior math or coding required. Every idea is explained intuitively in plain words rather than heavy formulas: why an \"if-then\" is false only when the 'if' is true and the 'then' is false, why a hundred examples still don't prove a rule, why {1,2,3} equals {3,2,1}, why 13 people must share a birth month, how a road map and a friendship network are the same dots-and-lines model, and how stepping onto the bottom rung and always reaching the next one lets you climb forever.",
+      },
+      {
+        emoji: "✨",
+        title: "Features",
+        body:
+          "**One unit, 8 topics** -- a complete plain-language syllabus: what discrete math is; logic, the machine code of reasoning; proof, how you know something for certain; sets, relations, and functions; counting and the pigeonhole principle; graphs, the hidden networks in everything; modular arithmetic, clock math that secures the internet; recursion and induction (the capstone).\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists. Questions ask you to reason through concrete cases in plain words, never to recite definitions.\n\n**AI-graded assignments** -- two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning checks** -- two ungraded instruments (Discrete Math subject reasoning and General Reasoning), each offered in three formats and three lengths, at four points in the journey (before, one-third, two-thirds, and after the course). They are unlimited practice with fresh questions every attempt and never affect the grade (coursework is 100%).\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- one-click self-tests that verify the entire stack (database, OpenAI, GPTZero, detection, and the practice/grade loop) before you trust a session.",
+      },
+      {
+        emoji: "🏗️",
+        title: "Architecture",
+        body:
+          "This is a pnpm workspace monorepo. The course runs as several artifacts plus shared libraries:\n\n**artifacts/qr-course** -- React + Vite frontend (the student app).\n\n**artifacts/api-server** -- Express API: lessons, tutor, practice, grading, detection, diagnostics.\n\n**artifacts/course-video** -- animated walkthrough video (Framer Motion).\n\n**lib/db** -- Drizzle ORM schema + Postgres connection.\n\n**lib/api-spec** -- OpenAPI contract -> generated React Query hooks + Zod validators.\n\n**Contract-first:** a single OpenAPI document is the source of truth. React Query hooks (client) and Zod validators (server) are generated from it, so request/response shapes can't drift.\n\n**Tech stack:** React, Vite, TypeScript, Tailwind, Express, Drizzle ORM, PostgreSQL (Neon), Clerk (auth), OpenAI (tutoring/grading), GPTZero (AI detection), Framer Motion (video).",
+      },
+      {
+        emoji: "🔑",
+        title: "Configuration",
+        body:
+          "The app reads the following secrets/environment variables (managed in the Replit Secrets pane):\n\n**DATABASE_URL** -- PostgreSQL connection string (an external Neon database).\n\n**OPENAI_API_KEY** -- OpenAI key for the tutor, practice generation, and grading.\n\n**OPENAI_BASE_URL** -- OpenAI-compatible base URL.\n\n**GPTZERO_API_KEY** -- GPTZero key for static AI-authorship detection.\n\n**CLERK_SECRET_KEY / CLERK_PUBLISHABLE_KEY** -- Clerk authentication (server + client).\n\n**VITE_CLERK_PUBLISHABLE_KEY** -- Clerk publishable key exposed to the frontend.\n\n**SESSION_SECRET** -- Server session signing.\n\nIf GPTZERO_API_KEY is absent, AI detection silently falls back to an LLM scorer plus a structural heuristic -- submissions never block.",
+      },
+      {
+        emoji: "🚀",
+        title: "Running",
+        body:
+          "The app runs through Replit workflows (not pnpm dev at the root). Each artifact has its own workflow that supplies the PORT and base-path it needs.\n\nTypical local checks include typechecking a package (pnpm --filter @workspace/api-server run typecheck), applying the database schema with Drizzle once on a fresh database (pnpm --filter @workspace/db run push), and regenerating API hooks/validators from the OpenAPI spec (pnpm --filter @workspace/api-spec run codegen).\n\nThe API server seeds the course content on startup and self-heals when the content version changes, so the database is populated automatically once DATABASE_URL is set and the schema has been pushed. The schema push creates the tables; the boot-time seed only fills in rows.\n\n**Authentication** -- Sign-in uses Clerk with email/password and social SSO (including Sign in with Google). Social providers are toggled from the workspace Auth pane -> Configure tab -> SSO providers -- enabling Google there makes it appear on the sign-in screen automatically; no code change is required. For a branded Google consent screen in production, add your own Google OAuth Client ID/Secret under Custom credentials.",
+      },
+      {
+        emoji: "🩺",
+        title: "Diagnostics",
+        body:
+          "Open the Diagnostics page in the app (or hit the API directly) to run:\n\n**System diagnostic (GET /api/diagnostics/system)** -- environment, database round-trip, course-seed integrity, OpenAI chat + JSON mode, the detection pipeline, an AI-positive control sample, and GPTZero connectivity.\n\n**Synthetic-student diagnostic (POST /api/diagnostics/synthetic-run)** -- spins up a fake student, runs a practice session, takes and submits a full assignment, and verifies grading + detection + analytics all reflect the run.",
+      },
+      {
+        emoji: "📚",
+        title: "Who It's For",
+        body:
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro to discrete math with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.",
+      },
+    ],
+  },
   "Baby Lambda Calculus": {
     emoji: "🔎",
     tagline:
@@ -1026,6 +1075,7 @@ export default function BabyLivingCourses() {
     { title: "Data Analytics for Children", url: "https://babyanalytics.xyz" },
     { title: "Developmental Psychology for Children", url: "https://babydevelopmentalpsychology.xyz" },
     { title: "Financial & Managerial Analytics for Children", url: "https://babyfinancialanalytics.xyz" },
+    { title: "Baby Discrete Math", url: "https://babydiscretemath.xyz" },
     { title: "Baby Lambda Calculus", url: "https://babylambdacalculus.xyz" },
     { title: "Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
     { title: "Operations & Supply Chain Analytics for Children", url: "https://babysupplychain.xyz" },
