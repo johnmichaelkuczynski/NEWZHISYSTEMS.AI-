@@ -156,7 +156,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Revenue Management & Pricing Analytics for Children": {
+  "Basic Revenue Management & Pricing Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to revenue management and pricing analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -165,7 +165,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Revenue Management & Pricing Analytics for Children is a self-paced, single-user web course that delivers a plain-language introduction to revenue management and pricing analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how businesses decide what to charge and how managers read demand to make better pricing decisions, never technical or jargon-heavy.",
+          "Basic Revenue Management & Pricing Analytics is a self-paced, single-user web course that delivers a plain-language introduction to revenue management and pricing analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how businesses decide what to charge and how managers read demand to make better pricing decisions, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
@@ -201,7 +201,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nRevenue Management & Pricing Analytics for Children -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Revenue Management & Pricing Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -340,7 +340,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Operations & Supply Chain Analytics for Children": {
+  "Basic Operations & Supply Chain Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to operations and supply chain analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -349,7 +349,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Operations & Supply Chain Analytics for Children is a self-paced, single-user web course that delivers a plain-language introduction to operations and supply chain analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how things really move through a business and how managers read the flow to make better decisions, never technical or jargon-heavy.",
+          "Basic Operations & Supply Chain Analytics is a self-paced, single-user web course that delivers a plain-language introduction to operations and supply chain analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how things really move through a business and how managers read the flow to make better decisions, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
@@ -385,7 +385,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nOperations & Supply Chain Analytics for Children -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Operations & Supply Chain Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -438,7 +438,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Predictive Analytics for Children": {
+  "Basic Predictive Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to predictive analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -447,7 +447,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Predictive Analytics for Children is a self-paced, single-user web course that delivers a plain-language introduction to predictive analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how we use patterns in the past to estimate what's likely to happen next and how to do it honestly, never technical or jargon-heavy.",
+          "Basic Predictive Analytics is a self-paced, single-user web course that delivers a plain-language introduction to predictive analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how we use patterns in the past to estimate what's likely to happen next and how to do it honestly, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
@@ -483,7 +483,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nPredictive Analytics for Children -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Predictive Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -634,7 +634,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Financial & Managerial Analytics for Children": {
+  "Basic Financial & Managerial Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to financial and managerial analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -643,7 +643,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Financial & Managerial Analytics for Children is a self-paced, single-user web course that delivers a plain-language introduction to financial and managerial analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how a business really makes money and how owners read the numbers to make better decisions, never technical or jargon-heavy.",
+          "Basic Financial & Managerial Analytics is a self-paced, single-user web course that delivers a plain-language introduction to financial and managerial analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how a business really makes money and how owners read the numbers to make better decisions, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
@@ -720,7 +720,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Restaurant & Hospitality Analytics for Children": {
+  "Basic Restaurant & Hospitality Analytics": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to restaurant and hospitality analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -729,7 +729,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Restaurant & Hospitality Analytics for Children is a self-paced, single-user web course that delivers a plain-language introduction to restaurant and hospitality analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how a restaurant really makes money and how owners read the numbers to make better decisions, never technical or jargon-heavy.",
+          "Basic Restaurant & Hospitality Analytics is a self-paced, single-user web course that delivers a plain-language introduction to restaurant and hospitality analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept friendly and age-appropriate: it explains how a restaurant really makes money and how owners read the numbers to make better decisions, never technical or jargon-heavy.",
       },
       {
         emoji: "✨",
@@ -765,7 +765,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nRestaurant & Hospitality Analytics for Children -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Restaurant & Hospitality Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -855,7 +855,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Developmental Psychology for Children": {
+  "Basic Developmental Psychology": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to developmental psychology that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -864,7 +864,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Developmental Psychology for Children is a self-paced, single-user web course that delivers a plain-language introduction to developmental psychology -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept tasteful and age-appropriate: it explains the science of how people grow and change across the whole lifespan, from before birth to old age.",
+          "Basic Developmental Psychology is a self-paced, single-user web course that delivers a plain-language introduction to developmental psychology -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept tasteful and age-appropriate: it explains the science of how people grow and change across the whole lifespan, from before birth to old age.",
       },
       {
         emoji: "✨",
@@ -941,7 +941,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Data Analytics for Children": {
+  "Basic Data Analytics": {
     emoji: "🔎",
     tagline:
       "A Friendly, One-Unit Intro to Data Analytics That Teaches, Tutors, Drills, and Grades Itself -- No Math, Coding, or Spreadsheets Required",
@@ -950,7 +950,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Data Analytics for Children is a self-paced, single-user web course that delivers a friendly, plain-language introduction to data analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, SQL, or other technical skills required.\n\nIt turns the everyday habit of noticing, comparing, and counting into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.\n\nThe curriculum is one unit -- \"Data Analytics for Everyone\" -- across 6 connected topics:\n\n**What is data, really?**\n\n**Spotting patterns**\n\n**Asking a good question**\n\n**Sorting, grouping, and counting**\n\n**Seeing the story**\n\n**From hunch to decision**\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Data Analytics for Children pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic Data Analytics is a self-paced, single-user web course that delivers a friendly, plain-language introduction to data analytics -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, SQL, or other technical skills required.\n\nIt turns the everyday habit of noticing, comparing, and counting into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.\n\nThe curriculum is one unit -- \"Data Analytics for Everyone\" -- across 6 connected topics:\n\n**What is data, really?**\n\n**Spotting patterns**\n\n**Asking a good question**\n\n**Sorting, grouping, and counting**\n\n**Seeing the story**\n\n**From hunch to decision**\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Basic Data Analytics pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🧠",
@@ -968,7 +968,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🏗️",
         title: "Architecture",
         body:
-          "This project is a pnpm monorepo with path-routed artifacts behind a shared reverse proxy:\n\n**artifacts/qr-course** -- the student-facing web app (React + Vite), served at /. This is Data Analytics for Children.\n\n**artifacts/api-server** -- the shared Express backend (lessons, tutor streaming, practice, grading, detection, diagnostics, analytics).\n\n**lib/api-spec** -- the OpenAPI source of truth plus generated React Query hooks and Zod schemas.\n\n**lib/db** -- the database schema and client (PostgreSQL via the project's DATABASE_URL).\n\n**artifacts/qr-course-demo, artifacts/diagnostics-demo** -- standalone demo-video artifacts that showcase the product.",
+          "This project is a pnpm monorepo with path-routed artifacts behind a shared reverse proxy:\n\n**artifacts/qr-course** -- the student-facing web app (React + Vite), served at /. This is Basic Data Analytics.\n\n**artifacts/api-server** -- the shared Express backend (lessons, tutor streaming, practice, grading, detection, diagnostics, analytics).\n\n**lib/api-spec** -- the OpenAPI source of truth plus generated React Query hooks and Zod schemas.\n\n**lib/db** -- the database schema and client (PostgreSQL via the project's DATABASE_URL).\n\n**artifacts/qr-course-demo, artifacts/diagnostics-demo** -- standalone demo-video artifacts that showcase the product.",
       },
       {
         emoji: "📊",
@@ -980,11 +980,11 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Data Analytics for Children reframes an AI-taught course as a closed accountability loop.\n\nIt doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.\n\nData Analytics for Children -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "Basic Data Analytics reframes an AI-taught course as a closed accountability loop.\n\nIt doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.\n\nBasic Data Analytics -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
-  "Criminal Psychology for Children": {
+  "Basic Criminal Psychology": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to criminal psychology that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -993,7 +993,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Criminal Psychology for Children is a self-paced, single-user web course that delivers a plain-language introduction to criminal psychology -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept tasteful and age-appropriate: it explains the science of why people offend and how the justice system reasons, never anything graphic or sensational.",
+          "Basic Criminal Psychology is a self-paced, single-user web course that delivers a plain-language introduction to criminal psychology -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or statistics required. The material is kept tasteful and age-appropriate: it explains the science of why people offend and how the justice system reasons, never anything graphic or sensational.",
       },
       {
         emoji: "✨",
@@ -1029,7 +1029,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "Who It's For",
         body:
-          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nCriminal Psychology for Children -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "**Middle Schoolers & Curious Adults** -- a complete, plain-language intro with on-demand tutoring and adaptive practice.\n\n**Instructors & Curriculum Designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.\n\nBasic Criminal Psychology -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -1076,7 +1076,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Evolutionary Psychology for Children": {
+  "Basic Evolutionary Psychology": {
     emoji: "🧠",
     tagline:
       "A Friendly, One-Unit Intro to Evolutionary Psychology That Teaches, Tutors, Drills, and Grades Itself -- No Math, Coding, or Prior Science Required",
@@ -1085,7 +1085,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🧩",
         title: "Overview",
         body:
-          "Evolutionary Psychology for Children is a self-paced, single-user web course that delivers a friendly, plain-language introduction to evolutionary psychology -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, or prior science required.\n\nIt turns one big idea -- that your mind has a history, and your everyday feelings are tools shaped to help your ancestors survive and connect -- into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.\n\nThe curriculum is one unit -- \"Evolutionary Psychology for Everyone\" -- across 6 connected topics:\n\n**The mind has a history**\n\n**Built to survive (cravings, fears, and beauty)**\n\n**The logic of attraction**\n\n**Love, jealousy, and keeping a mate**\n\n**Why we cooperate**\n\n**Why we fight -- and believe**\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Evolutionary Psychology for Children pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
+          "Basic Evolutionary Psychology is a self-paced, single-user web course that delivers a friendly, plain-language introduction to evolutionary psychology -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, or prior science required.\n\nIt turns one big idea -- that your mind has a history, and your everyday feelings are tools shaped to help your ancestors survive and connect -- into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.\n\nThe curriculum is one unit -- \"Evolutionary Psychology for Everyone\" -- across 6 connected topics:\n\n**The mind has a history**\n\n**Built to survive (cravings, fears, and beauty)**\n\n**The logic of attraction**\n\n**Love, jealousy, and keeping a mate**\n\n**Why we cooperate**\n\n**Why we fight -- and believe**\n\nDesigned for middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity, Basic Evolutionary Psychology pairs a real curriculum with two layers of AI-authorship detection -- surfacing not just whether the writing looks AI-generated, but whether the act of producing it did.",
       },
       {
         emoji: "🧠",
@@ -1103,7 +1103,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "🏗️",
         title: "Architecture",
         body:
-          "This project is a pnpm monorepo with path-routed artifacts behind a shared reverse proxy:\n\n**artifacts/qr-course** -- the student-facing web app (React + Vite), served at /. This is Evolutionary Psychology for Children.\n\n**artifacts/api-server** -- the shared Express backend (lessons, tutor streaming, practice, grading, detection, diagnostics, analytics).\n\n**lib/api-spec** -- the OpenAPI source of truth plus generated React Query hooks and Zod schemas.\n\n**lib/db** -- the database schema and client (PostgreSQL via the project's DATABASE_URL).\n\n**artifacts/course-promo, artifacts/qr-course-demo, artifacts/diagnostics-demo** -- standalone demo/promo-video artifacts that showcase the product.",
+          "This project is a pnpm monorepo with path-routed artifacts behind a shared reverse proxy:\n\n**artifacts/qr-course** -- the student-facing web app (React + Vite), served at /. This is Basic Evolutionary Psychology.\n\n**artifacts/api-server** -- the shared Express backend (lessons, tutor streaming, practice, grading, detection, diagnostics, analytics).\n\n**lib/api-spec** -- the OpenAPI source of truth plus generated React Query hooks and Zod schemas.\n\n**lib/db** -- the database schema and client (PostgreSQL via the project's DATABASE_URL).\n\n**artifacts/course-promo, artifacts/qr-course-demo, artifacts/diagnostics-demo** -- standalone demo/promo-video artifacts that showcase the product.",
       },
       {
         emoji: "📊",
@@ -1115,7 +1115,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "💡",
         title: "Core Idea",
         body:
-          "Evolutionary Psychology for Children reframes an AI-taught course as a closed accountability loop.\n\nIt doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.\n\nEvolutionary Psychology for Children -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+          "Basic Evolutionary Psychology reframes an AI-taught course as a closed accountability loop.\n\nIt doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.\n\nBasic Evolutionary Psychology -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
       },
     ],
   },
@@ -1142,7 +1142,7 @@ function renderSectionBody(body: string) {
 
 export default function BabyLivingCourses() {
   const courses: Course[] = [
-    { title: "Evolutionary Psychology for Children", url: "https://babyevopsych.xyz" },
+    { title: "Basic Evolutionary Psychology", url: "https://babyevopsych.xyz" },
     {
       title: "Baby AI",
       url: "https://babyartificialintelligence.xyz",
@@ -1206,21 +1206,21 @@ export default function BabyLivingCourses() {
         label: "Basic Constructive Critical Reasoning -- Course Completed (issued to Douglas Zhi)",
       },
     },
-    { title: "Criminal Psychology for Children", url: "https://babycrimpsych.xyz" },
-    { title: "Data Analytics for Children", url: "https://babyanalytics.xyz" },
-    { title: "Developmental Psychology for Children", url: "https://babydevelopmentalpsychology.xyz" },
-    { title: "Financial & Managerial Analytics for Children", url: "https://babyfinancialanalytics.xyz" },
+    { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz" },
+    { title: "Basic Data Analytics", url: "https://babyanalytics.xyz" },
+    { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz" },
+    { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz" },
     { title: "Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
     { title: "Baby Discrete Math", url: "https://babydiscretemath.xyz" },
     { title: "Baby Lambda Calculus", url: "https://babylambdacalculus.xyz" },
     { title: "Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
-    { title: "Operations & Supply Chain Analytics for Children", url: "https://babysupplychain.xyz" },
-    { title: "Predictive Analytics for Children", url: "https://babypredictiveanalytics.xyz" },
-    { title: "Revenue Management & Pricing Analytics for Children", url: "https://babyrevenuemanagement.xyz" },
+    { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz" },
+    { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz" },
+    { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz" },
     { title: "Psychodynamic Therapy 101", url: "https://babypsychodynamictherapy.xyz" },
     { title: "Psychodynamic Treatment of BPD 101", url: "https://psychodynamicbpdtherapy.xyz" },
     { title: "Psychodynamic Treatment of OCD 101", url: "https://psychodynamicocdtherapy.xyz" },
-    { title: "Restaurant & Hospitality Analytics for Children", url: "https://babyrestaurantanalytics.xyz" },
+    { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz" },
     { title: "Workforce Analytics", url: "https://babyworkforceanalytics.xyz" },
   ];
 
