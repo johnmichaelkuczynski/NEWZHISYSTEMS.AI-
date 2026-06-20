@@ -206,43 +206,6 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Foundations of Data Analytics (Short Course)": {
-    emoji: "📊",
-    tagline:
-      "Data 101 -- A One-Unit Foundations of Data Analytics Course, From the Analytics Workflow to SQL, pandas, and Dashboards",
-    sections: [
-      {
-        emoji: "🧩",
-        title: "Overview",
-        body:
-          "Data 101 is a self-paced, single-user web course that teaches the foundations most analytics tutorials rush past: what is this work, really? What does an analyst actually do? How is data structured? How do you pull the rows you need, clean the mess that's left, analyze it, and turn the result into something a team can act on?\n\nIt is a complete, taught-and-graded data analytics course delivered end to end by AI: depth-adjustable lectures, a tutor that answers questions about the exact passage you're reading, adaptive practice that meets you at your level, and homework, a unit test, and a final that are graded with written feedback. The curriculum is one focused unit -- the practical backbone an analyst meets in their first quarter -- presented as six connected topics.\n\nDesigned for students, self-learners, and instructors evaluating AI-taught coursework, Data 101 pairs a real six-topic syllabus with a built-in academic-integrity layer -- so the course is one students can trust to be fair, and instructors can trust to be honest.",
-      },
-      {
-        emoji: "🧠",
-        title: "What It Does",
-        body:
-          "**One-Unit Curriculum of 6 Topics** -- A complete foundations syllabus, organized by the real analytics workflow:\n\n**1.1 -- What data analytics is and the workflow.** What an analyst does and how the work differs from guessing; the ask -> collect -> clean -> analyze -> communicate loop; and why skipping a stage is where bad conclusions come from.\n\n**1.2 -- Data types, structure, and spreadsheets.** Categorical vs. numeric, continuous vs. discrete; tidy rows-and-columns structure; and working with data in a spreadsheet (Excel / Google Sheets).\n\n**1.3 -- Querying data with SQL.** Pulling exactly the rows and columns you need with SELECT, WHERE, GROUP BY, and joins.\n\n**1.4 -- Cleaning and transforming data.** Handling missing values, fixing types and formats, deduplicating, and reshaping data into an analyzable form.\n\n**1.5 -- Analysis with Python (pandas).** Loading, filtering, grouping, and aggregating data in pandas to answer real questions.\n\n**1.6 -- Data visualization and dashboards.** Choosing the right chart, telling an honest story with data, and building dashboards in Tableau / Power BI.\n\n**One Real Example per Lecture** -- Every topic grounds its idea in a concrete case -- a churn investigation, a sales table with dates stored as text, a misleading y-axis -- so abstractions always land on something you can picture.\n\n**Three-Depth Lectures** -- Every lecture reads at Short / Medium / Long length, preserving the same examples and learning objectives. Skim the concept in a minute, expand it on demand, or read the full deep cut.\n\n**Section-Scoped AI Tutor** -- Ask a question about the exact paragraph you're on and the answer streams back live, grounded in that lecture section. Suggested starter questions come ready for each lecture.\n\n**Adaptive Practice** -- Problem sets that get harder as you build a streak and ease off after a miss, with an explanation on every answer. Your level carries over, so each drill picks up where the last one left off.",
-      },
-      {
-        emoji: "⚙️",
-        title: "Technical Features",
-        body:
-          "**AI That Teaches at Your Depth** -- Lectures rewrite themselves to the length you want without losing the examples or the point, so the same topic works for a quick refresher or a deep study session.\n\n**A Tutor That Stays on Topic** -- Answers stream in live and stay anchored to the section you're reading, instead of wandering off into the whole syllabus.\n\n**Practice That Adapts in Real Time** -- Difficulty tracks your performance from problem to problem, keeping you in the productive zone between \"too easy\" and \"overwhelming.\"\n\n**Grading You Can Read** -- Assignments are scored on whether your answer means the right thing, not whether it matches a string -- and every result comes with a written rationale.\n\n**A Two-Layer Integrity Check** -- Submissions are screened both for AI-style writing and for telltale authoring behavior, catching misuse that simple text checks miss -- always with a human-readable reason.\n\n**Reasoning Diagnostics That Track Growth** -- Two original, validated-style instruments -- a dilemma-based ethical-reasoning inventory and a multiple-choice critical-reasoning test -- are administered at baseline and after the unit. Each item across both administrations is unique, every individual response is stored for later review, and the gradebook folds the diagnostics and the coursework into one weighted score (20% / 80%).\n\n**Three One-Click Self-Tests** -- The course can verify its own health end to end before you trust a session: a full system check, a simulated student run through the whole course, and an answer-key quality review that confirms every graded answer is sound.\n\n**A Real Demo, Not a Slideshow** -- The walkthrough video is the actual product in motion -- live typing, streaming answers, and synced audio -- captured straight from the running app.",
-      },
-      {
-        emoji: "🎓",
-        title: "Designed For",
-        body:
-          "**College Students & Self-Learners** -- A complete data analytics foundations course with on-demand tutoring and adaptive practice, no instructor required.\n\n**Anyone Switching Into a Data Role Who Wants the Fundamentals First** -- A structured tour of the concepts behind the tools: the workflow, data types, SQL, cleaning, pandas, and visualization.\n\n**Instructors Evaluating AI-Taught Coursework** -- A working example of what an AI-taught, AI-graded, integrity-screened course actually looks like from the student's seat.\n\n**Curious Minds Who Want the Ideas, Not Just the Syntax** -- Read the idea, see it in a real case, then write the answer in your own words.",
-      },
-      {
-        emoji: "💡",
-        title: "Core Idea",
-        body:
-          "Most analytics tutorials jump straight to the tools -- here's a SQL query, here's a pandas one-liner. Far fewer go back to the workflow underneath: what question you're actually answering, how the data is shaped, why it has to be cleaned, and how to tell an honest story with the result. This course is built around that second list.\n\nRead the idea, ground it in a real example, then state the answer in your own words -- and let the course check your reasoning fairly every step of the way.\n\nData 101 -- ask the question, work the data, tell the story.",
-      },
-    ],
-  },
   "Basic Discrete Math": {
     emoji: "🔎",
     tagline:
@@ -1218,7 +1181,6 @@ export default function BabyLivingCourses() {
     { title: "Basic Data Analytics", url: "https://babyanalytics.xyz", videoUrl: "https://youtu.be/FmUCg1agNkc" },
     { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz", videoUrl: "https://youtu.be/k42R9s1Mvm8" },
     { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
-    { title: "Basic Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
     { title: "Basic Discrete Math", url: "https://babydiscretemath.xyz", videoUrl: "https://youtu.be/rb4pnVCug2U" },
     { title: "Basic Lambda Calculus", url: "https://babylambdacalculus.xyz", videoUrl: "https://youtu.be/XpQuU6SU8P4" },
     { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
