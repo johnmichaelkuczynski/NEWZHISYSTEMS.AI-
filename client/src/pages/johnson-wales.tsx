@@ -1,5 +1,6 @@
 import { useState } from "react";
 import NavBar from "@/components/NavBar";
+import dataAnalyticsBadge from "@assets/BASIC_DATA_ANALYTICS_1781998712125.png";
 
 interface Section {
   emoji: string;
@@ -13,10 +14,17 @@ interface CourseDescription {
   sections: Section[];
 }
 
+interface Badge {
+  image: string;
+  url: string;
+  label: string;
+}
+
 interface Course {
   title: string;
   url: string;
   videoUrl?: string;
+  badge?: Badge;
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
@@ -429,7 +437,16 @@ function renderSectionBody(body: string) {
 
 export default function JohnsonWales() {
   const courses: Course[] = [
-    { title: "Basic Data Analytics", url: "https://babyanalytics.xyz", videoUrl: "https://youtu.be/FmUCg1agNkc" },
+    {
+      title: "Basic Data Analytics",
+      url: "https://babyanalytics.xyz",
+      videoUrl: "https://youtu.be/FmUCg1agNkc",
+      badge: {
+        image: dataAnalyticsBadge,
+        url: "https://credsverse.com/credentials/d8a812d4-3336-4000-a55a-2107c0e416fd",
+        label: "Basic Data Analytics -- Course Completed (issued to Douglas Zhi)",
+      },
+    },
     { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
     { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
     { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
@@ -495,6 +512,21 @@ export default function JohnsonWales() {
                         >
                           {isOpen ? "Hide" : "Details"}
                         </button>
+                      )}
+                      {course.badge && (
+                        <a
+                          href={course.badge.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={course.badge.label}
+                          className="shrink-0"
+                        >
+                          <img
+                            src={course.badge.image}
+                            alt={course.badge.label}
+                            className="w-12 h-12 object-contain hover:scale-105 transition-transform"
+                          />
+                        </a>
                       )}
                       {course.videoUrl && (
                         <a
