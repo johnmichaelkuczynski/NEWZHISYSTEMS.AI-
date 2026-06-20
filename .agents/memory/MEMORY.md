@@ -1,0 +1,1 @@
+- [Course double-listing sync](course-double-listing.md) — analytics courses live on both baby-living-courses.tsx and johnson-wales.tsx; mirror badge/video/title/removal changes to both.
