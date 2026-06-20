@@ -16,6 +16,7 @@ interface CourseDescription {
 interface Course {
   title: string;
   url: string;
+  videoUrl?: string;
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
@@ -466,14 +467,14 @@ function renderSectionBody(body: string) {
 export default function JohnsonWales() {
   const courses: Course[] = [
     { title: "Basic Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
-    { title: "Basic Data Analytics", url: "https://babyanalytics.xyz" },
-    { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz" },
-    { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
-    { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz" },
+    { title: "Basic Data Analytics", url: "https://babyanalytics.xyz", videoUrl: "https://youtu.be/FmUCg1agNkc" },
+    { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
+    { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
+    { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz" },
-    { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz" },
-    { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz" },
-    { title: "Basic Workforce Analytics", url: "https://babyworkforceanalytics.xyz" },
+    { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
+    { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
+    { title: "Basic Workforce Analytics", url: "https://babyworkforceanalytics.xyz", videoUrl: "https://youtu.be/rOINDQbLd7U" },
   ];
 
   const sortedCourses = [...courses].sort((a, b) =>
@@ -532,6 +533,16 @@ export default function JohnsonWales() {
                         >
                           {isOpen ? "Hide" : "Details"}
                         </button>
+                      )}
+                      {course.videoUrl && (
+                        <a
+                          href={course.videoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-medium whitespace-nowrap"
+                        >
+                          📹 Tutorial
+                        </a>
                       )}
                       <a
                         href={course.url}

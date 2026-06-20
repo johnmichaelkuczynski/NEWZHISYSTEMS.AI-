@@ -2413,8 +2413,8 @@ export default function Home() {
       { title: "EZGrader", url: "https://ezgrader.ai" }
     ],
     "🧠 Intelligence & Psychology": [
-      { title: "Ask A Philosopher", url: "https://genius101.xyz" },
-      { title: "Freud GPT", url: "https://freudgpt.me" },
+      { title: "Ask A Philosopher", url: "https://genius101.xyz", videoUrl: "https://youtu.be/gvMQBWYAxOc" },
+      { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
       { title: "Major Brain", url: "https://majorbrain.xyz" },
       { title: "Model Builder", url: "https://modelwiz.xyz" },
       { title: "Originality Meter", url: "https://originalitymeter.com" },

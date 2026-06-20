@@ -30,6 +30,7 @@ interface Course {
   title: string;
   url: string;
   badge?: Badge;
+  videoUrl?: string;
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
@@ -1142,7 +1143,7 @@ function renderSectionBody(body: string) {
 
 export default function BabyLivingCourses() {
   const courses: Course[] = [
-    { title: "Basic Evolutionary Psychology", url: "https://babyevopsych.xyz" },
+    { title: "Basic Evolutionary Psychology", url: "https://babyevopsych.xyz", videoUrl: "https://youtu.be/hWJicnEpS6c" },
     {
       title: "Basic AI",
       url: "https://babyartificialintelligence.xyz",
@@ -1155,6 +1156,7 @@ export default function BabyLivingCourses() {
     {
       title: "Basic AI Math",
       url: "https://babyaimath.xyz",
+      videoUrl: "https://youtu.be/tmf-vQU5TqQ",
       badge: {
         image: aiMathFundamentalsBadge,
         url: "https://credsverse.com/credentials/57cebc9f-f4aa-4ef5-a05d-47bd0bf26c0d",
@@ -1173,6 +1175,7 @@ export default function BabyLivingCourses() {
     {
       title: "Basic Finite Math",
       url: "https://babyfinitemath.xyz",
+      videoUrl: "https://youtu.be/w2Hy1Xkc-QE",
       badge: {
         image: finiteMathBadge,
         url: "https://credsverse.com/credentials/b7480ea3-bc7b-4a60-9099-7bc82db18bc8",
@@ -1182,6 +1185,7 @@ export default function BabyLivingCourses() {
     {
       title: "Basic Cognitive Science 101",
       url: "https://babycognitivescience101.xyz",
+      videoUrl: "https://youtu.be/KIYlhT3lhFM",
       badge: {
         image: cognitiveScienceBadge,
         url: "https://credsverse.com/credentials/a2c4a47b-23d5-4e11-b7ff-346e89b2a6ff",
@@ -1191,6 +1195,7 @@ export default function BabyLivingCourses() {
     {
       title: "Basic Infinite Series",
       url: "https://babyinfiniteseries.xyz",
+      videoUrl: "https://youtu.be/uwoiLIHjmb0",
       badge: {
         image: infiniteSeriesBadge,
         url: "https://credsverse.com/credentials/e5570034-5374-47e8-8cbf-d8e75c3969f8",
@@ -1200,28 +1205,29 @@ export default function BabyLivingCourses() {
     {
       title: "Basic Constructive Critical Reasoning",
       url: "https://babyconstructivereasoning.xyz",
+      videoUrl: "https://youtu.be/A_qV9cH23LA",
       badge: {
         image: constructiveReasoningBadge,
         url: "https://credsverse.com/credentials/baf24cb4-85ef-4d44-b64f-116c1efd7968",
         label: "Basic Constructive Critical Reasoning -- Course Completed (issued to Douglas Zhi)",
       },
     },
-    { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz" },
-    { title: "Basic Data Analytics", url: "https://babyanalytics.xyz" },
-    { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz" },
-    { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz" },
+    { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
+    { title: "Basic Data Analytics", url: "https://babyanalytics.xyz", videoUrl: "https://youtu.be/FmUCg1agNkc" },
+    { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz", videoUrl: "https://youtu.be/k42R9s1Mvm8" },
+    { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
     { title: "Basic Foundations of Data Analytics (Short Course)", url: "https://analytics101.xyz" },
-    { title: "Basic Discrete Math", url: "https://babydiscretemath.xyz" },
-    { title: "Basic Lambda Calculus", url: "https://babylambdacalculus.xyz" },
-    { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz" },
-    { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz" },
+    { title: "Basic Discrete Math", url: "https://babydiscretemath.xyz", videoUrl: "https://youtu.be/rb4pnVCug2U" },
+    { title: "Basic Lambda Calculus", url: "https://babylambdacalculus.xyz", videoUrl: "https://youtu.be/XpQuU6SU8P4" },
+    { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
+    { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz" },
-    { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz" },
+    { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
     { title: "Basic Psychodynamic Therapy 101", url: "https://babypsychodynamictherapy.xyz" },
     { title: "Basic Psychodynamic Treatment of BPD 101", url: "https://psychodynamicbpdtherapy.xyz" },
-    { title: "Basic Psychodynamic Treatment of OCD 101", url: "https://psychodynamicocdtherapy.xyz" },
-    { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz" },
-    { title: "Basic Workforce Analytics", url: "https://babyworkforceanalytics.xyz" },
+    { title: "Basic Psychodynamic Treatment of OCD 101", url: "https://psychodynamicocdtherapy.xyz", videoUrl: "https://youtu.be/5YZeCEsKKD8" },
+    { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
+    { title: "Basic Workforce Analytics", url: "https://babyworkforceanalytics.xyz", videoUrl: "https://youtu.be/rOINDQbLd7U" },
   ];
 
   const sortedCourses = [...courses].sort((a, b) =>
@@ -1295,6 +1301,16 @@ export default function BabyLivingCourses() {
                             alt={course.badge.label}
                             className="w-12 h-12 object-contain hover:scale-105 transition-transform"
                           />
+                        </a>
+                      )}
+                      {course.videoUrl && (
+                        <a
+                          href={course.videoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-medium whitespace-nowrap"
+                        >
+                          📹 Tutorial
                         </a>
                       )}
                       <a
