@@ -1167,6 +1167,7 @@ export default function BabyLivingCourses() {
     {
       title: "Basic Diagonalization and Incompleteness",
       url: "https://diagonalization.xyz",
+      videoUrl: "https://youtu.be/7yMY9fgsDO0",
       badge: {
         image: diagonalizationBadge,
         url: "https://credsverse.com/credentials/38c91731-2f69-4b98-9000-607927046ec5",
