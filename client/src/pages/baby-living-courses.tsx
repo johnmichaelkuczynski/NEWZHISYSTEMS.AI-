@@ -1147,6 +1147,7 @@ export default function BabyLivingCourses() {
     {
       title: "Basic AI",
       url: "https://babyartificialintelligence.xyz",
+      videoUrl: "https://youtu.be/NQJzLfNIhdw",
       badge: {
         image: aiFundamentalsBadge,
         url: "https://credsverse.com/credentials/dc3dd4b6-52d9-4468-b39a-acaf50c76352",
