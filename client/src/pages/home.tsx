@@ -2401,34 +2401,34 @@ export default function Home() {
     "📝 Writing & Books": [
       { title: "Living Book Creator", url: "https://livingbook.xyz/" },
       { title: "Book Builder", url: "https://bookbuilder.xyz" },
-      { title: "Genius Dictation", url: "https://geniusdictation.com", videoUrl: "/videos/genius-dictation-tutorial.mkv" },
+      { title: "Genius Dictation", url: "https://geniusdictation.com" },
       { title: "EZ Reader", url: "https://ezreader.ai" },
       { title: "Classic EZ Reader", url: "https://classicezreader.com" },
-      { title: "EZ Story", url: "https://ezstory.xyz", videoUrl: "https://www.youtube.com/watch?v=sRaZtSnkybM" },
+      { title: "EZ Story", url: "https://ezstory.xyz" },
       { title: "NeuroText", url: "https://neurotext.uk" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
       { title: "EZ Homework", url: "https://ezhw.xyz" },
-      { title: "EZGrader", url: "https://ezgrader.ai", videoUrl: "/videos/ezgrader-tutorial.mp4" }
+      { title: "EZGrader", url: "https://ezgrader.ai" }
     ],
     "🧠 Intelligence & Psychology": [
       { title: "Ask A Philosopher", url: "https://genius101.xyz" },
       { title: "Freud GPT", url: "https://freudgpt.me" },
       { title: "Major Brain", url: "https://majorbrain.xyz" },
       { title: "Model Builder", url: "https://modelwiz.xyz" },
-      { title: "Originality Meter", url: "https://originalitymeter.com", videoUrl: "https://www.youtube.com/watch?v=lRdczUD_0PE" },
+      { title: "Originality Meter", url: "https://originalitymeter.com" },
       { title: "Intelligence Meter", url: "https://intelligencemeter.biz" },
-      { title: "Mind Profiler", url: "https://mindprofiler.xyz/", videoUrl: "/videos/mind-profiler-tutorial.mp4" },
+      { title: "Mind Profiler", url: "https://mindprofiler.xyz/" },
       { title: "Text Evaluator", url: "https://textevaluator.xyz" },
-      { title: "Text IQ", url: "https://textiq.xyz/", videoUrl: "/videos/text-iq-tutorial.mp4" },
+      { title: "Text IQ", url: "https://textiq.xyz/" },
       { title: "Improve Your Writing", url: "https://improveyourwriting.xyz" },
       { title: "Cognitive Enhancer", url: "https://cognitiveenhancer.xyz" },
-      { title: "Psychology Pro", url: "https://psychologypro.xyz", videoUrl: "https://www.youtube.com/watch?v=0hIA4NsETZw" },
-      { title: "Text Genius", url: "https://textgenius.xyz", videoUrl: "https://www.youtube.com/watch?v=w2bgAo4nf64" },
+      { title: "Psychology Pro", url: "https://psychologypro.xyz" },
+      { title: "Text Genius", url: "https://textgenius.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
-      { title: "Model Transformer", url: "https://modeltransformer.xyz/", videoUrl: "https://www.youtube.com/watch?v=EubJaYvDbpg" },
-      { title: "LLM Plus", url: "https://llmplus.xyz/", videoUrl: "https://youtu.be/MreIR_4VH-M" }
+      { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
+      { title: "LLM Plus", url: "https://llmplus.xyz/" }
     ],
     "📸 Visual & Multimedia": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
@@ -2443,13 +2443,13 @@ export default function Home() {
     ],
     "⚙️ Utility & Conversion": [
       { title: "Goal Tracker", url: "https://smartgoaltracker.xyz" },
-      { title: "GPTByPass", url: "https://gptbypass.xyz", videoUrl: "https://www.youtube.com/watch?v=PR0JX_Hrgqc" },
+      { title: "GPTByPass", url: "https://gptbypass.xyz" },
       { title: "HTML Converter", url: "https://htmlconverter.xyz" },
       { title: "PDF Shrinker", url: "https://shrinkpdf.xyz" }
     ],
     "💹 Finance": [
       { title: "Forex Edge", url: "https://usdhkd.xyz" },
-      { title: "SOXL Options Pro", url: "https://soxlpro.xyz", videoUrl: "https://youtube.com/watch?v=TXgcuKomlrs" },
+      { title: "SOXL Options Pro", url: "https://soxlpro.xyz" },
       { title: "SOXL Options Edge", url: "https://soxledge.xyz" }
     ]
   };
