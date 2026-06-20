@@ -7,6 +7,7 @@ import cognitiveScienceBadge from "@assets/COGNITIVE_SCIENCE_1781747749673.png";
 import constructiveReasoningBadge from "@assets/BASIC_CONSTRUCTIVE_CRITICAL_REASONING_1781748870574.png";
 import finiteMathBadge from "@assets/FINITE_MATH_1781753715196.png";
 import diagonalizationBadge from "@assets/DIAGONALIZATION_1781754327939.png";
+import dataAnalyticsBadge from "@assets/BASIC_DATA_ANALYTICS_1781998712125.png";
 
 interface Section {
   emoji: string;
@@ -1178,7 +1179,16 @@ export default function BabyLivingCourses() {
       },
     },
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
-    { title: "Basic Data Analytics", url: "https://babyanalytics.xyz", videoUrl: "https://youtu.be/FmUCg1agNkc" },
+    {
+      title: "Basic Data Analytics",
+      url: "https://babyanalytics.xyz",
+      videoUrl: "https://youtu.be/FmUCg1agNkc",
+      badge: {
+        image: dataAnalyticsBadge,
+        url: "https://credsverse.com/credentials/d8a812d4-3336-4000-a55a-2107c0e416fd",
+        label: "Basic Data Analytics -- Course Completed (issued to Douglas Zhi)",
+      },
+    },
     { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz", videoUrl: "https://youtu.be/k42R9s1Mvm8" },
     { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
     { title: "Basic Discrete Math", url: "https://babydiscretemath.xyz", videoUrl: "https://youtu.be/rb4pnVCug2U" },
