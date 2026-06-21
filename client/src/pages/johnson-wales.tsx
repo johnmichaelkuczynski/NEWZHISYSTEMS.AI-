@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavBar from "@/components/NavBar";
 import dataAnalyticsBadge from "@assets/BASIC_DATA_ANALYTICS_1781998712125.png";
+import workforceAnalyticsBadge from "@assets/WORKFORCE_ANALYTICS_1782001428926.png";
 
 interface Section {
   emoji: string;
@@ -453,7 +454,16 @@ export default function JohnsonWales() {
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz", videoUrl: "https://youtu.be/wa7D4OKA3WA" },
     { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
     { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
-    { title: "Basic Workforce Analytics", url: "https://babyworkforceanalytics.xyz", videoUrl: "https://youtu.be/rOINDQbLd7U" },
+    {
+      title: "Basic Workforce Analytics",
+      url: "https://babyworkforceanalytics.xyz",
+      videoUrl: "https://youtu.be/rOINDQbLd7U",
+      badge: {
+        image: workforceAnalyticsBadge,
+        url: "https://credsverse.com/credentials/3aabea64-9f6a-4cce-a99e-f80f5da4fc99",
+        label: "Basic Workforce Analytics -- Course Completed (issued to Douglas Zhi)",
+      },
+    },
   ];
 
   const sortedCourses = [...courses].sort((a, b) =>
