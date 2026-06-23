@@ -9,6 +9,7 @@ import JournalIssue from "@/pages/journal-issue";
 import JournalAdmin from "@/pages/journal-admin";
 import Podcasts from "@/pages/podcasts";
 import OfficeUse from "@/pages/office-use";
+import AiHigherEd from "@/pages/ai-higher-ed";
 import Courses from "@/pages/courses";
 import JohnsonWales from "@/pages/johnson-wales";
 import BabyLivingCourses from "@/pages/baby-living-courses";
@@ -34,6 +35,9 @@ function Router() {
       </Route>
       <Route path="/office-use">
         <PasswordGate storageKey="office-use-access"><OfficeUse /></PasswordGate>
+      </Route>
+      <Route path="/ai-higher-ed">
+        <PasswordGate storageKey="ai-higher-ed-access"><AiHigherEd /></PasswordGate>
       </Route>
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />

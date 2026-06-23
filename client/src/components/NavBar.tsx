@@ -6,6 +6,7 @@ const links = [
   { href: "/journal", label: "Investor Notes" },
   { href: "/podcasts", label: "Investor Briefings" },
   { href: "/office-use", label: "Office Use" },
+  { href: "/ai-higher-ed", label: "AI in Higher Ed" },
 ];
 
 export default function NavBar() {

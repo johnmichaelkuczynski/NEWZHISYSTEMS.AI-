@@ -1,4 +1,4 @@
-import { type User, type InsertUser, type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, users, journalIssues, officeDocuments } from "@shared/schema";
+import { type User, type InsertUser, type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, type HigherEdReport, type InsertHigherEdReport, users, journalIssues, officeDocuments, higherEdReports } from "@shared/schema";
 import { db } from "./db";
 import { eq, desc, sql, or, ilike } from "drizzle-orm";
 
@@ -24,6 +24,13 @@ export interface IStorage {
   createOfficeDocument(doc: InsertOfficeDocument): Promise<OfficeDocument>;
   updateOfficeDocument(id: string, doc: Partial<InsertOfficeDocument>): Promise<OfficeDocument>;
   deleteOfficeDocument(id: string): Promise<void>;
+
+  // AI in Higher Ed reports
+  getAllHigherEdReports(): Promise<HigherEdReport[]>;
+  getHigherEdReport(id: string): Promise<HigherEdReport | undefined>;
+  createHigherEdReport(report: InsertHigherEdReport): Promise<HigherEdReport>;
+  updateHigherEdReport(id: string, report: Partial<InsertHigherEdReport>): Promise<HigherEdReport>;
+  deleteHigherEdReport(id: string): Promise<void>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -119,6 +126,33 @@ export class DatabaseStorage implements IStorage {
 
   async deleteOfficeDocument(id: string): Promise<void> {
     await db.delete(officeDocuments).where(eq(officeDocuments.id, id));
+  }
+
+  async getAllHigherEdReports(): Promise<HigherEdReport[]> {
+    return await db.select().from(higherEdReports).orderBy(desc(higherEdReports.createdAt));
+  }
+
+  async getHigherEdReport(id: string): Promise<HigherEdReport | undefined> {
+    const [report] = await db.select().from(higherEdReports).where(eq(higherEdReports.id, id));
+    return report || undefined;
+  }
+
+  async createHigherEdReport(insertReport: InsertHigherEdReport): Promise<HigherEdReport> {
+    const [report] = await db.insert(higherEdReports).values(insertReport).returning();
+    return report;
+  }
+
+  async updateHigherEdReport(id: string, updateData: Partial<InsertHigherEdReport>): Promise<HigherEdReport> {
+    const [report] = await db
+      .update(higherEdReports)
+      .set({ ...updateData, updatedAt: new Date() })
+      .where(eq(higherEdReports.id, id))
+      .returning();
+    return report;
+  }
+
+  async deleteHigherEdReport(id: string): Promise<void> {
+    await db.delete(higherEdReports).where(eq(higherEdReports.id, id));
   }
 }
 

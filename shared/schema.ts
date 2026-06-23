@@ -37,6 +37,22 @@ export const insertOfficeDocumentSchema = createInsertSchema(officeDocuments).pi
 export type InsertOfficeDocument = z.infer<typeof insertOfficeDocumentSchema>;
 export type OfficeDocument = typeof officeDocuments.$inferSelect;
 
+export const higherEdReports = pgTable("higher_ed_reports", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  title: text("title").notNull(),
+  body: text("body").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const insertHigherEdReportSchema = createInsertSchema(higherEdReports).pick({
+  title: true,
+  body: true,
+});
+
+export type InsertHigherEdReport = z.infer<typeof insertHigherEdReportSchema>;
+export type HigherEdReport = typeof higherEdReports.$inferSelect;
+
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,

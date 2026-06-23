@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import fs from "fs";
 import { storage } from "./storage";
-import { insertJournalIssueSchema, insertOfficeDocumentSchema } from "@shared/schema";
+import { insertJournalIssueSchema, insertOfficeDocumentSchema, insertHigherEdReportSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 import type { TextProcessingRequest, TestResult } from "@shared/ai-services";
 import { 
@@ -311,6 +311,66 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Error deleting office document:", error);
       res.status(500).json({ error: "Failed to delete office document" });
+    }
+  });
+
+  // AI in Higher Ed reports
+  app.get("/api/higher-ed", async (_req, res) => {
+    try {
+      const reports = await storage.getAllHigherEdReports();
+      res.json(reports);
+    } catch (error) {
+      console.error("Error fetching higher ed reports:", error);
+      res.status(500).json({ error: "Failed to fetch higher ed reports" });
+    }
+  });
+
+  app.get("/api/higher-ed/:id", async (req, res) => {
+    try {
+      const report = await storage.getHigherEdReport(req.params.id);
+      if (!report) return res.status(404).json({ error: "Not found" });
+      res.json(report);
+    } catch (error) {
+      console.error("Error fetching higher ed report:", error);
+      res.status(500).json({ error: "Failed to fetch higher ed report" });
+    }
+  });
+
+  app.post("/api/higher-ed", async (req, res) => {
+    try {
+      const result = insertHigherEdReportSchema.safeParse(req.body);
+      if (!result.success) {
+        return res.status(400).json({ error: "Validation failed", details: fromZodError(result.error).toString() });
+      }
+      const report = await storage.createHigherEdReport(result.data);
+      res.status(201).json(report);
+    } catch (error) {
+      console.error("Error creating higher ed report:", error);
+      res.status(500).json({ error: "Failed to create higher ed report" });
+    }
+  });
+
+  app.put("/api/higher-ed/:id", async (req, res) => {
+    try {
+      const result = insertHigherEdReportSchema.partial().safeParse(req.body);
+      if (!result.success) {
+        return res.status(400).json({ error: "Validation failed", details: fromZodError(result.error).toString() });
+      }
+      const report = await storage.updateHigherEdReport(req.params.id, result.data);
+      res.json(report);
+    } catch (error) {
+      console.error("Error updating higher ed report:", error);
+      res.status(500).json({ error: "Failed to update higher ed report" });
+    }
+  });
+
+  app.delete("/api/higher-ed/:id", async (req, res) => {
+    try {
+      await storage.deleteHigherEdReport(req.params.id);
+      res.status(204).send();
+    } catch (error) {
+      console.error("Error deleting higher ed report:", error);
+      res.status(500).json({ error: "Failed to delete higher ed report" });
     }
   });
 
