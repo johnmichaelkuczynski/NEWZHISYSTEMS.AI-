@@ -1,0 +1,41 @@
+CAL STATE FRESNO (California State University, Fresno)
+1. Which courses on the list does X have a real need for? List them in priority order, highest need first.
+Developmental Mathematics
+Quantitative Reasoning
+Critical Thinking
+Public Speaking
+Business Ethics
+Finance
+Basic Data Analytics
+AI
+Basic Financial & Managerial Analytics
+Basic Marketing Analytics
+Basic Operations & Supply Chain Analytics
+Basic Predictive Analytics
+Basic Workforce Analytics
+Basic Criminal Psychology
+Basic Developmental Psychology
+2. Take the course X needs most (Y). How much does X currently spend on Y per year?
+$640,000
+3. How much would it cost X to install my AI-powered version of Y?
+$70,000
+4. How much would it cost X to keep Y per year after installation, assuming reasonable maintenance fees?
+$32,000
+5. Across all the courses X needs (from Question 1), what does X currently spend per year to deliver them, added together?
+$5,200,000
+6. How much to install all of the courses from this list that X needs?
+$480,000
+7. Annual cost of keeping said courses up and running?
+$240,000
+8. What does X currently spend per year measuring whether its graduates are actually job-ready (internal benchmarking, assessment, outcomes verification)?
+$1,100,000
+9. What does it cost X per year, in attrition, employer complaints, or accreditation/gainful-employment exposure, that its credentials don't reliably convert to employment?
+$14,500,000
+10. How much would it cost X to install my version's internal diagnostics across the needed courses?
+$110,000
+11. How much per year to keep those diagnostics calibrated against live industry norms?
+$72,000
+12. Total cost to institution if they do not use my services.
+$20,800,000
+13. Total cost if they do use my services.
+$6,702,000
