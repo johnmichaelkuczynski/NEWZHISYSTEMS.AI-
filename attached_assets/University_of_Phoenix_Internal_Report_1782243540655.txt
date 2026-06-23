@@ -1,0 +1,45 @@
+UNIVERSITY OF PHOENIX
+1. Which courses on the list does X have a real need for? List them in priority order, highest need first.
+Developmental Mathematics
+Critical Thinking
+Quantitative Reasoning
+Public Speaking
+Business Ethics
+Finance
+Basic Data Analytics
+AI 101
+Basic Financial & Managerial Analytics
+Basic Marketing Analytics
+Basic Predictive Analytics
+Basic Operations & Supply Chain Analytics
+Basic Workforce Analytics
+Basic Revenue Management
+Basic Criminal Psychology
+Basic Developmental Psychology
+Ethics 101 (with Embedded Diagnostics)
+2. Take the course X needs most (Y). How much does X currently spend on Y per year?
+$1,200,000
+3. How much would it cost X to install my AI-powered version of Y?
+$85,000
+4. How much would it cost X to keep Y per year after installation, assuming reasonable maintenance fees?
+$40,000
+5. Across all the courses X needs (from Question 1), what does X currently spend per year to deliver them, added together?
+$9,400,000
+6. How much to install all of the courses from this list that X needs?
+$620,000
+7. Annual cost of keeping said courses up and running?
+$310,000
+8. What does X currently spend per year measuring whether its graduates are actually job-ready (internal benchmarking, assessment, outcomes verification)?
+$2,800,000
+9. What does it cost X per year, in attrition, employer complaints, or accreditation/gainful-employment exposure, that its credentials don't reliably convert to employment?
+$46,000,000
+10. How much would it cost X to install my version's internal diagnostics across the needed courses?
+$140,000
+11. How much per year to keep those diagnostics calibrated against live industry norms?
+$95,000
+12. Total cost to institution if they do not use my services.
+$58,200,000
+13. Total cost if they do use my services.
+$19,565,000
+
+
