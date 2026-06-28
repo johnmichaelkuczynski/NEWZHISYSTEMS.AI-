@@ -36,6 +36,43 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  "AI Logic": {
+    emoji: "🤖",
+    tagline:
+      "A Four-Week Introductory Course on the Ideas Behind Artificial Intelligence -- From \"What Is AI?\" to Agents, Alignment, and the Future",
+    sections: [
+      {
+        emoji: "🧩",
+        title: "Overview",
+        body:
+          "AI Logic is a self-paced, single-user web course that asks the question AI coverage usually skips: what are these systems, really? What is a model? What does \"training\" actually mean? How does a neural network learn? Why do language models make things up? What is bias, alignment, or an AI agent? The course answers these conceptually -- in plain English, with no math or coding background required -- one connected idea at a time.\n\nThe full runtime -- lectures with Short / Medium / Long depth, section-scoped AI tutor, adaptive practice, AI-graded homework / tests / midterm / final, two-layer AI-authorship detection, and one-click diagnostics -- teaches the conceptual backbone of modern AI: how machines learn from data, what neural networks and generative models do, and how to use AI responsibly.",
+      },
+      {
+        emoji: "🧠",
+        title: "What It Does",
+        body:
+          "**Four-Week Curriculum of 28 Micro-Lectures** -- Organized by theme:\n\n**Week 1 -- What AI is and how it got here.** What AI is and isn't (automation vs. intelligence); a brief history from symbolic AI to machine learning; rules vs. learning; data as the raw material; what \"training\" actually means; models as input-output functions; and where AI shows up in everyday life.\n\n**Week 2 -- How machines learn.** Pattern recognition; features and representations; supervised learning from labels; unsupervised learning (finding structure); prediction, classification, and error (precision and recall); and why more data and bigger models help.\n\n**Week 3 -- Neural networks and generative AI.** The intuition behind neural networks; how networks learn (loss, backpropagation, gradient descent); from neural nets to deep learning; language models and next-token prediction; what \"generative\" AI means; prompting; and the strengths, limits, and hallucination of these systems.\n\n**Week 4 -- AI in the world: ethics, safety, and the future.** Bias, fairness, and data quality; reliability, evaluation, and trust; privacy and security; automation, work, and the economy; alignment and AI safety basics; a practical workflow for using AI well; the near future of agents; and a capstone synthesis.\n\n**One Real Example per Lecture** -- Every micro-lecture grounds its concept in a concrete, real-world example -- e.g. Deep Blue vs. AlphaGo as symbolic-vs-learned AI, the ImageNet dataset launching deep learning, a recruiting tool that learned historical bias, the boat-racing AI that gamed its reward by spinning in circles, language models regurgitating memorized training data, and coding agents that act over multiple steps.\n\n**One Conceptual Question per Lecture** -- Every homework / test / midterm / final problem is a short-answer conceptual question (define a term, draw a distinction, explain why something works, identify an example) answered in plain English -- no math or code required.\n\n**Three-Depth Lectures, Section-Scoped Tutor, Adaptive Practice, AI Grading, Two-Layer Detection, Operator Diagnostics** -- All inherited unchanged from the underlying runtime.\n\n**12 Graded Assignments** -- Two homeworks per week plus a graded weekly checkpoint: Week 1 test, end-of-Week-2 midterm, Week 3 test, end-of-Week-4 cumulative final.\n\n**Built-In Product Demo Video** -- The companion demo artifact ships as a short, narrated screencast of the live UI.",
+      },
+      {
+        emoji: "⚙️",
+        title: "Technical Features",
+        body:
+          "**Conceptual Answer Grading** -- Every problem's canonical answer is a short conceptual statement. The AI grader (with a numeric short-circuit retained for harmless edge cases) judges whether the student's answer captures the key idea of the model answer, accepting paraphrases and lenient wording while staying strict on the essential concept.\n\n**Static AI Detection (GPTZero):** Every submitted answer is sent to GPTZero's predict/text endpoint; the per-document AI probability is blended 0.85 x GPTZero + 0.15 x structural-heuristic for the final score. If GPTZero is unavailable, the system silently falls back to an LLM scorer plus heuristic -- submissions never block.\n\n**Diachronic Keystroke Detection:** The student textarea captures keystroke count, erase count, bulk-insert events, longest bulk insert, rewrite segments, and total duration. A scorer penalizes paste-then-reword behavior, low keystroke-to-output ratios, and impossibly sustained typing speeds.\n\n**System Diagnostic (/diagnostics/system):** environment, database round-trip, course-seed integrity, OpenAI chat completion, OpenAI JSON mode, detection pipeline, and grader equivalence check. Each step returns pass/fail, timing, and a raw error string.\n\n**Synthetic-Student Diagnostic (/diagnostics/synthetic-run):** end-to-end stack proof -- a synthetic student reads every lecture, takes and submits every assignment, runs adaptive practice, asks the tutor, and triggers detection, verifying grading + detection + analytics all reflect the run.\n\n**Content Auditor (/diagnostics/content-audit):** sends every lecture body and every stored \"correct answer\" to OpenAI for an independent verdict on whether each is actually correct -- flagging wrong definitions, inaccurate claims about how AI works, misused terminology, and conceptual answers that don't satisfy their prompt.\n\n**Auto-Reseed on Curriculum Change** -- seedIfEmpty compares the set of topic slugs in the database to the expected curriculum and checks a sentinel phrase in a designated lecture. If either differs, it wipes and re-seeds in dependency order. A single content swap propagates cleanly on the next server start.\n\n**Contract-First API** -- Single OpenAPI document; React Query hooks for the UI and Zod validators for the server are generated from it.\n\n**Streaming AI Tutor** -- Token-by-token Server-Sent-Event streaming with a section-scoped system prompt grounded in the active lecture.\n\n**Adaptive Practice Engine** -- Per-session difficulty (1-5) adjusts after each attempt; conceptual questions are generated on demand.",
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body:
+          "**Anyone Curious About AI Who Wants the Concepts, Not the Hype:** A short, focused course on the conceptual scaffolding behind modern AI -- data, learning, models, neural networks, generation, and responsible use -- with no math or coding prerequisites.\n\n**Instructors & Curriculum Designers** -- A working reference for AI-taught, AI-graded, AI-detection-screened coursework whose answers are conceptual rather than symbolic.",
+      },
+      {
+        emoji: "💡",
+        title: "Core Idea",
+        body:
+          "Most coverage of AI is either breathless hype or dense technical detail. This course takes the middle path: it explains the real ideas behind AI clearly enough that anyone can follow, and honestly enough that you come away able to tell what these systems can and cannot do.\n\nRead the idea, see it grounded in a real example, then explain the idea in your own words.\n\nAI Logic -- read the idea, ground the idea, explain the idea.",
+      },
+    ],
+  },
   "Spatial IQ Booster": {
     emoji: "🔎",
     tagline:
@@ -1279,6 +1316,7 @@ export default function BabyLivingCourses() {
         label: "Basic Constructive Critical Reasoning -- Course Completed (issued to Douglas Zhi)",
       },
     },
+    { title: "AI Logic", url: "https://ailogiccourse.xyz" },
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
     {
       title: "Basic Data Analytics",
