@@ -1316,7 +1316,7 @@ export default function BabyLivingCourses() {
         label: "Basic Constructive Critical Reasoning -- Course Completed (issued to Douglas Zhi)",
       },
     },
-    { title: "AI Logic", url: "https://ailogiccourse.xyz" },
+    { title: "AI Logic", url: "https://ailogiccourse.xyz", videoUrl: "https://youtu.be/NyrQs-__M-s" },
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
     {
       title: "Basic Data Analytics",
