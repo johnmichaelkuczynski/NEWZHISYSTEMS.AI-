@@ -2454,6 +2454,9 @@ export default function Home() {
       { title: "Forex Edge", url: "https://usdhkd.xyz" },
       { title: "SOXL Options Pro", url: "https://soxlpro.xyz" },
       { title: "SOXL Options Edge", url: "https://soxledge.xyz" }
+    ],
+    "🙏 Religion & Spiritual Growth": [
+      { title: "Astrology Plus", url: "https://astrologyplus.xyz" }
     ]
   };
 
