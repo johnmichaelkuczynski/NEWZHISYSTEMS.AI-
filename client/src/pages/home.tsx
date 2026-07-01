@@ -2408,7 +2408,8 @@ export default function Home() {
       { title: "EZ Reader", url: "https://ezreader.ai" },
       { title: "Classic EZ Reader", url: "https://classicezreader.com" },
       { title: "EZ Story", url: "https://ezstory.xyz" },
-      { title: "NeuroText", url: "https://neurotext.uk" }
+      { title: "NeuroText", url: "https://neurotext.uk" },
+      { title: "Style Mimic", url: "https://stylemimic.xyz" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
