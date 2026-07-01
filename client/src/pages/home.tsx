@@ -2456,7 +2456,9 @@ export default function Home() {
       { title: "SOXL Options Edge", url: "https://soxledge.xyz" }
     ],
     "🙏 Religion & Spiritual Growth": [
-      { title: "Astrology Plus", url: "https://astrologyplus.xyz" }
+      { title: "Astrology Plus", url: "https://astrologyplus.xyz" },
+      { title: "Black Jesus", url: "https://blackjesus.xyz" },
+      { title: "What Would Jesus Do?", url: "https://whatwouldjesusdo.in" }
     ]
   };
 
