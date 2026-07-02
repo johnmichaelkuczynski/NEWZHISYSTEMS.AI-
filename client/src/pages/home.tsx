@@ -2449,6 +2449,7 @@ export default function Home() {
     "⚙️ Utility & Conversion": [
       { title: "Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "GPTByPass", url: "https://gptbypass.xyz" },
+      { title: "GPT Crusher", url: "https://gptcrusher.xyz" },
       { title: "HTML Converter", url: "https://htmlconverter.xyz" },
       { title: "PDF Shrinker", url: "https://shrinkpdf.xyz" }
     ],
