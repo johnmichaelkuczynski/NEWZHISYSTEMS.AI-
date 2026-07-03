@@ -2372,7 +2372,7 @@ export default function Home() {
     { title: "DICTIONARY OF ANALYTIC PHILOSOPHY", url: "https://philosophydictionary.xyz" },
     { title: "EMPIRICISM AND ITS LIMITS", url: "https://empiricism101.xyz" },
     { title: "EPISTEMOLOGY", url: "https://epistemology101.xyz" },
-    { title: "ETHICS", url: "https://ethics101.xyz" },
+    { title: "ETHICS", url: "https://ethics101.ink" },
     { title: "FREEDOM", url: "https://freedom101.xyz" },
     { title: "MATHEMATICAL LOGIC", url: "https://mathlogic.xyz" },
     { title: "ON THE CARDINALITY OF PROOF SPACES", url: "https://godel101.xyz" },
