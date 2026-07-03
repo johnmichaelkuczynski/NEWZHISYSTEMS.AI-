@@ -2366,7 +2366,7 @@ export default function Home() {
   const livingBooksByKuczynski = [
     { title: "A HISTORY OF AMERICAN FINANCIAL REGULATION", url: "https://financialregulation.xyz" },
     { title: "AI AND PHILOSOPHY", url: "https://epistemicengineering.xyz" },
-    { title: "AI LOGIC", url: "https://ailogic101.xyz" },
+    { title: "AI LOGIC", url: "https://thelogicofartificialintelligence.xyz" },
     { title: "ANALYTIC PHILOSOPHY (COMPLETE)", url: "https://analyticphilosophy.xyz" },
     { title: "CAUSATION", url: "https://causality101.xyz" },
     { title: "DICTIONARY OF ANALYTIC PHILOSOPHY", url: "https://philosophydictionary.xyz" },
