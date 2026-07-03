@@ -2391,7 +2391,7 @@ export default function Home() {
     { title: "DEATH OF IVAN ILYCH", url: "https://ivanilych.xyz" },
     { title: "DRACULA", url: "https://draculaplus.xyz" },
     { title: "DREAM PSYCHOLOGY", url: "https://dreampsychology.xyz" },
-    { title: "FRANKENSTEIN", url: "https://frankenstein101.xyz" },
+    { title: "FRANKENSTEIN", url: "https://frankenstein.ink" },
     { title: "INDUSTRIAL SOCIETY AND ITS CRITICS", url: "https://unabombermanifesto.xyz" },
     { title: "KING JAMES BIBLE", url: "https://kingjamesbible.xyz" },
     { title: "PRINCIPLES OF PSYCHOLOGY", url: "https://herbertspencer.xyz" },
