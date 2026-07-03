@@ -691,43 +691,6 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Ethics 101 (with Embedded Diagnostics)": {
-    emoji: "⚖️",
-    tagline:
-      "EthosReason -- A Four-Unit College Ethics Course with Two Built-In Reasoning Diagnostics (modeled on the DIT and CCTST)",
-    sections: [
-      {
-        emoji: "🧩",
-        title: "Overview",
-        body:
-          "EthosReason is a self-paced, single-user web course that asks the question most ethics classes rush past: what are these things, really? What is goodness? What makes an act right, or wrong? When we praise or condemn someone, what exactly are we judging? Is there such a thing as moral truth -- and if so, can you ever derive it from plain facts?\n\nIt is a complete, taught-and-graded Ethics course delivered end to end by AI: depth-adjustable lectures, a tutor that answers questions about the exact passage you're reading, adaptive practice that meets you at your level, and homework, tests, a midterm, and a final that are graded with written feedback. The curriculum is built around one connected arc of moral philosophy -- the same backbone an undergraduate eventually meets in a semester ethics seminar, presented in four focused units.\n\nThis edition is the same as the standard Ethics course, with two diagnostic reasoning tests built right into the coursework -- modeled on the DIT (Defining Issues Test) and the CCTST (California Critical Thinking Skills Test) -- so you can watch your reasoning grow as you move through the units.\n\nDesigned for students, self-learners, and instructors evaluating AI-taught coursework, EthosReason pairs a real 27-topic syllabus with a built-in academic-integrity layer -- so the course is one students can trust to be fair, and instructors can trust to be honest.",
-      },
-      {
-        emoji: "🧠",
-        title: "What It Does",
-        body:
-          "**Four-Unit Curriculum of 27 Topics** -- A complete ethics syllabus, organized by theme:\n\n**Unit 1 -- Foundations of Value.** What ethics is and how it differs from description; normative categories; instrumental vs. intrinsic goodness; goodness vs. commendableness; the two kinds of intrinsic badness; the morally complex structure of real situations; and why moral attributes are positive, not merely the absence of their opposites.\n\n**Unit 2 -- Obligation, Right, and Wrong.** Why moral obligations carry weight; how outweighing differs from canceling; \"right\" as least bad and \"wrong\" as least good; why \"ought\" implies \"can\"; and why legality is not the same thing as morality.\n\n**Unit 3 -- Acts, Agents, and Judgment.** Judging an act vs. judging the person; why intention is what truly counts; why attempts are punished less severely; the Hitler problem; whether one can act immorally toward oneself; and self-harm, punishment, and autonomy.\n\n**Unit 4 -- Metaethics and Moral Truth.** Whether you can derive an \"ought\" from an \"is\"; Moore's open-question argument; ampliative entailment; the genetic fallacy in ethics; moral truth vs. its uses; bad reasons to reject ethical realism; disagreement, fact, and value; and a capstone on what ethical truths really are.\n\n**One Real Example per Lecture** -- Every topic grounds its idea in a concrete case -- a pianist waking a sick roommate, freeing slaves before the Civil War, the Hitler problem -- so abstractions always land on something you can picture.\n\n**Three-Depth Lectures** -- Every lecture reads at Short / Medium / Long length, preserving the same examples and learning objectives. Skim the concept in a minute, expand it on demand, or read the full deep cut.\n\n**Section-Scoped AI Tutor** -- Ask a question about the exact paragraph you're on and the answer streams back live, grounded in that lecture section. Suggested starter questions come ready for each lecture.\n\n**Adaptive Practice** -- Problem sets that get harder as you build a streak and ease off after a miss, with an explanation on every answer. Your level carries over, so each drill picks up where the last left off.\n\n**Graded Assignments** -- Each unit ships with homework and a test; Unit 2 adds a midterm and Unit 4 a cumulative final. Every submission is graded with per-problem feedback and a percent score on the attempt.\n\n**Built-In Diagnostic Reasoning Assessments** -- Two original reasoning instruments run alongside the coursework and measure how your thinking grows over the course:\n\n**Ethical Reasoning (dilemma-based).** Read a moral dilemma, decide what the person should do, then rate how much each of a dozen considerations weighed on you and rank your top few -- a behavioral measure of which kinds of reasons drive your judgment, not whether you picked a \"correct\" answer.\n\n**Critical Reasoning (multiple-choice).** Ten questions spanning the five core thinking skills -- analysis, inference, evaluation, deduction, and induction.\n\n**Given five times each.** Once as a baseline before Unit 1, then again after every unit -- ten administrations in all -- so your end-of-course reasoning can be compared against where you started. Every question across all ten is mutually unique, so retaking never means repeating an item.\n\n**Pass on submit, with written feedback.** Completing an instrument counts as a pass and returns a plain-language critique of your reasoning; skipping it is a fail. The two diagnostics jointly count for 20% of your final grade, with coursework the other 80%.\n\n**Built-in prep.** Short primer lectures teach the method behind each instrument before you sit it.\n\n**Built-In Academic-Integrity Check** -- Every submitted answer is screened for signs of AI authorship, and each verdict comes with a plain-language explanation rather than an opaque flag.\n\n**Live Analytics** -- A dashboard of progress at a glance: attempts, accuracy, and streak; per-topic mastery; and a recent-activity feed that surfaces weak spots and momentum.",
-      },
-      {
-        emoji: "⚙️",
-        title: "Technical Features",
-        body:
-          "**AI That Teaches at Your Depth** -- Lectures rewrite themselves to the length you want without losing the examples or the point, so the same topic works for a quick refresher or a deep study session.\n\n**A Tutor That Stays on Topic** -- Answers stream in live and stay anchored to the section you're reading, instead of wandering off into the whole syllabus.\n\n**Practice That Adapts in Real Time** -- Difficulty tracks your performance from problem to problem, keeping you in the productive zone between \"too easy\" and \"overwhelming.\"\n\n**Grading You Can Read** -- Assignments are scored on whether your answer means the right thing, not whether it matches a string -- and every result comes with a written rationale.\n\n**A Two-Layer Integrity Check** -- Submissions are screened both for AI-style writing and for telltale authoring behavior, catching misuse that simple text checks miss -- always with a human-readable reason.\n\n**Reasoning Diagnostics That Track Growth** -- Two original, validated-style instruments -- a dilemma-based ethical-reasoning inventory and a multiple-choice critical-reasoning test -- are administered at baseline and after every unit. Each item across all ten administrations is unique, every individual response is stored for later review, and the gradebook folds the diagnostics and the coursework into one weighted score (20% / 80%).\n\n**Three One-Click Self-Tests** -- The course can verify its own health end to end before you trust a session: a full system check, a simulated student run through the whole course, and an answer-key quality review that confirms every graded answer is sound.\n\n**A Real Demo, Not a Slideshow** -- The walkthrough video is the actual product in motion -- live typing, streaming answers, and synced audio -- captured straight from the running app.",
-      },
-      {
-        emoji: "🎓",
-        title: "Designed For",
-        body:
-          "**College Students & Self-Learners** -- A complete ethics course with on-demand tutoring and adaptive practice, no instructor required.\n\n**Anyone Who Ever Argued About Right and Wrong and Wanted to Argue Better** -- A structured tour of the concepts behind the arguments: goodness, obligation, intention, and moral truth.\n\n**Instructors Evaluating AI-Taught Coursework** -- A working example of what an AI-taught, AI-graded, integrity-screened course actually looks like from the student's seat.\n\n**Curious Minds Who Want the Ideas, Not Just the Vocabulary** -- Read the idea, see it in a real case, then write the defining judgment in your own words.",
-      },
-      {
-        emoji: "💡",
-        title: "Core Idea",
-        body:
-          "Most ethics talk argues the verdicts -- was this act right, was that person to blame. Far fewer go back to the concepts underneath: what goodness is, what \"right\" and \"wrong\" actually mean, what we judge when we judge a person, and whether moral claims can be true at all. This course is built around that second list.\n\nRead the idea, ground it in a real example, then state the moral judgment in your own words -- and let the course check your reasoning fairly every step of the way.\n\nEthosReason -- read the idea, ground the idea, write the idea.",
-      },
-    ],
-  },
   "Philosophy 101": {
     emoji: "🦉",
     tagline:
@@ -807,7 +770,6 @@ export default function Courses() {
     { title: "Developmental Mathematics", url: "https://developmentalmath.xyz" },
     { title: "Analytic Philosophy", url: "https://analyticphilosophy.net" },
     { title: "Ethics", url: "https://ethics101.xyz" },
-    { title: "Ethics 101 (with Embedded Diagnostics)", url: "https://ethics101plux.xyz" },
     { title: "Philosophy 101", url: "https://philosophy101.xyz" },
   ];
 
