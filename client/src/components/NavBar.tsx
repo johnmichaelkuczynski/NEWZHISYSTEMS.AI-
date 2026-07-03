@@ -1,7 +1,7 @@
 const links = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Living Courses" },
-  { href: "/johnson-wales", label: "Johnson & Wales" },
+  { href: "/johnson-wales", label: "Restaurant and Hospitality" },
   { href: "/baby-living-courses", label: "Basic Living Courses" },
   { href: "/journal", label: "Investor Notes" },
   { href: "/podcasts", label: "Investor Briefings" },
