@@ -2439,7 +2439,7 @@ export default function Home() {
     "📸 Visual & Multimedia": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
       { title: "Graphic Novel Creator", url: "https://graphicnovelcreator.xyz" },
-      { title: "OCR Pro", url: "https://ocrpro.xyz" },
+      { title: "OCR Pro", url: "https://ocrman.xyz" },
       { title: "Photo Psychoanalysis", url: "https://photopsychoanalysis.xyz" },
       { title: "Smart Photo/Video Viewer", url: "https://smartphotoviewer.xyz" }
     ],
