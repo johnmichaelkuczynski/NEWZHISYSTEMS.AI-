@@ -2380,7 +2380,7 @@ export default function Home() {
     { title: "SYMBOLIC LOGIC", url: "https://symboliclogic.xyz" },
     { title: "THE INCOMPLETENESS OF DEDUCTIVE LOGIC", url: "https://incompletenessofdeduction.xyz" },
     { title: "THEORETICAL KNOWLEDGE & INDUCTIVE INFERENCE", url: "https://theoreticalknowledge.xyz" },
-    { title: "WHY WAS SOCRATES EXECUTED?", url: "https://deathofsocrates.xyz" }
+    { title: "WHY WAS SOCRATES EXECUTED?", url: "https://socrates.ink" }
   ];
 
   const classicsBooks = [
