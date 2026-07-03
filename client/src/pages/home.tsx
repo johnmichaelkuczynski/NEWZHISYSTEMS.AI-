@@ -2385,7 +2385,7 @@ export default function Home() {
 
   const classicsBooks = [
     { title: "ANARCHISM AND OTHER ESSAYS", url: "https://anarchismandotheressays.xyz" },
-    { title: "ART OF WAR", url: "https://theartofwarbysuntzu.xyz" },
+    { title: "ART OF WAR", url: "https://suntzu.ink" },
     { title: "BOOK OF MORMON", url: "https://bookofmormon101.xyz" },
     { title: "CIVILIZATION AND ITS DISCONTENTS", url: "https://freudciv.xyz" },
     { title: "DEATH OF IVAN ILYCH", url: "https://ivanilych.xyz" },
@@ -2394,7 +2394,7 @@ export default function Home() {
     { title: "FRANKENSTEIN", url: "https://frankenstein.ink" },
     { title: "INDUSTRIAL SOCIETY AND ITS FUTURE", url: "https://industrialsocietyanditsfuture.xyz" },
     { title: "KING JAMES BIBLE", url: "https://kingjamesbible.xyz" },
-    { title: "PRINCIPLES OF PSYCHOLOGY", url: "https://herbertspencer.xyz" },
+    { title: "PRINCIPLES OF PSYCHOLOGY", url: "https://principlesofpsychologybyherbertspencer.xyz" },
     { title: "SHAKESPEARE COMPLETE WORKS", url: "https://shakespeare101.xyz" },
     { title: "THE COMMUNIST MANIFESTO", url: "https://communistmanifesto.xyz" },
     { title: "THE LAWS", url: "https://thelawsbyplato.xyz" },
