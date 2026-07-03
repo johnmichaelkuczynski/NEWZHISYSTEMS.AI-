@@ -2373,7 +2373,7 @@ export default function Home() {
     { title: "EMPIRICISM AND ITS LIMITS", url: "https://empiricism101.xyz" },
     { title: "EPISTEMOLOGY", url: "https://epistemology101.xyz" },
     { title: "ETHICS", url: "https://ethics101.ink" },
-    { title: "FREEDOM", url: "https://freedom101.xyz" },
+    { title: "FREEDOM", url: "https://humanfreedom.xyz" },
     { title: "MATHEMATICAL LOGIC", url: "https://mathlogic.xyz" },
     { title: "ON THE CARDINALITY OF PROOF SPACES", url: "https://godel101.xyz" },
     { title: "SEMANTICS", url: "https://semantics101.xyz" },
