@@ -2370,7 +2370,7 @@ export default function Home() {
     { title: "ANALYTIC PHILOSOPHY (COMPLETE)", url: "https://analyticphilosophy.xyz" },
     { title: "CAUSATION", url: "https://causality101.xyz" },
     { title: "DICTIONARY OF ANALYTIC PHILOSOPHY", url: "https://dictionaryofanalyticphilosophy.xyz" },
-    { title: "EMPIRICISM AND ITS LIMITS", url: "https://empiricism101.xyz" },
+    { title: "EMPIRICISM AND ITS LIMITS", url: "https://empiricismandrationalism.xyz" },
     { title: "EPISTEMOLOGY", url: "https://epistemology101.xyz" },
     { title: "ETHICS", url: "https://ethics101.ink" },
     { title: "FREEDOM", url: "https://humanfreedom.xyz" },
