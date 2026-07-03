@@ -2374,7 +2374,7 @@ export default function Home() {
     { title: "EPISTEMOLOGY", url: "https://epistemology101.xyz" },
     { title: "ETHICS", url: "https://ethics101.xyz" },
     { title: "FREEDOM", url: "https://freedom101.xyz" },
-    { title: "MATHEMATICAL LOGIC", url: "https://mathematicallogic.app" },
+    { title: "MATHEMATICAL LOGIC", url: "https://mathlogic.xyz" },
     { title: "ON THE CARDINALITY OF PROOF SPACES", url: "https://godel101.xyz" },
     { title: "SEMANTICS", url: "https://semantics101.xyz" },
     { title: "SYMBOLIC LOGIC", url: "https://symboliclogic.xyz" },
