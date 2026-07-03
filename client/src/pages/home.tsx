@@ -2086,7 +2086,7 @@ Unlike consumer chatbots that produce generic, hedged, watered-down output, the 
   ],
 };
 
-appDescriptions["Smart Photo/Video Viewer"] = {
+appDescriptions["Multiple Video Viewer"] = {
   emoji: "🖼️",
   tagline:
     "High-Performance Photo & Video Viewer with Local AI-Powered Organization",
@@ -2441,7 +2441,7 @@ export default function Home() {
       { title: "Graphic Novel Creator", url: "https://graphicnovelcreator.xyz" },
       { title: "OCR Pro", url: "https://ocrman.shop" },
       { title: "Photo Psychoanalysis", url: "https://photopsychoanalysis.xyz" },
-      { title: "Smart Photo/Video Viewer", url: "https://smartphotoviewer.xyz" }
+      { title: "Multiple Video Viewer", url: "https://multivideo.xyz" }
     ],
     "🎧 Audio & Interactive Media": [
       { title: "Audio Transcriber", url: "https://audiotranscriber.xyz" },
