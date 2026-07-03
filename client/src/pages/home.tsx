@@ -2399,7 +2399,7 @@ export default function Home() {
     { title: "THE COMMUNIST MANIFESTO", url: "https://communistmanifesto.xyz" },
     { title: "THE LAWS", url: "https://thelawsbyplato.xyz" },
     { title: "TOTEM AND TABOO", url: "https://totemandtaboo.xyz" },
-    { title: "TRACTATUS LOGICO-PHILOSOPHICUS", url: "https://tractatuslogicophilosophicus.xyz" }
+    { title: "TRACTATUS LOGICO-PHILOSOPHICUS", url: "https://tractatuslogicophilosophicus.shop" }
   ];
 
   const appCategories: Record<string, App[]> = {
