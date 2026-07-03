@@ -2392,7 +2392,7 @@ export default function Home() {
     { title: "DRACULA", url: "https://draculaplus.xyz" },
     { title: "DREAM PSYCHOLOGY", url: "https://dreampsychology.xyz" },
     { title: "FRANKENSTEIN", url: "https://frankenstein.ink" },
-    { title: "INDUSTRIAL SOCIETY AND ITS CRITICS", url: "https://industrialsocietyanditsfuture.xyz" },
+    { title: "INDUSTRIAL SOCIETY AND ITS FUTURE", url: "https://industrialsocietyanditsfuture.xyz" },
     { title: "KING JAMES BIBLE", url: "https://kingjamesbible.xyz" },
     { title: "PRINCIPLES OF PSYCHOLOGY", url: "https://herbertspencer.xyz" },
     { title: "SHAKESPEARE COMPLETE WORKS", url: "https://shakespeare101.xyz" },
