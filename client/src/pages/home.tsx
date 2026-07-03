@@ -2389,7 +2389,7 @@ export default function Home() {
     { title: "BOOK OF MORMON", url: "https://bookofmormon101.xyz" },
     { title: "CIVILIZATION AND ITS DISCONTENTS", url: "https://civilizationanditsdiscontents.xyz" },
     { title: "DEATH OF IVAN ILYCH", url: "https://ivanilych.xyz" },
-    { title: "DRACULA", url: "https://dracula101.xyz" },
+    { title: "DRACULA", url: "https://draculaplus.xyz" },
     { title: "DREAM PSYCHOLOGY", url: "https://dreampsychology.xyz" },
     { title: "FRANKENSTEIN", url: "https://frankenstein101.xyz" },
     { title: "INDUSTRIAL SOCIETY AND ITS CRITICS", url: "https://unabombermanifesto.xyz" },
