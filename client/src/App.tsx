@@ -16,18 +16,32 @@ import BabyLivingCourses from "@/pages/baby-living-courses";
 import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
 import Administrative from "@/pages/administrative";
+import SignInPage from "@/pages/sign-in";
 import { useEffect, useRef } from "react";
-import { useAuth } from "@/hooks/use-auth";
+import { useUser, useAuth as useClerkAuth } from "@clerk/clerk-react";
 
 function VisitTracker() {
-  const { isAuthenticated } = useAuth();
+  const { isSignedIn } = useUser();
+  const { getToken } = useClerkAuth();
   const tracked = useRef(false);
   useEffect(() => {
-    if (isAuthenticated && !tracked.current) {
+    if (isSignedIn && !tracked.current) {
       tracked.current = true;
-      fetch("/api/visits", { method: "POST", credentials: "include" }).catch(() => {});
+      (async () => {
+        try {
+          const token = await getToken();
+          const res = await fetch("/api/visits", {
+            method: "POST",
+            credentials: "include",
+            headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+          });
+          if (!res.ok) tracked.current = false;
+        } catch {
+          tracked.current = false;
+        }
+      })();
     }
-  }, [isAuthenticated]);
+  }, [isSignedIn, getToken]);
   return null;
 }
 
@@ -58,6 +72,7 @@ function Router() {
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
       <Route path="/administrative" component={Administrative} />
+      <Route path="/sign-in" component={SignInPage} />
       <Route component={NotFound} />
     </Switch>
   );

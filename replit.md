@@ -31,7 +31,7 @@ Preferred communication style: Simple, everyday language.
 - **Podcast Library**: 14 episodes with AI-generated audio content aligned with journal research.
 - **Core Applications**: 28 applications organized into 6 categories (Writing & Books, Education & Learning, Intelligence & Psychology, Visual & Multimedia, Audio & Interactive Media, Utility & Conversion).
 - **Video Tutorial System**: Instructional video tutorials for apps, indicated by prominent "📹 Tutorial" buttons. Videos are stored in `/client/public/videos/`. Nine tutorials are currently implemented.
-- **Visitor Tracking & Admin Page**: Replit Auth (supports Google login) with a `visits` table recording each signed-in visit (email, name, timestamp). The `/administrative` page is restricted (server- and client-side) to johnmichaelkuczynski@gmail.com and shows the visit log, visitor totals (all time / 24 hours / month / year), and bar graphs for each timeframe. The "Administrative" nav link only appears for that account.
+- **Visitor Tracking & Admin Page**: Clerk authentication (Google sign-in at `/sign-in`, keys in CLERK_SECRET_KEY / VITE_CLERK_PUBLISHABLE_KEY secrets) with a `visits` table recording each signed-in visit (email, name, timestamp). The `/administrative` page is restricted (server- and client-side) to johnmichaelkuczynski@gmail.com and shows the visit log, visitor totals (all time / 24 hours / month / year), and bar graphs for each timeframe. The "Administrative" nav link only appears for that account. Replit Auth was fully removed in favor of Clerk.
 
 ### System Design Choices
 - **Persistent Storage**: Transitioned from in-memory session storage to PostgreSQL for robust data persistence.

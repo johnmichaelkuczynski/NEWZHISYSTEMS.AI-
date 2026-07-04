@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import NavBar from "@/components/NavBar";
-import { useAuth } from "@/hooks/use-auth";
+import { useUser, useAuth as useClerkAuth } from "@clerk/clerk-react";
 import {
   BarChart,
   Bar,
@@ -113,7 +113,7 @@ function Message({ title, body, showSignIn }: { title: string; body: string; sho
         <p className="text-gray-600 mb-4">{body}</p>
         {showSignIn && (
           <a
-            href="/api/login"
+            href="/sign-in"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium rounded px-6 py-2"
           >
             Sign In
@@ -125,24 +125,30 @@ function Message({ title, body, showSignIn }: { title: string; body: string; sho
 }
 
 export default function Administrative() {
-  const { user, isAuthenticated, isLoading } = useAuth();
-  const isAdmin = (user?.email || "").toLowerCase() === ADMIN_EMAIL;
+  const { user, isSignedIn, isLoaded } = useUser();
+  const { getToken } = useClerkAuth();
+  const email = user?.primaryEmailAddress?.emailAddress || "";
+  const isAdmin = email.toLowerCase() === ADMIN_EMAIL;
 
   const { data, isLoading: dataLoading, error } = useQuery<AdminData>({
     queryKey: ["/api/admin/visits"],
     queryFn: async () => {
-      const res = await fetch("/api/admin/visits", { credentials: "include" });
+      const token = await getToken();
+      const res = await fetch("/api/admin/visits", {
+        credentials: "include",
+        headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+      });
       if (!res.ok) throw new Error(`${res.status}`);
       return res.json();
     },
     enabled: isAdmin,
   });
 
-  if (isLoading) {
+  if (!isLoaded) {
     return <Message title="Administrative" body="Checking your account..." />;
   }
 
-  if (!isAuthenticated) {
+  if (!isSignedIn) {
     return (
       <Message
         title="Administrative"

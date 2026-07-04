@@ -16,25 +16,43 @@ import {
   generateSuggestedReadings 
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
-import { setupAuth, registerAuthRoutes, isAuthenticated } from "./replit_integrations/auth";
+import { clerkMiddleware, getAuth, clerkClient } from "@clerk/express";
 import { db } from "./db";
 import { visits } from "@shared/schema";
 import { desc as descOrder, sql as sqlExpr } from "drizzle-orm";
 
+async function getClerkUserInfo(req: any): Promise<{ userId: string; email: string; name: string } | null> {
+  const { userId } = getAuth(req);
+  if (!userId) return null;
+  const user = await clerkClient.users.getUser(userId);
+  const email =
+    user.primaryEmailAddress?.emailAddress ||
+    user.emailAddresses[0]?.emailAddress ||
+    "";
+  const name = [user.firstName, user.lastName].filter(Boolean).join(" ");
+  return { userId, email, name };
+}
+
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Auth (Replit Auth - supports Google login)
-  await setupAuth(app);
-  registerAuthRoutes(app);
+  // Clerk authentication (Google sign-in)
+  app.use(
+    clerkMiddleware({
+      publishableKey: process.env.VITE_CLERK_PUBLISHABLE_KEY,
+      secretKey: process.env.CLERK_SECRET_KEY,
+    }),
+  );
 
   // Record a visit (called by the client when a signed-in user loads the site)
-  app.post("/api/visits", isAuthenticated, async (req: any, res) => {
+  app.post("/api/visits", async (req, res) => {
     try {
-      const claims = req.user?.claims || {};
-      const name = [claims.first_name, claims.last_name].filter(Boolean).join(" ");
+      const info = await getClerkUserInfo(req);
+      if (!info) {
+        return res.status(401).json({ error: "Not signed in" });
+      }
       await db.insert(visits).values({
-        userId: claims.sub ?? null,
-        email: claims.email ?? null,
-        name: name || null,
+        userId: info.userId,
+        email: info.email || null,
+        name: info.name || null,
       });
       res.json({ success: true });
     } catch (error) {
@@ -45,10 +63,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Admin: list visits (restricted to the site owner's account)
   const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
-  app.get("/api/admin/visits", isAuthenticated, async (req: any, res) => {
+  app.get("/api/admin/visits", async (req, res) => {
     try {
-      const email = (req.user?.claims?.email || "").toLowerCase();
-      if (email !== ADMIN_EMAIL) {
+      const info = await getClerkUserInfo(req);
+      if (!info) {
+        return res.status(401).json({ error: "Not signed in" });
+      }
+      if (info.email.toLowerCase() !== ADMIN_EMAIL) {
         return res.status(403).json({ error: "Access denied" });
       }
       const allVisits = await db
