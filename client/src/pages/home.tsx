@@ -2444,7 +2444,7 @@ export default function Home() {
       { title: "Graphic Novel Creator", url: "https://graphicnovelcreator.xyz" },
       { title: "OCR Pro", url: "https://ocrman.shop" },
       { title: "Photo Psychoanalysis", url: "https://photopsychoanalysis.xyz" },
-      { title: "Multiple Video Viewer", url: "https://multivideo.xyz" }
+      { title: "Multiple Video Viewer", url: "https://multivideo.ink" }
     ],
     "🎧 Audio & Interactive Media": [
       { title: "Audio Transcriber", url: "https://audiotranscriber.xyz" },
