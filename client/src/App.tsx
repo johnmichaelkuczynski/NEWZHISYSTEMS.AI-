@@ -15,6 +15,7 @@ import JohnsonWales from "@/pages/johnson-wales";
 import BabyLivingCourses from "@/pages/baby-living-courses";
 import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
+import AdminGate from "@/components/AdminGate";
 import Administrative from "@/pages/administrative";
 import SignInPage from "@/pages/sign-in";
 import { useEffect, useRef } from "react";
@@ -63,7 +64,7 @@ function Router() {
         <PasswordGate><Podcasts /></PasswordGate>
       </Route>
       <Route path="/office-use">
-        <PasswordGate storageKey="office-use-access"><OfficeUse /></PasswordGate>
+        <AdminGate><OfficeUse /></AdminGate>
       </Route>
       <Route path="/ai-higher-ed">
         <PasswordGate storageKey="ai-higher-ed-access"><AiHigherEd /></PasswordGate>
