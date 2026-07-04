@@ -16,13 +16,13 @@ import {
   generateSuggestedReadings 
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
-import { setupAuth, registerAuthRoutes, isAuthenticated } from "./googleAuth";
+import { setupAuth, registerAuthRoutes, isAuthenticated } from "./replit_integrations/auth";
 import { db } from "./db";
 import { visits } from "@shared/schema";
 import { desc as descOrder, sql as sqlExpr } from "drizzle-orm";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Auth (direct Google login)
+  // Auth (Replit Auth - supports Google login)
   await setupAuth(app);
   registerAuthRoutes(app);
 
