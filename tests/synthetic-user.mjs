@@ -73,10 +73,10 @@ async function main() {
 
   // ---- 1. Credentials present ----
   console.log("1. Credentials");
-  check("GOOGLE_OAUTH_CLIENT_ID set", !!process.env.GOOGLE_OAUTH_CLIENT_ID?.trim());
-  check("GOOGLE_OAUTH_CLIENT_SECRET set", !!process.env.GOOGLE_OAUTH_CLIENT_SECRET?.trim());
+  check("GOOGLE_CLIENT_ID set", !!process.env.GOOGLE_CLIENT_ID?.trim());
+  check("GOOGLE_CLIENT_SECRET set", !!process.env.GOOGLE_CLIENT_SECRET?.trim());
   check("SESSION_SECRET set", !!SECRET);
-  check("client ID looks like a Google client ID", /\.apps\.googleusercontent\.com$/.test(process.env.GOOGLE_OAUTH_CLIENT_ID?.trim() || ""));
+  check("client ID looks like a Google client ID", /\.apps\.googleusercontent\.com$/.test(process.env.GOOGLE_CLIENT_ID?.trim() || ""));
 
   // ---- 2. Public endpoints ----
   console.log("\n2. Public pages & APIs (anonymous)");
@@ -110,7 +110,7 @@ async function main() {
   const loc = oauth.headers.get("location") || "";
   check("redirects to accounts.google.com", loc.startsWith("https://accounts.google.com/o/oauth2/v2/auth?"));
   const u = loc ? new URL(loc) : null;
-  check("client_id matches secret exactly", u?.searchParams.get("client_id") === process.env.GOOGLE_OAUTH_CLIENT_ID?.trim());
+  check("client_id matches secret exactly", u?.searchParams.get("client_id") === process.env.GOOGLE_CLIENT_ID?.trim());
   check("redirect_uri is this app's callback", u?.searchParams.get("redirect_uri") === `${BASE}/api/auth/google/callback`);
   check("CSRF state param present", (u?.searchParams.get("state") || "").length >= 32);
   check("scope is openid email profile", u?.searchParams.get("scope") === "openid email profile");
