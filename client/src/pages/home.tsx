@@ -2418,7 +2418,7 @@ export default function Home() {
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
-      { title: "EZ Homework", url: "https://ezhw.xyz" },
+      { title: "EZ Homework", url: "https://ezhw.ink" },
       { title: "EZGrader", url: "https://ezgrader.ai" }
     ],
     "🧠 Intelligence & Psychology": [
