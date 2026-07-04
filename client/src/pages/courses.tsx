@@ -768,7 +768,7 @@ export default function Courses() {
     { title: "Formal Logic", url: "https://logic101.xyz" },
     { title: "AI 101", url: "https://ai101.live" },
     { title: "Developmental Mathematics", url: "https://developmentalmath.xyz" },
-    { title: "Analytic Philosophy", url: "https://analyticphilosophy.net" },
+    { title: "Analytic Philosophy", url: "https://analyticphilosophy101.ink" },
     { title: "Ethics", url: "https://ethics101.xyz" },
     { title: "Philosophy 101", url: "https://philosophy101.xyz" },
   ];
