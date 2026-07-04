@@ -2419,7 +2419,7 @@ export default function Home() {
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
       { title: "EZ Homework", url: "https://ezhw.ink" },
-      { title: "EZGrader", url: "https://ezgrader.ai" }
+      { title: "EZGrader", url: "https://ezgrader.ink" }
     ],
     "🧠 Intelligence & Psychology": [
       { title: "Ask A Philosopher", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
