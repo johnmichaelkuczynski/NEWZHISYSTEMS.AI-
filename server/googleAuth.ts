@@ -53,7 +53,10 @@ export async function setupAuth(app: Express) {
   passport.serializeUser((user: Express.User, done) => done(null, user));
   passport.deserializeUser((user: Express.User, done) => done(null, user));
 
-  if (!process.env.GOOGLE_CLIENT_ID || !process.env.GOOGLE_CLIENT_SECRET) {
+  const googleClientId = (process.env.GOOGLE_CLIENT_ID || "").trim();
+  const googleClientSecret = (process.env.GOOGLE_CLIENT_SECRET || "").trim();
+
+  if (!googleClientId || !googleClientSecret) {
     console.warn(
       "Google login is not configured yet: missing GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET",
     );
@@ -67,8 +70,8 @@ export async function setupAuth(app: Express) {
   passport.use(
     new GoogleStrategy(
       {
-        clientID: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        clientID: googleClientId,
+        clientSecret: googleClientSecret,
         callbackURL: "/api/auth/google/callback",
         proxy: true,
       },
