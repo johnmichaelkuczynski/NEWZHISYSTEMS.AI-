@@ -1,5 +1,6 @@
 import { useUser } from "@clerk/clerk-react";
 import NavBar from "@/components/NavBar";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
 
 const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
 
@@ -25,14 +26,7 @@ export default function AdminGate({ children }: { children: React.ReactNode }) {
           <p className="text-gray-600 mb-4">
             This section is only available to the site administrator.
           </p>
-          {!isSignedIn && (
-            <a
-              href="/sign-in"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium rounded px-6 py-2"
-            >
-              Sign In
-            </a>
-          )}
+          {!isSignedIn && <GoogleSignInButton />}
         </div>
       </div>
     );

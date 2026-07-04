@@ -1,4 +1,5 @@
 import { useUser, useClerk } from "@clerk/clerk-react";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
 
 const links = [
   { href: "/", label: "Home" },
@@ -54,12 +55,7 @@ export default function NavBar() {
                 </button>
               </span>
             ) : (
-              <a
-                href="/sign-in"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-3 py-1 rounded"
-              >
-                Sign In
-              </a>
+              <GoogleSignInButton className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-3 py-1 rounded" />
             )}
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Redirect } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -18,23 +18,21 @@ import PasswordGate from "@/components/PasswordGate";
 import AdminGate from "@/components/AdminGate";
 import Administrative from "@/pages/administrative";
 import SignInPage from "@/pages/sign-in";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
 import { useEffect, useRef } from "react";
-import { useUser, useAuth as useClerkAuth } from "@clerk/clerk-react";
+import { useUser, AuthenticateWithRedirectCallback } from "@clerk/clerk-react";
 
 function VisitTracker() {
   const { isSignedIn } = useUser();
-  const { getToken } = useClerkAuth();
   const tracked = useRef(false);
   useEffect(() => {
     if (isSignedIn && !tracked.current) {
       tracked.current = true;
       (async () => {
         try {
-          const token = await getToken();
           const res = await fetch("/api/visits", {
             method: "POST",
             credentials: "include",
-            headers: token ? { Authorization: `Bearer ${token}` } : undefined,
           });
           if (!res.ok) tracked.current = false;
         } catch {
@@ -42,38 +40,81 @@ function VisitTracker() {
         }
       })();
     }
-  }, [isSignedIn, getToken]);
+  }, [isSignedIn]);
   return null;
+}
+
+function Landing() {
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      <div className="max-w-md w-full bg-white border border-gray-200 rounded-lg p-10 text-center">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Zhi Systems</h1>
+        <p className="text-gray-600 mb-8">
+          Living Books and AI-powered applications. Sign in to enter.
+        </p>
+        <GoogleSignInButton />
+      </div>
+    </div>
+  );
+}
+
+function Protected({ children }: { children: React.ReactNode }) {
+  const { isSignedIn, isLoaded } = useUser();
+  if (!isLoaded) return null;
+  if (!isSignedIn) return <Redirect to="/" />;
+  return <>{children}</>;
+}
+
+function HomeRoute() {
+  const { isSignedIn, isLoaded } = useUser();
+  if (!isLoaded) return null;
+  return isSignedIn ? <Home /> : <Landing />;
 }
 
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/journal/admin" component={JournalAdmin} />
+      <Route path="/" component={HomeRoute} />
+      <Route path="/sign-in/sso-callback">
+        <AuthenticateWithRedirectCallback signInForceRedirectUrl="/" signUpForceRedirectUrl="/" />
+      </Route>
+      <Route path="/sign-in/:rest*" component={SignInPage} />
+      <Route path="/sign-in" component={SignInPage} />
+      <Route path="/sign-up/:rest*" component={SignInPage} />
+      <Route path="/sign-up" component={SignInPage} />
+      <Route path="/journal/admin">
+        <Protected><JournalAdmin /></Protected>
+      </Route>
       <Route path="/journal">
-        <PasswordGate><Journal /></PasswordGate>
+        <Protected><PasswordGate><Journal /></PasswordGate></Protected>
       </Route>
       <Route path="/journal/vol-:volume/no-:issue">
-        <PasswordGate><JournalIssue /></PasswordGate>
+        <Protected><PasswordGate><JournalIssue /></PasswordGate></Protected>
       </Route>
       <Route path="/journal/:volume/:issue">
-        <PasswordGate><JournalIssue /></PasswordGate>
+        <Protected><PasswordGate><JournalIssue /></PasswordGate></Protected>
       </Route>
       <Route path="/podcasts">
-        <PasswordGate><Podcasts /></PasswordGate>
+        <Protected><PasswordGate><Podcasts /></PasswordGate></Protected>
       </Route>
       <Route path="/office-use">
-        <AdminGate><OfficeUse /></AdminGate>
+        <Protected><AdminGate><OfficeUse /></AdminGate></Protected>
       </Route>
       <Route path="/ai-higher-ed">
-        <PasswordGate storageKey="ai-higher-ed-access"><AiHigherEd /></PasswordGate>
+        <Protected><PasswordGate storageKey="ai-higher-ed-access"><AiHigherEd /></PasswordGate></Protected>
       </Route>
-      <Route path="/courses" component={Courses} />
-      <Route path="/johnson-wales" component={JohnsonWales} />
-      <Route path="/baby-living-courses" component={BabyLivingCourses} />
-      <Route path="/administrative" component={Administrative} />
-      <Route path="/sign-in" component={SignInPage} />
+      <Route path="/courses">
+        <Protected><Courses /></Protected>
+      </Route>
+      <Route path="/johnson-wales">
+        <Protected><JohnsonWales /></Protected>
+      </Route>
+      <Route path="/baby-living-courses">
+        <Protected><BabyLivingCourses /></Protected>
+      </Route>
+      <Route path="/administrative">
+        <Protected><Administrative /></Protected>
+      </Route>
       <Route component={NotFound} />
     </Switch>
   );

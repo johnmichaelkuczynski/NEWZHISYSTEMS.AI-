@@ -33,17 +33,40 @@ async function getClerkUserInfo(req: any): Promise<{ userId: string; email: stri
   return { userId, email, name };
 }
 
-export async function registerRoutes(app: Express): Promise<Server> {
-  // Clerk authentication (Google sign-in)
-  app.use(
-    clerkMiddleware({
-      publishableKey: process.env.VITE_CLERK_PUBLISHABLE_KEY,
-      secretKey: process.env.CLERK_SECRET_KEY,
-    }),
-  );
+const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
 
-  // Record a visit (called by the client when a signed-in user loads the site)
-  app.post("/api/visits", async (req, res) => {
+// requireAuth: session must exist (cookie-based via clerkMiddleware)
+async function requireAuth(req: any, res: any, next: any) {
+  const { userId } = getAuth(req);
+  if (!userId) {
+    return res.status(401).json({ error: "Not signed in" });
+  }
+  next();
+}
+
+// requireAdmin: loads the Clerk user and rejects unless it's the site owner
+async function requireAdmin(req: any, res: any, next: any) {
+  try {
+    const info = await getClerkUserInfo(req);
+    if (!info) {
+      return res.status(401).json({ error: "Not signed in" });
+    }
+    if (info.email.toLowerCase() !== ADMIN_EMAIL) {
+      return res.status(403).json({ error: "Access denied" });
+    }
+    next();
+  } catch (error) {
+    console.error("Admin check failed:", error);
+    res.status(500).json({ error: "Auth check failed" });
+  }
+}
+
+export async function registerRoutes(app: Express): Promise<Server> {
+  // Clerk authentication (Google sign-in), cookie-based sessions
+  app.use(clerkMiddleware());
+
+  // Record a login event (called by the client when a signed-in user loads the site)
+  app.post("/api/visits", requireAuth, async (req, res) => {
     try {
       const info = await getClerkUserInfo(req);
       if (!info) {
@@ -61,17 +84,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Admin: list visits (restricted to the site owner's account)
-  const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
-  app.get("/api/admin/visits", async (req, res) => {
+  // Admin: visit log + per-user data (restricted to the site owner's account)
+  app.get("/api/admin/visits", requireAuth, requireAdmin, async (req, res) => {
     try {
-      const info = await getClerkUserInfo(req);
-      if (!info) {
-        return res.status(401).json({ error: "Not signed in" });
-      }
-      if (info.email.toLowerCase() !== ADMIN_EMAIL) {
-        return res.status(403).json({ error: "Access denied" });
-      }
       const allVisits = await db
         .select()
         .from(visits)
