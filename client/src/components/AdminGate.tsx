@@ -1,14 +1,11 @@
-import { useUser } from "@clerk/clerk-react";
+import { useAuth } from "@/hooks/useAuth";
 import NavBar from "@/components/NavBar";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
 
-const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
-
 export default function AdminGate({ children }: { children: React.ReactNode }) {
-  const { user, isSignedIn, isLoaded } = useUser();
-  const email = (user?.primaryEmailAddress?.emailAddress || "").toLowerCase();
+  const { isSignedIn, isAdmin, isLoading } = useAuth();
 
-  if (!isLoaded) {
+  if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50">
         <NavBar />
@@ -17,7 +14,7 @@ export default function AdminGate({ children }: { children: React.ReactNode }) {
     );
   }
 
-  if (!isSignedIn || email !== ADMIN_EMAIL) {
+  if (!isSignedIn || !isAdmin) {
     return (
       <div className="min-h-screen bg-gray-50">
         <NavBar />

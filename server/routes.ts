@@ -16,73 +16,14 @@ import {
   generateSuggestedReadings 
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
-import { clerkMiddleware, getAuth, clerkClient } from "@clerk/express";
+import { setupGoogleAuth, requireAuth, requireAdmin } from "./googleAuth";
 import { db } from "./db";
 import { visits } from "@shared/schema";
 import { desc as descOrder, sql as sqlExpr } from "drizzle-orm";
 
-async function getClerkUserInfo(req: any): Promise<{ userId: string; email: string; name: string } | null> {
-  const { userId } = getAuth(req);
-  if (!userId) return null;
-  const user = await clerkClient.users.getUser(userId);
-  const email =
-    user.primaryEmailAddress?.emailAddress ||
-    user.emailAddresses[0]?.emailAddress ||
-    "";
-  const name = [user.firstName, user.lastName].filter(Boolean).join(" ");
-  return { userId, email, name };
-}
-
-const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
-
-// requireAuth: session must exist (cookie-based via clerkMiddleware)
-async function requireAuth(req: any, res: any, next: any) {
-  const { userId } = getAuth(req);
-  if (!userId) {
-    return res.status(401).json({ error: "Not signed in" });
-  }
-  next();
-}
-
-// requireAdmin: loads the Clerk user and rejects unless it's the site owner
-async function requireAdmin(req: any, res: any, next: any) {
-  try {
-    const info = await getClerkUserInfo(req);
-    if (!info) {
-      return res.status(401).json({ error: "Not signed in" });
-    }
-    if (info.email.toLowerCase() !== ADMIN_EMAIL) {
-      return res.status(403).json({ error: "Access denied" });
-    }
-    next();
-  } catch (error) {
-    console.error("Admin check failed:", error);
-    res.status(500).json({ error: "Auth check failed" });
-  }
-}
-
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Clerk authentication (Google sign-in), cookie-based sessions
-  app.use(clerkMiddleware());
-
-  // Record a login event (called by the client when a signed-in user loads the site)
-  app.post("/api/visits", requireAuth, async (req, res) => {
-    try {
-      const info = await getClerkUserInfo(req);
-      if (!info) {
-        return res.status(401).json({ error: "Not signed in" });
-      }
-      await db.insert(visits).values({
-        userId: info.userId,
-        email: info.email || null,
-        name: info.name || null,
-      });
-      res.json({ success: true });
-    } catch (error) {
-      console.error("Error recording visit:", error);
-      res.status(500).json({ error: "Failed to record visit" });
-    }
-  });
+  // Direct Google OAuth (no third-party auth service), cookie sessions in Postgres
+  setupGoogleAuth(app);
 
   // Admin: visit log + per-user data (restricted to the site owner's account)
   app.get("/api/admin/visits", requireAuth, requireAdmin, async (req, res) => {

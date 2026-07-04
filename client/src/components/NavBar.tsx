@@ -1,4 +1,4 @@
-import { useUser, useClerk } from "@clerk/clerk-react";
+import { useAuth, useSignOut } from "@/hooks/useAuth";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
 
 const links = [
@@ -13,9 +13,8 @@ const links = [
 ];
 
 export default function NavBar() {
-  const { user, isSignedIn } = useUser();
-  const { signOut } = useClerk();
-  const email = user?.primaryEmailAddress?.emailAddress || "";
+  const { user, isSignedIn, isAdmin } = useAuth();
+  const signOut = useSignOut();
   return (
     <div className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-3">
@@ -36,7 +35,7 @@ export default function NavBar() {
                 {link.label}
               </a>
             ))}
-            {email.toLowerCase() === "johnmichaelkuczynski@gmail.com" && (
+            {isAdmin && (
               <a
                 href="/administrative"
                 className="text-blue-600 hover:text-blue-800 font-medium"
@@ -46,7 +45,15 @@ export default function NavBar() {
             )}
             {isSignedIn ? (
               <span className="flex items-center gap-2">
-                <span className="text-gray-600 text-sm">{email}</span>
+                {user?.avatar && (
+                  <img
+                    src={user.avatar}
+                    alt=""
+                    className="w-6 h-6 rounded-full"
+                    referrerPolicy="no-referrer"
+                  />
+                )}
+                <span className="text-gray-600 text-sm">{user?.name || user?.email}</span>
                 <button
                   onClick={() => signOut()}
                   className="text-blue-600 hover:text-blue-800 font-medium"

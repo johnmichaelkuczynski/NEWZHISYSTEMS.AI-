@@ -17,32 +17,8 @@ import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
 import AdminGate from "@/components/AdminGate";
 import Administrative from "@/pages/administrative";
-import SignInPage from "@/pages/sign-in";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
-import { useEffect, useRef } from "react";
-import { useUser, AuthenticateWithRedirectCallback } from "@clerk/clerk-react";
-
-function VisitTracker() {
-  const { isSignedIn } = useUser();
-  const tracked = useRef(false);
-  useEffect(() => {
-    if (isSignedIn && !tracked.current) {
-      tracked.current = true;
-      (async () => {
-        try {
-          const res = await fetch("/api/visits", {
-            method: "POST",
-            credentials: "include",
-          });
-          if (!res.ok) tracked.current = false;
-        } catch {
-          tracked.current = false;
-        }
-      })();
-    }
-  }, [isSignedIn]);
-  return null;
-}
+import { useAuth } from "@/hooks/useAuth";
 
 function Landing() {
   return (
@@ -59,15 +35,15 @@ function Landing() {
 }
 
 function Protected({ children }: { children: React.ReactNode }) {
-  const { isSignedIn, isLoaded } = useUser();
-  if (!isLoaded) return null;
+  const { isSignedIn, isLoading } = useAuth();
+  if (isLoading) return null;
   if (!isSignedIn) return <Redirect to="/" />;
   return <>{children}</>;
 }
 
 function HomeRoute() {
-  const { isSignedIn, isLoaded } = useUser();
-  if (!isLoaded) return null;
+  const { isSignedIn, isLoading } = useAuth();
+  if (isLoading) return null;
   return isSignedIn ? <Home /> : <Landing />;
 }
 
@@ -75,13 +51,12 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={HomeRoute} />
-      <Route path="/sign-in/sso-callback">
-        <AuthenticateWithRedirectCallback signInForceRedirectUrl="/" signUpForceRedirectUrl="/" />
+      <Route path="/sign-in/:rest*">
+        <Redirect to="/" />
       </Route>
-      <Route path="/sign-in/:rest*" component={SignInPage} />
-      <Route path="/sign-in" component={SignInPage} />
-      <Route path="/sign-up/:rest*" component={SignInPage} />
-      <Route path="/sign-up" component={SignInPage} />
+      <Route path="/sign-in">
+        <Redirect to="/" />
+      </Route>
       <Route path="/journal/admin">
         <Protected><JournalAdmin /></Protected>
       </Route>
@@ -125,7 +100,6 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <VisitTracker />
         <Router />
       </TooltipProvider>
     </QueryClientProvider>

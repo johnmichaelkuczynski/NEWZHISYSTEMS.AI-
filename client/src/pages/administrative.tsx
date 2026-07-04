@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import NavBar from "@/components/NavBar";
-import { useUser } from "@clerk/clerk-react";
+import { useAuth } from "@/hooks/useAuth";
 import {
   BarChart,
   Bar,
@@ -10,8 +10,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import type { Visit } from "@shared/schema";
-
-const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
 
 interface AdminData {
   visits: Visit[];
@@ -113,10 +111,10 @@ function Message({ title, body, showSignIn }: { title: string; body: string; sho
         <p className="text-gray-600 mb-4">{body}</p>
         {showSignIn && (
           <a
-            href="/sign-in"
+            href="/api/auth/google"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium rounded px-6 py-2"
           >
-            Sign In
+            Sign in with Google
           </a>
         )}
       </div>
@@ -125,9 +123,7 @@ function Message({ title, body, showSignIn }: { title: string; body: string; sho
 }
 
 export default function Administrative() {
-  const { user, isSignedIn, isLoaded } = useUser();
-  const email = user?.primaryEmailAddress?.emailAddress || "";
-  const isAdmin = email.toLowerCase() === ADMIN_EMAIL;
+  const { isSignedIn, isLoading, isAdmin } = useAuth();
 
   const { data, isLoading: dataLoading, error } = useQuery<AdminData>({
     queryKey: ["/api/admin/visits"],
@@ -141,7 +137,7 @@ export default function Administrative() {
     enabled: isAdmin,
   });
 
-  if (!isLoaded) {
+  if (isLoading) {
     return <Message title="Administrative" body="Checking your account..." />;
   }
 

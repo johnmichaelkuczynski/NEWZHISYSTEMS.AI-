@@ -1,21 +1,7 @@
-import { useSignIn } from "@clerk/clerk-react";
-
 export default function GoogleSignInButton({ className }: { className?: string }) {
-  const { signIn, isLoaded } = useSignIn();
-
-  const handleClick = async () => {
-    if (!signIn) return;
-    await signIn.authenticateWithRedirect({
-      strategy: "oauth_google",
-      redirectUrl: "/sign-in/sso-callback",
-      redirectUrlComplete: "/",
-    });
-  };
-
   return (
-    <button
-      onClick={handleClick}
-      disabled={!isLoaded}
+    <a
+      href="/api/auth/google"
       className={
         className ||
         "inline-flex items-center gap-2 bg-white border border-gray-300 hover:bg-gray-100 text-gray-800 font-medium rounded px-4 py-2 shadow-sm"
@@ -28,6 +14,6 @@ export default function GoogleSignInButton({ className }: { className?: string }
         <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
       </svg>
       Sign in with Google
-    </button>
+    </a>
   );
 }
