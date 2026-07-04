@@ -1,6 +1,3 @@
-import { useAuth, useSignOut } from "@/hooks/useAuth";
-import GoogleSignInButton from "@/components/GoogleSignInButton";
-
 const links = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Living Courses" },
@@ -13,8 +10,6 @@ const links = [
 ];
 
 export default function NavBar() {
-  const { user, isSignedIn, isAdmin } = useAuth();
-  const signOut = useSignOut();
   return (
     <div className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-3">
@@ -35,35 +30,6 @@ export default function NavBar() {
                 {link.label}
               </a>
             ))}
-            {isAdmin && (
-              <a
-                href="/administrative"
-                className="text-blue-600 hover:text-blue-800 font-medium"
-              >
-                Administrative
-              </a>
-            )}
-            {isSignedIn ? (
-              <span className="flex items-center gap-2">
-                {user?.avatar && (
-                  <img
-                    src={user.avatar}
-                    alt=""
-                    className="w-6 h-6 rounded-full"
-                    referrerPolicy="no-referrer"
-                  />
-                )}
-                <span className="text-gray-600 text-sm">{user?.name || user?.email}</span>
-                <button
-                  onClick={() => signOut()}
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Sign Out
-                </button>
-              </span>
-            ) : (
-              <GoogleSignInButton className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-3 py-1 rounded" />
-            )}
           </div>
         </div>
       </div>

@@ -16,46 +16,8 @@ import {
   generateSuggestedReadings 
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
-import { setupGoogleAuth, requireAuth, requireAdmin } from "./googleAuth";
-import { db } from "./db";
-import { visits } from "@shared/schema";
-import { desc as descOrder, sql as sqlExpr } from "drizzle-orm";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Direct Google OAuth (no third-party auth service), cookie sessions in Postgres
-  setupGoogleAuth(app);
-
-  // Admin: visit log + per-user data (restricted to the site owner's account)
-  app.get("/api/admin/visits", requireAuth, requireAdmin, async (req, res) => {
-    try {
-      const allVisits = await db
-        .select()
-        .from(visits)
-        .orderBy(descOrder(visits.visitedAt))
-        .limit(5000);
-      const [counts] = await db
-        .select({
-          allTime: sqlExpr<number>`count(*)`,
-          last24h: sqlExpr<number>`count(*) filter (where ${visits.visitedAt} >= now() - interval '24 hours')`,
-          lastMonth: sqlExpr<number>`count(*) filter (where ${visits.visitedAt} >= now() - interval '30 days')`,
-          lastYear: sqlExpr<number>`count(*) filter (where ${visits.visitedAt} >= now() - interval '365 days')`,
-        })
-        .from(visits);
-      res.json({
-        visits: allVisits,
-        stats: {
-          allTime: Number(counts.allTime),
-          last24h: Number(counts.last24h),
-          lastMonth: Number(counts.lastMonth),
-          lastYear: Number(counts.lastYear),
-        },
-      });
-    } catch (error) {
-      console.error("Error fetching visits:", error);
-      res.status(500).json({ error: "Failed to fetch visits" });
-    }
-  });
-
   // Journal routes
   app.get("/api/journal", async (req, res) => {
     try {
@@ -103,7 +65,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/journal", requireAuth, async (req, res) => {
+  app.post("/api/journal", async (req, res) => {
     try {
       const result = insertJournalIssueSchema.safeParse(req.body);
       if (!result.success) {
@@ -121,7 +83,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.put("/api/journal/:id", requireAuth, async (req, res) => {
+  app.put("/api/journal/:id", async (req, res) => {
     try {
       const result = insertJournalIssueSchema.partial().safeParse(req.body);
       if (!result.success) {
@@ -139,7 +101,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.delete("/api/journal/:id", requireAuth, async (req, res) => {
+  app.delete("/api/journal/:id", async (req, res) => {
     try {
       await storage.deleteJournalIssue(req.params.id);
       res.status(204).send();
@@ -150,7 +112,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // AI Processing Routes
-  app.post("/api/ai/generate-audio", requireAuth, async (req, res) => {
+  app.post("/api/ai/generate-audio", async (req, res) => {
     try {
       const { text } = req.body;
       const { generateAudio } = await import('./speech-services');
@@ -167,7 +129,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/rewrite", requireAuth, async (req, res) => {
+  app.post("/api/ai/rewrite", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const result = await rewriteText(request);
@@ -178,7 +140,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/study-guide", requireAuth, async (req, res) => {
+  app.post("/api/ai/study-guide", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const result = await generateStudyGuide(request);
@@ -189,7 +151,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/test", requireAuth, async (req, res) => {
+  app.post("/api/ai/test", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const questions = await generateTest(request);
@@ -200,7 +162,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/test/submit", requireAuth, async (req, res) => {
+  app.post("/api/ai/test/submit", async (req, res) => {
     try {
       const { questions, userAnswers } = req.body;
       
@@ -253,7 +215,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/podcast", requireAuth, async (req, res) => {
+  app.post("/api/ai/podcast", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const result = await generatePodcast(request);
@@ -265,7 +227,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/cognitive-map", requireAuth, async (req, res) => {
+  app.post("/api/ai/cognitive-map", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const map = await generateCognitiveMap(request);
@@ -276,7 +238,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/summary-thesis", requireAuth, async (req, res) => {
+  app.post("/api/ai/summary-thesis", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const result = await generateSummaryThesis(request);
@@ -287,7 +249,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/thesis-deep-dive", requireAuth, async (req, res) => {
+  app.post("/api/ai/thesis-deep-dive", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const result = await generateThesisDeepDive(request);
@@ -298,7 +260,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/ai/suggested-readings", requireAuth, async (req, res) => {
+  app.post("/api/ai/suggested-readings", async (req, res) => {
     try {
       const request: TextProcessingRequest = req.body;
       const readings = await generateSuggestedReadings(request);
@@ -310,7 +272,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Office documents
-  app.get("/api/office", requireAuth, requireAdmin, async (_req, res) => {
+  app.get("/api/office", async (_req, res) => {
     try {
       const docs = await storage.getAllOfficeDocuments();
       res.json(docs);
@@ -320,7 +282,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/office/:id", requireAuth, requireAdmin, async (req, res) => {
+  app.get("/api/office/:id", async (req, res) => {
     try {
       const doc = await storage.getOfficeDocument(req.params.id);
       if (!doc) return res.status(404).json({ error: "Not found" });
@@ -331,7 +293,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/office", requireAuth, requireAdmin, async (req, res) => {
+  app.post("/api/office", async (req, res) => {
     try {
       const result = insertOfficeDocumentSchema.safeParse(req.body);
       if (!result.success) {
@@ -345,7 +307,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.put("/api/office/:id", requireAuth, requireAdmin, async (req, res) => {
+  app.put("/api/office/:id", async (req, res) => {
     try {
       const result = insertOfficeDocumentSchema.partial().safeParse(req.body);
       if (!result.success) {
@@ -359,7 +321,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.delete("/api/office/:id", requireAuth, requireAdmin, async (req, res) => {
+  app.delete("/api/office/:id", async (req, res) => {
     try {
       await storage.deleteOfficeDocument(req.params.id);
       res.status(204).send();
@@ -370,7 +332,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // AI in Higher Ed reports
-  app.get("/api/higher-ed", requireAuth, async (_req, res) => {
+  app.get("/api/higher-ed", async (_req, res) => {
     try {
       const reports = await storage.getAllHigherEdReports();
       res.json(reports);
@@ -380,7 +342,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/higher-ed/:id", requireAuth, async (req, res) => {
+  app.get("/api/higher-ed/:id", async (req, res) => {
     try {
       const report = await storage.getHigherEdReport(req.params.id);
       if (!report) return res.status(404).json({ error: "Not found" });
@@ -391,7 +353,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/higher-ed", requireAuth, async (req, res) => {
+  app.post("/api/higher-ed", async (req, res) => {
     try {
       const result = insertHigherEdReportSchema.safeParse(req.body);
       if (!result.success) {
@@ -405,7 +367,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.put("/api/higher-ed/:id", requireAuth, async (req, res) => {
+  app.put("/api/higher-ed/:id", async (req, res) => {
     try {
       const result = insertHigherEdReportSchema.partial().safeParse(req.body);
       if (!result.success) {
@@ -419,7 +381,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.delete("/api/higher-ed/:id", requireAuth, async (req, res) => {
+  app.delete("/api/higher-ed/:id", async (req, res) => {
     try {
       await storage.deleteHigherEdReport(req.params.id);
       res.status(204).send();
