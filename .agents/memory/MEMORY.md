@@ -1,3 +1,3 @@
 - [Course double-listing sync](course-double-listing.md) — analytics courses live on both baby-living-courses.tsx and johnson-wales.tsx; mirror badge/video/title/removal changes to both.
 - [DB URL drift](db-url-drift.md) — server reads EXTERNAL_DATABASE_URL but drizzle.config uses DATABASE_URL; push with DATABASE_URL="$EXTERNAL_DATABASE_URL" npm run db:push.
-- [Clerk secret/instance drift](clerk-secret-drift.md) — jwk-kid-mismatch 500 means sk and pk point at different Clerk instances; verify via api.clerk.com/v1/instance vs frontend jwks kid.
+- [Secret paste whitespace](secret-paste-whitespace.md) — pasted secrets can carry invisible chars (NBSP); always trim env credentials before use.

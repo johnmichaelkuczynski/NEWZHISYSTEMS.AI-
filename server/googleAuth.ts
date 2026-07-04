@@ -23,13 +23,13 @@ declare module "express-session" {
 }
 
 function getClientId(): string {
-  const id = process.env.GOOGLE_OAUTH_CLIENT_ID;
+  const id = process.env.GOOGLE_OAUTH_CLIENT_ID?.trim();
   if (!id) throw new Error("GOOGLE_OAUTH_CLIENT_ID is not set");
   return id;
 }
 
 function getClientSecret(): string {
-  const secret = process.env.GOOGLE_OAUTH_CLIENT_SECRET;
+  const secret = process.env.GOOGLE_OAUTH_CLIENT_SECRET?.trim();
   if (!secret) throw new Error("GOOGLE_OAUTH_CLIENT_SECRET is not set");
   return secret;
 }
