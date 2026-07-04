@@ -2406,7 +2406,7 @@ export default function Home() {
 
   const appCategories: Record<string, App[]> = {
     "📝 Writing & Books": [
-      { title: "Living Book Creator", url: "https://livingbook.xyz/" },
+      { title: "Living Book Creator", url: "https://livingbookcreator.xyz" },
       { title: "Book Builder", url: "https://bookbuilder.xyz" },
       { title: "Genius Dictation", url: "https://geniusdictation.com" },
       { title: "EZ Reader", url: "https://ezreader.ai" },
