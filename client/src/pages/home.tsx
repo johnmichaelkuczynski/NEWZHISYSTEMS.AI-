@@ -2413,7 +2413,8 @@ export default function Home() {
       { title: "Classic EZ Reader", url: "https://classicezreader.com" },
       { title: "EZ Story", url: "https://ezstory.xyz" },
       { title: "NeuroText", url: "https://neurotext.uk" },
-      { title: "Style Mimic", url: "https://stylemimic.xyz" }
+      { title: "Style Mimic", url: "https://stylemimic.xyz" },
+      { title: "Text Hero", url: "https://texthero.xyz" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
