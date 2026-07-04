@@ -3,11 +3,17 @@ import { pgTable, text, varchar, integer, timestamp } from "drizzle-orm/pg-core"
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
+export * from "./models/auth";
+
+export const visits = pgTable("visits", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  username: text("username").notNull().unique(),
-  password: text("password").notNull(),
+  userId: varchar("user_id"),
+  email: varchar("email"),
+  name: varchar("name"),
+  visitedAt: timestamp("visited_at").defaultNow().notNull(),
 });
+
+export type Visit = typeof visits.$inferSelect;
 
 export const journalIssues = pgTable("journal_issues", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
@@ -53,11 +59,6 @@ export const insertHigherEdReportSchema = createInsertSchema(higherEdReports).pi
 export type InsertHigherEdReport = z.infer<typeof insertHigherEdReportSchema>;
 export type HigherEdReport = typeof higherEdReports.$inferSelect;
 
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
-});
-
 export const insertJournalIssueSchema = createInsertSchema(journalIssues).pick({
   title: true,
   body: true,
@@ -67,7 +68,5 @@ export const insertJournalIssueSchema = createInsertSchema(journalIssues).pick({
   tags: true,
 });
 
-export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
 export type InsertJournalIssue = z.infer<typeof insertJournalIssueSchema>;
 export type JournalIssue = typeof journalIssues.$inferSelect;

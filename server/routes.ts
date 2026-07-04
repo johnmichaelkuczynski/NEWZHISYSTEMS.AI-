@@ -16,8 +16,69 @@ import {
   generateSuggestedReadings 
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
+import { setupAuth, registerAuthRoutes, isAuthenticated } from "./replit_integrations/auth";
+import { db } from "./db";
+import { visits } from "@shared/schema";
+import { desc as descOrder, sql as sqlExpr } from "drizzle-orm";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Auth (Replit Auth - supports Google login)
+  await setupAuth(app);
+  registerAuthRoutes(app);
+
+  // Record a visit (called by the client when a signed-in user loads the site)
+  app.post("/api/visits", isAuthenticated, async (req: any, res) => {
+    try {
+      const claims = req.user?.claims || {};
+      const name = [claims.first_name, claims.last_name].filter(Boolean).join(" ");
+      await db.insert(visits).values({
+        userId: claims.sub ?? null,
+        email: claims.email ?? null,
+        name: name || null,
+      });
+      res.json({ success: true });
+    } catch (error) {
+      console.error("Error recording visit:", error);
+      res.status(500).json({ error: "Failed to record visit" });
+    }
+  });
+
+  // Admin: list visits (restricted to the site owner's account)
+  const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
+  app.get("/api/admin/visits", isAuthenticated, async (req: any, res) => {
+    try {
+      const email = (req.user?.claims?.email || "").toLowerCase();
+      if (email !== ADMIN_EMAIL) {
+        return res.status(403).json({ error: "Access denied" });
+      }
+      const allVisits = await db
+        .select()
+        .from(visits)
+        .orderBy(descOrder(visits.visitedAt))
+        .limit(5000);
+      const [counts] = await db
+        .select({
+          allTime: sqlExpr<number>`count(*)`,
+          last24h: sqlExpr<number>`count(*) filter (where ${visits.visitedAt} >= now() - interval '24 hours')`,
+          lastMonth: sqlExpr<number>`count(*) filter (where ${visits.visitedAt} >= now() - interval '30 days')`,
+          lastYear: sqlExpr<number>`count(*) filter (where ${visits.visitedAt} >= now() - interval '365 days')`,
+        })
+        .from(visits);
+      res.json({
+        visits: allVisits,
+        stats: {
+          allTime: Number(counts.allTime),
+          last24h: Number(counts.last24h),
+          lastMonth: Number(counts.lastMonth),
+          lastYear: Number(counts.lastYear),
+        },
+      });
+    } catch (error) {
+      console.error("Error fetching visits:", error);
+      res.status(500).json({ error: "Failed to fetch visits" });
+    }
+  });
+
   // Journal routes
   app.get("/api/journal", async (req, res) => {
     try {

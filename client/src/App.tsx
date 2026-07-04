@@ -15,6 +15,21 @@ import JohnsonWales from "@/pages/johnson-wales";
 import BabyLivingCourses from "@/pages/baby-living-courses";
 import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
+import Administrative from "@/pages/administrative";
+import { useEffect, useRef } from "react";
+import { useAuth } from "@/hooks/use-auth";
+
+function VisitTracker() {
+  const { isAuthenticated } = useAuth();
+  const tracked = useRef(false);
+  useEffect(() => {
+    if (isAuthenticated && !tracked.current) {
+      tracked.current = true;
+      fetch("/api/visits", { method: "POST", credentials: "include" }).catch(() => {});
+    }
+  }, [isAuthenticated]);
+  return null;
+}
 
 function Router() {
   return (
@@ -42,6 +57,7 @@ function Router() {
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
+      <Route path="/administrative" component={Administrative} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -52,6 +68,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
+        <VisitTracker />
         <Router />
       </TooltipProvider>
     </QueryClientProvider>

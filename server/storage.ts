@@ -1,4 +1,4 @@
-import { type User, type InsertUser, type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, type HigherEdReport, type InsertHigherEdReport, users, journalIssues, officeDocuments, higherEdReports } from "@shared/schema";
+import { type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, type HigherEdReport, type InsertHigherEdReport, journalIssues, officeDocuments, higherEdReports } from "@shared/schema";
 import { db } from "./db";
 import { eq, desc, sql, or, ilike } from "drizzle-orm";
 
@@ -6,10 +6,6 @@ import { eq, desc, sql, or, ilike } from "drizzle-orm";
 // you might need
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
-  
   // Journal methods
   getAllJournalIssues(): Promise<JournalIssue[]>;
   getJournalIssue(volume: number, issue: number): Promise<JournalIssue | undefined>;
@@ -34,24 +30,6 @@ export interface IStorage {
 }
 
 export class DatabaseStorage implements IStorage {
-  async getUser(id: string): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.id, id));
-    return user || undefined;
-  }
-
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.username, username));
-    return user || undefined;
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const [user] = await db
-      .insert(users)
-      .values(insertUser)
-      .returning();
-    return user;
-  }
-
   // Journal methods
   async getAllJournalIssues(): Promise<JournalIssue[]> {
     return await db.select().from(journalIssues).orderBy(desc(journalIssues.createdAt));
