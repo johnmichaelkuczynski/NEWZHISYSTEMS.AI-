@@ -3,28 +3,6 @@ import { pgTable, text, varchar, integer, timestamp } from "drizzle-orm/pg-core"
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  googleId: varchar("google_id").notNull().unique(),
-  email: varchar("email").notNull(),
-  name: varchar("name"),
-  avatar: varchar("avatar"),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-  lastSignInAt: timestamp("last_sign_in_at").defaultNow().notNull(),
-});
-
-export type User = typeof users.$inferSelect;
-
-export const visits = pgTable("visits", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  userId: varchar("user_id"),
-  email: varchar("email"),
-  name: varchar("name"),
-  visitedAt: timestamp("visited_at").defaultNow().notNull(),
-});
-
-export type Visit = typeof visits.$inferSelect;
-
 export const journalIssues = pgTable("journal_issues", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   title: text("title").notNull(),

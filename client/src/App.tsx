@@ -14,29 +14,18 @@ import Courses from "@/pages/courses";
 import JohnsonWales from "@/pages/johnson-wales";
 import BabyLivingCourses from "@/pages/baby-living-courses";
 import NotFound from "@/pages/not-found";
-import PasswordGate from "@/components/PasswordGate";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/journal/admin" component={JournalAdmin} />
-      <Route path="/journal">
-        <PasswordGate><Journal /></PasswordGate>
-      </Route>
-      <Route path="/journal/vol-:volume/no-:issue">
-        <PasswordGate><JournalIssue /></PasswordGate>
-      </Route>
-      <Route path="/journal/:volume/:issue">
-        <PasswordGate><JournalIssue /></PasswordGate>
-      </Route>
-      <Route path="/podcasts">
-        <PasswordGate><Podcasts /></PasswordGate>
-      </Route>
+      <Route path="/journal" component={Journal} />
+      <Route path="/journal/vol-:volume/no-:issue" component={JournalIssue} />
+      <Route path="/journal/:volume/:issue" component={JournalIssue} />
+      <Route path="/podcasts" component={Podcasts} />
       <Route path="/office-use" component={OfficeUse} />
-      <Route path="/ai-higher-ed">
-        <PasswordGate storageKey="ai-higher-ed-access"><AiHigherEd /></PasswordGate>
-      </Route>
+      <Route path="/ai-higher-ed" component={AiHigherEd} />
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
