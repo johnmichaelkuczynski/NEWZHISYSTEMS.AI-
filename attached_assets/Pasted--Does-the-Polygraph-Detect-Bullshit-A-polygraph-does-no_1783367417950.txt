@@ -1,0 +1,61 @@
+# Does the Polygraph Detect Bullshit?
+
+A polygraph does not measure truth. It measures the distance between what you say and what some autonomic part of you believes — the sweat and the pulse and the caught breath of a nervous system that has noticed a contradiction the mouth is trying to paper over. This raises a strange question. Not "can it catch a liar," but "can it catch bullshit" — where bullshit, in the precise Frankfurtian sense, is not falsehood asserted against a known truth but narrative-truth that the speaker has internalized to some fractional, wobbling degree. The person who says "we hire on merit" while half-knowing the hire was about lineage; the professor who advocates a doctrine that "must" be right because Oxford published it and the field rewards it, even as a quieter voice mutters that it sounds like the thing his stoned roommate said. These are not lies. They are professions held at arm's length, in mental quotation marks, validated by the authority of their source rather than by contact with the world.
+
+The conjecture is that the needle can tell the difference — but only if you strip the syntax. Ask the question in its native institutional habitat — "does the preponderance of the evidence suggest we might wish to consider whether mental content is individuated externally?" — and the hedges give the accepted-belief somewhere to hide; the needle barely flickers. Strip it to a bare "true or false?" and you force the accepted credence and the underlying factual belief into the same register at the same instant, and the collision spikes. On this view the polygraph is not a lie detector at all but a bullshit-pressure gauge: a device for measuring how much protective grammar a belief requires to remain comfortable. The truths that need no scaffolding — Santa Barbara is in California, Kaplan was my advisor — sit flat. The professions that survive only inside a nest of qualifications thrash the moment the qualifications are taken away.
+
+---
+
+# A Falsifiable Conjecture
+
+Here is the conjecture, and its virtue is that it is not philosophy but empirical claim: verifiable, falsifiable, and — to my knowledge — neither yet verified nor yet falsified. When you ask people, under conditions that measure autonomic arousal and under phrasing sharp enough to admit no hedge, whether they *actually* believe the propositions their profession or institution requires them to profess, it will turn out that to a large and measurable extent they do not. Not that they secretly believe the opposite — that would be ordinary hypocrisy, and the psychology of hypocrisy is well charted. The claim is subtler and more damning: that the professed doctrine never occupied the factual-belief register in the first place, that it was filed under *acceptance* rather than *belief*, held as a policy of premising-in-context rather than as a truth about the world, and that the physiological signature of this — nervous, erratic, uninterpretable rather than cleanly true or cleanly false — is detectable and distinct.
+
+The experiment writes itself. Take the accepted doctrine D of some field. Recruit its adherents and a matched sample of intelligent outsiders who reject D. Ask each, bluntly, "is D true?" Predict: the outsider who says "false" sits flat, because for him the blunt answer and the factual belief coincide; the insider who says "true" spikes, because the profession is being dragged out of its hedged habitat and onto the ledger the machine audits. Vary the syntactic sharpness and watch arousal scale with it — same subject, same doctrine, needle rising with nothing but the removal of qualifiers. Control for ordinary test-anxiety with neutral factual questions. If the insiders stay flat, the conjecture is dead and the doctrines are sincerely believed. If they light up, then we have, for the first time, an instrument that distinguishes belief from its institutional counterfeit — and a great many distinguished careers become, in a quite literal sense, unable to answer the question they have spent a lifetime professing to have answered.
+
+---
+
+# The Examination (a fiction)
+
+*Names, places, and events below are invented. Any composite is a type, not a person.*
+
+**POLYGRAPHER:** Professor Sturgeon, does Vulcan exist? Yes or no.
+
+**STURGEON:** It exists qua mythical object. *(The needle dips into lie territory.)*
+
+**POLYGRAPHER:** Just a yes or no, please. Once more: does Vulcan exist?
+
+**STURGEON:** Yes. *(The needle drives deep into lie territory. Sturgeon senses it and follows up.)* Yes, but existence is not binary, and this — this — is the solecism embedded in your question. You are prejudging —
+
+**POLYGRAPHER:** *(as the trace goes erratic, tending toward the uninterpretable)* That's great. Just a yes or a no. You're doing great. Professor, do you live in Santa Teresa?
+
+**STURGEON:** Yes. *(The needle behaves — a little ruggedly, residual nerves from the last round.)*
+
+**POLYGRAPHER:** Is Santa Teresa in California?
+
+**STURGEON:** Yes. *(Clean. He is calming down.)*
+
+**POLYGRAPHER:** Was David Chaplin your dissertation advisor?
+
+**STURGEON:** Yes. *(Truth territory. Low arousal.)*
+
+**POLYGRAPHER:** Did Gavin Ellis publish a proof that indeterminate identity collapses into non-identity — that since x is determinately identical with x, then if x is only indeterminately identical with y, then y has a property x lacks, namely being only indeterminately identical with x, and therefore is not x? Do you follow?
+
+**STURGEON:** I follow. And yes, he published that. *(Truth — but nervousness. Extreme nervousness. A stock climbing on a badly non-monotonic tape.)*
+
+**POLYGRAPHER:** Did you publish a similar proof in your dissertation?
+
+**STURGEON:** Ah — em — well, it depends what you mean by —
+
+**POLYGRAPHER:** A simple yes or no, sir. You're doing great.
+
+**STURGEON:** Fine. Fine. Yes. Yes, I did.
+
+**POLYGRAPHER:** Outstanding. Which came first — yours or Ellis's?
+
+**STURGEON:** Well, if memory serves — and it was an awfully long time ago — *(needle everywhere, not necessarily lying, but violently active)* — ah, yes. Technically his appeared first, but —
+
+**POLYGRAPHER:** Did you derive it before you read his?
+
+**STURGEON:** I had it independently. The citation was a courtesy. *(And here the needle does the strangest thing of the session: not the clean deflection of a lie, not the flat repose of a truth, but a wide, wandering, unreadable oscillation — the signature of a claim with no factual bedrock beneath it, a story about his own priority that has hardened into memory and that even he can no longer check against the fact.)*
+
+**POLYGRAPHER:** *(gently)* That's great. You're doing great.
