@@ -14,6 +14,7 @@ import Courses from "@/pages/courses";
 import JohnsonWales from "@/pages/johnson-wales";
 import BabyLivingCourses from "@/pages/baby-living-courses";
 import NotFound from "@/pages/not-found";
+import PasswordGate from "@/components/PasswordGate";
 
 function Router() {
   return (
@@ -25,7 +26,9 @@ function Router() {
       <Route path="/journal/:volume/:issue" component={JournalIssue} />
       <Route path="/podcasts" component={Podcasts} />
       <Route path="/office-use" component={OfficeUse} />
-      <Route path="/ai-higher-ed" component={AiHigherEd} />
+      <Route path="/ai-higher-ed">
+        <PasswordGate><AiHigherEd /></PasswordGate>
+      </Route>
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
