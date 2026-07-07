@@ -1505,7 +1505,7 @@ Unlike bloated transcription suites that bury the core feature behind paywalls, 
   ],
 };
 
-appDescriptions["EZ Redirect"] = {
+appDescriptions["EZREDIRECT"] = {
   emoji: "🔀",
   tagline: "A utility that generates callback URLs for domain names.",
   sections: [
@@ -2463,7 +2463,7 @@ export default function Home() {
       { title: "Podcast Creator", url: "https://ezpodcast.xyz" }
     ],
     "⚙️ Utility & Conversion": [
-      { title: "EZ Redirect", url: "https://ezredirect.xyz" },
+      { title: "EZREDIRECT", url: "https://ezredirect.xyz" },
       { title: "Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "GPTByPass", url: "https://gptbypass.xyz" },
       { title: "GPT Crusher", url: "https://gptcrusher.xyz" },
