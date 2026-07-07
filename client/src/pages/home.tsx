@@ -1505,6 +1505,18 @@ Unlike bloated transcription suites that bury the core feature behind paywalls, 
   ],
 };
 
+appDescriptions["EZ Redirect"] = {
+  emoji: "🔀",
+  tagline: "A utility that generates callback URLs for domain names.",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `EZ Redirect generates callback URLs for domain names — a quick utility for producing the redirect/callback endpoints that services and integrations ask for when you register a domain.`,
+    },
+  ],
+};
+
 appDescriptions["PDF Shrinker"] = {
   emoji: "📄",
   tagline:
@@ -2451,6 +2463,7 @@ export default function Home() {
       { title: "Podcast Creator", url: "https://ezpodcast.xyz" }
     ],
     "⚙️ Utility & Conversion": [
+      { title: "EZ Redirect", url: "https://ezredirect.xyz" },
       { title: "Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "GPTByPass", url: "https://gptbypass.xyz" },
       { title: "GPT Crusher", url: "https://gptcrusher.xyz" },
