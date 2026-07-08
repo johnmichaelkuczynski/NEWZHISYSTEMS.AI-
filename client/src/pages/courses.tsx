@@ -169,25 +169,37 @@ const courseDescriptions: Record<string, CourseDescription> = {
   "Voice-Powered KnowThySelf": {
     emoji: "🪞",
     tagline:
-      "KnowThySelf -- Voice-Powered Self-Knowledge: A four-unit, spoken-first self-inquiry course where you answer honest questions out loud and an AI tells you something true about yourself -- analysis, not grading.",
+      "KnowThySelf -- Voice-Powered Self-Knowledge: A structured month of honest self-inquiry. You speak. AI listens -- and tells you something true.",
     sections: [
       {
-        emoji: "🧩",
-        title: "What This Is",
+        emoji: "🌱",
+        title: "What It Is",
         body:
-          "KnowThySelf walks one person through a structured month of self-inquiry. You read a short lesson, sit with a probing prompt, record a spoken answer, and get a candid, perceptive reading of what your answer -- and the way you gave it -- reveals. Each reading compounds into a cumulative portrait across nine dimensions, culminating in a capstone that names the one conflict you're really trying to resolve.",
+          "Most self-reflection tools let you write tidy answers about who you wish you were. KnowThySelf is different.\n\nYou read a short lesson, sit with a question designed to unsettle you a little, and then answer it out loud -- in your own voice, at your own pace. The AI doesn't grade you. It reads your answer -- what you said and how you said it -- and reflects something true back to you. Over four units and nine sessions, those reflections weave together into a cumulative portrait of who you actually are.\n\nBy the final capstone, it names the one core conflict you keep circling.",
       },
       {
-        emoji: "🗂️",
-        title: "Layout",
+        emoji: "🗺️",
+        title: "How the Course Is Structured",
         body:
-          "**App** -- the user-facing course, served at the root. **API** -- an Express API (database, object storage, AssemblyAI transcription, OpenAI analysis, diagnostics). **Videos** -- a product demo and a promo, both with audio. **Shared libraries** -- an OpenAPI spec as the source of truth, generated React Query hooks plus Zod validators, and a Drizzle database schema. The behavior shifted from grading to analyzing, with subject and branding changed to match self-inquiry.",
+          "The course runs across four units, each with lessons and a recorded session at the end:\n\n**Unit 1** -- The self you present: how you show up and why.\n\n**Unit 2** -- How you see the world: your lens, your assumptions.\n\n**Unit 3** -- What you want and what stops you.\n\n**Unit 4** -- The capstone: naming the central conflict.\n\nEach unit includes short readings to sit with before you record. There are no right answers.",
       },
       {
-        emoji: "⚙️",
-        title: "How It Works",
+        emoji: "🎙️",
+        title: "How a Session Works",
         body:
-          "**Spoken pipeline** -- the browser records with MediaRecorder -> presigned upload -> object storage -> the server transcribes via AssemblyAI -> derives delivery metrics -> produces a candid reading via OpenAI, then rebuilds the cumulative profile.\n\n**Analysis, not grading** -- every answer returns a headline, an interpretation, and observations; the profile returns dimensions, a synthesis, and -- after the capstone -- a primary conflict. No scores.\n\n**Fail-loud** -- if transcription or analysis fails, the response is stored as failed and the API returns 502 -- never a fabricated reading.\n\n**Contract-first** -- one OpenAPI document drives the generated client hooks and server Zod validators.\n\n**Database** -- external Postgres (Neon), seeded idempotently on boot.",
+          "**Read** -- a short, focused lesson that primes the question.\n\n**Sit with it** -- let the question land before you reach for an answer.\n\n**Speak** -- record your answer out loud (you can re-record as many times as you like).\n\n**Receive** -- the AI reads back what your answer reveals, including how you said it.\n\n**Continue** -- each session deepens the portrait built from everything before it.\n\nYou also have an AI tutor on every lecture page -- ask it anything, in text or by voice, and it responds knowing your history.",
+      },
+      {
+        emoji: "🪟",
+        title: "What You Get",
+        body:
+          "A candid reading after each session -- not praise, not a score, but a real interpretation.\n\nA growing portrait across all nine sessions -- nine dimensions of how you move through the world.\n\nA capstone conclusion -- the one conflict at the root of the patterns.\n\nAn AI tutor -- present on every lecture, aware of what you've shared, ready to go deeper.",
+      },
+      {
+        emoji: "🔒",
+        title: "Your Privacy",
+        body:
+          "Every response is private to your account. Nothing is shared. The AI reads your delivery -- pace, pauses, fillers -- as tells, not as a grade. There is no leaderboard, no score, no comparison.",
       },
     ],
   },

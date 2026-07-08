@@ -1,0 +1,39 @@
+🪞 KnowThySelf — Voice-Powered Self-Knowledge
+A structured month of honest self-inquiry. You speak. AI listens — and tells you something true.
+
+🌱 What It Is
+Most self-reflection tools let you write tidy answers about who you wish you were. KnowThySelf is different.
+
+You read a short lesson, sit with a question designed to unsettle you a little, and then answer it out loud — in your own voice, at your own pace. The AI doesn't grade you. It reads your answer — what you said and how you said it — and reflects something true back to you. Over four units and nine sessions, those reflections weave together into a cumulative portrait of who you actually are.
+
+By the final capstone, it names the one core conflict you keep circling.
+
+🗺️ How the Course Is Structured
+The course runs across four units, each with lessons and a recorded session at the end:
+
+Unit	Theme
+Unit 1	The self you present — how you show up and why
+Unit 2	How you see the world — your lens, your assumptions
+Unit 3	What you want and what stops you
+Unit 4	The capstone — naming the central conflict
+Each unit includes short readings to sit with before you record. There are no right answers.
+
+🎙️ How a Session Works
+Read — a short, focused lesson that primes the question
+Sit with it — let the question land before you reach for an answer
+Speak — record your answer out loud (you can re-record as many times as you like)
+Receive — the AI reads back what your answer reveals, including how you said it
+Continue — each session deepens the portrait built from everything before it
+You also have an AI tutor on every lecture page — ask it anything, in text or by voice, and it responds knowing your history.
+
+🪟 What You Get
+A candid reading after each session — not praise, not a score, but a real interpretation
+A growing portrait across all nine sessions — nine dimensions of how you move through the world
+A capstone conclusion — the one conflict at the root of the patterns
+An AI tutor — present on every lecture, aware of what you've shared, ready to go deeper
+🔒 Your Privacy
+Every response is private to your account. Nothing is shared. The AI reads your delivery — pace, pauses, fillers — as tells, not as a grade. There is no leaderboard, no score, no comparison.
+
+👤 User Preferences
+Caps in requests are for emphasis, not literal instructions.
+Keep documentation polished and in the emoji-section-header style used in this README.
