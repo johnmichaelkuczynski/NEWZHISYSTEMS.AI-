@@ -757,7 +757,7 @@ export default function Courses() {
     { title: "Know Thyself", url: "https://knowthyself101.xyz" },
     { title: "Portfolio Analysis", url: "https://portfolioanalysis101.xyz" },
     { title: "Public Speaking", url: "https://publicspeaking101.xyz" },
-    { title: "Voice-Powered KnowThySelf", url: "https://selfknow.xyz" },
+    { title: "Voice-Powered KnowThySelf", url: "https://voicepoweredknowthyself.xyz" },
     { title: "Finance", url: "https://finance101.xyz" },
     { title: "Business Ethics", url: "https://businessethics101.xyz" },
     { title: "Teach Yourself Math Notation", url: "https://mathnotation.xyz" },
