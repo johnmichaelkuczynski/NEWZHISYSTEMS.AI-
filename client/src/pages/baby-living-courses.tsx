@@ -36,6 +36,43 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  "Personal Finance": {
+    emoji: "💵",
+    tagline:
+      "Teach Yourself Personal Finance -- A Four-Unit Introductory Course on the Ideas Behind Money: From \"Gross vs. Net\" to Investing, Insurance, and Life Planning",
+    sections: [
+      {
+        emoji: "🧩",
+        title: "Overview",
+        body:
+          "Teach Yourself Personal Finance is a self-paced, single-user web course that explains how money actually works -- in plain English, without the jargon and without requiring any math or spreadsheet background. What's the difference between gross and net pay? How does compound interest grow your savings? Why does a credit score matter? What is diversification, inflation, or risk pooling? The course answers these conceptually, one connected idea at a time.\n\nThe full runtime -- lectures with Short / Medium / Long depth, section-scoped AI tutor, adaptive practice, AI-graded homework / tests / midterm / final, two-layer AI-authorship detection, and one-click diagnostics -- is preserved and put to work teaching the conceptual backbone of personal finance: how income, budgeting, debt, saving, investing, and risk fit together.",
+      },
+      {
+        emoji: "🧠",
+        title: "What It Does",
+        body:
+          "**Four-Unit Curriculum of 32 Micro-Lectures** -- Organized by theme:\n\n**Unit 1 -- Money, income, and budgeting (8 lectures):** income (gross vs. net); taxes and take-home pay; cash flow; budgeting; needs vs. wants; emergency funds; banking; and opportunity cost.\n\n**Unit 2 -- Credit, debt, and borrowing (8 lectures):** credit; interest; credit scores; loans and amortization; credit cards; good vs. bad debt; debt repayment; and default.\n\n**Unit 3 -- Saving, investing, and growth (8 lectures):** compound interest; the time value of money; risk and return; asset classes; diversification; index funds; retirement accounts; and inflation.\n\n**Unit 4 -- Risk, protection, and life planning (8 lectures):** insurance and risk pooling; life insurance; estate basics; major purchases; financial goals; and avoiding scams -- closing with a capstone synthesis.\n\n**One Real Example per Lecture** -- Every micro-lecture grounds its concept in a concrete, real-world example -- e.g. a $60,000 offer letter shrinking to take-home pay, how a small credit-card balance snowballs at a high APR, a single dollar doubling over decades of compounding, an index fund quietly beating stock-pickers, and how insurance spreads one person's disaster across a large pool.\n\n**One Conceptual Question per Lecture** -- Every homework / test / midterm / final problem is a short-answer conceptual question (define a term, draw a distinction, explain why something works, identify an example) answered in plain English -- no math or spreadsheets required.\n\n**Three-Depth Lectures, Section-Scoped Tutor, Adaptive Practice, AI Grading, Two-Layer Detection, One-Click Diagnostics** -- All inherited unchanged from the runtime.\n\n**Built-In Product Demo Video** -- The companion demo artifact ships as a short screencast of the live UI over a background music bed.",
+      },
+      {
+        emoji: "⚙️",
+        title: "Technical Features",
+        body:
+          "**Conceptual Answer Grading** -- Every problem's canonical answer is a short conceptual statement. The AI grader (with a numeric short-circuit retained for harmless edge cases) judges whether the student's answer captures the key idea of the model answer, accepting paraphrases and lenient wording while staying strict on the essential concept.\n\n**Static AI Detection (GPTZero):** Every submitted answer is sent to GPTZero's predict/text endpoint; the per-document AI probability is blended 0.85 x GPTZero + 0.15 x structural-heuristic for the final score. If GPTZero is unavailable, the system silently falls back to an LLM scorer plus heuristic.\n\n**Diachronic Keystroke Detection:** The student textarea captures keystroke count, erase count, bulk-insert events, longest bulk insert, rewrite segments, and total duration. A scorer penalizes paste-then-reword behavior, low keystroke-to-output ratios, and impossibly sustained typing speeds.\n\n**System Diagnostic (/diagnostics/system):** environment, database round-trip, course-seed integrity, OpenAI chat completion, OpenAI JSON mode, detection pipeline, and grader equivalence check.\n\n**Synthetic-Student Diagnostic (/diagnostics/synthetic-run):** end-to-end stack proof -- a synthetic student reads every lecture, takes and submits every assignment, runs adaptive practice, asks the tutor, and triggers detection, verifying grading + detection + analytics all reflect the run.\n\n**Content Auditor (/diagnostics/content-audit):** sends every lecture body and every stored \"correct answer\" to OpenAI for an independent verdict on whether each is actually correct -- flagging wrong definitions, inaccurate claims about how money works, misused terminology, and conceptual answers that don't satisfy their prompt.\n\n**Auto-Reseed on Curriculum Change** -- seedIfEmpty compares the set of topic slugs in the database to the expected curriculum and checks a sentinel phrase in a designated lecture. If either differs, it wipes and re-seeds in dependency order, so a single content swap propagates cleanly.\n\n**Contract-First API** -- Single OpenAPI document; React Query hooks for the UI and Zod validators for the server are generated from it.\n\n**Streaming AI Tutor** -- Token-by-token Server-Sent-Event streaming with a section-scoped system prompt grounded in the active lecture.\n\n**Adaptive Practice Engine** -- Per-session difficulty (1-5) adjusts after each attempt; conceptual questions are generated on demand.\n\nNote: the on-screen math keyboard component remains in the codebase (the engine is preserved unchanged), but the finance curriculum's answers are plain-English conceptual statements, so the course does not rely on it.",
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body:
+          "**Anyone Who Wants the Concepts, Not the Jargon:** A short, focused course on the conceptual scaffolding behind personal finance -- income, budgeting, debt, saving, investing, and risk -- with no math or spreadsheet prerequisites.\n\n**Instructors & Curriculum Designers** -- A working reference for AI-taught, AI-graded, AI-detection-screened coursework whose answers are conceptual rather than symbolic.",
+      },
+      {
+        emoji: "💡",
+        title: "Core Idea",
+        body:
+          "Most money advice is either breathless hype or dense technical detail. This course takes the middle path: it explains the real ideas behind personal finance clearly enough that anyone can follow, and honestly enough that you come away able to make your own decisions with confidence.\n\nRead the idea, see it grounded in a real example, then explain the idea in your own words.\n\nTeach Yourself Personal Finance -- read the idea, ground the idea, explain the idea.",
+      },
+    ],
+  },
   "AI Logic": {
     emoji: "🤖",
     tagline:
