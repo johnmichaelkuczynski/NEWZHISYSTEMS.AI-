@@ -440,7 +440,7 @@ export default function JohnsonWales() {
   const courses: Course[] = [
     {
       title: "Basic Data Analytics",
-      url: "https://babyanalytics.xyz",
+      url: "https://dataanalytics.ink",
       videoUrl: "https://youtu.be/FmUCg1agNkc",
       badge: {
         image: dataAnalyticsBadge,
