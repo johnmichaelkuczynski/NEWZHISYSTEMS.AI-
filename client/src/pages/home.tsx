@@ -2439,7 +2439,7 @@ export default function Home() {
       { title: "Major Brain", url: "https://majorbrain.xyz" },
       { title: "Model Builder", url: "https://modelwiz.xyz" },
       { title: "Originality Meter", url: "https://originalitymeter.com" },
-      { title: "Intelligence Meter", url: "https://intelligencemeter.biz" },
+      { title: "Intelligence Meter", url: "https://iq101.xyz" },
       { title: "Mind Profiler", url: "https://mindprofiler.xyz/" },
       { title: "Text Evaluator", url: "https://textevaluator.xyz" },
       { title: "Text IQ", url: "https://textiq.xyz/" },
