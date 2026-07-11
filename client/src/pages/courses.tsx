@@ -766,7 +766,7 @@ export default function Courses() {
     { title: "Constructive Critical Reasoning", url: "https://constructivereasoning.xyz" },
     { title: "Quantitative Reasoning", url: "https://quantitativereasoning.ink" },
     { title: "Evolutionary Psychology", url: "https://evopsych.xyz" },
-    { title: "Know Thyself", url: "https://knowthyself101.xyz" },
+    { title: "Know Thyself", url: "https://minikinowthyself.ink" },
     { title: "Portfolio Analysis", url: "https://portfolioanalysis101.xyz" },
     { title: "Public Speaking", url: "https://publicspeaking101.xyz" },
     { title: "Voice-Powered KnowThySelf", url: "https://voicepoweredknowthyself.xyz" },
