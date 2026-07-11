@@ -764,7 +764,7 @@ function renderSectionBody(body: string) {
 export default function Courses() {
   const courses: Course[] = [
     { title: "Constructive Critical Reasoning", url: "https://constructivereasoning.xyz" },
-    { title: "Quantitative Reasoning", url: "https://quantitativereasoning101.xyz" },
+    { title: "Quantitative Reasoning", url: "https://quantitativereasoning.ink" },
     { title: "Evolutionary Psychology", url: "https://evopsych.xyz" },
     { title: "Know Thyself", url: "https://knowthyself101.xyz" },
     { title: "Portfolio Analysis", url: "https://portfolioanalysis101.xyz" },
