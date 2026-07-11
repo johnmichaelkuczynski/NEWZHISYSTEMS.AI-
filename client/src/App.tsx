@@ -13,6 +13,7 @@ import AiHigherEd from "@/pages/ai-higher-ed";
 import Courses from "@/pages/courses";
 import JohnsonWales from "@/pages/johnson-wales";
 import BabyLivingCourses from "@/pages/baby-living-courses";
+import PrivacyPolicy from "@/pages/privacy-policy";
 import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
 
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
   );
