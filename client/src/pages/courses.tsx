@@ -773,7 +773,7 @@ export default function Courses() {
     { title: "Finance", url: "https://finance101.xyz" },
     { title: "Business Ethics", url: "https://businessethics101.xyz" },
     { title: "Teach Yourself Math Notation", url: "https://mathnotation.xyz" },
-    { title: "Conceptual Mathematics", url: "https://conceptualmath.xyz" },
+    { title: "Conceptual Mathematics", url: "https://conceptualmath.ink" },
     { title: "Conceptual Physics", url: "https://conceptualphysics.xyz" },
     { title: "Critical Thinking", url: "https://criticalthinking101.xyz" },
     { title: "Quantitative Critical Thinking", url: "https://quantitativethinking.xyz" },
