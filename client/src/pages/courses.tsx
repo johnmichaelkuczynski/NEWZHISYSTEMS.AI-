@@ -779,7 +779,7 @@ export default function Courses() {
     { title: "Quantitative Critical Thinking", url: "https://quantitativethinking.xyz" },
     { title: "Formal Logic", url: "https://logic101.xyz" },
     { title: "AI 101", url: "https://ai101.live" },
-    { title: "Developmental Mathematics", url: "https://developmentalmath.xyz" },
+    { title: "Developmental Mathematics", url: "https://developmentalmath.ink" },
     { title: "Analytic Philosophy", url: "https://analyticphilosophy101.ink" },
     { title: "Ethics", url: "https://ethics101.xyz" },
     { title: "Philosophy 101", url: "https://philosophy101.xyz" },
