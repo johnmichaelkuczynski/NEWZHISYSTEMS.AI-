@@ -775,7 +775,7 @@ export default function Courses() {
     { title: "Teach Yourself Math Notation", url: "https://mathnotation.xyz" },
     { title: "Conceptual Mathematics", url: "https://conceptualmath.ink" },
     { title: "Conceptual Physics", url: "https://conceptualphysics.ink" },
-    { title: "Critical Thinking", url: "https://criticalthinking101.xyz" },
+    { title: "Critical Thinking", url: "https://criticalthinking.ink" },
     { title: "Quantitative Critical Thinking", url: "https://quantitativethinking.xyz" },
     { title: "Formal Logic", url: "https://formallogic.xyz" },
     { title: "AI 101", url: "https://ai101.live" },
