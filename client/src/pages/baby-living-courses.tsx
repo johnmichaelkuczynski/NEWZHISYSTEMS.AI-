@@ -1370,7 +1370,7 @@ export default function BabyLivingCourses() {
     { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz", videoUrl: "https://youtu.be/k42R9s1Mvm8" },
     { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
     { title: "Basic Discrete Math", url: "https://babydiscretemath.xyz", videoUrl: "https://youtu.be/rb4pnVCug2U" },
-    { title: "Basic Lambda Calculus", url: "https://babylambdacalculus.xyz", videoUrl: "https://youtu.be/XpQuU6SU8P4" },
+    { title: "Basic Lambda Calculus", url: "https://basiclambdacalculus.xyz", videoUrl: "https://youtu.be/XpQuU6SU8P4" },
     { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
     { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz", videoUrl: "https://youtu.be/wa7D4OKA3WA" },
