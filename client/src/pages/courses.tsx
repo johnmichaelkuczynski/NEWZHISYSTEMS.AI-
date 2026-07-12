@@ -777,7 +777,7 @@ export default function Courses() {
     { title: "Conceptual Physics", url: "https://conceptualphysics.ink" },
     { title: "Critical Thinking", url: "https://criticalthinking101.xyz" },
     { title: "Quantitative Critical Thinking", url: "https://quantitativethinking.xyz" },
-    { title: "Formal Logic", url: "https://logic101.xyz" },
+    { title: "Formal Logic", url: "https://formallogic.xyz" },
     { title: "AI 101", url: "https://ai101.live" },
     { title: "Developmental Mathematics", url: "https://developmentalmath.ink" },
     { title: "Analytic Philosophy", url: "https://analyticphilosophy101.ink" },
