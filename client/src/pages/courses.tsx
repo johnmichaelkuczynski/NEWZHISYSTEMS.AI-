@@ -314,43 +314,6 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Quantitative Critical Thinking": {
-    emoji: "🔢",
-    tagline:
-      "Quantitative Think, The Quantitative Reasoning Studio -- Executable College Coursework: Taught, Tutored, Drilled, Graded, and Integrity-Checked Entirely by AI",
-    sections: [
-      {
-        emoji: "🧩",
-        title: "Overview",
-        body:
-          "Quantitative Think is a full-service self-paced learning platform that delivers a complete four-week college-freshman Quantitative Reasoning course -- taught, tutored, drilled, graded, and integrity-checked entirely by AI.\n\nIt performs end-to-end coursework: depth-adjustable lectures, section-scoped Socratic tutoring, adaptive problem generation, and rubric-faithful AI grading -- from a 90-second concept skim all the way to a full midterm and final with per-problem rationales.\n\nDesigned for students, instructors evaluating AI-taught coursework, and academic-integrity researchers, it merges a real 29-topic quantitative-reasoning syllabus with two layers of AI-authorship detection -- producing a course that students can trust to be fair and that instructors can trust to be honest.",
-      },
-      {
-        emoji: "🧠",
-        title: "What It Does",
-        body:
-          "**Four-Week Structured Curriculum** -- A complete quantitative-reasoning syllabus across 29 topics: magnitude and estimation, units and proportional reasoning, percentages and base rates, ratios and rates, descriptive statistics, probability and conditional probability, correlation versus causation, exponential growth, and reading data and visualizations critically. Each week ships with lectures, homework, and a test; week four adds a midterm and a final.\n\n**Three-Depth Lectures** -- Every lecture is available at Short / Medium / Long length, AI-rewritten while preserving the same worked examples and learning objectives. Skim the concept, expand it on demand, or read the textbook-style deep cut.\n\n**Section-Scoped AI Tutor** -- Ask a question about the paragraph you're reading and the answer streams back token-by-token, grounded in that exact lecture section. Suggested starter questions are pre-generated per lecture.\n\n**Adaptive Topic Practice** -- Generated problem sets that move difficulty up after a streak and down after a miss, with worked explanations on every answer. Per-session difficulty persists, so each drill picks up where the last one left off.\n\n**AI-Graded Assignments** -- Homework, tests, midterm, and final are scored by an LLM grader that returns per-problem correctness plus a written rationale, then rolls up to a percent score on the attempt.\n\n**Two-Layer AI-Authorship Detection** -- Each submitted answer is screened by both a static text classifier (GPTZero) and a diachronic keystroke-pattern detector. Each verdict ships with a human-readable rationale.\n\n**Live Analytics** -- Dashboard KPIs (attempts, accuracy, streak), per-topic mastery percentages, and a recent-activity feed -- so progress, weak spots, and momentum are all visible at a glance.\n\n**Operator Diagnostics** -- Two one-click self-tests verify the entire stack -- database, OpenAI, GPTZero, detection pipeline, and the practice/grade loop -- before you trust a session.",
-      },
-      {
-        emoji: "⚙️",
-        title: "Technical Features",
-        body:
-          "**Static Text Detection (GPTZero)** -- Every submitted answer is sent to GPTZero's predict/text endpoint; the per-document AI probability is blended 0.85 x GPTZero + 0.15 x structural-heuristic for the final score. If GPTZero is unavailable, the system silently falls back to an LLM scorer plus heuristic -- submissions never block.\n\n**Diachronic Keystroke Detection** -- The student textarea captures keystroke count, erase count, bulk-insert events, longest bulk insert, rewrite segments, and total duration. A scorer penalizes paste-then-reword behavior, low keystroke-to-output ratios, and impossibly sustained typing speeds -- catching AI use even when the final text is reworded enough to pass GPTZero.\n\n**System Diagnostic** -- Seven ordered checks: environment (DATABASE_URL present), database round-trip, course-seed integrity (29 topics / 29 lectures / 12 assignments / 57 problems), OpenAI chat completion, OpenAI JSON mode, detection pipeline (structural heuristic + GPTZero scoring), and grader semantic-equivalence. Each step returns pass/fail, timing, and a raw error string.\n\n**Synthetic-Student Diagnostic** -- Spins up a fake student, reads every lecture, submits all twelve assignments (homework, tests, midterm, and final), runs an adaptive practice session (difficulty adjusts down on a miss and up on a streak), queries the section-scoped tutor, scans a pasted-style answer through both detectors, and verifies grading + detection + analytics all reflect the run. End-to-end stack proof in one click.\n\n**Contract-First API** -- A single OpenAPI document is the source of truth; React Query hooks for the UI and Zod validators for the server are generated from it. Request and response shapes can't drift between client and server because both come from the same spec.\n\n**Streaming AI Tutor** -- Token-by-token Server-Sent-Event streaming for tutor answers, with a section-scoped system prompt so responses stay grounded in the lecture the student is reading.\n\n**Adaptive Practice Engine** -- Per-session difficulty (1–4 continuous) adjusts after each attempt; the next-problem generator takes the current difficulty and the topic as input, so the question pool is generated on demand instead of pre-baked.\n\n**Real-React Demo Video** -- The 62-second product walkthrough is a real React app, not a slideshow: persistent sidebar, animated SVG cursor, character-by-character typing, word-by-word streaming responses, and scene-synced background audio -- all exported as MP4 from a single browser tab.",
-      },
-      {
-        emoji: "🎓",
-        title: "Designed For",
-        body:
-          "**College Freshmen & Self-Learners** -- A complete one-month quantitative-reasoning course delivered with on-demand tutoring and adaptive practice -- no instructor required.\n\n**Instructors & Curriculum Designers** -- A working reference for what AI-taught, AI-graded, AI-detection-screened coursework actually looks like end-to-end.\n\n**Academic-Integrity Researchers** -- A live testbed for layered AI-authorship detection that combines text-based classification with behavioral keystroke evidence.\n\n**Product & Engineering Teams** -- A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a pnpm monorepo.",
-      },
-      {
-        emoji: "💡",
-        title: "Core Idea",
-        body:
-          "Quantitative Think redefines an AI-taught course as a closed accountability loop.\n\nIt doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click. The result is a self-paced course students can actually trust to be fair, and that instructors can actually trust to be honest.\n\nQuantitative Think -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
-      },
-    ],
-  },
   "Critical Thinking": {
     emoji: "🎓",
     tagline:
@@ -776,7 +739,6 @@ export default function Courses() {
     { title: "Conceptual Mathematics", url: "https://conceptualmath.ink" },
     { title: "Conceptual Physics", url: "https://conceptualphysics.ink" },
     { title: "Critical Thinking", url: "https://criticalthinking.ink" },
-    { title: "Quantitative Critical Thinking", url: "https://quantitativethinking.xyz" },
     { title: "Formal Logic", url: "https://formallogic.xyz" },
     { title: "AI 101", url: "https://ai101.live" },
     { title: "Developmental Mathematics", url: "https://developmentalmath.ink" },
