@@ -2477,7 +2477,7 @@ export default function Home() {
     { title: "ON THE CARDINALITY OF PROOF SPACES", url: "https://godel101.xyz" },
     { title: "PLATONISM", url: "https://platonism.ink" },
     { title: "SEMANTICS", url: "https://semantics101.xyz" },
-    { title: "SYMBOLIC LOGIC", url: "https://formallogic.xyz" },
+    { title: "SYMBOLIC LOGIC", url: "https://symboliclogic.ink" },
     { title: "THE INCOMPLETENESS OF DEDUCTIVE LOGIC", url: "https://incompletenessofdeduction.xyz" },
     { title: "THEORETICAL KNOWLEDGE & INDUCTIVE INFERENCE", url: "https://theoreticalknowledge.xyz" },
     { title: "WHY WAS SOCRATES EXECUTED?", url: "https://socrates.ink" }
