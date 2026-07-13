@@ -19,6 +19,7 @@ import Terms from "@/pages/terms";
 import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
 import Administrative from "@/pages/administrative";
+import LivingBooks from "@/pages/living-books";
 
 function useVisitTracking() {
   const [location] = useLocation();
@@ -49,6 +50,7 @@ function Router() {
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
+      <Route path="/living-books" component={LivingBooks} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={Terms} />
       <Route path="/administrative">

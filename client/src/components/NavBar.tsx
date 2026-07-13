@@ -1,5 +1,6 @@
 const links = [
   { href: "/", label: "Home" },
+  { href: "/living-books", label: "Living Books" },
   { href: "/courses", label: "Living Courses" },
   { href: "/johnson-wales", label: "Restaurant and Hospitality" },
   { href: "/baby-living-courses", label: "Basic Living Courses" },
