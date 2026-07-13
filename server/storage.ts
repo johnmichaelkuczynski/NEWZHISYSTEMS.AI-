@@ -1,4 +1,4 @@
-import { type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, type HigherEdReport, type InsertHigherEdReport, journalIssues, officeDocuments, higherEdReports } from "@shared/schema";
+import { type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, type HigherEdReport, type InsertHigherEdReport, journalIssues, officeDocuments, higherEdReports, siteVisits } from "@shared/schema";
 import { db } from "./db";
 import { eq, desc, sql, or, ilike } from "drizzle-orm";
 
@@ -131,6 +131,102 @@ export class DatabaseStorage implements IStorage {
 
   async deleteHigherEdReport(id: string): Promise<void> {
     await db.delete(higherEdReports).where(eq(higherEdReports.id, id));
+  }
+
+  // Visitor analytics
+  async recordVisit(visit: {
+    path: string;
+    ip: string;
+    userAgent: string | null;
+    referer: string | null;
+    country: string | null;
+    region: string | null;
+    city: string | null;
+  }): Promise<void> {
+    await db.insert(siteVisits).values(visit);
+  }
+
+  async getAnalytics(): Promise<any> {
+    const countsFor = async (interval: string | null) => {
+      const where = interval
+        ? sql`created_at >= now() - ${interval}::interval`
+        : sql`true`;
+      const [row] = await db
+        .select({
+          visits: sql<number>`count(*)::int`,
+          unique: sql<number>`count(distinct ip)::int`,
+        })
+        .from(siteVisits)
+        .where(where);
+      return row;
+    };
+
+    const [last24h, last7d, last30d, allTime] = await Promise.all([
+      countsFor("24 hours"),
+      countsFor("7 days"),
+      countsFor("30 days"),
+      countsFor(null),
+    ]);
+
+    const hourly = await db.execute(sql`
+      SELECT to_char(date_trunc('hour', created_at), 'HH24:00') AS label,
+             date_trunc('hour', created_at) AS bucket,
+             count(*)::int AS visits,
+             count(distinct ip)::int AS "unique"
+      FROM site_visits
+      WHERE created_at >= now() - interval '24 hours'
+      GROUP BY bucket ORDER BY bucket
+    `);
+
+    const daily = await db.execute(sql`
+      SELECT to_char(date_trunc('day', created_at), 'Mon DD') AS label,
+             date_trunc('day', created_at) AS bucket,
+             count(*)::int AS visits,
+             count(distinct ip)::int AS "unique"
+      FROM site_visits
+      WHERE created_at >= now() - interval '30 days'
+      GROUP BY bucket ORDER BY bucket
+    `);
+
+    const countries = await db.execute(sql`
+      SELECT coalesce(country, 'Unknown') AS country,
+             count(*)::int AS visits,
+             count(distinct ip)::int AS "unique"
+      FROM site_visits
+      GROUP BY 1 ORDER BY visits DESC LIMIT 30
+    `);
+
+    const cities = await db.execute(sql`
+      SELECT coalesce(city, 'Unknown') AS city,
+             coalesce(region, '') AS region,
+             coalesce(country, 'Unknown') AS country,
+             count(*)::int AS visits
+      FROM site_visits
+      WHERE city IS NOT NULL
+      GROUP BY 1, 2, 3 ORDER BY visits DESC LIMIT 30
+    `);
+
+    const pages = await db.execute(sql`
+      SELECT path, count(*)::int AS visits
+      FROM site_visits
+      GROUP BY path ORDER BY visits DESC LIMIT 20
+    `);
+
+    const recent = await db
+      .select()
+      .from(siteVisits)
+      .orderBy(desc(siteVisits.createdAt))
+      .limit(200);
+
+    return {
+      totals: { last24h, last7d, last30d, allTime },
+      hourly: hourly.rows,
+      daily: daily.rows,
+      countries: countries.rows,
+      cities: cities.rows,
+      pages: pages.rows,
+      recent,
+    };
   }
 }
 

@@ -30,6 +30,12 @@ export default function NavBar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/administrative"
+              className="text-gray-400 hover:text-gray-600 text-xs"
+            >
+              Administrative
+            </a>
           </div>
         </div>
       </div>

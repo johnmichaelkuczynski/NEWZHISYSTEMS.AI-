@@ -47,6 +47,20 @@ export const insertHigherEdReportSchema = createInsertSchema(higherEdReports).pi
 export type InsertHigherEdReport = z.infer<typeof insertHigherEdReportSchema>;
 export type HigherEdReport = typeof higherEdReports.$inferSelect;
 
+export const siteVisits = pgTable("site_visits", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  path: text("path").notNull(),
+  ip: text("ip").notNull(),
+  userAgent: text("user_agent"),
+  referer: text("referer"),
+  country: text("country"),
+  region: text("region"),
+  city: text("city"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export type SiteVisit = typeof siteVisits.$inferSelect;
+
 export const insertJournalIssueSchema = createInsertSchema(journalIssues).pick({
   title: true,
   body: true,

@@ -1,4 +1,5 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
+import { useEffect } from "react";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -17,8 +18,22 @@ import PrivacyPolicy from "@/pages/privacy-policy";
 import Terms from "@/pages/terms";
 import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
+import Administrative from "@/pages/administrative";
+
+function useVisitTracking() {
+  const [location] = useLocation();
+  useEffect(() => {
+    if (location.startsWith("/administrative")) return;
+    fetch("/api/track", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ path: location }),
+    }).catch(() => {});
+  }, [location]);
+}
 
 function Router() {
+  useVisitTracking();
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -36,6 +51,11 @@ function Router() {
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={Terms} />
+      <Route path="/administrative">
+        <PasswordGate storageKey="administrative-access">
+          <Administrative />
+        </PasswordGate>
+      </Route>
       <Route component={NotFound} />
     </Switch>
   );

@@ -1,11 +1,16 @@
 import { useState, type ReactNode } from "react";
 
 const PASSWORD = "1234";
-const STORAGE_KEY = "ai-higher-ed-access";
 
-export default function PasswordGate({ children }: { children: ReactNode }) {
+export default function PasswordGate({
+  children,
+  storageKey = "ai-higher-ed-access",
+}: {
+  children: ReactNode;
+  storageKey?: string;
+}) {
   const [unlocked, setUnlocked] = useState(
-    () => sessionStorage.getItem(STORAGE_KEY) === "granted",
+    () => sessionStorage.getItem(storageKey) === "granted",
   );
   const [input, setInput] = useState("");
   const [error, setError] = useState(false);
@@ -15,7 +20,7 @@ export default function PasswordGate({ children }: { children: ReactNode }) {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     if (input === PASSWORD) {
-      sessionStorage.setItem(STORAGE_KEY, "granted");
+      sessionStorage.setItem(storageKey, "granted");
       setUnlocked(true);
     } else {
       setError(true);

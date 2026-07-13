@@ -16,6 +16,7 @@ import {
   generateSuggestedReadings 
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
+import geoip from "geoip-lite";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Journal routes
@@ -393,6 +394,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.get("/api/voice-options", (req, res) => {
     res.json(VOICE_OPTIONS);
+  });
+
+  // Visitor tracking
+  app.post("/api/track", async (req, res) => {
+    try {
+      const path = typeof req.body?.path === "string" ? req.body.path.slice(0, 500) : "/";
+      const forwarded = req.headers["x-forwarded-for"];
+      const ip = (typeof forwarded === "string" ? forwarded.split(",")[0].trim() : req.socket.remoteAddress) || "unknown";
+      const geo = geoip.lookup(ip);
+      await storage.recordVisit({
+        path,
+        ip,
+        userAgent: (req.headers["user-agent"] || "").slice(0, 500) || null,
+        referer: (typeof req.headers["referer"] === "string" ? req.headers.referer.slice(0, 500) : null),
+        country: geo?.country || null,
+        region: geo?.region || null,
+        city: geo?.city || null,
+      });
+      res.json({ ok: true });
+    } catch (error) {
+      res.status(500).json({ error: "Failed to record visit" });
+    }
+  });
+
+  app.get("/api/analytics", async (_req, res) => {
+    try {
+      const data = await storage.getAnalytics();
+      res.json(data);
+    } catch (error) {
+      console.error("Analytics error:", error);
+      res.status(500).json({ error: "Failed to load analytics" });
+    }
   });
 
   // Note: Audio files are now served as static assets from public/audio/
