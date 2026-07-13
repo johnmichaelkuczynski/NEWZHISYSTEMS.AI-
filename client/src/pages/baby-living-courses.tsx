@@ -1382,7 +1382,7 @@ export default function BabyLivingCourses() {
     },
     {
       title: "Basic Constructive Critical Reasoning",
-      url: "https://babyconstructivereasoning.xyz",
+      url: "https://basicconstructivereasoning.xyz",
       videoUrl: "https://youtu.be/A_qV9cH23LA",
       badge: {
         image: constructiveReasoningBadge,
