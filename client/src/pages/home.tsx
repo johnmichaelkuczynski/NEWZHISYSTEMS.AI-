@@ -2499,7 +2499,7 @@ export default function Home() {
     { title: "SHAKESPEARE COMPLETE WORKS", url: "https://shakespeare101.xyz" },
     { title: "THE COMMUNIST MANIFESTO", url: "https://communistmanifesto.xyz" },
     { title: "THE LAWS", url: "https://thelawsbyplato.xyz" },
-    { title: "TOTEM AND TABOO", url: "https://totemandtaboo.xyz" },
+    { title: "TOTEM AND TABOO", url: "https://totemandtaboo.ink" },
     { title: "TRACTATUS LOGICO-PHILOSOPHICUS", url: "https://tractatuslogicophilosophicus.shop" }
   ];
 
