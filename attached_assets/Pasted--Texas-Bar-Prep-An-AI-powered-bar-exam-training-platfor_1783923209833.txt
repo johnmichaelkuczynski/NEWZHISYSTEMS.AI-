@@ -1,0 +1,74 @@
+⚖️ Texas Bar Prep
+An AI-powered bar exam training platform that generates a fresh, fully original question every time you open it — covering all three days of the Texas Bar, graded instantly by the same AI that wrote the question.
+
+🧩 Overview
+Texas Bar Prep is a full-length, live-AI bar exam simulator. It covers every subject tested on the Texas Bar Exam across all three days — MBE multiple choice, Day 1 written analysis and MPT tasks, and Day 3 essays — and generates every question from scratch on demand. No static question bank. No recycled prompts. No answer key that a classmate already has.
+
+The platform runs four separate AI models in parallel. You choose which one writes your question, grades your answer, and explains the law. Switch models mid-session to get a second legal opinion on any concept.
+
+The grading engine is calibrated to bar-examiner standards: a polished, well-organized answer that states the wrong legal rule scores in the 60s. Legal accuracy is everything. Style is worth nothing.
+
+🧠 What It Does
+Full Diagnostic Test — A 20-question assessment spanning every major tested subject. The AI analyzes your answers, scores each one, and tells you exactly which areas need the most attention before exam day.
+
+Day 1 Practice — Written Analysis — MPT tasks, short-answer Texas procedure drills, writing-under-pressure exercises, and Texas-specific civil and criminal procedure questions. Every prompt is original.
+
+Day 2 Practice — MBE — 200-question multiple-choice simulation across Constitutional Law, Contracts, Torts, Criminal Law & Procedure, Evidence, Real Property, and Civil Procedure. Each question is generated live and graded instantly with a full explanation of the correct rule.
+
+Day 3 Practice — Essays — Full essay questions in Business Associations, Family Law, Secured Transactions, Trusts & Estates, Real Property, and Mixed Practice. Graded on rule accuracy (70% of score), application to facts (20%), and clarity (10% maximum).
+
+Practice Mode — Single questions on demand, any subject, any type, any difficulty. Immediate grade, immediate explanation, immediate next question. No menus between you and the question.
+
+AI Study Assistant — A legal AI tutor built into the sidebar. Ask it to explain the Erie doctrine, walk through the Rule Against Perpetuities, or tell you why you got a contracts question wrong. It holds context across the conversation and builds on your questions.
+
+Analytics Dashboard — Tracks every question answered, every score, average mastery per subject, and a running pass-probability estimate. Shows you exactly which subjects to study tomorrow.
+
+Google Sign-In — Your full history — every question, every score, every session — is tied to your Google account and persists across devices.
+
+⚙️ How Grading Works
+Rule Accuracy — 70% of score. Stating the wrong doctrine, missing a required element, or applying the wrong standard of review costs 30–40 points immediately, regardless of how well the rest of the answer is written.
+
+Application to Facts — 20% of score. The AI checks whether the correct rule was actually applied to the specific facts given, not stated in the abstract.
+
+Clarity and Organization — 10% maximum. Writing quality is recognized only if the legal analysis is correct first. It cannot rescue a wrong answer.
+
+Score bands — 90–100: correct rule, correct application, correct conclusion. 80–89: correct rule, minor analytical gap. 70–79: right issue, wrong rule or wrong conclusion. 60–69: issue identified, rule misapplied. Below 60: wrong doctrine, off-topic, or missing core legal principle.
+
+🤖 AI Providers
+Zhi 1 — OpenAI GPT-4. Primary question generation and grading engine.
+Zhi 2 — Anthropic Claude. Strong on nuanced essay analysis and explanations.
+Zhi 3 — DeepSeek-V2. Alternative generation with different stylistic tendencies.
+Zhi 4 — Perplexity. Legal concept research and citation-aware explanations.
+Switch providers between questions or mid-session. Each model generates independently — the same fact pattern can produce meaningfully different questions depending on which model you use.
+
+📚 Subjects Covered
+Constitutional Law
+Contracts & UCC Sales
+Torts
+Criminal Law & Procedure
+Evidence
+Real Property
+Civil Procedure
+Family Law
+Wills, Trusts & Estates
+Business Associations
+Secured Transactions
+Texas Civil Procedure
+Texas Criminal Procedure
+🎯 Designed For
+3Ls in the final semester — Start practicing before graduation. The diagnostic test shows exactly where the gaps are.
+
+First-time takers — Work through all three days systematically. The analytics dashboard tracks your mastery across every subject and tells you how close you are to passing.
+
+Re-takers who need targeted practice — The platform never repeats a question, so you can run subject-specific drills on exactly the areas that cost you points on the last attempt.
+
+Anyone serious about passing — This platform does not tell you that you're doing great when you're not. If your answer misses the rule, it says so clearly and explains what the correct rule is.
+
+💡 Core Idea
+Bar prep fails people for one reason: they practice recognizing answers, not generating them. A question bank teaches you to remember which bubble to fill in. The bar exam asks you to construct the legal analysis yourself, under pressure, for six straight hours.
+
+Texas Bar Prep puts you on the generating side every time. The AI writes a question you have never seen. You answer it. The AI grades it against the actual legal standard. You see exactly where your reasoning broke down and what the law actually says.
+
+Do that a thousand times across every tested subject and you will not be surprised on exam day.
+
+The question is already waiting. Open the app and answer it.
