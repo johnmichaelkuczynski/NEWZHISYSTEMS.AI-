@@ -36,6 +36,43 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  "Voice Powered Know Thyself": {
+    emoji: "🪞",
+    tagline:
+      "KnowThySelf -- Voice-Powered Self-Knowledge: A structured month of honest self-inquiry. You speak. AI listens -- and tells you something true.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "What It Is",
+        body:
+          "Most self-reflection tools let you write tidy answers about who you wish you were. KnowThySelf is different.\n\nYou read a short lesson, sit with a question designed to unsettle you a little, and then answer it out loud -- in your own voice, at your own pace. The AI doesn't grade you. It reads your answer -- what you said and how you said it -- and reflects something true back to you. Over four units and nine sessions, those reflections weave together into a cumulative portrait of who you actually are.\n\nBy the final capstone, it names the one core conflict you keep circling.",
+      },
+      {
+        emoji: "🗺️",
+        title: "How the Course Is Structured",
+        body:
+          "The course runs across four units, each with lessons and a recorded session at the end:\n\n**Unit 1** -- The self you present: how you show up and why.\n\n**Unit 2** -- How you see the world: your lens, your assumptions.\n\n**Unit 3** -- What you want and what stops you.\n\n**Unit 4** -- The capstone: naming the central conflict.\n\nEach unit includes short readings to sit with before you record. There are no right answers.",
+      },
+      {
+        emoji: "🎙️",
+        title: "How a Session Works",
+        body:
+          "**Read** -- a short, focused lesson that primes the question.\n\n**Sit with it** -- let the question land before you reach for an answer.\n\n**Speak** -- record your answer out loud (you can re-record as many times as you like).\n\n**Receive** -- the AI reads back what your answer reveals, including how you said it.\n\n**Continue** -- each session deepens the portrait built from everything before it.\n\nYou also have an AI tutor on every lecture page -- ask it anything, in text or by voice, and it responds knowing your history.",
+      },
+      {
+        emoji: "🪟",
+        title: "What You Get",
+        body:
+          "A candid reading after each session -- not praise, not a score, but a real interpretation.\n\nA growing portrait across all nine sessions -- nine dimensions of how you move through the world.\n\nA capstone conclusion -- the one conflict at the root of the patterns.\n\nAn AI tutor -- present on every lecture, aware of what you've shared, ready to go deeper.",
+      },
+      {
+        emoji: "🔒",
+        title: "Your Privacy",
+        body:
+          "Every response is private to your account. Nothing is shared. The AI reads your delivery -- pace, pauses, fillers -- as tells, not as a grade. There is no leaderboard, no score, no comparison.",
+      },
+    ],
+  },
   "Personal Finance": {
     emoji: "💵",
     tagline:
