@@ -4,10 +4,10 @@ const links = [
   { href: "/courses", label: "Living Courses" },
   { href: "/baby-living-courses", label: "Basic Living Courses" },
   { href: "/johnson-wales", label: "Restaurant and Hospitality" },
+  { href: "/ai-higher-ed", label: "AI in Higher Ed" },
   { href: "/investor-notes", label: "Investor Notes" },
   { href: "/investor-briefings", label: "Investor Briefings" },
   { href: "/office-use", label: "Office Use" },
-  { href: "/ai-higher-ed", label: "AI in Higher Ed" },
 ];
 
 export default function NavBar() {
