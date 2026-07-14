@@ -481,9 +481,6 @@ export default function JohnsonWales() {
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
             Johnson &amp; Wales
           </h1>
-          <p className="text-gray-700 text-lg">
-            AI-powered courses developed for Johnson &amp; Wales.
-          </p>
         </header>
 
         {sortedCourses.length === 0 ? (
