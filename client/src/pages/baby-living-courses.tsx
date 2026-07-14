@@ -1396,7 +1396,7 @@ export default function BabyLivingCourses() {
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
     {
       title: "Basic Data Analytics",
-      url: "https://dataanalytics.ink",
+      url: "https://babyanalytics.xyz",
       videoUrl: "https://youtu.be/FmUCg1agNkc",
       badge: {
         image: dataAnalyticsBadge,
