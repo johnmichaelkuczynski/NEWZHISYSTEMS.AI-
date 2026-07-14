@@ -2676,7 +2676,6 @@ export default function Home() {
       { title: "EZREDIRECT", url: "https://ezredirect.xyz" },
       { title: "Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "GPTByPass", url: "https://gptbypass.ink" },
-      { title: "GPT Crusher", url: "https://gptcrusher.xyz" },
       { title: "HTML Converter", url: "https://htmlconverter.xyz" },
       { title: "Law Organizer", url: "https://laworganizer.xyz" },
       { title: "PDF Shrinker", url: "https://shrinkpdf.xyz" }
