@@ -1317,7 +1317,7 @@ function renderSectionBody(body: string) {
 
 export default function BabyLivingCourses() {
   const courses: Course[] = [
-    { title: "IQ Booster", url: "https://replit.com/@johnmichaelkucz/INTELLIGENCE-BOOSTER" },
+    { title: "IQ Booster", url: "https://iqbooster.xyz" },
     { title: "Spatial IQ Booster", url: "https://spatialiqbooster.xyz" },
     { title: "Basic Evolutionary Psychology", url: "https://babyevopsych.xyz", videoUrl: "https://youtu.be/hWJicnEpS6c" },
     {
