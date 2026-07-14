@@ -1,0 +1,37 @@
+✍️ Rewrite Plus
+The Text Transformation Workshop — Any Author's Voice, Any Reading Level, Any Length
+
+🧩 Overview
+Rewrite Plus is a full-service AI text processing platform that rewrites, summarizes, and expands any text — tuned to your target audience, in the voice of any author you name, at whatever length you need.
+
+It performs end-to-end document processing — from quick one-paragraph rewrites to full book-length documents, automatically split into manageable pages with page-by-page navigation and processing.
+
+Designed for writers, students, editors, and serious readers, it merges multi-provider AI processing with rigorous prompt engineering, producing rewrites that capture an author's authentic vocabulary, sentence rhythms, and philosophical viewpoint — never generic paraphrase.
+
+🧠 What It Does
+Author-Style Rewriting — Rewrite any text in the voice of any author you type in: Shakespeare, Bertrand Russell, Hemingway, Einstein, or anyone else. The AI deeply analyzes the author's vocabulary, sentence structures, rhetorical devices, and characteristic tone before rewriting.
+Quick Rewrite by Education Level — One-click rewriting targeted at a 15-year-old, college graduate, master's student, or PhD-level reader, while preserving the original length.
+Custom Sophistication Control — Type any target audience ("intelligent freshman") or use the slider from 12-year-old to PhD for fine-grained control.
+Summarize & Expand — Compress long passages into their essentials, or expand terse text into detailed explanation, with optional output-length targets ("2 paragraphs", "5 pages").
+Live Document Ingestion — Drop .pdf, .doc, .docx, .jpg, or .png files (up to 300MB) into the upload zone; text is automatically extracted, cleaned of encoding artifacts, and split into pages.
+Page-by-Page Processing — Large documents are chunked into readable pages with Previous/Next navigation; each page can be processed independently and results are saved.
+Chat with AI — Ask questions about the text you're working on, with the current document as live context.
+OCR Text Extraction — Pull text out of images and scanned documents automatically.
+⚙️ Technical Features
+Multi-Provider AI Backbone: Pluggable across Anthropic Claude (default), OpenAI, DeepSeek, Grok (xAI), and Venice AI — switch providers per request from a dropdown.
+Automatic Failover: If the selected provider errors or its key is invalid, the app automatically retries down the provider chain until one succeeds — no interruption to your workflow.
+Smart Chunking Engine: Documents are split on paragraph boundaries into ~4,000-character pages, preserving structure; chunks persist in PostgreSQL so processed results survive navigation.
+Text Cleaning Pipeline: PDF and DOCX extraction artifacts (smart quotes, em-dashes, replacement characters) are normalized into clean, readable text before display.
+Length-Faithful Rewrites: Quick Rewrite counts the input's words and instructs the model to match, preventing silent compression of your text.
+Persistent Document Store: Uploads, chunks, processed results, and chat history are stored in PostgreSQL for retrieval across the session.
+🎓 Designed For
+Writers & Editors: Recast drafts in a different register or a specific author's voice without losing the argument.
+Students: Translate dense academic prose down to your level — or polish your own writing up to PhD register.
+Researchers: Summarize long PDFs page by page, then interrogate the text through the built-in AI chat.
+Serious Readers: Upload full books and read them re-rendered at whatever sophistication level suits you.
+💡 Core Idea
+Rewrite Plus redefines text transformation as a style-faithful interpretive process.
+
+It doesn't just paraphrase — it analyzes voice, audience, and structure, then rewrites with the author's actual rhetorical machinery. The result: text transformation that is faithful, controllable, and robust at any length.
+
+Rewrite Plus — any text, any voice, any reader.
