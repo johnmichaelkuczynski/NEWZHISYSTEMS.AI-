@@ -2640,7 +2640,7 @@ export default function Home() {
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
       { title: "EZ Homework", url: "https://ezhw.ink" },
-      { title: "EZGrader", url: "https://ezgrader.ink" },
+      { title: "EZGrader", url: "https://ezgrader.ai" },
       { title: "Texas Bar Prep", url: "https://texasbarprep.ink" }
     ],
     "🧠 Intelligence & Psychology": [
