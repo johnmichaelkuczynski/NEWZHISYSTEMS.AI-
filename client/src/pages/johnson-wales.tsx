@@ -452,7 +452,7 @@ export default function JohnsonWales() {
     { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
     { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz", videoUrl: "https://youtu.be/wa7D4OKA3WA" },
-    { title: "Basic Revenue Management & Pricing Analytics", url: "https://www.babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
+    { title: "Basic Revenue Management & Pricing Analytics", url: "https://basicrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
     { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
     {
       title: "Basic Workforce Analytics",
@@ -477,12 +477,6 @@ export default function JohnsonWales() {
       <NavBar />
 
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <header className="mb-10">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Johnson &amp; Wales
-          </h1>
-        </header>
-
         {sortedCourses.length === 0 ? (
           <div className="border border-dashed border-gray-300 rounded-lg p-10 text-center text-gray-500">
             Courses will be added here soon.
