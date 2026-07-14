@@ -452,7 +452,7 @@ export default function JohnsonWales() {
     { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
     { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz", videoUrl: "https://youtu.be/wa7D4OKA3WA" },
-    { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
+    { title: "Basic Revenue Management & Pricing Analytics", url: "https://www.babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
     { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
     {
       title: "Basic Workforce Analytics",

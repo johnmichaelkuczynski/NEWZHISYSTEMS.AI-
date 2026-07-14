@@ -1411,7 +1411,7 @@ export default function BabyLivingCourses() {
     { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
     { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
     { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz", videoUrl: "https://youtu.be/wa7D4OKA3WA" },
-    { title: "Basic Revenue Management & Pricing Analytics", url: "https://babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
+    { title: "Basic Revenue Management & Pricing Analytics", url: "https://www.babyrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
     { title: "Basic Psychodynamic Therapy 101", url: "https://psychodynamictherapy.xyz", videoUrl: "https://youtu.be/UsUJ3oPdpiY" },
     { title: "Basic Psychodynamic Treatment of BPD 101", url: "https://psychodynamicbpdtherapy.xyz", videoUrl: "https://youtu.be/ZN2TGmrVzTw" },
     { title: "Basic Psychodynamic Treatment of OCD 101", url: "https://psychodynamicocdtherapy.xyz", videoUrl: "https://youtu.be/5YZeCEsKKD8" },
