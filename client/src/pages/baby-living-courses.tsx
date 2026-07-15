@@ -1317,7 +1317,7 @@ function renderSectionBody(body: string) {
 
 export default function BabyLivingCourses() {
   const courses: Course[] = [
-    { title: "IQ Booster", url: "https://iqbooster.xyz" },
+    { title: "IQ Booster", url: "https://iqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=oVz0qZnGl20" },
     { title: "Spatial IQ Booster", url: "https://spatialiqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=nfje84a3sps" },
     { title: "Basic Evolutionary Psychology", url: "https://babyevopsych.xyz", videoUrl: "https://youtu.be/hWJicnEpS6c" },
     {
