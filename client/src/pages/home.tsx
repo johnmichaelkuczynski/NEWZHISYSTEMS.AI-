@@ -2681,7 +2681,7 @@ export default function Home() {
       { title: "PDF Shrinker", url: "https://shrinkpdf.xyz" }
     ],
     "💹 Finance": [
-      { title: "Forex Edge", url: "https://usdhkd.ink", videoUrl: "https://www.youtube.com/watch?v=D7qa07ZmVM0" },
+      { title: "Forex Edge", url: "https://usdhkd.ink", videoUrl: "https://www.youtube.com/watch?v=By7pTjl5HZA" },
       { title: "SOXL Options Pro", url: "https://soxlpro.xyz" },
       { title: "SOXL Options Edge", url: "https://soxledge.xyz" }
     ],
