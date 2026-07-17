@@ -2682,7 +2682,7 @@ export default function Home() {
     ],
     "💹 Finance": [
       { title: "Forex Edge", url: "https://usdhkd.ink", videoUrl: "https://www.youtube.com/watch?v=By7pTjl5HZA" },
-      { title: "SOXL Options Pro", url: "https://soxlpro.xyz" },
+      { title: "SOXL Options Pro", url: "https://soxlpro.xyz", videoUrl: "https://www.youtube.com/watch?v=RJvzrX2X_F4" },
       { title: "SOXL Options Edge", url: "https://soxledge.xyz" }
     ],
     "🙏 Religion & Spiritual Growth": [
