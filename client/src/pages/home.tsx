@@ -2671,12 +2671,6 @@ export default function Home() {
       { title: "Audio Transcriber Plus", url: "https://audiotranscriber.ink" },
       { title: "Podcast Creator", url: "https://ezpodcast.xyz" }
     ],
-    "⚙️ Utility & Conversion": [
-      { title: "EZREDIRECT", url: "https://ezredirect.xyz" },
-      { title: "HTML Converter", url: "https://htmlconverter.xyz" },
-      { title: "Law Organizer", url: "https://laworganizer.xyz" },
-      { title: "PDF Shrinker", url: "https://shrinkpdf.xyz" }
-    ],
     "💹 Finance": [
       { title: "Forex Edge", url: "https://usdhkd.ink", videoUrl: "https://www.youtube.com/watch?v=By7pTjl5HZA" },
       { title: "SOXL Options Pro", url: "https://soxlpro.xyz", videoUrl: "https://www.youtube.com/watch?v=1dqJiPIt9Lc" },
