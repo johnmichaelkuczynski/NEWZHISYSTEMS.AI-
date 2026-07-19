@@ -2635,7 +2635,8 @@ export default function Home() {
       { title: "NeuroText", url: "https://neurotext.ink" },
       { title: "Style Mimic", url: "https://stylemimic.xyz" },
       { title: "Text Surgeon Plus", url: "https://textsurgeonplus.xyz/" },
-      { title: "Rewrite Plus", url: "https://rewriteplus.xyz" }
+      { title: "Rewrite Plus", url: "https://rewriteplus.xyz" },
+      { title: "GPTByPass", url: "https://gptbypass.ink" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
@@ -2675,7 +2676,6 @@ export default function Home() {
     "⚙️ Utility & Conversion": [
       { title: "EZREDIRECT", url: "https://ezredirect.xyz" },
       { title: "Goal Tracker", url: "https://smartgoaltracker.xyz" },
-      { title: "GPTByPass", url: "https://gptbypass.ink" },
       { title: "HTML Converter", url: "https://htmlconverter.xyz" },
       { title: "Law Organizer", url: "https://laworganizer.xyz" },
       { title: "PDF Shrinker", url: "https://shrinkpdf.xyz" }
