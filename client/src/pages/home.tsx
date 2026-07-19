@@ -1495,7 +1495,7 @@ appDescriptions["Mind Probe"] = {
       title: "Overview",
       body: `Mind Probe is a professional-grade cognitive, psychological, and psychopathological analysis engine. Paste or upload any text sample and receive a deep, structured profile across six analysis types -- powered by your choice of four state-of-the-art AI models with real-time streaming results.
 
-Scores represent an outperformance percentile -- a score of 72/100 means the author outperforms 72 out of 100 people in the reference population on that dimension. The system is calibrated to distinguish genuine intellectual output from pseudo-intellectual or performative text.`,
+Scores represent an outperformance percentile -- a score of 72/100 means the author outperforms 72 out of 100 people in the reference population on that dimension. The system is calibrated to distinguish genuine intellectual output from pseudo-intellectual or performative text, and has been tested against a wide range of writing styles and domains.`,
     },
     {
       emoji: "🔍",
@@ -1519,28 +1519,37 @@ Scores represent an outperformance percentile -- a score of 72/100 means the aut
 
 Paste text directly into the input area, or drag and drop a file (PDF, Word, or plain text -- up to 10 MB).
 
-Choose an AI engine (ZHI 1-4) based on your preferred reasoning style: **ZHI 1** (OpenAI GPT -- balanced and precise), **ZHI 2** (Anthropic Claude -- nuanced and thorough), **ZHI 3** (DeepSeek -- pattern-focused), **ZHI 4** (Perplexity -- research-focused and contextually grounded). All four engines are fully interchangeable -- switch between them freely to compare perspectives on the same text.
+Choose an AI engine (ZHI 1-4) based on your preferred reasoning style.
 
 Start the analysis and watch results stream in real time as each question is processed. Use the dialogue system to ask follow-up questions or request a regenerated analysis with specific concerns addressed. Download the completed report at any time.`,
     },
     {
-      emoji: "🛠",
-      title: "Technical Features",
-      body: `**Real-Time Streaming** -- Responses appear token-by-token via Server-Sent Events as the AI processes each question. No waiting for the full response.
+      emoji: "🤖",
+      title: "AI Engines (ZHI 1-4)",
+      body: `Mind Probe gives you direct access to four world-class AI reasoning engines -- switch freely between them to compare perspectives on the same text, or settle on the one that best fits your professional workflow.
 
-**Batch Question Processing** -- Questions are sent to the LLM in groups of 5 with controlled pacing to stay within token limits and ensure consistent output quality.
+**ZHI 1** -- Primary analysis engine -- balanced, precise, and consistent
 
-**File Processing** -- Supports PDF, Microsoft Word, and plain text uploads with automatic text extraction, including drag-and-drop.
+**ZHI 2** -- Alternative reasoning model -- nuanced, thorough, and reflective
 
-**Large Text Chunking** -- Texts over 1,000 words are automatically detected and split into selectable chunks so you control exactly what gets analysed.
+**ZHI 3** -- Specialised profiling engine -- pattern-focused and incisive
 
-**Dialogue System** -- Post-analysis conversation mode lets you interrogate the results, raise concerns, or request a full regeneration with your feedback incorporated.
+**ZHI 4** -- Research-focused model -- contextually grounded and rigorous`,
+    },
+    {
+      emoji: "✨",
+      title: "Key Capabilities",
+      body: `**Real-Time Streaming** -- Results appear live as the AI works through each question. No waiting for a wall of text at the end.
 
-**Download Reports** -- Export the completed analysis as a text report at any time.
+**Six Distinct Profiles** -- From a quick cognitive snapshot to a full clinical-depth psychopathological report.
 
-**Graceful Degradation** -- Each AI provider fails independently with a clear in-stream error message, so one unavailable engine never blocks the others.
+**File Upload** -- Supports PDF, Microsoft Word, and plain text documents with automatic text extraction.
 
-**No accounts required** -- The app is fully functional without login. All analyses run anonymously.`,
+**Large Text Handling** -- Oversized texts are automatically detected and broken into selectable segments so you stay in control of scope.
+
+**Dialogue & Regeneration** -- After any analysis, continue the conversation, raise concerns, or trigger a full regeneration with your feedback built in.
+
+**Downloadable Reports** -- Export the completed profile as a clean text report.`,
     },
     {
       emoji: "🎯",
