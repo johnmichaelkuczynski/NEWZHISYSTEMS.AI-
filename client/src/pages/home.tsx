@@ -2650,7 +2650,6 @@ export default function Home() {
       { title: "Originality Meter", url: "https://originalitymeter.com" },
       { title: "Intelligence Meter", url: "https://iq101.ink", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
       { title: "Mind Profiler", url: "https://mindprofiler.ink" },
-      { title: "Text Evaluator", url: "https://textevaluator.xyz" },
       { title: "Text IQ", url: "https://textiq.xyz/" },
       { title: "Improve Your Writing", url: "https://improveyourwriting.xyz" },
       { title: "Cognitive Enhancer", url: "https://cognitiveenhancer.xyz" },
