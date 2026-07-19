@@ -2651,7 +2651,6 @@ export default function Home() {
       { title: "Intelligence Meter", url: "https://iq101.ink", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
       { title: "Mind Profiler", url: "https://mindprofiler.ink" },
       { title: "Mind Probe", url: "https://mindprobe.ink" },
-      { title: "Cognitive Enhancer", url: "https://cognitiveenhancer.xyz" },
       { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "Psychology Pro", url: "https://psychologypro.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
