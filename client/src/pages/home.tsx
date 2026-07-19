@@ -2684,12 +2684,6 @@ export default function Home() {
       { title: "Forex Edge", url: "https://usdhkd.ink", videoUrl: "https://www.youtube.com/watch?v=By7pTjl5HZA" },
       { title: "SOXL Options Pro", url: "https://soxlpro.xyz", videoUrl: "https://www.youtube.com/watch?v=1dqJiPIt9Lc" },
       { title: "SOXL Options Edge", url: "https://soxledge.xyz", videoUrl: "https://www.youtube.com/watch?v=RJvzrX2X_F4" }
-    ],
-    "🙏 Religion & Spiritual Growth": [
-      { title: "Ask Emerson", url: "https://askemerson.ink" },
-      { title: "Astrology Plus", url: "https://astrologyplus.xyz" },
-      { title: "Black Jesus", url: "https://blackjesus.xyz" },
-      { title: "What Would Jesus Do?", url: "https://whatwouldjesusdo.in" }
     ]
   };
 
