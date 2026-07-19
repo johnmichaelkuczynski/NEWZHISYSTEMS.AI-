@@ -2660,14 +2660,12 @@ export default function Home() {
       { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
       { title: "LLM Plus", url: "https://llmplus.ink" }
     ],
-    "📸 Visual & Multimedia": [
+    "🎬 Audio-Visual": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
       { title: "Graphic Novel Creator", url: "https://graphicnovelcreator.xyz" },
       { title: "OCR Pro", url: "https://ocrman.shop" },
       { title: "Photo Psychoanalysis", url: "https://photopsychoanalysis.xyz" },
-      { title: "Multiple Video Viewer", url: "https://multivideo.ink" }
-    ],
-    "🎧 Audio & Interactive Media": [
+      { title: "Multiple Video Viewer", url: "https://multivideo.ink" },
       { title: "Audio Transcriber Plus", url: "https://audiotranscriber.ink" },
       { title: "Podcast Creator", url: "https://ezpodcast.xyz" }
     ],
