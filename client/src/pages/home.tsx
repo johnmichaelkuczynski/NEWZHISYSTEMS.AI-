@@ -2633,7 +2633,6 @@ export default function Home() {
       { title: "Classic EZ Reader", url: "https://classicezreader.ink" },
       { title: "EZ Story", url: "https://ezstory.xyz" },
       { title: "NeuroText", url: "https://neurotext.ink" },
-      { title: "Style Mimic", url: "https://stylemimic.xyz" },
       { title: "Text Surgeon Plus", url: "https://textsurgeonplus.xyz/" },
       { title: "Rewrite Plus", url: "https://rewriteplus.xyz" },
       { title: "GPTByPass", url: "https://gptbypass.ink" }
