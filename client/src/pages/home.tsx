@@ -2656,7 +2656,6 @@ export default function Home() {
       { title: "Cognitive Enhancer", url: "https://cognitiveenhancer.xyz" },
       { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "Psychology Pro", url: "https://psychologypro.xyz" },
-      { title: "Text Genius", url: "https://textgenius.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
       { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
       { title: "LLM Plus", url: "https://llmplus.ink" }
