@@ -790,7 +790,7 @@ It doesn't just impersonate -- it retrieves, reasons, and writes from the thinke
       },
     ],
   },
-  "Ask A Philosopher": {
+  "Genius 101": {
     emoji: "🎓",
     tagline: "Converse, Question, and Generate Long-Form Work in the Voice of History's Greatest Minds",
     sections: [
@@ -2644,7 +2644,7 @@ export default function Home() {
       { title: "Texas Bar Prep", url: "https://texasbarprep.ink" }
     ],
     "🧠 Intelligence & Psychology": [
-      { title: "Ask A Philosopher", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
+      { title: "Genius 101", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
       { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
       { title: "Major Brain", url: "https://majorbrain.xyz" },
       { title: "Model Builder", url: "https://modelwiz.xyz" },
