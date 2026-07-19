@@ -54,7 +54,9 @@ function Router() {
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
-      <Route path="/living-books" component={LivingBooks} />
+      <Route path="/living-books">
+        <PasswordGate storageKey="living-books-access"><LivingBooks /></PasswordGate>
+      </Route>
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={Terms} />
       <Route path="/administrative">
