@@ -2646,7 +2646,6 @@ export default function Home() {
     "🧠 Intelligence & Psychology": [
       { title: "Genius 101", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
       { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
-      { title: "Major Brain", url: "https://majorbrain.xyz" },
       { title: "Model Builder", url: "https://modelwiz.xyz" },
       { title: "Originality Meter", url: "https://originalitymeter.com" },
       { title: "Intelligence Meter", url: "https://iq101.ink", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
