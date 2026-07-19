@@ -1485,6 +1485,81 @@ Unlike consumer art generators that produce generic, hedged, sanitized output, t
   ],
 };
 
+appDescriptions["Mind Probe"] = {
+  emoji: "🧠",
+  tagline:
+    "Professional-Grade Cognitive, Psychological, and Psychopathological Profiling from Any Text Sample",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `Mind Probe is a professional-grade cognitive, psychological, and psychopathological analysis engine. Paste or upload any text sample and receive a deep, structured profile across six analysis types -- powered by your choice of four state-of-the-art AI models with real-time streaming results.
+
+Scores represent an outperformance percentile -- a score of 72/100 means the author outperforms 72 out of 100 people in the reference population on that dimension. The system is calibrated to distinguish genuine intellectual output from pseudo-intellectual or performative text.`,
+    },
+    {
+      emoji: "🔍",
+      title: "Analysis Types",
+      body: `**Cognitive** -- Basic cognitive assessment with core intelligence metrics. Measures reasoning, abstraction, and conceptual precision.
+
+**Comprehensive Cognitive** -- Four-phase deep cognitive analysis. Expands the core assessment with layered evaluation across multiple dimensions.
+
+**Psychological** -- Personality and behavioural assessment. Identifies dispositional patterns, affect regulation, and interpersonal tendencies.
+
+**Comprehensive Psychological** -- Multi-phase psychological profiling. Full-spectrum analysis of personality structure and behavioural drivers.
+
+**Psychopathological** -- Clinical pathology assessment. Screens for markers consistent with recognised psychopathological presentations.
+
+**Comprehensive Psychopathological** -- Detailed clinical assessment protocol. The most thorough analysis type, covering the full diagnostic landscape.`,
+    },
+    {
+      emoji: "⚙️",
+      title: "How It Works",
+      body: `Select an analysis type from the six available profiles.
+
+Paste text directly into the input area, or drag and drop a file (PDF, Word, or plain text -- up to 10 MB).
+
+Choose an AI engine (ZHI 1-4) based on your preferred reasoning style: **ZHI 1** (OpenAI GPT -- balanced and precise), **ZHI 2** (Anthropic Claude -- nuanced and thorough), **ZHI 3** (DeepSeek -- pattern-focused), **ZHI 4** (Perplexity -- research-focused and contextually grounded). All four engines are fully interchangeable -- switch between them freely to compare perspectives on the same text.
+
+Start the analysis and watch results stream in real time as each question is processed. Use the dialogue system to ask follow-up questions or request a regenerated analysis with specific concerns addressed. Download the completed report at any time.`,
+    },
+    {
+      emoji: "🛠",
+      title: "Technical Features",
+      body: `**Real-Time Streaming** -- Responses appear token-by-token via Server-Sent Events as the AI processes each question. No waiting for the full response.
+
+**Batch Question Processing** -- Questions are sent to the LLM in groups of 5 with controlled pacing to stay within token limits and ensure consistent output quality.
+
+**File Processing** -- Supports PDF, Microsoft Word, and plain text uploads with automatic text extraction, including drag-and-drop.
+
+**Large Text Chunking** -- Texts over 1,000 words are automatically detected and split into selectable chunks so you control exactly what gets analysed.
+
+**Dialogue System** -- Post-analysis conversation mode lets you interrogate the results, raise concerns, or request a full regeneration with your feedback incorporated.
+
+**Download Reports** -- Export the completed analysis as a text report at any time.
+
+**Graceful Degradation** -- Each AI provider fails independently with a clear in-stream error message, so one unavailable engine never blocks the others.
+
+**No accounts required** -- The app is fully functional without login. All analyses run anonymously.`,
+    },
+    {
+      emoji: "🎯",
+      title: "Designed For",
+      body: `**Researchers** -- evaluating written samples at scale
+
+**Clinicians** -- seeking a structured first-pass profile before deeper assessment
+
+**Educators** -- assessing the cognitive complexity of student writing
+
+**Analysts** -- comparing reasoning quality across multiple texts or authors
+
+**Investigators** -- identifying psychopathological markers in written communication
+
+*Disclaimer: Mind Probe is a passthrough profiling tool intended for professional assessment purposes. Outputs are AI-generated and should be interpreted by qualified practitioners. They do not constitute a clinical diagnosis.*`,
+    },
+  ],
+};
+
 appDescriptions["Smart Goal Tracker"] = {
   emoji: "🗓️",
   tagline: "A Calendar-Based To-Do Tracker with Honest Follow-Through Analytics",
