@@ -1563,7 +1563,7 @@ Tally also extends past the daily horizon -- it tracks medium-term goals (e.g. p
   ],
 };
 
-appDescriptions["Audio Transcriber"] = {
+appDescriptions["Audio Transcriber Plus"] = {
   emoji: "🎙️",
   tagline:
     "AI-Powered Audio Transcription for Recordings, Interviews, and Voice Notes",
@@ -2668,7 +2668,7 @@ export default function Home() {
       { title: "Multiple Video Viewer", url: "https://multivideo.ink" }
     ],
     "🎧 Audio & Interactive Media": [
-      { title: "Audio Transcriber", url: "https://audiotranscriber.ink" },
+      { title: "Audio Transcriber Plus", url: "https://audiotranscriber.ink" },
       { title: "Podcast Creator", url: "https://ezpodcast.xyz" }
     ],
     "⚙️ Utility & Conversion": [
