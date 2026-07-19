@@ -1,6 +1,6 @@
 const links = [
   { href: "/", label: "Home" },
-  { href: "/main-page", label: "Main Page" },
+  { href: "/main-page", label: "Beta" },
   { href: "/living-books", label: "Living Books" },
   { href: "/courses", label: "Living Courses" },
   { href: "/baby-living-courses", label: "Basic Living Courses" },
