@@ -1485,7 +1485,7 @@ Unlike consumer art generators that produce generic, hedged, sanitized output, t
   ],
 };
 
-appDescriptions["Goal Tracker"] = {
+appDescriptions["Smart Goal Tracker"] = {
   emoji: "🗓️",
   tagline: "A Calendar-Based To-Do Tracker with Honest Follow-Through Analytics",
   sections: [
@@ -2654,6 +2654,7 @@ export default function Home() {
       { title: "Text IQ", url: "https://textiq.xyz/" },
       { title: "Improve Your Writing", url: "https://improveyourwriting.xyz" },
       { title: "Cognitive Enhancer", url: "https://cognitiveenhancer.xyz" },
+      { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "Psychology Pro", url: "https://psychologypro.xyz" },
       { title: "Text Genius", url: "https://textgenius.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
@@ -2673,7 +2674,6 @@ export default function Home() {
     ],
     "⚙️ Utility & Conversion": [
       { title: "EZREDIRECT", url: "https://ezredirect.xyz" },
-      { title: "Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "HTML Converter", url: "https://htmlconverter.xyz" },
       { title: "Law Organizer", url: "https://laworganizer.xyz" },
       { title: "PDF Shrinker", url: "https://shrinkpdf.xyz" }
