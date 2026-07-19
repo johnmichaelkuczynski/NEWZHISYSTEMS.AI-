@@ -39,7 +39,9 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/main-page" component={MainPage} />
+      <Route path="/main-page">
+        <PasswordGate storageKey="main-page-access"><MainPage /></PasswordGate>
+      </Route>
       <Route path="/journal/admin" component={JournalAdmin} />
       <Route path="/journal" component={Journal} />
       <Route path="/journal/vol-:volume/no-:issue" component={JournalIssue} />
