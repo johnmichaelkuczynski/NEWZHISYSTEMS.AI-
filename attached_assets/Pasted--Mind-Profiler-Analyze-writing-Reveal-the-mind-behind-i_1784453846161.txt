@@ -1,0 +1,32 @@
+🧠 Mind Profiler
+Analyze writing. Reveal the mind behind it.
+
+Mind Profiler is a multi-model AI web application that analyzes writing samples to generate deep insights into the author's cognitive patterns, reasoning style, psychological traits, and estimated intelligence. Paste any text — an essay, an email, a forum post, a dissertation — and receive a structured, explicit cognitive and psychological profile within seconds.
+
+🌐 Live at mindprofiler.ink
+
+✨ What It Does
+Cognitive Profiling — Analyzes 20 distinct cognitive parameters: abstract reasoning, logical structure, linguistic complexity, ideation breadth, analogical thinking, conceptual precision, and more. Every parameter is scored, explained, and supported by direct quotations from the submitted text.
+Psychological Profiling — Maps personality traits, emotional tone, attachment patterns, defense mechanisms, and motivational drivers derived from writing style alone.
+Comprehensive Analysis — Combines cognitive and psychological profiling into a single integrated assessment with percentile scoring against a normalized population baseline.
+Multi-Provider AI — Five AI backends available on demand; route each analysis to the model best suited for the task or run all five in parallel and compare results side by side.
+Large-Document Pipeline — Upload PDFs, Word documents, or plain text of any length. Files are automatically split into overlapping chunks, processed sequentially, and merged into a single unified report. Real-time progress updates stream to the screen as each chunk completes.
+Dynamic Quotation Engine — Every comprehensive report pulls authentic direct quotes from the submission and explains exactly what each passage reveals about the author's cognition and psychology.
+Downloadable Reports — Export any completed analysis as a formatted Word (.docx) or PDF document for archiving, sharing, or further study.
+Google Sign-In — One-click Google OAuth login. No passwords, no accounts to manage — just a Google account.
+Admin Analytics Dashboard — Owner-only visitor analytics with bucketed time-series graphs (last 24 hours, last 30 days, last year, all time).
+🤖 AI Engines
+Five proprietary AI engines — ZHI 1 through ZHI 5 — are available on demand. Each brings a distinct analytical profile and set of strengths. Select the engine best suited for your text, or run Multi to dispatch all five simultaneously and compare their profiles side by side.
+
+🔬 Analysis Modes
+Cognitive — Fast single-pass analysis of the 20 cognitive parameters with a ZHI provider of your choice.
+Psychological — Personality, emotional, and psychodynamic assessment.
+Comprehensive Cognitive — Expanded deep-dive with percentile scoring, extended reasoning, and authentic quotations for every parameter.
+Comprehensive Psychological — Full psychodynamic profile with clinical-style notation, category breakdowns, and population-relative percentile ranks.
+🎯 Designed For
+Writers and authors who want objective feedback on how their prose reveals their thinking style.
+Academics and researchers who need to evaluate the intellectual rigor of papers, arguments, or dissertations before submission.
+Hiring managers and recruiters who want a fast signal on a candidate's reasoning style from a writing sample.
+Psychologists and coaches looking for a structured supplemental perspective on a client's written self-expression.
+Philosophers and theorists who need formal cognitive stress-testing and conceptual clarity assessment.
+Curious individuals who simply want to understand their own cognitive fingerprint.
