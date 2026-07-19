@@ -20,6 +20,7 @@ import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
 import Administrative from "@/pages/administrative";
 import LivingBooks from "@/pages/living-books";
+import MainPage from "@/pages/main-page";
 
 function useVisitTracking() {
   const [location] = useLocation();
@@ -38,6 +39,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/main-page" component={MainPage} />
       <Route path="/journal/admin" component={JournalAdmin} />
       <Route path="/journal" component={Journal} />
       <Route path="/journal/vol-:volume/no-:issue" component={JournalIssue} />
