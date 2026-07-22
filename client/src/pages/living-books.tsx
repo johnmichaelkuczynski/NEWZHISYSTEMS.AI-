@@ -5,6 +5,7 @@ const livingBooksByKuczynski = [
   { title: "AI AND PHILOSOPHY", url: "https://epistemicengineering.xyz" },
   { title: "AI LOGIC", url: "https://thelogicofartificialintelligence.xyz" },
   { title: "ANALYTIC PHILOSOPHY (COMPLETE)", url: "https://analyticphilosophy.xyz" },
+  { title: "BEAUTY JUNKIES (BY ALEX KUCZYNSKI)", url: "https://beautyjunkies.ink" },
   { title: "CAUSATION", url: "https://causality101.xyz" },
   { title: "DICTIONARY OF ANALYTIC PHILOSOPHY", url: "https://dictionaryofanalyticphilosophy.xyz" },
   { title: "EMPIRICISM AND ITS LIMITS", url: "https://empiricismandrationalism.xyz" },
