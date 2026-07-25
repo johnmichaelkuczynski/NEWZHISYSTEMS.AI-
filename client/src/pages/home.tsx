@@ -2783,7 +2783,8 @@ export default function Home() {
       { title: "NeuroText", url: "https://neurotext.ink" },
       { title: "Text Surgeon Plus", url: "https://textsurgeonplus.xyz/" },
       { title: "Rewrite Plus", url: "https://rewriteplus.xyz" },
-      { title: "GPTByPass", url: "https://gptbypass.ink" }
+      { title: "GPTByPass", url: "https://gptbypass.ink" },
+      { title: "Forensic Document Verifier", url: "https://forensicdocumentverifier.com" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
@@ -2812,7 +2813,8 @@ export default function Home() {
       { title: "Photo Psychoanalysis", url: "https://photopsychoanalysis.xyz" },
       { title: "Multiple Video Viewer", url: "https://multivideo.ink" },
       { title: "Audio Transcriber Plus", url: "https://audiotranscriber.ink" },
-      { title: "Podcast Creator", url: "https://ezpodcast.xyz" }
+      { title: "Podcast Creator", url: "https://ezpodcast.xyz" },
+      { title: "YouTube Video Downloader", url: "https://youtubedownloader.ink" }
     ],
     "💹 Finance": [
       { title: "Forex Edge", url: "https://usdhkd.ink", videoUrl: "https://www.youtube.com/watch?v=By7pTjl5HZA" },
