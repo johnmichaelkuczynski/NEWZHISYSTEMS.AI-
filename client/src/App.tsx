@@ -31,6 +31,13 @@ function useVisitTracking() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ path: location }),
     }).catch(() => {});
+    if (typeof (window as any).gtag === "function") {
+      (window as any).gtag("event", "page_view", {
+        page_path: location,
+        page_location: window.location.href,
+        page_title: document.title,
+      });
+    }
   }, [location]);
 }
 
