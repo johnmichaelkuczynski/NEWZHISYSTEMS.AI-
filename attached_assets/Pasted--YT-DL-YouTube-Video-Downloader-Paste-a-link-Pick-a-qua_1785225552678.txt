@@ -1,0 +1,51 @@
+🎬 YT//DL — YouTube Video Downloader
+Paste a link. Pick a quality. Download your video. No ads, no signups, no extensions required.
+
+✨ What It Does
+YT//DL is a clean, fast web app that lets you pull YouTube videos to your device in the quality you actually want. Drop in a URL, see the video's title, thumbnail, channel, and view count — then choose from every available resolution and hit Download.
+
+That's it.
+
+🚀 Features
+🔗 One-Click Extraction — Paste any YouTube URL and instantly fetch the video's metadata: title, thumbnail, duration, channel, and view count.
+
+📐 Quality Selector — Every available resolution is listed (1080p, 720p, 480p, and more). Pick the one that suits your needs.
+
+⬇️ Direct MP4 Download — Videos are delivered as clean MP4 files, merged with audio, ready to play anywhere.
+
+🔐 Google Account Connect — YouTube restricts server-side downloads without authentication. YT//DL solves this with a one-time sign-in flow — click "Connect YouTube Account," visit a short Google URL on any device, enter a code, and you're done. No passwords, no extensions, no file exports.
+
+📧 Contact — Questions or issues? Reach us at zhi@zhisystems.org
+
+🖥️ How to Use
+1. Open the app
+2. Paste a YouTube URL into the search bar
+3. Click EXTRACT
+4. Browse the available quality options
+5. Click DOWNLOAD
+
+If YouTube returns an authentication error, use the YouTube Authentication panel to connect your Google account — a one-time, two-step process.
+
+🔑 First-Time Setup (Authentication)
+YouTube blocks downloads from server IPs without a real user session. Here's how to connect:
+
+Step	What to do
+1️⃣	Click "Connect YouTube Account" in the app
+2️⃣	A short code appears (like ABCD-1234)
+3️⃣	Open google.com/device in any browser
+4️⃣	Sign in with your Google account and enter the code
+5️⃣	The app detects it automatically — you're connected ✅
+Your session persists until the server restarts. The advanced panel also accepts a cookies.txt file if you prefer that route.
+
+🌐 Live App
+youtubedownloader.ink
+
+🏗️ Built With
+Layer	Technology
+🖼️ Frontend	React + Vite + Tailwind CSS
+⚙️ Backend	Node.js + Express 5
+📥 Downloader	yt-dlp
+📦 Monorepo	pnpm workspaces
+📬 Contact
+Built by Zhi Systems 📧 zhi@zhisystems.org
+
