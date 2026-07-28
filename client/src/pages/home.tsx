@@ -2771,6 +2771,42 @@ Unlike retail screeners that surface "unusual options activity" without explaini
 
 appDescriptions["Model Builder"] = appDescriptions["ModelWiz"];
 
+appDescriptions["YouTube Video Downloader"] = {
+  emoji: "🎬",
+  tagline: "Paste a Link. Pick a Quality. Download Your Video — No Ads, No Signups, No Extensions",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `YT//DL is a clean, fast web app that lets you pull YouTube videos to your device in the quality you actually want. Drop in a URL, see the video's title, thumbnail, channel, and view count -- then choose from every available resolution and hit Download.
+
+That's it.`,
+    },
+    {
+      emoji: "⚙️",
+      title: "Core Capabilities",
+      body: `**One-Click Extraction** -- Paste any YouTube URL and instantly fetch the video's metadata: title, thumbnail, duration, channel, and view count.
+
+**Quality Selector** -- Every available resolution is listed (1080p, 720p, 480p, and more). Pick the one that suits your needs.
+
+**Direct MP4 Download** -- Videos are delivered as clean MP4 files, merged with audio, ready to play anywhere.
+
+**Google Account Connect** -- YouTube restricts server-side downloads without authentication. YT//DL solves this with a one-time sign-in flow -- click "Connect YouTube Account," visit a short Google URL on any device, enter a code, and you're done. No passwords, no extensions, no file exports.`,
+    },
+    {
+      emoji: "🖥️",
+      title: "How to Use",
+      body: `1. Open the app
+2. Paste a YouTube URL into the search bar
+3. Click EXTRACT
+4. Browse the available quality options
+5. Click DOWNLOAD
+
+If YouTube returns an authentication error, use the YouTube Authentication panel to connect your Google account -- a one-time, two-step process: click "Connect YouTube Account," open google.com/device in any browser, sign in with your Google account, and enter the short code shown in the app. The app detects it automatically. The advanced panel also accepts a cookies.txt file if you prefer that route.`,
+    },
+  ],
+};
+
 export default function Home() {
   const appCategories: Record<string, App[]> = {
     "📝 Writing & Books": [
