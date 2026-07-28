@@ -2845,6 +2845,59 @@ The Forensic Document Examiner surfaces structural and metadata signals -- it is
   ],
 };
 
+appDescriptions["FrameWise"] = {
+  emoji: "🧠",
+  tagline: "Precision Communication Coach — Say Exactly the Right Thing, Every Single Time",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `FrameWise is an AI-powered communication coach that rewrites your messages so they land perfectly -- with the right person, in the right tone, at the right moment. No therapy, no journaling, no vague advice. Just better words, instantly.
+
+You paste a draft message -- or describe what you want to say -- and FrameWise gives you back two things: a brief diagnosis of what's likely to go wrong with your original phrasing, and an optimized rewrite ready to copy and send, no editing required.
+
+The AI is calibrated to understand psychological dynamics: power, vulnerability, defensiveness, desire, emotional tone. It doesn't just make messages polite -- it makes them effective.`,
+    },
+    {
+      emoji: "🎯",
+      title: "Three Modes",
+      body: `**💬 Free-form Mode** -- No account needed. Paste any message -- a text to a friend, an email to a client, a Hinge opener, a resignation letter -- and get an instant rewrite. Fast, anonymous, no strings attached.
+
+**👤 Real Relationships** -- Sign in and create profiles for the real people in your life -- your boss, your partner, your difficult mother-in-law. Over time, FrameWise learns what works with each person and what doesn't. Every conversation gets smarter.
+
+**🤖 Virtual Relationships** -- Build a psychological construct of someone you've never met -- a celebrity, a public figure, an archetype -- and practice communicating with them. Great for job interviews, sales prep, difficult confrontations, or just understanding how different types of people think.`,
+    },
+    {
+      emoji: "⚙️",
+      title: "Core Capabilities",
+      body: `**How It Gets Smarter** -- Every time you use FrameWise with a person profile, the AI takes note. What phrases land well? What triggers defensiveness? What style of communication gets results with this particular human? These observations accumulate automatically into a Psychological Profile -- a living document that shapes every future message rewrite for that person. The longer you use it, the sharper it gets.
+
+**Photo Analysis** -- Upload a photo of someone -- a LinkedIn headshot, a candid shot, a reference image -- and FrameWise runs a Vision AI scan that extracts emotional baseline and confidence signals, formality and presentation style, and specific communication cues to work with or around.
+
+**Document Intelligence** -- Drop in screenshots, photos of letters, chat exports, business cards -- anything with text. FrameWise reads it using Vision OCR and incorporates the content as context when coaching your messages.
+
+**Your Data** -- Sign in with Google (one click, no passwords). Everything stays private to your account. Free-form chat works with zero sign-in required -- sign in only when you want your history and profiles saved.`,
+    },
+    {
+      emoji: "💡",
+      title: "Example Use Cases",
+      body: `**Texting an ex** -- Strips the neediness, keeps the warmth
+
+**Emailing your boss for a raise** -- Reframes it from a request to a business case
+
+**Declining a wedding invitation** -- Makes it feel like a gift, not a rejection
+
+**Confronting a difficult friend** -- Removes the accusation, keeps the truth
+
+**Cold outreach on LinkedIn** -- Sounds like a human, not a template
+
+**Apologizing without groveling** -- Accountable but not pathetic
+
+FrameWise doesn't tell you what to feel. It tells you what to say.`,
+    },
+  ],
+};
+
 appDescriptions["YouTube Video Downloader"] = {
   emoji: "🎬",
   tagline: "Paste a Link. Pick a Quality. Download Your Video — No Ads, No Signups, No Extensions",
@@ -2914,7 +2967,8 @@ export default function Home() {
       { title: "Psychology Pro", url: "https://psychologypro.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
       { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
-      { title: "LLM Plus", url: "https://llmplus.ink" }
+      { title: "LLM Plus", url: "https://llmplus.ink" },
+      { title: "FrameWise", url: "https://framewise.ink" }
     ],
     "🎬 Audio-Visual": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
