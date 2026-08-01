@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { Search, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import CopyButton from "@/components/CopyButton";
 import { toRomanNumeral, formatJournalUrl } from "@/lib/journal-utils";
 import type { JournalIssue } from "@shared/schema";
 
@@ -163,13 +164,16 @@ export default function JournalPage() {
                       .substring(0, 200)}...
                   </div>
                   
-                  <Link 
-                    href={formatJournalUrl(issue.volume, issue.issue)}
-                    className="text-blue-600 hover:text-blue-800 font-medium"
-                    data-testid={`link-read-issue-${issue.volume}-${issue.issue}`}
-                  >
-                    Read full issue →
-                  </Link>
+                  <div className="flex items-center gap-4">
+                    <Link 
+                      href={formatJournalUrl(issue.volume, issue.issue)}
+                      className="text-blue-600 hover:text-blue-800 font-medium"
+                      data-testid={`link-read-issue-${issue.volume}-${issue.issue}`}
+                    >
+                      Read full issue →
+                    </Link>
+                    <CopyButton text={`${issue.title}\n\n${issue.body}`} />
+                  </div>
                 </article>
               ))}
             </div>

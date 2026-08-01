@@ -51,6 +51,8 @@ function Router() {
       </Route>
       <Route path="/journal/admin" component={JournalAdmin} />
       <Route path="/journal" component={Journal} />
+      <Route path="/investor-notes" component={Journal} />
+      <Route path="/investor-briefings" component={Podcasts} />
       <Route path="/journal/vol-:volume/no-:issue" component={JournalIssue} />
       <Route path="/journal/:volume/:issue" component={JournalIssue} />
       <Route path="/podcasts" component={Podcasts} />

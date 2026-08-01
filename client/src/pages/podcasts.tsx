@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowLeft, Play, Calendar, Clock } from "lucide-react";
+import CopyButton from "@/components/CopyButton";
 
 interface Podcast {
   id: string;
@@ -205,6 +206,7 @@ export default function Podcasts() {
                 
                 {/* Play Button */}
                 <div className="flex flex-col items-center gap-2 ml-4">
+                  <CopyButton text={`${podcast.title}\n\n${podcast.description}`} />
                   {podcast.audioUrl ? (
                     <button className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors">
                       <Play className="w-4 h-4" />

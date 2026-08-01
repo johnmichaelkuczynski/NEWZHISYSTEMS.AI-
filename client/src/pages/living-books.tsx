@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar";
+import CopyButton from "@/components/CopyButton";
 
 const livingBooksByKuczynski = [
   { title: "A HISTORY OF AMERICAN FINANCIAL REGULATION", url: "https://financialregulation.xyz" },
@@ -57,6 +58,7 @@ function BookItem({ title, url }: { title: string; url: string }) {
       >
         {url}
       </a>
+      <CopyButton text={`${title} — ${url}`} className="shrink-0" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import NavBar from "@/components/NavBar";
+import CopyButton from "@/components/CopyButton";
 
 interface App {
   title: string;
@@ -2754,7 +2755,7 @@ export default function MainPage() {
             )}
           </div>
           <span className="text-gray-500 hidden sm:inline">—</span>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <a
               href={url}
               className="text-blue-600 hover:text-blue-800 hover:underline break-all"
@@ -2774,6 +2775,16 @@ export default function MainPage() {
                 📹 Tutorial
               </a>
             )}
+            <CopyButton
+              text={
+                description
+                  ? `${title}\n${url}\n\n${description.tagline}\n\n${description.sections
+                      .map((s) => `${s.title}\n\n${s.body}`)
+                      .join("\n\n")}`
+                  : `${title} — ${url}`
+              }
+              className="shrink-0"
+            />
           </div>
         </div>
         {expanded && description && (

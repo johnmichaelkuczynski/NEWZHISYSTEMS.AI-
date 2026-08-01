@@ -3,6 +3,7 @@ import { useQuery, useMutation } from "@tanstack/react-query";
 import { Link } from "wouter";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import { Button } from "@/components/ui/button";
+import CopyButton from "@/components/CopyButton";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import type { HigherEdReport } from "@shared/schema";
@@ -155,7 +156,7 @@ export default function AiHigherEd() {
                     <h2 className="text-2xl font-semibold text-gray-900">
                       {report.title}
                     </h2>
-                    <div className="flex gap-2 shrink-0">
+                    <div className="flex flex-wrap justify-end gap-2 shrink-0">
                       <Button
                         size="sm"
                         variant="outline"
@@ -163,6 +164,7 @@ export default function AiHigherEd() {
                       >
                         {isOpen ? "Collapse" : "Read"}
                       </Button>
+                      <CopyButton text={`${report.title}\n\n${report.body}`} />
                       <Button size="sm" variant="outline" onClick={() => startEdit(report)}>
                         Edit
                       </Button>
