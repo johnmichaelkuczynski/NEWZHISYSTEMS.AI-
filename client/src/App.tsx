@@ -45,7 +45,10 @@ function Router() {
   useVisitTracking();
   return (
     <Switch>
-      <Route path="/" component={Home} />
+      <Route path="/" component={Courses} />
+      <Route path="/utilities">
+        <PasswordGate storageKey="utilities-access"><Home /></PasswordGate>
+      </Route>
       <Route path="/main-page">
         <PasswordGate storageKey="main-page-access"><MainPage /></PasswordGate>
       </Route>

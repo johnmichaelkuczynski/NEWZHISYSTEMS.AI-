@@ -1,8 +1,8 @@
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/courses", label: "Living Courses" },
+  { href: "/", label: "Living Courses" },
   { href: "/baby-living-courses", label: "Basic Living Courses" },
   { href: "/johnson-wales", label: "Restaurant and Hospitality" },
+  { href: "/utilities", label: "Utilities" },
   { href: "/living-books", label: "Alpha" },
   { href: "/main-page", label: "Beta" },
   { href: "/ai-higher-ed", label: "AI in Higher Ed" },
