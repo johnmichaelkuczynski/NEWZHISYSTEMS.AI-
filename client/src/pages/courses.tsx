@@ -757,7 +757,7 @@ export default function Courses() {
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
       <NavBar />
 
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
             Living Courses
@@ -768,7 +768,38 @@ export default function Courses() {
           </p>
         </header>
 
-        <div className="space-y-4">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <aside className="lg:w-80 shrink-0">
+            <div className="lg:sticky lg:top-6 border border-gray-200 rounded-lg bg-gray-50 p-6">
+              <ul className="space-y-4 text-sm text-gray-800 leading-relaxed list-disc pl-4">
+                <li>
+                  <strong>24/7 built-in tutors</strong> — every student has
+                  on-demand, personalized instruction, eliminating the access
+                  gap that stalls most online learning.
+                </li>
+                <li>
+                  <strong>Cheat-proof by design</strong> — assessments cannot
+                  be gamed, so completion actually certifies competence.
+                </li>
+                <li>
+                  <strong>Industry-aligned progress</strong> — advancement is
+                  benchmarked to professional standards, making the credential
+                  something employers can trust.
+                </li>
+                <li>
+                  <strong>Fixed assessments, adaptive lectures</strong> —
+                  tests and homework are locked for rigor, while lectures flex
+                  in length, depth, and style to fit each learner.
+                </li>
+                <li>
+                  <strong>Verified mastery</strong> — adaptation never dilutes
+                  standards; retention and mastery are confirmed, not assumed.
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <div className="flex-1 min-w-0 space-y-4">
           {sortedCourses.map((course) => {
             const desc = courseDescriptions[course.title];
             const isOpen = expanded === course.title;
@@ -828,6 +859,7 @@ export default function Courses() {
               </div>
             );
           })}
+          </div>
         </div>
       </div>
     </div>
