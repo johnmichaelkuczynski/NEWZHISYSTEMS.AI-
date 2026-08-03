@@ -1394,6 +1394,7 @@ export default function BabyLivingCourses() {
     { title: "Personal Finance", url: "https://personalfinance101.xyz", videoUrl: "https://www.youtube.com/watch?v=GKZ5KciGFss" },
     { title: "Voice Powered Know Thyself", url: "https://voicepoweredknowthyself.xyz", videoUrl: "https://www.youtube.com/watch?v=MgqTMa1J2fw" },
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
+    { title: "Programming (Python-based CS 1 / Computational Thinking)", url: "https://python101.xyz" },
     {
       title: "Basic Data Analytics",
       url: "https://babyanalytics.xyz",
