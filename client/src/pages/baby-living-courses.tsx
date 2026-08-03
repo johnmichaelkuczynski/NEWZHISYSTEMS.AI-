@@ -1294,6 +1294,43 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Data Structures and Algorithms": {
+    emoji: "🧠",
+    tagline:
+      "Data Structures and Algorithms -- The Complete Four-Week Course That Teaches, Tutors, Drills, Grades -- and Polices -- Itself: 28 full lectures, an AI tutor scoped to the paragraph you're reading, adaptive practice, real written feedback, and two layers of AI-cheating detection. Zero instructors required.",
+    sections: [
+      {
+        emoji: "🚀",
+        title: "Why This Course Exists",
+        body:
+          "Every fast thing you've ever used -- the search bar that answers in milliseconds, the map that reroutes before you miss the turn, the feed that never stutters -- is fast because someone chose the right data structure and the right algorithm. This course teaches you to be that someone.\n\nNo dense formalism. No wall of proofs. Every idea is developed from first principles in plain language, grounded in systems you already use: browser back buttons, printer queues, autocomplete, GPS routing, fraud detection. By the end you don't just know what a hash table is -- you know when to reach for one, what it costs you, and how to defend the choice out loud.\n\nBuilt for adults entering the discipline -- career changers, graduate students, researchers arriving from another field -- and for anyone who wants to see what a fully AI-operated course actually looks like.",
+      },
+      {
+        emoji: "📚",
+        title: "What You Get",
+        body:
+          "**Four-Week Curriculum of 28 Lectures** -- Seven per week, organized by theme:\n\n**Week 1 -- Foundations: complexity and linear structures.** Why data structures and algorithms matter; measuring time and space; Big-O notation and growth rates; arrays and dynamic arrays; linked lists (singly and doubly); stacks: last-in, first-out; queues and deques.\n\n**Week 2 -- Recursion, sorting, and searching.** Recursion: the core idea; the call stack and base cases; linear and binary search; elementary sorts (bubble, selection, insertion); divide and conquer with merge sort; quicksort and partitioning; comparing sorts on stability, time, and space.\n\n**Week 3 -- Trees, hashing, and priority structures.** Trees and terminology; binary trees and traversals; binary search trees; balanced trees (why and how); hash tables and hash functions; collisions and resolution strategies; heaps and priority queues.\n\n**Week 4 -- Graphs and algorithmic strategies.** Graph representations and terminology; breadth-first search; depth-first search; shortest paths with Dijkstra's algorithm; greedy algorithms; dynamic programming; choosing the right approach -- a problem-solving guide.\n\n**One Real System per Lecture** -- Every lecture ends with an \"In the real world\" section that anchors the idea in production software: undo stacks in editors, load balancers draining queues, database indexes as balanced trees, git bisect as binary search, routers running shortest-path, spell-checkers built on dynamic programming.\n\n**Section-Scoped AI Tutor** -- Ask about the exact paragraph you're reading and the answer streams back token-by-token, grounded in that lecture section. Starter questions are always concrete cases -- never \"define X.\"\n\n**Three-Depth Lectures** -- Read every topic Short / Medium / Long. Same examples, same objectives, your choice of depth. Skim before work; go deep on the weekend.\n\n**Adaptive Practice That Reads You** -- Difficulty climbs while you're hot and eases off after a miss; per-session difficulty persists between visits. Every question is a realistic scenario that demands reasoning in your own words -- never trivia, never recitation.\n\n**Six Graded Assignments** -- Four weekly homeworks (7 problems each), a timed 30-minute midterm covering weeks 1-2, and a timed 45-minute cumulative final. An AI grader scores for semantic equivalence and writes a per-problem rationale, not just a checkmark.\n\n**Two-Layer AI-Authorship Detection** -- Every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector. It's not just whether the words look AI-written -- it's whether the act of writing them did.\n\n**Diagnostic Reasoning Checks** -- Two ungraded instruments (Data Structures reasoning and General Reasoning), each in three formats and three lengths, offered at four checkpoints: before the course, one-third in, two-thirds in, and after. Unlimited attempts, fresh questions every time, never counted toward your grade -- coursework is 100%.\n\n**Live Analytics** -- Attempts, accuracy, streak, per-topic mastery, and a recent-activity feed. Your weak spots have nowhere to hide.",
+      },
+      {
+        emoji: "⚙️",
+        title: "Technical Features",
+        body:
+          "**Static AI Detection (GPTZero)** -- Every submitted answer is sent to GPTZero's predict/text endpoint; the per-document AI probability is blended 0.85 x GPTZero + 0.15 x structural-heuristic for the final score. If GPTZero is unavailable, the system silently falls back to an LLM scorer plus heuristic -- submissions never block.\n\n**Diachronic Keystroke Detection** -- The answer textarea captures keystroke count, erase count, bulk-insert events, longest bulk insert, rewrite segments, and total duration. A scorer penalizes paste-then-reword behavior, low keystroke-to-output ratios, and impossibly sustained typing speeds.\n\n**System Diagnostic** -- Ordered checks: environment, database round-trip, course-seed integrity (>=28 topics), AI chat completion, JSON mode, detection pipeline, AI-positive control sample, and detector connectivity. Each step returns pass/fail, timing, and a raw error string.\n\n**Synthetic-Student Diagnostic** -- End-to-end stack proof: a fake student runs a practice session, takes a full assignment attempt, submits, and the system verifies grading + detection + analytics all reflect the run.\n\n**Auto-Reseed on Curriculum Change** -- The seeder stores a content version in the database; when a republished build ships changed course content, boot detects the mismatch and swaps the entire curriculum in a single transaction.\n\n**Contract-First API** -- A single OpenAPI document is the source of truth; React Query hooks for the UI and Zod validators for the server are both generated from it, so request/response shapes can't drift.\n\n**Streaming AI Tutor** -- Token-by-token Server-Sent-Event streaming with a section-scoped system prompt grounded in the active lecture.\n\n**Adaptive Practice Engine** -- Per-session difficulty (1-4, continuous) adjusts after each attempt; problems are generated on demand, never pre-baked.",
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body:
+          "**Newcomers to the discipline** -- A complete, plain-language introduction to data structures and algorithms with on-demand tutoring and adaptive drilling. No prior background assumed; no instructor required.\n\n**Instructors & Curriculum Designers** -- A working, end-to-end reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- A live testbed for layered AI-authorship detection: text classification plus behavioral keystroke evidence.\n\n**Product & Engineering Teams** -- A reference implementation of contract-first full-stack architecture, streaming AI UX, and one-click self-diagnostic tooling.",
+      },
+      {
+        emoji: "💡",
+        title: "The Core Idea",
+        body:
+          "Most \"AI courses\" bolt a chatbot onto a PDF. This one closes the loop.\n\nIt teaches the material, tutors you through the confusing parts, drills you at exactly your level, grades your work with written reasoning, detects AI-written submissions two different ways, and proves the whole pipeline still works with a single click. A course students can trust to be fair -- and instructors can trust to be honest.\n\nData Structures and Algorithms -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+      },
+    ],
+  },
 };
 
 function renderSectionBody(body: string) {
