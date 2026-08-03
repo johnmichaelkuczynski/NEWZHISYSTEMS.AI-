@@ -1294,6 +1294,43 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Databases and SQL": {
+    emoji: "🔎",
+    tagline:
+      "Databases and SQL -- A complete, four-week introduction to relational databases and SQL that teaches, tutors, drills, and grades itself -- for adults beginning the discipline.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "What It Is",
+        body:
+          "Databases and SQL is a self-paced, single-user web course that delivers a thorough, plain-language introduction to relational databases and the SQL language -- the practical craft of storing, querying, shaping, and safeguarding data -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement.\n\nIt assumes no prior background in the subject and develops every idea from first principles in plain words rather than dense formalism: what a database really is and why it beats a pile of spreadsheets, how the relational model organizes data into tables, rows, and columns, how to write queries that retrieve and combine exactly the data you want, how to design schemas that keep data clean, and how SQL is used safely inside real applications -- from your first SELECT all the way to window functions, indexes, and injection-safe queries.",
+      },
+      {
+        emoji: "✨",
+        title: "Features",
+        body:
+          "**Four weeks, 28 sections** -- A complete plain-language syllabus: data, tables, and basic queries; combining and summarizing data; designing databases and changing data; advanced queries and real-world SQL.\n\n**Three-depth lessons** -- Every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- Ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- Generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists. Questions ask you to explain your reasoning and read or write queries in plain words, never to memorize trivia.\n\n**AI-graded assignments** -- Two homework sets, a timed unit test, and a cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- Every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning checks** -- Two ungraded instruments (Databases and SQL subject reasoning and General Reasoning), each offered in three formats and three lengths, at four points in the journey (before, one-third, two-thirds, and after the course). Unlimited practice with fresh questions every attempt -- never counted toward the grade; coursework is 100%.\n\n**Live analytics** -- Dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- One-click self-tests that verify the entire stack before you trust a session.",
+      },
+      {
+        emoji: "⚙️",
+        title: "Technical Features",
+        body:
+          "**Contract-First API** -- A single OpenAPI document is the source of truth. React Query hooks (client) and Zod validators (server) are generated from it, so request/response shapes can't drift.\n\n**System Diagnostic** -- Environment, database round-trip, course-seed integrity, AI chat + JSON mode, the detection pipeline, an AI-positive control sample, and detector connectivity -- each with pass/fail and timing.\n\n**Synthetic-Student Diagnostic** -- Spins up a fake student, runs a practice session, takes and submits a full assignment, and verifies grading + detection + analytics all reflect the run.\n\n**Self-Healing Content Seeding** -- The server seeds the course content on startup and self-heals when the content version changes, so updated curriculum propagates cleanly.\n\n**Streaming AI Tutor** -- Token-by-token streaming with a section-scoped prompt grounded in the active lecture.\n\n**Adaptive Practice Engine** -- Per-session difficulty adjusts after each attempt; problems are generated on demand, never pre-baked.",
+      },
+      {
+        emoji: "📚",
+        title: "Who It's For",
+        body:
+          "**Newcomers to the discipline** -- A complete, plain-language introduction to relational databases and SQL with on-demand tutoring and adaptive practice, assuming no prior background.\n\n**Instructors & Curriculum Designers** -- A working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- A live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.",
+      },
+      {
+        emoji: "💡",
+        title: "Core Idea",
+        body:
+          "Databases and SQL doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click.\n\nDatabases and SQL -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+      },
+    ],
+  },
   "Data Structures and Algorithms": {
     emoji: "🧠",
     tagline:
@@ -1433,6 +1470,7 @@ export default function BabyLivingCourses() {
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
     { title: "Programming (Python-based CS 1 / Computational Thinking)", url: "https://python101.xyz", videoUrl: "https://youtu.be/wAHcQhr4w0o" },
     { title: "Data Structures and Algorithms", url: "https://datastructures101.xyz", videoUrl: "https://youtu.be/9Sj_xvDZZ6c" },
+    { title: "Databases and SQL", url: "https://databases101.xyz", videoUrl: "https://youtu.be/VF0WhpkuseI" },
     {
       title: "Basic Data Analytics",
       url: "https://babyanalytics.xyz",
