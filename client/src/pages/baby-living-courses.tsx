@@ -1294,6 +1294,43 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Computer Systems": {
+    emoji: "🔎",
+    tagline:
+      "Computer Systems -- A complete introduction to computer systems that teaches, tutors, drills, and grades itself -- for adults beginning the discipline.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "What It Is",
+        body:
+          "Computer Systems is a self-paced, single-user web course that delivers a thorough, depth-forward introduction to computer organization -- how a machine works from the transistor up to a running program -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement.\n\nIt assumes no prior background in the subject and develops every idea from first principles: how bits represent numbers, text, and logic; how gates and circuits become a processor that fetches, decodes, and executes instructions; how the memory hierarchy and virtual memory keep that processor fed; and how pipelining, I/O, interrupts, and the operating system tie the whole system together -- from a single transistor to a program you can run.",
+      },
+      {
+        emoji: "✨",
+        title: "Features",
+        body:
+          "**Four weeks, 28 topics** -- A complete syllabus that builds the machine bottom-up:\n\n**Week 1 -- Data representation and digital logic:** layers of a machine; binary/hex; two's complement; text & floating point; boolean logic & gates; combinational circuits; sequential logic.\n\n**Week 2 -- The processor and machine instructions:** datapath & control; fetch-decode-execute; ISA & machine code; assembly; registers & addressing modes; instruction types; control flow.\n\n**Week 3 -- Memory and the memory hierarchy:** hierarchy; RAM; locality; cache organization; stack/heap layout; virtual memory; paging & protection.\n\n**Week 4 -- Performance, I/O, and the system as a whole:** throughput/latency/CPI; pipelining; hazards; multicore; I/O & buses; interrupts & the OS; transistor-to-program capstone.\n\n**Three-depth lessons** -- Every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- Ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- Generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists. Questions ask you to explain your reasoning in plain words, never to crunch heavy calculations.\n\n**AI-graded assignments** -- Two homework sets and a test each week (Homework N.1 / N.2 + Week N Test), plus a cumulative final in week 4, each scored for semantic equivalence with a written rationale and a rolled-up percent score. Coursework is 100% of the grade.\n\n**Two-layer AI-authorship detection** -- Every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning checks** -- Two ungraded instruments (Computer Systems subject reasoning and General Reasoning), each offered in three formats and three lengths, at four points in the journey (before, one-third, two-thirds, and after the course). Unlimited practice with fresh questions every attempt -- never counted toward the grade.\n\n**Live analytics** -- Dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.\n\n**Operator diagnostics** -- One-click self-tests that verify the entire stack before you trust a session.",
+      },
+      {
+        emoji: "⚙️",
+        title: "Technical Features",
+        body:
+          "**Contract-First API** -- A single OpenAPI document is the source of truth. React Query hooks (client) and Zod validators (server) are generated from it, so request/response shapes can't drift.\n\n**System Diagnostic** -- Environment, database round-trip, course-seed integrity, AI chat + JSON mode, the detection pipeline, an AI-positive control sample, and detector connectivity -- each with pass/fail and timing.\n\n**Synthetic-Student Diagnostic** -- Spins up a fake student, runs a practice session, takes and submits a full assignment, and verifies grading + detection + analytics all reflect the run.\n\n**Self-Healing Content Seeding** -- The server seeds the course content on startup and self-heals when the content version changes, so updated curriculum propagates cleanly.\n\n**Streaming AI Tutor** -- Token-by-token streaming with a section-scoped prompt grounded in the active lecture.\n\n**Adaptive Practice Engine** -- Per-session difficulty adjusts after each attempt; problems are generated on demand, never pre-baked.",
+      },
+      {
+        emoji: "📚",
+        title: "Who It's For",
+        body:
+          "**Newcomers to the discipline** -- A complete introduction to computer systems with on-demand tutoring and adaptive practice, assuming no prior background.\n\n**Instructors & Curriculum Designers** -- A working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- A live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & Engineering Teams** -- A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.",
+      },
+      {
+        emoji: "💡",
+        title: "Core Idea",
+        body:
+          "Computer Systems doesn't just teach the material and grade the homework -- it teaches, tutors, drills, grades, detects misuse, and proves the whole pipeline still works with a single click.\n\nComputer Systems -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+      },
+    ],
+  },
   "Machine Learning and Applied AI": {
     emoji: "🔎",
     tagline:
@@ -1509,6 +1546,7 @@ export default function BabyLivingCourses() {
     { title: "Data Structures and Algorithms", url: "https://datastructures101.xyz", videoUrl: "https://youtu.be/9Sj_xvDZZ6c" },
     { title: "Databases and SQL", url: "https://databases101.xyz", videoUrl: "https://youtu.be/VF0WhpkuseI" },
     { title: "Machine Learning and Applied AI", url: "https://machinelearning101.xyz", videoUrl: "https://youtu.be/7eot6NUgr2A" },
+    { title: "Computer Systems", url: "https://computersystems101.xyz", videoUrl: "https://youtu.be/E_qLdP5CEs0" },
     {
       title: "Basic Data Analytics",
       url: "https://babyanalytics.xyz",
