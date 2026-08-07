@@ -1294,9 +1294,22 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Computer Systems": {
-    emoji: "🔎",
+  "Biology": {
+    emoji: "🧠",
     tagline:
+      "Biology -- The Complete Four-Week Course That Teaches, Tutors, Drills, Grades -- and Polices -- Itself: 28 full lectures, an AI tutor scoped to the paragraph you're reading, adaptive practice, real written feedback, and two layers of AI-cheating detection. Zero instructors required.",
+    sections: [
+      {
+        emoji: "🚀",
+        title: "Why This Course Exists",
+        body:
+          "Almost every question that touches your life eventually runs through biology -- the vaccine that trains your immune system, the genetic test that names a risk before symptoms appear, the antibiotic that stops working when a population evolves resistance, the yeast that turns sugar into bread and beer, the crop bred to survive a drought, the reef we are racing to conserve. This course teaches you to read the living world the way biologists do.\n\nNo dense formalism. No wall of jargon. Every idea is developed from first principles in plain language, grounded in systems you already meet: fermentation in your kitchen, inheritance in your own family, the metabolism that burns the food on your plate, the mutations behind a disease. By the end you don't just know what a protein is -- you know what it does, why its shape decides its function, and how to defend the reasoning out loud.\n\nBuilt for adults entering the discipline -- career changers, graduate students, researchers arriving from another field -- and for anyone who wants to see what a fully AI-operated course actually looks like.",
+      },
+      {
+        emoji: "📚",
+        title: "What You Get",
+        body:
+          "**Four-Week Curriculum of 28 Lectures** -- Seven per week, organized by theme:\n\n**Week 1 -- The chemistry and molecules of life.** What life is (characteristics and levels of organization); atoms, elements, and chemical bonds; water and why its properties matter for life; carbon and the logic of organic molecules; car
       "Computer Systems -- A complete introduction to computer systems that teaches, tutors, drills, and grades itself -- for adults beginning the discipline.",
     sections: [
       {
@@ -1547,6 +1560,7 @@ export default function BabyLivingCourses() {
     { title: "Databases and SQL", url: "https://databases101.xyz", videoUrl: "https://youtu.be/VF0WhpkuseI" },
     { title: "Machine Learning and Applied AI", url: "https://machinelearning101.xyz", videoUrl: "https://youtu.be/7eot6NUgr2A" },
     { title: "Computer Systems", url: "https://computersystems101.xyz", videoUrl: "https://youtu.be/E_qLdP5CEs0" },
+    { title: "Biology", url: "https://biology101.xyz", videoUrl: "https://youtu.be/6OBbSeQ7GUo" },
     {
       title: "Basic Data Analytics",
       url: "https://babyanalytics.xyz",
