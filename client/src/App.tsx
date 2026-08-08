@@ -21,6 +21,7 @@ import PasswordGate from "@/components/PasswordGate";
 import Administrative from "@/pages/administrative";
 import LivingBooks from "@/pages/living-books";
 import MainPage from "@/pages/main-page";
+import Microcertifications from "@/pages/microcertifications";
 
 function useVisitTracking() {
   const [location] = useLocation();
@@ -65,6 +66,7 @@ function Router() {
       </Route>
       <Route path="/courses" component={Courses} />
       <Route path="/johnson-wales" component={JohnsonWales} />
+      <Route path="/microcertifications" component={Microcertifications} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
       <Route path="/living-books">
         <PasswordGate storageKey="living-books-access"><LivingBooks /></PasswordGate>

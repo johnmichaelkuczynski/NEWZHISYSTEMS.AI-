@@ -1294,6 +1294,43 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Sociology 101": {
+    emoji: "🔎",
+    tagline:
+      "Sociology 101 -- The sociology course that teaches you, tutors you, coaches you, and certifies you -- all in one place.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "What It Is",
+        body:
+          "Most online courses hand you a stack of videos and wish you luck. This one works the way a great university course does -- a brilliant lecturer, a patient tutor on call at any hour, homework that gets real feedback, and a credential that actually means something -- except it never sleeps, never runs out of office hours, and never lets you fall through the cracks.",
+      },
+      {
+        emoji: "✅",
+        title: "Five Promises We Make to Every Student",
+        body:
+          "**A tutor available 24/7** -- Stuck at 11 pm? Ask your built-in tutor and get a clear, personalized explanation of exactly what you're working on -- instantly. No forums, no waiting, no falling behind.\n\n**Cheat-proof by design** -- Our assessments cannot be gamed. When you finish this course, your completion means something -- to you, and to anyone you show it to.\n\n**Progress that institutions recognize** -- Your advancement is benchmarked against real academic standards, not arbitrary course rubrics. Finish the course, and you'll have the sociological literacy expected in any first-year university program.\n\n**Rigorous where it counts, flexible where it helps** -- Tests and homework hold the same high bar for everyone. Lectures bend to you: short and punchy, standard, or deep-dive detail -- or ask for a version rewritten just for you. You control the learning. The standard never moves.\n\n**Mastery that's verified, not assumed** -- Independent skill checks at multiple points in the course confirm you're actually retaining and mastering the material. When you're done, you'll know you know it -- and so will we.",
+      },
+      {
+        emoji: "📚",
+        title: "A Four-Week Journey Through the Sociological Perspective",
+        body:
+          "No prior background required. Twenty-eight bite-size topics take you from your very first look at the sociological imagination to a working understanding of how societies hold together and change:\n\n**Week 1 -- The Sociological Perspective** -- The sociological imagination; sociology vs. common sense; Durkheim, Marx, and Weber; functionalism, conflict theory, and symbolic interaction; the research process; surveys, experiments, and fieldwork; research ethics.\n\n**Week 2 -- Culture, Self, and Society** -- Norms, values, and symbols; language and subcultures; socialization; the agents of socialization; the social construction of the self; everyday interaction; groups and bureaucracy.\n\n**Week 3 -- Inequality and Social Difference** -- Social stratification; class and mobility; global stratification; race and ethnicity; prejudice and racism; sex and gender inequality; deviance and social control.\n\n**Week 4 -- Social Institutions and Change** -- Family and marriage; education and religion; economy and work; power and the state; population, urbanization, and the environment; social movements; social change.\n\nEvery topic comes with lectures at three depths, conversation starters for your tutor, and unlimited adaptive practice.",
+      },
+      {
+        emoji: "🚀",
+        title: "What Learning Here Feels Like",
+        body:
+          "**Your tutor knows what page you're on** -- Literally. Ask a question and the answer speaks to the exact material in front of you, with fresh suggested questions every time you open a lecture.\n\n**Practice that meets you where you are** -- Nail a problem and the next one gets harder. Miss one and the course eases up. Every problem is a real scenario -- never trivia, never rote recall -- with instant feedback and a model answer after every attempt.\n\n**Graded assignments with real feedback** -- Weekly homework, tests, and a cumulative final -- each graded with paragraph-level commentary explaining what you got right and where to improve. Plus a practice version of every assignment, so you can rehearse before it counts.\n\n**Skill checkpoints along the way** -- Ungraded, retakeable check-ins measure your sociological understanding and reasoning ability at multiple points in the course. Your grade comes 100% from your coursework.\n\n**A dashboard that tells you what to do next** -- See your strongest and weakest topics at a glance, track your assignment average, and get a personalized report with concrete next-step recommendations.",
+      },
+      {
+        emoji: "🎓",
+        title: "Who This Is For",
+        body:
+          "**Undergraduates** -- If you're taking your first sociology course, you're exactly who this was built for. Bring curiosity; we handle the rest.\n\n**Graduate students, researchers, and faculty** -- Self-paced and structured. One topic on a lunch break, or a whole week's material on a Saturday -- your schedule, your call.\n\n**Schools and training programs** -- A turnkey model for AI-taught, AI-graded, integrity-protected coursework -- ready for blended or fully online delivery.\n\n**Anyone who's been burned by online courses before** -- If you've started five courses and finished none, this one was designed around the reasons the others didn't stick.",
+      },
+    ],
+  },
   "Biology": {
     emoji: "🧠",
     tagline:
@@ -1309,7 +1346,32 @@ const courseDescriptions: Record<string, CourseDescription> = {
         emoji: "📚",
         title: "What You Get",
         body:
-          "**Four-Week Curriculum of 28 Lectures** -- Seven per week, organized by theme:\n\n**Week 1 -- The chemistry and molecules of life.** What life is (characteristics and levels of organization); atoms, elements, and chemical bonds; water and why its properties matter for life; carbon and the logic of organic molecules; carbohydrates and lipids; proteins: structure and function; nucleic acids: DNA and RNA.\n\n**Week 2 -- The cell and its energy.** Cell theory and comparing cell types; a tour of the euk that delivers a thorough, depth-forward introduction to computer organization -- how a machine works from the transistor up to a running program -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement.\n\nIt assumes no prior background in the subject and develops every idea from first principles: how bits represent numbers, text, and logic; how gates and circuits become a processor that fetches, decodes, and executes instructions; how the memory hierarchy and virtual memory keep that processor fed; and how pipelining, I/O, interrupts, and the operating system tie the whole system together -- from a single transistor to a program you can run.",
+          "**Four-Week Curriculum of 28 Lectures** -- Seven per week, organized by theme:\n\n**Week 1 -- The chemistry and molecules of life.** What life is (characteristics and levels of organization); atoms, elements, and chemical bonds; water and why its properties matter for life; carbon and the logic of organic molecules; carbohydrates and lipids; proteins: structure and function; nucleic acids: DNA and RNA.\n\n**Week 2 -- The cell and its energy.** Cell theory and comparing cell types; a tour of the eukaryotic cell and its organelles; the plasma membrane; diffusion, osmosis, and active transport; energy, ATP, and enzymes; cellular respiration; photosynthesis.\n\n**Week 3 -- Cell division and heredity.** The cell cycle and mitosis; meiosis and gametes; Mendel and the principles of inheritance; Punnett squares and probability; complex inheritance patterns; chromosomes, linkage, and sex-linked traits; mutations and genetic disorders.\n\n**Week 4 -- Molecular genetics and evolution.** DNA replication; transcription; translation; gene regulation and expression; biotechnology and genetic engineering; Darwin, natural selection, and evidence for evolution; population genetics.\n\n**One Real System per Lecture** -- Every lecture ends with an \"In the real world\" section: mRNA vaccines built on transcription and translation, PCR and CRISPR in the lab, blood-type inheritance at the clinic, antibiotic resistance evolving in a hospital, fermentation in a brewery, carbon fixation feeding a forest.\n\n**Section-Scoped AI Tutor, Three-Depth Lectures, Adaptive Practice** -- Ask about the exact paragraph you're reading and the answer streams back grounded in that section; read every topic Short / Medium / Long; difficulty climbs while you're hot and eases off after a miss.\n\n**Six Graded Assignments** -- Four weekly homeworks (7 problems each), a timed 30-minute midterm covering weeks 1-2, and a timed 45-minute cumulative final. An AI grader scores for semantic equivalence and writes a per-problem rationale.\n\n**Two-Layer AI-Authorship Detection** -- Every submission is screened by a static text classifier (GPTZero) and a diachronic keystroke-pattern detector.\n\n**Diagnostic Reasoning Checks** -- Two ungraded instruments (Biology reasoning and General Reasoning), each in three formats and three lengths, at four checkpoints. Unlimited attempts, never counted toward your grade -- coursework is 100%.\n\n**Live Analytics** -- Attempts, accuracy, streak, per-topic mastery, and a recent-activity feed.",
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body:
+          "**Newcomers to the discipline** -- A complete, plain-language introduction to biology with on-demand tutoring and adaptive drilling. No prior background assumed; no instructor required.\n\n**Instructors & Curriculum Designers** -- A working, end-to-end reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-Integrity Researchers** -- A live testbed for layered AI-authorship detection: text classification plus behavioral keystroke evidence.\n\n**Product & Engineering Teams** -- A reference implementation of contract-first full-stack architecture, streaming AI UX, and one-click self-diagnostic tooling.",
+      },
+      {
+        emoji: "💡",
+        title: "The Core Idea",
+        body:
+          "Most \"AI courses\" bolt a chatbot onto a PDF. This one closes the loop.\n\nIt teaches the material, tutors you through the confusing parts, drills you at exactly your level, grades your work with written reasoning, detects AI-written submissions two different ways, and proves the whole pipeline still works with a single click.\n\nBiology -- where the curriculum, the tutor, the grader, and the integrity check all live in one room.",
+      },
+    ],
+  },
+  "Computer Systems": {
+    emoji: "🔎",
+    tagline:
+      "Computer Systems -- A complete introduction to computer systems that teaches, tutors, drills, and grades itself -- for adults beginning the discipline.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "What It Is",
+        body:
+          "Computer Systems is a self-paced, single-user web course that delivers a thorough, depth-forward introduction to computer organization -- how a machine works from the transistor up to a running program -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement.\n\nIt assumes no prior background in the subject and develops every idea from first principles: how bits represent numbers, text, and logic; how gates and circuits become a processor that fetches, decodes, and executes instructions; how the memory hierarchy and virtual memory keep that processor fed; and how pipelining, I/O, interrupts, and the operating system tie the whole system together -- from a single transistor to a program you can run.",
       },
       {
         emoji: "✨",
@@ -1554,6 +1616,7 @@ export default function BabyLivingCourses() {
     { title: "Machine Learning and Applied AI", url: "https://machinelearning101.xyz", videoUrl: "https://youtu.be/7eot6NUgr2A" },
     { title: "Computer Systems", url: "https://computersystems101.xyz", videoUrl: "https://youtu.be/E_qLdP5CEs0" },
     { title: "Biology", url: "https://biology101.xyz", videoUrl: "https://youtu.be/6OBbSeQ7GUo" },
+    { title: "Sociology 101", url: "https://sociology101.ink", videoUrl: "https://youtu.be/yTDWIfuRrOc" },
     {
       title: "Basic Data Analytics",
       url: "https://babyanalytics.xyz",
