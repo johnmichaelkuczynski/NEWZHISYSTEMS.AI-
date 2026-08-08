@@ -46,7 +46,7 @@ function Router() {
   useVisitTracking();
   return (
     <Switch>
-      <Route path="/" component={Courses} />
+      <Route path="/" component={Microcertifications} />
       <Route path="/utilities">
         <PasswordGate storageKey="utilities-access"><Home /></PasswordGate>
       </Route>
