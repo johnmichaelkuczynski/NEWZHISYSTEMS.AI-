@@ -1531,7 +1531,13 @@ function renderSectionBody(body: string) {
   });
 }
 
-export default function BabyLivingCourses() {
+export function CourseCatalog({
+  heading,
+  subtitle,
+}: {
+  heading: string;
+  subtitle?: string;
+}) {
   const courses: Course[] = [
     { title: "IQ Booster", url: "https://iqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=oVz0qZnGl20" },
     { title: "Spatial IQ Booster", url: "https://spatialiqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=nfje84a3sps" },
@@ -1663,13 +1669,8 @@ export default function BabyLivingCourses() {
 
       <div className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-10">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Basic Living Courses
-          </h1>
-          <p className="text-gray-700 text-lg">
-            Short courses for children and for anyone who wants quick exposure
-            to a discipline.
-          </p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-3">{heading}</h1>
+          {subtitle && <p className="text-gray-700 text-lg">{subtitle}</p>}
         </header>
 
         {sortedCourses.length === 0 ? (
@@ -1766,5 +1767,14 @@ export default function BabyLivingCourses() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function BabyLivingCourses() {
+  return (
+    <CourseCatalog
+      heading="Basic Living Courses"
+      subtitle="Short courses for children and for anyone who wants quick exposure to a discipline."
+    />
   );
 }
