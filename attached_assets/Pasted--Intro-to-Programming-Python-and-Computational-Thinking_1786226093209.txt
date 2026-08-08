@@ -1,0 +1,45 @@
+🐍 Intro to Programming: Python and Computational Thinking
+The programming course that teaches you, tutors you, coaches you, and certifies you — all in one place.
+
+Most online courses hand you a stack of videos and wish you luck. This one works the way a great university course does — a brilliant lecturer, a patient tutor on call at any hour, homework that gets real feedback, and a credential that actually means something — except it never sleeps, never runs out of office hours, and never lets you fall through the cracks.
+
+✅ Five Promises We Make to Every Student
+A tutor available 24/7 — Stuck at 11 pm? Ask your built-in tutor and get a clear, personalized explanation of exactly what you're working on — instantly. No forums, no waiting, no falling behind. Every student gets the kind of on-demand, one-on-one instruction that used to be reserved for private tutoring.
+
+Cheat-proof by design — Our assessments cannot be gamed. When you finish this course, your completion means something — to you, and to anyone you show it to. Certificates backed by shortcuts are worthless; ours certifies genuine competence.
+
+Progress that employers recognize — Your advancement is benchmarked against real professional standards, not arbitrary course rubrics. Finish the course, and you'll have the skills employers expect from a working programmer on day one.
+
+Rigorous where it counts, flexible where it helps — Tests and homework hold the same high bar for everyone. Lectures, on the other hand, bend to you: choose short and punchy, standard, or deep-dive detail — or ask for a version rewritten just for you. You control the learning. The standard never moves.
+
+Mastery that's verified, not assumed — Flexibility never waters down the outcome. Independent skill checks at multiple points in the course confirm you're actually retaining and mastering the material. When you're done, you'll know you know it — and so will we.
+
+📚 A Four-Week Journey from Zero to Real Programs
+No experience required. Twenty-eight bite-size topics take you from your very first line of Python to shipping a complete working project:
+
+Week 1 — Thinking Like a Programmer — What a program really is · variables and types · expressions · input and output · your first Python script · the art of computational thinking.
+Week 2 — Control Flow and Logic — Making decisions in code · loops and repetition · nested logic · reading error messages like a pro · systematic debugging.
+Week 3 — Data Structures and Functions — Lists, strings, and dictionaries · elegant Python idioms · writing your own functions · organizing code that scales.
+Week 4 — Building Real Programs — Working with files · handling errors gracefully · the standard library · thinking about efficiency · building and shipping a real project.
+Every topic comes with lectures at three depths, conversation starters for your tutor, and unlimited adaptive practice.
+
+🚀 What Learning Here Feels Like
+Your tutor knows what page you're on — Literally. Ask a question and the answer speaks to the exact material in front of you, with fresh suggested questions every time you open a lecture.
+
+Practice that meets you where you are — Nail a problem and the next one gets harder. Miss one and the course eases up. Every problem is a real scenario — never trivia, never rote recall — with instant feedback and a model answer after every attempt.
+
+13 graded assignments with real feedback — Weekly homework, unit tests, and a cumulative final — each graded with paragraph-level commentary explaining what you got right and where to improve. Plus a practice version of every assignment, so you can rehearse before it counts.
+
+Skill checkpoints along the way — Ungraded, retakeable check-ins measure your programming skill and reasoning ability at multiple points in the course — so you can watch yourself get better in real time. Your grade comes 100% from your coursework.
+
+A dashboard that tells you what to do next — See your strongest and weakest topics at a glance, track your assignment average, and get a personalized report with concrete next-step recommendations.
+
+🎓 Who This Is For
+Complete beginners — If you've never written a line of code, you're exactly who this course was built for. Bring curiosity; we handle the rest.
+Career changers and upskillers — Self-paced and structured. One topic on a lunch break, or a whole week's material on a Saturday — your schedule, your call.
+Schools and training programs — A turnkey model for AI-taught, AI-graded, integrity-protected coursework — ready for blended or fully online delivery.
+Anyone who's been burned by online courses before — If you've started five courses and finished none, this one was designed around the reasons the others didn't stick.
+🎬 See It in Action
+The companion promo video ships right alongside the course — a one-minute tour of the five promises above. A full walkthrough video and a 10-slide course overview deck are included for anyone who wants a closer look before diving in.
+
+Intro to Programming: Python and Computational Thinking — where the lecturer, the tutor, the coach, and the credential all live in one room.
