@@ -3030,6 +3030,7 @@ export default function Home() {
       { title: "College AI Match", url: "https://collegeaimatch.xyz" },
       { title: "EZ Homework", url: "https://ezhw.ink" },
       { title: "EZGrader", url: "https://ezgrader.ai" },
+      { title: "Judge Evaluator", url: "https://judge101.ink" },
       { title: "Texas Bar Prep", url: "https://texasbarprep.ink" }
     ],
     "🧠 Intelligence & Psychology": [
