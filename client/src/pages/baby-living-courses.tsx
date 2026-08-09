@@ -1656,6 +1656,7 @@ export function CourseCatalog({
     { title: "Voice Powered Know Thyself", url: "https://voicepoweredknowthyself.xyz", videoUrl: "https://www.youtube.com/watch?v=MgqTMa1J2fw" },
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
     { title: "Programming (Python-based CS 1 / Computational Thinking)", url: "https://python101.xyz", videoUrl: "https://youtu.be/wAHcQhr4w0o" },
+    { title: "Prompt Engineering", url: "https://promptengineering.ink", videoUrl: "https://www.youtube.com/watch?v=-xrVcKgaVeI" },
     { title: "Data Structures and Algorithms", url: "https://datastructures101.xyz", videoUrl: "https://youtu.be/9Sj_xvDZZ6c" },
     { title: "Databases and SQL", url: "https://databases101.xyz", videoUrl: "https://youtu.be/VF0WhpkuseI" },
     { title: "Machine Learning and Applied AI", url: "https://machinelearning101.xyz", videoUrl: "https://youtu.be/7eot6NUgr2A" },
