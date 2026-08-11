@@ -3023,7 +3023,8 @@ export default function Home() {
       { title: "Text Surgeon Plus", url: "https://textsurgeonplus.xyz/" },
       { title: "Rewrite Plus", url: "https://rewriteplus.xyz" },
       { title: "GPTByPass", url: "https://gptbypass.ink" },
-      { title: "Forensic Document Verifier", url: "https://forensicdocumentverifier.com" }
+      { title: "Forensic Document Verifier", url: "https://forensicdocumentverifier.com" },
+      { title: "JM Kuczynski", url: "https://jmkuczynski.ai" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
