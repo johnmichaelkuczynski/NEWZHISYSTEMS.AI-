@@ -1331,6 +1331,31 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Prompt Engineering": {
+    emoji: "🔎",
+    tagline:
+      "Prompt Engineering -- A complete, four-week introduction to prompt engineering that teaches, tutors, drills, grades, and proofs itself -- for adults beginning the discipline.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "What It Is",
+        body:
+          "Prompt Engineering is a self-paced, single-user web course that delivers a thorough, plain-language introduction to prompt engineering -- the craft of designing instructions that make language models produce accurate, consistent, useful output -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. It assumes no prior background in the subject and develops every idea from first principles in plain words rather than dense formalism: how models read and continue text, how to be specific about what you want, how to steer role, tone, format, and length, and how to build reliable, testable prompts -- from single instructions and worked examples to structured output, tool use, and full prompt-to-product systems.",
+      },
+      {
+        emoji: "✨",
+        title: "Features",
+        body:
+          "**Four weeks, 28 lectures** -- a complete plain-language syllabus across four weeks of seven topics each: Foundations (what prompt engineering is · how models read and continue text · anatomy of a prompt · being specific · role and tone · format and length · failure modes), Core techniques (zero-shot vs few-shot · writing good examples · chain-of-thought · decomposition · context and reference · delimiters and structure · iterating and debugging), Advanced patterns and reliability (structured output and JSON · prompt chaining · self-critique · retrieval-augmented generation · tool use and function calling · temperature and sampling · evaluation and testing), and Applications, safety, and systems (writing, summarizing, and extraction · coding and data · analysis and decision support · prompt injection · hallucination and bias · templates · from prompt to product).\n\n**Three-depth lessons** -- every lesson reads at Short / Medium / Long length, AI-rewritten while keeping the same examples and learning objectives.\n\n**Section-scoped AI tutor** -- ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.\n\n**Adaptive practice** -- generated problem sets that get harder on a streak and ease off after a miss; per-session difficulty persists. Questions ask you to explain your reasoning in plain words, never to memorize trivia.\n\n**AI-graded assignments** -- four weekly homework sets, a timed 30-minute midterm after week 2, and a timed 45-minute cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percent score.\n\n**Two-layer AI-authorship detection** -- every submission is screened by a static text classifier and a keystroke-pattern detector, each with a human-readable verdict.\n\n**Diagnostic reasoning checks** -- two ungraded instruments (Prompt Engineering subject reasoning and General Reasoning), each offered in three formats and three lengths, at four points in the journey. Unlimited practice with fresh questions every attempt; they never affect the grade (coursework is 100%).\n\n**Live analytics** -- dashboard KPIs (attempts, accuracy, streak), per-topic mastery, and a recent-activity feed.",
+      },
+      {
+        emoji: "📚",
+        title: "Who It's For",
+        body:
+          "**Newcomers to the discipline** -- a complete, plain-language introduction to prompt engineering with on-demand tutoring and adaptive practice, assuming no prior background.\n\n**Instructors & curriculum designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.\n\n**Academic-integrity researchers** -- a live testbed for layered AI-authorship detection (text classification + keystroke behavior).\n\n**Product & engineering teams** -- a reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic tooling.",
+      },
+    ],
+  },
   "Sociology 101": {
     emoji: "🔎",
     tagline:
@@ -1656,7 +1681,7 @@ export function CourseCatalog({
     { title: "Voice Powered Know Thyself", url: "https://voicepoweredknowthyself.xyz", videoUrl: "https://www.youtube.com/watch?v=MgqTMa1J2fw" },
     { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
     { title: "Programming (Python-based CS 1 / Computational Thinking)", url: "https://python101.xyz", videoUrl: "https://youtu.be/wAHcQhr4w0o" },
-    { title: "Prompt Engineering", url: "https://promptengineering.ink", videoUrl: "https://www.youtube.com/watch?v=-xrVcKgaVeI" },
+    { title: "Prompt Engineering", url: "https://promptengineering.ink", videoUrl: "https://www.youtube.com/watch?v=SfDheb0UR-Q" },
     { title: "Data Structures and Algorithms", url: "https://datastructures101.xyz", videoUrl: "https://youtu.be/9Sj_xvDZZ6c" },
     { title: "Databases and SQL", url: "https://databases101.xyz", videoUrl: "https://youtu.be/VF0WhpkuseI" },
     { title: "Machine Learning and Applied AI", url: "https://machinelearning101.xyz", videoUrl: "https://youtu.be/7eot6NUgr2A" },
