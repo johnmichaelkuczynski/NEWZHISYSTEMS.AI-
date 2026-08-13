@@ -1,12 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import {
-  ClerkProvider,
-  SignedIn,
-  SignedOut,
-  SignIn,
-  SignOutButton,
-  useUser,
-} from "@clerk/clerk-react";
 import NavBar from "@/components/NavBar";
 import {
   ResponsiveContainer,
@@ -67,51 +59,63 @@ function StatCard({ title, counts }: { title: string; counts?: Counts }) {
 const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
 
 export default function Administrative() {
-  const publishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string;
-  return (
-    <ClerkProvider publishableKey={publishableKey} afterSignOutUrl="/administrative">
-      <SignedOut>
-        <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
-          <NavBar />
-          <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col items-center">
-            <p className="text-gray-600 mb-6">Sign in to view visitor analytics.</p>
-            <SignIn routing="hash" />
-          </div>
-        </div>
-      </SignedOut>
-      <SignedIn>
-        <AdminGate />
-      </SignedIn>
-    </ClerkProvider>
-  );
-}
+  const { data: me, isLoading } = useQuery<{ email: string | null; isAdmin: boolean }>({
+    queryKey: ["/api/auth/me"],
+  });
 
-function AdminGate() {
-  const { user } = useUser();
-  const emails = (user?.emailAddresses || []).map((e) =>
-    e.emailAddress.toLowerCase(),
-  );
-  if (!emails.includes(ADMIN_EMAIL)) {
+  const signOut = async () => {
+    await fetch("/api/auth/logout", { method: "POST" });
+    window.location.reload();
+  };
+
+  if (isLoading) {
+    return (
+      <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
+        <NavBar />
+        <div className="max-w-6xl mx-auto px-4 py-16 text-center text-gray-600">
+          Loading...
+        </div>
+      </div>
+    );
+  }
+
+  if (!me?.email) {
+    return (
+      <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
+        <NavBar />
+        <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col items-center">
+          <p className="text-gray-600 mb-6">Sign in to view visitor analytics.</p>
+          <a
+            href="/api/auth/google"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg"
+          >
+            Sign in with Google
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  if (!me.isAdmin) {
     return (
       <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
         <NavBar />
         <div className="max-w-6xl mx-auto px-4 py-16 text-center">
           <p className="text-red-600 mb-4">
-            This account is not authorized to view analytics.
+            {me.email} is not authorized to view analytics.
           </p>
-          <SignOutButton>
-            <button className="text-blue-600 underline">
-              Sign out and try a different account
-            </button>
-          </SignOutButton>
+          <button onClick={signOut} className="text-blue-600 underline">
+            Sign out and try a different account
+          </button>
         </div>
       </div>
     );
   }
-  return <AnalyticsDashboard />;
+
+  return <AnalyticsDashboard onSignOut={signOut} />;
 }
 
-function AnalyticsDashboard() {
+function AnalyticsDashboard({ onSignOut }: { onSignOut: () => void }) {
   const { data, isLoading, error } = useQuery<AnalyticsData>({
     queryKey: ["/api/analytics"],
     refetchInterval: 60_000,
@@ -121,7 +125,12 @@ function AnalyticsDashboard() {
     <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
       <NavBar />
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Administrative</h1>
+        <div className="flex items-center justify-between mb-1">
+          <h1 className="text-2xl font-bold">Administrative</h1>
+          <button onClick={onSignOut} className="text-sm text-blue-600 underline">
+            Sign out
+          </button>
+        </div>
         <p className="text-gray-600 text-sm mb-6">
           Visitor analytics for zhisystems.ai. Auto-refreshes every minute.
         </p>

@@ -17,27 +17,84 @@ import {
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
 import geoip from "geoip-lite";
-import { clerkMiddleware, getAuth, clerkClient } from "@clerk/express";
+import session from "express-session";
 
 const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  app.use(clerkMiddleware());
+  app.set("trust proxy", 1);
+  app.use(
+    session({
+      secret: process.env.SESSION_SECRET || "dev-secret",
+      resave: false,
+      saveUninitialized: false,
+      cookie: {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        maxAge: 30 * 24 * 60 * 60 * 1000,
+      },
+    }),
+  );
 
-  const requireAdmin = async (req: any, res: any, next: any) => {
+  const getRedirectUri = (req: any) =>
+    `https://${req.get("host")}/api/auth/google/callback`;
+
+  app.get("/api/auth/google", (req, res) => {
+    const params = new URLSearchParams({
+      client_id: process.env.GOOGLE_CLIENT_ID || "",
+      redirect_uri: getRedirectUri(req),
+      response_type: "code",
+      scope: "openid email",
+      prompt: "select_account",
+    });
+    res.redirect(`https://accounts.google.com/o/oauth2/v2/auth?${params}`);
+  });
+
+  app.get("/api/auth/google/callback", async (req, res) => {
     try {
-      const { userId } = getAuth(req);
-      if (!userId) return res.status(401).json({ error: "Not signed in" });
-      const user = await clerkClient.users.getUser(userId);
-      const emails = user.emailAddresses.map((e) => e.emailAddress.toLowerCase());
-      if (!emails.includes(ADMIN_EMAIL)) {
-        return res.status(403).json({ error: "Not authorized" });
+      const code = req.query.code as string;
+      if (!code) return res.redirect("/administrative");
+      const tokenRes = await fetch("https://oauth2.googleapis.com/token", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          code,
+          client_id: process.env.GOOGLE_CLIENT_ID || "",
+          client_secret: process.env.GOOGLE_CLIENT_SECRET || "",
+          redirect_uri: getRedirectUri(req),
+          grant_type: "authorization_code",
+        }),
+      });
+      const tokens = await tokenRes.json();
+      if (!tokens.id_token) {
+        console.error("Google token exchange failed:", tokens);
+        return res.redirect("/administrative?auth=failed");
       }
-      next();
+      const payload = JSON.parse(
+        Buffer.from(tokens.id_token.split(".")[1], "base64url").toString(),
+      );
+      (req.session as any).email = (payload.email || "").toLowerCase();
+      res.redirect("/administrative");
     } catch (err) {
-      console.error("Admin auth error:", err);
-      res.status(500).json({ error: "Auth check failed" });
+      console.error("Google auth error:", err);
+      res.redirect("/administrative?auth=failed");
     }
+  });
+
+  app.get("/api/auth/me", (req, res) => {
+    const email = (req.session as any)?.email || null;
+    res.json({ email, isAdmin: email === ADMIN_EMAIL });
+  });
+
+  app.post("/api/auth/logout", (req, res) => {
+    req.session.destroy(() => res.json({ ok: true }));
+  });
+
+  const requireAdmin = (req: any, res: any, next: any) => {
+    const email = (req.session as any)?.email;
+    if (!email) return res.status(401).json({ error: "Not signed in" });
+    if (email !== ADMIN_EMAIL) return res.status(403).json({ error: "Not authorized" });
+    next();
   };
   // Journal routes
   app.get("/api/journal", async (req, res) => {
