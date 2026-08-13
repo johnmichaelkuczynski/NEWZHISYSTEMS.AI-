@@ -42,8 +42,91 @@ function useVisitTracking() {
   }, [location]);
 }
 
+const SEO_META: Record<string, { title: string; description: string; noindex?: boolean }> = {
+  "/": {
+    title: "Microcertifications | Zhi Systems — AI-Taught, Cheat-Proof Courses",
+    description:
+      "Earn microcertifications through AI-taught, AI-graded, cheat-proof courses with 24/7 built-in tutors. Level 1 Cadet: pass any course from the Zhi Systems catalog.",
+  },
+  "/microcertifications": {
+    title: "Microcertifications | Zhi Systems — AI-Taught, Cheat-Proof Courses",
+    description:
+      "Earn microcertifications through AI-taught, AI-graded, cheat-proof courses with 24/7 built-in tutors.",
+  },
+  "/courses": {
+    title: "Living Courses | Zhi Systems — Self-Paced, AI-Taught College Coursework",
+    description:
+      "Self-paced, AI-taught, AI-graded college coursework with built-in academic-integrity enforcement: philosophy, logic, math, physics, finance, AI, and more.",
+  },
+  "/baby-living-courses": {
+    title: "Basic Living Courses | Zhi Systems — Short AI-Taught Courses",
+    description:
+      "Short AI-taught courses for children and for anyone who wants quick exposure to a discipline — from Python and prompt engineering to biology and sociology.",
+  },
+  "/johnson-wales": {
+    title: "Restaurant & Hospitality Analytics Courses | Zhi Systems",
+    description:
+      "AI-taught analytics courses for restaurant, hospitality, and business programs.",
+  },
+  "/journal": {
+    title: "Journal | Zhi Systems",
+    description: "Essays and research from Zhi Systems.",
+  },
+  "/podcasts": {
+    title: "Podcasts | Zhi Systems",
+    description: "Audio briefings and podcasts from Zhi Systems.",
+  },
+  "/privacy-policy": { title: "Privacy Policy | Zhi Systems", description: "Zhi Systems privacy policy." },
+  "/terms": { title: "Terms of Service | Zhi Systems", description: "Zhi Systems terms of service." },
+  "/administrative": {
+    title: "Administrative | Zhi Systems",
+    description: "Private analytics.",
+    noindex: true,
+  },
+};
+
+function upsertMeta(attr: "name" | "property", key: string, content: string) {
+  let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function useSeoMeta() {
+  const [location] = useLocation();
+  useEffect(() => {
+    const meta = SEO_META[location];
+    const canonicalUrl = `https://zhisystems.ai${location === "/" ? "/" : location}`;
+    if (meta) {
+      document.title = meta.title;
+      upsertMeta("name", "description", meta.description);
+      upsertMeta("property", "og:title", meta.title);
+      upsertMeta("property", "og:description", meta.description);
+    }
+    upsertMeta("property", "og:url", canonicalUrl);
+    upsertMeta(
+      "name",
+      "robots",
+      meta?.noindex || location.startsWith("/office-use") || location.startsWith("/journal/admin")
+        ? "noindex, nofollow"
+        : "index, follow",
+    );
+    let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      document.head.appendChild(link);
+    }
+    link.setAttribute("href", canonicalUrl);
+  }, [location]);
+}
+
 function Router() {
   useVisitTracking();
+  useSeoMeta();
   return (
     <Switch>
       <Route path="/" component={Microcertifications} />
@@ -74,9 +157,7 @@ function Router() {
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={Terms} />
       <Route path="/administrative">
-        <PasswordGate storageKey="administrative-access">
-          <Administrative />
-        </PasswordGate>
+        <Administrative />
       </Route>
       <Route component={NotFound} />
     </Switch>

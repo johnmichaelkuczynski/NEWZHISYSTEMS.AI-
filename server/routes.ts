@@ -17,8 +17,28 @@ import {
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
 import geoip from "geoip-lite";
+import { clerkMiddleware, getAuth, clerkClient } from "@clerk/express";
+
+const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  app.use(clerkMiddleware());
+
+  const requireAdmin = async (req: any, res: any, next: any) => {
+    try {
+      const { userId } = getAuth(req);
+      if (!userId) return res.status(401).json({ error: "Not signed in" });
+      const user = await clerkClient.users.getUser(userId);
+      const emails = user.emailAddresses.map((e) => e.emailAddress.toLowerCase());
+      if (!emails.includes(ADMIN_EMAIL)) {
+        return res.status(403).json({ error: "Not authorized" });
+      }
+      next();
+    } catch (err) {
+      console.error("Admin auth error:", err);
+      res.status(500).json({ error: "Auth check failed" });
+    }
+  };
   // Journal routes
   app.get("/api/journal", async (req, res) => {
     try {
@@ -418,7 +438,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/analytics", async (_req, res) => {
+  app.get("/api/analytics", requireAdmin, async (_req, res) => {
     try {
       const data = await storage.getAnalytics();
       res.json(data);

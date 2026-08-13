@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /administrative
+Disallow: /office-use
+Disallow: /journal/admin
+
+Sitemap: https://zhisystems.ai/sitemap.xml
