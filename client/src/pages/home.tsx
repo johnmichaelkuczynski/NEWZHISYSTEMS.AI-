@@ -15,6 +15,176 @@ interface AppDescription {
 }
 
 const appDescriptions: Record<string, AppDescription> = {
+  "Neoclassical Piano": {
+    emoji: "🎹",
+    tagline:
+      "The Official Site -- One composer. Fourteen albums. Nine singles. Every genre from a cappella to banjo. A stark, editorial promotional site for a catalog of modern neoclassical music.",
+    sections: [
+      {
+        emoji: "🎼",
+        title: "What This Is",
+        body: `Neoclassical Piano is the promotional home for a modern composer's complete catalog -- intricate etudes, a cappella vocal works, harpsichord prestos, and genre-bending experiments in disco, techno, jazz, banjo, ragtime, and horn. The site does one thing exceptionally well: it puts the music front and center and sends listeners straight to it.
+
+**The Full Catalog, One Page** -- Every album and every single, each with a real video thumbnail and a one-click link to YouTube.
+
+**Multi-Platform** -- Works not found on YouTube are available on Amazon Music.
+
+**The Artist, Up Front** -- The composer's portrait anchors the page from the first pixel.`,
+      },
+      {
+        emoji: "💿",
+        title: "The Catalog",
+        body: `**Albums -- 14 Releases**
+
+**The A Cappella Cycle** -- Neoclassical A Cappella, Volumes I through V. Five full albums of vocal architecture.
+
+**The Genre Experiments** -- Neoclassical Disco, Neoclassical Techno, Neoclassical Banjo, Neoclassical Horn, Neoclassical Featherlight Jazz, and Neoclassical Featherlight Disco.
+
+**The Classical Line** -- Classical Neoclassical, Classical Rag, and EZ Neoclassical.
+
+**Singles -- 9 Releases**
+
+**Two-Piano Works** -- C Major Etude for Two Pianos, Simple Piece for Two Pianos, G Major Bagatelle for Two Pianos, and the Etude for Two Pianos "The Beast".
+
+**The November 2022 Sessions** -- Etudes, prestos, a song without words, a G minor harpsichord presto, and a compositional exercise -- dated like journal entries.`,
+      },
+      {
+        emoji: "✨",
+        title: "Site Features",
+        body: `**Instant Thumbnails** -- Every release pulls its real video artwork live from YouTube, so the grid always matches what listeners will see when they click through.
+
+**Editorial Design** -- A high-contrast alabaster-and-ink palette with a bold crimson accent; classical serif display type paired with technical monospace labels.
+
+**Motion With Taste** -- Smooth hover reveals, subtle scaling, and staggered transitions throughout.
+
+**Fully Responsive** -- From phone to widescreen, the catalog grid adapts cleanly.
+
+**Zero Friction** -- No accounts, no players to configure. Click a release, land on the music.`,
+      },
+      {
+        emoji: "🎧",
+        title: "Designed For",
+        body: `**New Listeners** -- Land, browse, click, listen. The whole catalog is one scroll away.
+
+**Returning Fans** -- A single canonical place to find every album and single, labeled and organized.
+
+**The Curious** -- Anyone who sees "Neoclassical Banjo" next to "A Cappella Volume V" and has to know what that sounds like.`,
+      },
+    ],
+  },
+  "JM Kuczynski": {
+    emoji: "🎓",
+    tagline:
+      "AI-Powered Courses — The complete digital showcase of John-Michael Kuczynski, PhD: 51 AI-powered courses, 39 working apps, and a live AI channel to the mind behind them all.",
+    sections: [
+      {
+        emoji: "✨",
+        title: "What This Is",
+        body: `A distinctive editorial-style web presence -- cream, ink, and crimson, set in archival serif type -- that puts an entire body of AI courseware in one place:
+
+**📚 51 AI Courses** -- Every course hyperlinked and ready to launch, from logic and mathematics to psychoanalysis and economics. Each one is a fully AI-powered interactive learning experience, not a video playlist.
+
+**🛠️ 39 Key Apps** -- A working arsenal of intelligent tools: graders, tutors, analyzers, generators. Every app listed is live and clickable.
+
+**🔗 Professional Record** -- Direct links to Google Scholar, PhilPapers, Amazon, Amazon Music, and Quora -- the full scholarly and creative footprint, open to every visitor.`,
+      },
+      {
+        emoji: "🗣️",
+        title: "Ask Dr. K — A Live AI Dialogue",
+        body: `The centerpiece: a draggable, resizable dialogue window that channels Kuczynski's digital corpus in real time.
+
+**Voice-Powered Input** -- Speak your question; professional-grade transcription turns it into text instantly. No typing required.
+
+**Spoken Replies** -- Toggle the speaker and hear answers read aloud.
+
+**Answer Length Control** -- From Super Concise (50 words) to Detailed (1,200 words). You decide how deep the answer goes.
+
+**Bullet-Point Mode** -- One click reformats replies as clean, scannable bullets.
+
+**Downloadable Transcripts** -- Export any exchange as a text file with a single click.
+
+**Google Sign-In Gate** -- Conversation requires a Google login; browsing the record never does.`,
+      },
+      {
+        emoji: "🧭",
+        title: "Designed For",
+        body: `**Students & Autodidacts** -- hunting for serious, AI-driven courses in philosophy, logic, mathematics, psychology, and economics.
+
+**Readers & Researchers** -- who want the complete Kuczynski record -- publications, books, audiobooks -- one click away.
+
+**The Curious** -- who would rather ask the author directly than read an FAQ. That's what the red button is for.
+
+"The record is open."`,
+      },
+    ],
+  },
+  "Zhi Microcertifications": {
+    emoji: "知",
+    tagline:
+      "Micro-, Meso-, and Macro-Certifications in Computer and AI-Related Disciplines -- Earned Through AI-Taught, AI-Graded, Cheat-Proof Courses",
+    sections: [
+      {
+        emoji: "🧩",
+        title: "Overview",
+        body: `ZHI Microcertifications is Zhi Systems' certification platform. From a single front door, users reach a catalog of fully-built, AI-taught courses in computer and AI-related disciplines -- artificial intelligence, AI math, data analytics, workforce analytics, Python, prompt engineering, finite math, cognitive science, and more -- and earn tiered certifications by passing them. Every course is a real, deployed product with its own AI tutor, adaptive practice, AI grading, and integrity enforcement -- not a demo, not a mockup, not a coming-soon page.
+
+The certification ladder runs on three scales. Micro-certifications certify mastery of a single course. Meso-certifications certify completion of a cluster of related courses within a discipline. Macro-certifications certify completion of a full discipline track. Advancement is benchmarked to professional standards, so the credential is something employers can trust -- and because every assessment is cheat-proof by design, completion actually certifies competence.`,
+      },
+      {
+        emoji: "👥",
+        title: "Who It's For",
+        body: `**Job seekers and career changers** -- need employer-credible, verifiable credentials in AI and computing disciplines without enrolling in a degree program
+
+**Students and self-directed learners** -- need affordable, self-paced courses with a 24/7 built-in tutor that eliminate the access gap that stalls most online learning
+
+**Employers and hiring managers** -- need certifications that certify actual competence: every submission passes two-layer AI-authorship detection, so a ZHI badge cannot be gamed
+
+**Instructors, schools, and training programs** -- need turn-key AI-taught coursework (analytics, Python, prompt engineering, reasoning) with AI grading and one-click diagnostics
+
+**Professionals upskilling in AI** -- need rigorous, conceptual grounding in how AI actually works, from neural networks to alignment, without a math or coding prerequisite
+
+**Anyone** -- who wants a certification path where the tuition is low, the tutor never sleeps, and the credential means what it says`,
+      },
+      {
+        emoji: "⚙️",
+        title: "Core Capabilities",
+        body: `**Tiered Certification Ladder** -- Micro (single course), meso (course cluster), and macro (full discipline) certifications, starting at Level 1 "Cadet": pass any course from the catalog.
+
+**Course Catalog in Computer and AI-Related Disciplines** -- Dozens of fully-built courses: AI Logic, Basic AI, Basic AI Math, Data Analytics, Workforce Analytics, Python, Prompt Engineering, Finite Math, Cognitive Science, Constructive Reasoning, Diagonalization, Infinite Series, and more -- each linking to its own production deployment.
+
+**Custom Certification Badges** -- Every course awards a custom ZHI badge image, displayed in the catalog and issued on completion.
+
+**AI-Taught, Three-Depth Lectures** -- Every lecture reads at Short / Medium / Long depth, AI-rewritten while preserving the same examples and learning objectives.
+
+**24/7 Section-Scoped AI Tutor** -- Ask about the exact paragraph you're reading; answers stream back grounded in that lecture section. Every student gets on-demand, personalized instruction.
+
+**Adaptive Practice** -- Generated problem sets that get harder on a streak and ease off after a miss, with per-session difficulty persistence.
+
+**AI-Graded Coursework** -- Homework, timed tests, midterms, and finals scored for semantic equivalence with written rationales and rolled-up percent scores.
+
+**Cheat-Proof by Design** -- Every submission is screened by two-layer AI-authorship detection: a static text classifier plus a diachronic keystroke-pattern detector, each with a human-readable verdict.
+
+**Fixed Assessments, Adaptive Lectures** -- Tests and homework are locked for rigor, while lectures flex in length, depth, and style to fit each learner.
+
+**Installable App Across All Platforms** -- Installs to the home screen as a standalone 知 app on iPhone, iPad, Android, macOS, and Windows.`,
+      },
+      {
+        emoji: "🚀",
+        title: "What Makes It Different",
+        body: `**Every link is a real product** -- Every course URL points to a deployed, working application with its own database, tutor, and grading stack. There are no "coming soon" cards, no parked domains, no mocked previews.
+
+**The credential cannot be gamed** -- Assessments are fixed, server-enforced, and screened by two independent AI-authorship detectors. A ZHI certification certifies that the certified person did the work.
+
+**Courses are entire applications, not landing pages** -- Each course is a separately-deployed learning system with three-depth lectures, a section-scoped tutor, adaptive practice, and AI grading. ZHI Microcertifications is the catalog; each course is the cathedral.
+
+**A tutor for every student, always** -- The built-in AI tutor gives every learner on-demand, personalized instruction 24/7, eliminating the access gap that stalls most online learning.
+
+**No silent fallbacks, no fake data** -- If a dependency is unavailable, the system says so. If a tutorial doesn't exist yet, no button is rendered. If an AI call fails, the user sees the failure -- never a hallucinated success.
+
+**A single coherent identity** -- The 知 mark (zhī -- knowledge, wisdom) appears on the logo, the favicon, the installed-app icon, and the home-screen bookmark. One brand, one ladder, one site, one source of truth.`,
+      },
+    ],
+  },
   "Rewrite Plus": {
     emoji: "✍️",
     tagline: "The Text Transformation Workshop — Any Author's Voice, Any Reading Level, Any Length",
@@ -3027,7 +3197,8 @@ export default function Home() {
     ],
     "🌐 Website-Apps": [
       { title: "JM Kuczynski", url: "https://jmkuczynski.ai" },
-      { title: "Neoclassical Piano", url: "https://neoclassicalpiano.com" }
+      { title: "Neoclassical Piano", url: "https://neoclassicalpiano.com" },
+      { title: "Zhi Microcertifications", url: "https://microcertifications.ai" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
