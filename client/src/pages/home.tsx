@@ -3023,8 +3023,11 @@ export default function Home() {
       { title: "Text Surgeon Plus", url: "https://textsurgeonplus.xyz/" },
       { title: "Rewrite Plus", url: "https://rewriteplus.xyz" },
       { title: "GPTByPass", url: "https://gptbypass.ink" },
-      { title: "Forensic Document Verifier", url: "https://forensicdocumentverifier.com" },
-      { title: "JM Kuczynski", url: "https://jmkuczynski.ai" }
+      { title: "Forensic Document Verifier", url: "https://forensicdocumentverifier.com" }
+    ],
+    "🌐 Website-Apps": [
+      { title: "JM Kuczynski", url: "https://jmkuczynski.ai" },
+      { title: "Neoclassical Piano", url: "https://neoclassicalpiano.com" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
