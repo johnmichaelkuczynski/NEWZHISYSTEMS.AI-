@@ -1,0 +1,54 @@
+🔍 Merlin
+Find usernames across the internet — a friendly web app for tracking down accounts by name.
+
+Type a username, watch results stream in live, and jump straight to every profile that matches.
+
+📖 Overview
+Merlin wraps a powerful username-search engine in a clean, no-jargon web app. There is no command line, no setup, and no technical knowledge required — you open the page, type a name, and the results appear card by card as each site is checked.
+
+One-Box Search — A single input is the entire interface. Enter any username (up to 64 characters) and press Search or hit Enter.
+462 Sites Checked Per Search — Every query fans out across hundreds of social networks, forums, and platforms in parallel, so a full scan finishes in seconds rather than minutes.
+Live Streaming Results — Matches surface the instant they are confirmed, using Server-Sent Events. You never wait for the whole scan to finish before seeing the first hit.
+Clickable Result Cards — Each found account shows the site name, its favicon, and the direct profile URL. Click any card to open the profile in a new tab.
+Honest Progress — A live progress bar reports exactly how many of the 462 sites have been checked, and only reaches 100% when the scan genuinely completes.
+Firewall-Aware — Sites protected by Cloudflare or similar WAFs are detected and flagged separately, so a blocked check is never mistaken for a real result.
+Graceful Failure — If the connection drops or a scan stalls, the app says so and preserves the results found so far, instead of falsely claiming completion.
+⚙️ Technical Features
+Flask + SSE Backend — A lightweight Flask server (app.py) runs each search in a background thread and streams results to the browser over a text/event-stream connection. No polling, no page reloads.
+Direct Library Integration — The app calls Sherlock's sherlock() function directly through a custom QueryNotify subclass that pushes each result into a queue, rather than shelling out to the CLI. This keeps results fast and structured.
+Parallel Site Scanning — Sherlock's multi-threaded FuturesSession checks up to 20 sites concurrently, and results are relayed to the UI as each future resolves.
+Result Classification — Every check is resolved to one of CLAIMED, AVAILABLE, WAF, UNKNOWN, or ILLEGAL. Only confirmed matches become cards; WAF hits raise a notice; the rest advance the progress bar silently.
+Local Site Database — Site definitions load from the bundled sherlock_project/resources/data.json at startup (462 sites after NSFW filtering), avoiding a network dependency on boot.
+Zero-Build Frontend — The entire UI is a single self-contained templates/index.html with inline CSS and vanilla JavaScript. No bundler, no framework, no build step.
+Production Server — Deployed behind Gunicorn (gunicorn --bind=0.0.0.0:5000 --reuse-port app:app) rather than Flask's development server, so the app stays responsive under real traffic.
+🔐 Required Secrets
+SESSION_SECRET — Signed-session cookie secret used by Flask. Falls back to a default in development, but should always be set in production.
+No third-party API keys are required. Sherlock queries public site endpoints directly, so the app works out of the box with no external accounts.
+
+🚀 Running Locally
+The app is a Flask server managed by the Start application workflow.
+
+python app.py
+
+It serves on port 5000. Open the preview and start searching.
+
+For production, it runs under Gunicorn:
+
+gunicorn --bind=0.0.0.0:5000 --reuse-port app:app
+
+🗂️ Project Structure
+app.py                        Flask server + SSE streaming endpoint
+templates/index.html          Self-contained frontend (HTML/CSS/JS)
+sherlock_project/             Sherlock core library
+  sherlock.py                 Main search logic
+  sites.py                    Site list loader
+  result.py                   QueryStatus / QueryResult types
+  resources/data.json         Local site database (loaded at startup)
+pyproject.toml                Dependencies (Poetry)
+
+🎓 Designed For
+Anyone checking their own digital footprint — See at a glance where a username is registered across the web.
+OSINT & research — A fast, visual front end for reconnaissance work that would otherwise happen on the command line.
+Non-technical users — No terminal, no flags, no install. Just a search box and clickable results.
+🙏 Credits
+Merlin is built on top of the excellent Sherlock Project (MIT License), adding a real-time streaming web interface on top of the original engine.

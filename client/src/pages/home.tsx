@@ -3198,7 +3198,13 @@ export default function Home() {
     "🌐 Website-Apps": [
       { title: "JM Kuczynski", url: "https://jmkuczynski.ai" },
       { title: "Neoclassical Piano", url: "https://neoclassicalpiano.com" },
+      { title: "Paradoxes", url: "https://paradoxes.ink" },
       { title: "Zhi Microcertifications", url: "https://microcertifications.ai" }
+    ],
+    "🕵️ Recon": [
+      { title: "Git Leak", url: "https://gitleak.ink" },
+      { title: "MailInsight", url: "https://mailinsight.xyz" },
+      { title: "Project Merlin", url: "https://projectmerlin.ink" }
     ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
