@@ -19,7 +19,7 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
-  "Constructive Critical Reasoning": {
+  "Constructive Critical Reasoning (Level 3)": {
     emoji: "🧭",
     tagline:
       "A Four-Unit Course That Trains You to Draw the Strongest Conclusion the Data Actually Supports -- Taught, Tutored, Drilled, and Graded by AI",
@@ -56,7 +56,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Quantitative Reasoning": {
+  "Quantitative Reasoning (Level 3)": {
     emoji: "🎓",
     tagline: "The Quantitative Reasoning Studio -- Executable College Coursework",
     sections: [
@@ -92,7 +92,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Conceptual Mathematics": {
+  "Conceptual Mathematics (Level 3)": {
     emoji: "🧠",
     tagline:
       "Teach Yourself Conceptual Mathematics -- A Four-Week Course on the Ideas Behind the Symbols, From the Integers to Gödel and the Halting Problem",
@@ -129,7 +129,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Teach Yourself Math Notation": {
+  "Teach Yourself Math Notation (Level 3)": {
     emoji: "🔣",
     tagline:
       "Teach Yourself Mathematical Notation -- A Four-Week Course on the Symbols of Mathematics, Science, and Engineering",
@@ -166,7 +166,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Voice-Powered KnowThySelf": {
+  "Voice-Powered KnowThySelf (Level 3)": {
     emoji: "🪞",
     tagline:
       "KnowThySelf -- Voice-Powered Self-Knowledge: A structured month of honest self-inquiry. You speak. AI listens -- and tells you something true.",
@@ -203,7 +203,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Public Speaking": {
+  "Public Speaking (Level 3)": {
     emoji: "🎙️",
     tagline:
       "Podium, The Spoken-First Studio -- A Four-Week College Public Speaking Course That Teaches, Coaches, and Grades How You Actually Speak",
@@ -240,7 +240,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Portfolio Analysis": {
+  "Portfolio Analysis (Level 3)": {
     emoji: "📈",
     tagline:
       "The Portfolio Analysis Studio -- Executable College Coursework: Taught, Tutored, Drilled, Graded, and Integrity-Checked Entirely by AI",
@@ -277,7 +277,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Conceptual Physics": {
+  "Conceptual Physics (Level 3)": {
     emoji: "🔬",
     tagline:
       "The Conceptual Physics Studio -- Executable College Coursework: Taught, Tutored, Drilled, Graded, and Integrity-Checked Entirely by AI",
@@ -314,7 +314,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Critical Thinking": {
+  "Critical Thinking (Level 3)": {
     emoji: "🎓",
     tagline:
       "ClearThink, The Critical Thinking Studio -- Executable College Coursework: Taught, Tutored, Drilled, Graded, and Integrity-Checked Entirely by AI",
@@ -351,7 +351,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Know Thyself": {
+  "Know Thyself (Level 3)": {
     emoji: "🔍",
     tagline:
       "Know Thyself -- A Four-Week Course in Self-Examination: Read the Lecture, Sit With the Question, Answer Honestly",
@@ -382,7 +382,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Evolutionary Psychology": {
+  "Evolutionary Psychology (Level 3)": {
     emoji: "🧬",
     tagline:
       "Teach Yourself Evolutionary Psychology -- A Four-Week Course on the Adapted Mind, From Natural Selection to Cooperation, Language, and Culture",
@@ -419,7 +419,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Finance": {
+  "Finance (Level 3)": {
     emoji: "💼",
     tagline:
       "Teach Yourself Finance -- A Four-Week Course on the Ideas Behind the Money, From the Time Value of a Dollar to the WACC of a Whole Company",
@@ -456,7 +456,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Business Ethics": {
+  "Business Ethics (Level 3)": {
     emoji: "🎓",
     tagline:
       "The Business Ethics Studio -- A Four-Week College Course That Teaches, Tutors, and Proofs Itself",
@@ -481,7 +481,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Formal Logic": {
+  "Formal Logic (Level 3)": {
     emoji: "⊢",
     tagline:
       "Teach Yourself Formal Logic -- Learn to Reason Like a Logician, in Four Focused Weeks",
@@ -518,7 +518,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "AI 101": {
+  "AI (Level 3)": {
     emoji: "🤖",
     tagline:
       "Teach Yourself AI -- A Four-Week Introductory Course on the Ideas Behind Artificial Intelligence, From \"What Is AI?\" to Agents, Alignment, and the Future",
@@ -555,7 +555,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Developmental Mathematics": {
+  "Developmental Mathematics (Level 3)": {
     emoji: "🧮",
     tagline:
       "Teach Yourself Developmental Mathematics -- A Four-Week Course That Rebuilds the Foundations, From Place Value to the Start of Algebra",
@@ -592,7 +592,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Analytic Philosophy": {
+  "Analytic Philosophy (Level 3)": {
     emoji: "🧠",
     tagline:
       "Teach Yourself Analytic Philosophy -- A Four-Week Course on the Logic Behind the Words, From Frege's Logical Form to Formal Truth and the Map of Philosophy",
@@ -629,7 +629,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Ethics": {
+  "Ethics (Level 3)": {
     emoji: "⚖️",
     tagline:
       "EthosReason -- A Four-Unit College Ethics Course, From the Nature of Goodness to Moral Truth Itself",
@@ -666,7 +666,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Philosophy 101": {
+  "Philosophy (Level 3)": {
     emoji: "🦉",
     tagline:
       "PhiloReason -- A Four-Unit College Philosophy 101 Course, From Clear Reasoning to the Big Questions of Mind, Reality, God, and the Good",
@@ -726,25 +726,25 @@ function renderSectionBody(body: string) {
 
 export default function Courses() {
   const courses: Course[] = [
-    { title: "Constructive Critical Reasoning", url: "https://constructivereasoning.xyz" },
-    { title: "Quantitative Reasoning", url: "https://quantitativereasoning.ink" },
-    { title: "Evolutionary Psychology", url: "https://evopsych.xyz" },
-    { title: "Know Thyself", url: "https://minikinowthyself.ink" },
-    { title: "Portfolio Analysis", url: "https://portfolioanalysis101.ink" },
-    { title: "Public Speaking", url: "https://publicspeaking101.xyz" },
-    { title: "Voice-Powered KnowThySelf", url: "https://voicepoweredknowthyself.xyz" },
-    { title: "Finance", url: "https://finance101.xyz" },
-    { title: "Business Ethics", url: "https://businessethics101.ink" },
-    { title: "Teach Yourself Math Notation", url: "https://mathnotation.ink" },
-    { title: "Conceptual Mathematics", url: "https://conceptualmath.ink" },
-    { title: "Conceptual Physics", url: "https://conceptualphysics.ink" },
-    { title: "Critical Thinking", url: "https://criticalthinking.ink" },
-    { title: "Formal Logic", url: "https://formallogic.xyz" },
-    { title: "AI 101", url: "https://ai101.ink" },
-    { title: "Developmental Mathematics", url: "https://developmentalmath.ink" },
-    { title: "Analytic Philosophy", url: "https://analyticphilosophy101.ink" },
-    { title: "Ethics", url: "https://ethics101.xyz" },
-    { title: "Philosophy 101", url: "https://philosophy101.xyz" },
+    { title: "Constructive Critical Reasoning (Level 3)", url: "https://constructivereasoning.xyz" },
+    { title: "Quantitative Reasoning (Level 3)", url: "https://quantitativereasoning.ink" },
+    { title: "Evolutionary Psychology (Level 3)", url: "https://evopsych.xyz" },
+    { title: "Know Thyself (Level 3)", url: "https://minikinowthyself.ink" },
+    { title: "Portfolio Analysis (Level 3)", url: "https://portfolioanalysis101.ink" },
+    { title: "Public Speaking (Level 3)", url: "https://publicspeaking101.xyz" },
+    { title: "Voice-Powered KnowThySelf (Level 3)", url: "https://voicepoweredknowthyself.xyz" },
+    { title: "Finance (Level 3)", url: "https://finance101.xyz" },
+    { title: "Business Ethics (Level 3)", url: "https://businessethics101.ink" },
+    { title: "Teach Yourself Math Notation (Level 3)", url: "https://mathnotation.ink" },
+    { title: "Conceptual Mathematics (Level 3)", url: "https://conceptualmath.ink" },
+    { title: "Conceptual Physics (Level 3)", url: "https://conceptualphysics.ink" },
+    { title: "Critical Thinking (Level 3)", url: "https://criticalthinking.ink" },
+    { title: "Formal Logic (Level 3)", url: "https://formallogic.xyz" },
+    { title: "AI (Level 3)", url: "https://ai101.ink" },
+    { title: "Developmental Mathematics (Level 3)", url: "https://developmentalmath.ink" },
+    { title: "Analytic Philosophy (Level 3)", url: "https://analyticphilosophy101.ink" },
+    { title: "Ethics (Level 3)", url: "https://ethics101.xyz" },
+    { title: "Philosophy (Level 3)", url: "https://philosophy101.xyz" },
   ];
 
   const sortedCourses = [...courses].sort((a, b) =>
