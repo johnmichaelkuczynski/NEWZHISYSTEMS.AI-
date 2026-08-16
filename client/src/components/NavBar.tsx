@@ -6,8 +6,8 @@ const links = [
 
 const privateLinks = [
   { href: "/utilities", label: "Utilities" },
-  { href: "/living-books", label: "Alpha" },
-  { href: "/main-page", label: "Beta" },
+  { href: "/living-books", label: "Memos" },
+  { href: "/main-page", label: "Reports" },
   { href: "/ai-higher-ed", label: "AI in Higher Ed" },
   { href: "/investor-notes", label: "Investor Notes" },
   { href: "/investor-briefings", label: "Investor Briefings" },
