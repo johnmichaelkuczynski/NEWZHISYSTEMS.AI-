@@ -1,3 +1,5 @@
+import zhiLogo from "@assets/zhi_logoc_1786844531458.png";
+
 const links = [
   { href: "/nanocertifications", label: "Nanocertifications" },
   { href: "/", label: "Microcertifications" },
@@ -20,6 +22,19 @@ export default function NavBar() {
     <div className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-start justify-between gap-6">
+          <a
+            href="mailto:zhi@zhisystems.org"
+            className="shrink-0 flex flex-col items-center gap-1"
+          >
+            <img
+              src={zhiLogo}
+              alt="Zhi Systems logo"
+              className="w-12 h-12 rounded"
+            />
+            <span className="text-xs font-medium text-gray-800 tracking-wide whitespace-nowrap">
+              ZHI SYSTEMS
+            </span>
+          </a>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-0.5">
             <a
               href="mailto:zhi@zhisystems.org"
