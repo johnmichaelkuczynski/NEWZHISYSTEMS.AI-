@@ -762,10 +762,6 @@ export default function Courses() {
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
             Certifications
           </h1>
-          <p className="text-gray-700 text-lg">
-            Self-paced, AI-taught, AI-graded college coursework with built-in
-            academic-integrity enforcement.
-          </p>
         </header>
 
         <div className="flex flex-col lg:flex-row gap-8">

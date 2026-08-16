@@ -245,7 +245,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Psychodynamic Treatment of BPD 101": {
+  "Psychodynamic Treatment of BPD 101 (Level 2)": {
     emoji: "🧭",
     tagline:
       "A One-Unit Basic Course on the Psychodynamic Treatment of BPD -- Taught, Tutored, Drilled, and Graded by AI",
@@ -282,7 +282,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Psychodynamic Treatment of OCD 101": {
+  "Psychodynamic Treatment of OCD 101 (Level 2)": {
     emoji: "🧭",
     tagline:
       "A One-Unit Basic Course on the Psychodynamic Treatment of OCD -- Taught, Tutored, Drilled, and Graded by AI",
@@ -319,7 +319,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Workforce Analytics": {
+  "Workforce Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to workforce analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -368,7 +368,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Revenue Management & Pricing Analytics": {
+  "Revenue Management & Pricing Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to revenue management and pricing analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -417,7 +417,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Discrete Math": {
+  "Discrete Math (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to discrete math that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -466,7 +466,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Lambda Calculus": {
+  "Lambda Calculus (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to the lambda calculus that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -515,7 +515,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Operations & Supply Chain Analytics": {
+  "Operations & Supply Chain Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to operations and supply chain analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -564,7 +564,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Marketing Analytics": {
+  "Marketing Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to marketing analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -613,7 +613,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Predictive Analytics": {
+  "Predictive Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to predictive analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -662,7 +662,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Diagonalization and Incompleteness": {
+  "Diagonalization and Incompleteness (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to diagonalization and incompleteness that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -711,7 +711,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Finite Math": {
+  "Finite Math (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to finite math that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -760,7 +760,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Infinite Series": {
+  "Infinite Series (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to infinite series that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -809,7 +809,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Financial & Managerial Analytics": {
+  "Financial & Managerial Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to financial and managerial analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -858,7 +858,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Psychodynamic Therapy 101": {
+  "Psychodynamic Therapy 101 (Level 2)": {
     emoji: "🧭",
     tagline:
       "A One-Unit Basic Course on the Mind Beneath the Surface -- Taught, Tutored, Drilled, and Graded by AI",
@@ -895,7 +895,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Restaurant & Hospitality Analytics": {
+  "Restaurant & Hospitality Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to restaurant and hospitality analytics that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -944,7 +944,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Cognitive Science 101": {
+  "Cognitive Science 101 (Level 2)": {
     emoji: "🧭",
     tagline:
       "A One-Unit Basic Course on How the Mind Works -- Taught, Tutored, Drilled, and Graded by AI",
@@ -981,7 +981,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic AI Math": {
+  "AI Math (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to the math behind AI that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -1030,7 +1030,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Developmental Psychology": {
+  "Developmental Psychology (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to developmental psychology that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -1079,7 +1079,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Constructive Critical Reasoning": {
+  "Constructive Critical Reasoning (Level 2)": {
     emoji: "🧭",
     tagline:
       "A One-Unit Course That Trains You to Draw the Strongest Conclusion the Data Actually Supports -- Taught, Tutored, Drilled, and Graded by AI",
@@ -1116,7 +1116,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Data Analytics": {
+  "Data Analytics (Level 2)": {
     emoji: "🔎",
     tagline:
       "A Friendly, One-Unit Intro to Data Analytics That Teaches, Tutors, Drills, and Grades Itself -- No Math, Coding, or Spreadsheets Required",
@@ -1159,7 +1159,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Criminal Psychology": {
+  "Criminal Psychology (Level 2)": {
     emoji: "🔎",
     tagline:
       "A friendly, one-unit intro to criminal psychology that teaches, tutors, drills, and grades itself -- for curious students and adults alike.",
@@ -1208,7 +1208,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic AI": {
+  "AI (Level 2)": {
     emoji: "🤖",
     tagline:
       "A Friendly, One-Unit Intro to Artificial Intelligence That Teaches, Tutors, Drills, and Grades Itself -- No Math, Coding, or Prior Science Required",
@@ -1251,7 +1251,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Basic Evolutionary Psychology": {
+  "Evolutionary Psychology (Level 2)": {
     emoji: "🧠",
     tagline:
       "A Friendly, One-Unit Intro to Evolutionary Psychology That Teaches, Tutors, Drills, and Grades Itself -- No Math, Coding, or Prior Science Required",
@@ -1605,9 +1605,9 @@ export function CourseCatalog({
   const courses: Course[] = [
     { title: "IQ Booster", url: "https://iqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=oVz0qZnGl20" },
     { title: "Spatial IQ Booster", url: "https://spatialiqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=nfje84a3sps" },
-    { title: "Basic Evolutionary Psychology", url: "https://babyevopsych.xyz", videoUrl: "https://youtu.be/hWJicnEpS6c" },
+    { title: "Evolutionary Psychology (Level 2)", url: "https://babyevopsych.xyz", videoUrl: "https://youtu.be/hWJicnEpS6c" },
     {
-      title: "Basic AI",
+      title: "AI (Level 2)",
       url: "https://babyartificialintelligence.xyz",
       videoUrl: "https://youtu.be/NQJzLfNIhdw",
       badge: {
@@ -1617,7 +1617,7 @@ export function CourseCatalog({
       },
     },
     {
-      title: "Basic AI Math",
+      title: "AI Math (Level 2)",
       url: "https://babyaimath.xyz",
       videoUrl: "https://youtu.be/tmf-vQU5TqQ",
       badge: {
@@ -1627,7 +1627,7 @@ export function CourseCatalog({
       },
     },
     {
-      title: "Basic Diagonalization and Incompleteness",
+      title: "Diagonalization and Incompleteness (Level 2)",
       url: "https://diagonalization.xyz",
       videoUrl: "https://youtu.be/7yMY9fgsDO0",
       badge: {
@@ -1637,7 +1637,7 @@ export function CourseCatalog({
       },
     },
     {
-      title: "Basic Finite Math",
+      title: "Finite Math (Level 2)",
       url: "https://babyfinitemath.xyz",
       videoUrl: "https://youtu.be/w2Hy1Xkc-QE",
       badge: {
@@ -1647,7 +1647,7 @@ export function CourseCatalog({
       },
     },
     {
-      title: "Basic Cognitive Science 101",
+      title: "Cognitive Science 101 (Level 2)",
       url: "https://babycognitivescience101.xyz",
       videoUrl: "https://youtu.be/KIYlhT3lhFM",
       badge: {
@@ -1657,7 +1657,7 @@ export function CourseCatalog({
       },
     },
     {
-      title: "Basic Infinite Series",
+      title: "Infinite Series (Level 2)",
       url: "https://babyinfiniteseries.xyz",
       videoUrl: "https://youtu.be/uwoiLIHjmb0",
       badge: {
@@ -1667,7 +1667,7 @@ export function CourseCatalog({
       },
     },
     {
-      title: "Basic Constructive Critical Reasoning",
+      title: "Constructive Critical Reasoning (Level 2)",
       url: "https://basicconstructivereasoning.xyz",
       videoUrl: "https://youtu.be/A_qV9cH23LA",
       badge: {
@@ -1679,7 +1679,7 @@ export function CourseCatalog({
     { title: "AI Logic", url: "https://ailogiccourse.xyz", videoUrl: "https://youtu.be/NyrQs-__M-s" },
     { title: "Personal Finance", url: "https://personalfinance101.xyz", videoUrl: "https://www.youtube.com/watch?v=GKZ5KciGFss" },
     { title: "Voice Powered Know Thyself", url: "https://voicepoweredknowthyself.xyz", videoUrl: "https://www.youtube.com/watch?v=MgqTMa1J2fw" },
-    { title: "Basic Criminal Psychology", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
+    { title: "Criminal Psychology (Level 2)", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
     { title: "Programming (Python-based CS 1 / Computational Thinking)", url: "https://python101.xyz", videoUrl: "https://youtu.be/wAHcQhr4w0o" },
     { title: "Prompt Engineering", url: "https://promptengineering.ink", videoUrl: "https://www.youtube.com/watch?v=SfDheb0UR-Q" },
     { title: "Data Structures and Algorithms", url: "https://datastructures101.xyz", videoUrl: "https://youtu.be/9Sj_xvDZZ6c" },
@@ -1689,7 +1689,7 @@ export function CourseCatalog({
     { title: "Biology", url: "https://biology101.xyz", videoUrl: "https://youtu.be/6OBbSeQ7GUo" },
     { title: "Sociology 101", url: "https://sociology101.ink", videoUrl: "https://youtu.be/yTDWIfuRrOc" },
     {
-      title: "Basic Data Analytics",
+      title: "Data Analytics (Level 2)",
       url: "https://babyanalytics.xyz",
       videoUrl: "https://youtu.be/FmUCg1agNkc",
       badge: {
@@ -1698,20 +1698,20 @@ export function CourseCatalog({
         label: "Basic Data Analytics -- Course Completed (issued to Douglas Zhi)",
       },
     },
-    { title: "Basic Developmental Psychology", url: "https://babydevelopmentalpsychology.xyz", videoUrl: "https://youtu.be/k42R9s1Mvm8" },
-    { title: "Basic Financial & Managerial Analytics", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
-    { title: "Basic Discrete Math", url: "https://basicdiscretemath.xyz", videoUrl: "https://youtu.be/rb4pnVCug2U" },
-    { title: "Basic Lambda Calculus", url: "https://basiclambdacalculus.xyz", videoUrl: "https://youtu.be/XpQuU6SU8P4" },
-    { title: "Basic Marketing Analytics", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
-    { title: "Basic Operations & Supply Chain Analytics", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
-    { title: "Basic Predictive Analytics", url: "https://babypredictiveanalytics.xyz", videoUrl: "https://youtu.be/wa7D4OKA3WA" },
-    { title: "Basic Revenue Management & Pricing Analytics", url: "https://basicrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
-    { title: "Basic Psychodynamic Therapy 101", url: "https://psychodynamictherapy.xyz", videoUrl: "https://youtu.be/UsUJ3oPdpiY" },
-    { title: "Basic Psychodynamic Treatment of BPD 101", url: "https://psychodynamicbpdtherapy.xyz", videoUrl: "https://youtu.be/ZN2TGmrVzTw" },
-    { title: "Basic Psychodynamic Treatment of OCD 101", url: "https://psychodynamicocdtherapy.xyz", videoUrl: "https://youtu.be/5YZeCEsKKD8" },
-    { title: "Basic Restaurant & Hospitality Analytics", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
+    { title: "Developmental Psychology (Level 2)", url: "https://babydevelopmentalpsychology.xyz", videoUrl: "https://youtu.be/k42R9s1Mvm8" },
+    { title: "Financial & Managerial Analytics (Level 2)", url: "https://babyfinancialanalytics.xyz", videoUrl: "https://youtu.be/VTIJZvoe150" },
+    { title: "Discrete Math (Level 2)", url: "https://basicdiscretemath.xyz", videoUrl: "https://youtu.be/rb4pnVCug2U" },
+    { title: "Lambda Calculus (Level 2)", url: "https://basiclambdacalculus.xyz", videoUrl: "https://youtu.be/XpQuU6SU8P4" },
+    { title: "Marketing Analytics (Level 2)", url: "https://babymarketinganalytics.xyz", videoUrl: "https://youtu.be/hQ3JuHB8zBw" },
+    { title: "Operations & Supply Chain Analytics (Level 2)", url: "https://babysupplychain.xyz", videoUrl: "https://youtu.be/jh6b0Ap4DTU" },
+    { title: "Predictive Analytics (Level 2)", url: "https://babypredictiveanalytics.xyz", videoUrl: "https://youtu.be/wa7D4OKA3WA" },
+    { title: "Revenue Management & Pricing Analytics (Level 2)", url: "https://basicrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
+    { title: "Psychodynamic Therapy 101 (Level 2)", url: "https://psychodynamictherapy.xyz", videoUrl: "https://youtu.be/UsUJ3oPdpiY" },
+    { title: "Psychodynamic Treatment of BPD 101 (Level 2)", url: "https://psychodynamicbpdtherapy.xyz", videoUrl: "https://youtu.be/ZN2TGmrVzTw" },
+    { title: "Psychodynamic Treatment of OCD 101 (Level 2)", url: "https://psychodynamicocdtherapy.xyz", videoUrl: "https://youtu.be/5YZeCEsKKD8" },
+    { title: "Restaurant & Hospitality Analytics (Level 2)", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
     {
-      title: "Basic Workforce Analytics",
+      title: "Workforce Analytics (Level 2)",
       url: "https://babyworkforceanalytics.xyz",
       videoUrl: "https://youtu.be/rOINDQbLd7U",
       badge: {
