@@ -12,8 +12,6 @@ import Podcasts from "@/pages/podcasts";
 import OfficeUse from "@/pages/office-use";
 import AiHigherEd from "@/pages/ai-higher-ed";
 import Courses from "@/pages/courses";
-import JohnsonWales from "@/pages/johnson-wales";
-import BabyLivingCourses from "@/pages/baby-living-courses";
 import Nanocertifications from "@/pages/nanocertifications";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import Terms from "@/pages/terms";
@@ -55,7 +53,7 @@ const SEO_META: Record<string, { title: string; description: string; noindex?: b
       "Earn microcertifications through AI-taught, AI-graded, cheat-proof courses with 24/7 built-in tutors.",
   },
   "/courses": {
-    title: "Living Courses | Zhi Systems — Self-Paced, AI-Taught College Coursework",
+    title: "Certifications | Zhi Systems — Self-Paced, AI-Taught College Coursework",
     description:
       "Self-paced, AI-taught, AI-graded college coursework with built-in academic-integrity enforcement: philosophy, logic, math, physics, finance, AI, and more.",
   },
@@ -63,16 +61,6 @@ const SEO_META: Record<string, { title: string; description: string; noindex?: b
     title: "Nanocertifications | Zhi Systems — AI-Taught Micro Courses",
     description:
       "Nanocertifications from Zhi Systems: compact, rigorous AI-taught courses with built-in tutors, cheat-proof assessments, and verified mastery.",
-  },
-  "/baby-living-courses": {
-    title: "Basic Living Courses | Zhi Systems — Short AI-Taught Courses",
-    description:
-      "Short AI-taught courses for children and for anyone who wants quick exposure to a discipline — from Python and prompt engineering to biology and sociology.",
-  },
-  "/johnson-wales": {
-    title: "Restaurant & Hospitality Analytics Courses | Zhi Systems",
-    description:
-      "AI-taught analytics courses for restaurant, hospitality, and business programs.",
   },
   "/journal": {
     title: "Journal | Zhi Systems",
@@ -154,9 +142,7 @@ function Router() {
         <PasswordGate><AiHigherEd /></PasswordGate>
       </Route>
       <Route path="/courses" component={Courses} />
-      <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/microcertifications" component={Microcertifications} />
-      <Route path="/baby-living-courses" component={BabyLivingCourses} />
       <Route path="/nanocertifications" component={Nanocertifications} />
       <Route path="/living-books">
         <PasswordGate storageKey="living-books-access"><LivingBooks /></PasswordGate>

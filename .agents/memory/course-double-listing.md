@@ -9,3 +9,5 @@ The analytics courses (e.g. Basic Data Analytics, Marketing/Workforce/Operations
 **Why:** The user viewed Johnson & Wales and didn't see a badge that was added only to baby-living-courses. They explicitly asked: for a double-listed course, put the badge (and by extension other changes) in both places.
 
 **How to apply:** Before editing a course, grep both files for the exact title. If it exists in both, mirror the change. Note johnson-wales originally lacked the Badge interface + badge render block — both pages now support `badge?` on the Course interface and render it before the Tutorial/Visit buttons.
+
+**Update 2026-08-15:** The johnson-wales page was removed from the nav/routes/sitemap at the owner's request ("get rid of Restaurant and Hospitality"). The file still exists but is unrouted; double-listing sync only matters again if the page is ever restored.
