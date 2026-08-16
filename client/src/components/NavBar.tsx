@@ -23,9 +23,9 @@ export default function NavBar() {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-0.5">
             <a
               href="mailto:zhi@zhisystems.org"
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-1.5 rounded mr-4"
             >
-              Contact Us
+              ✉️ Contact Us
             </a>
             {links.map((link) => (
               <a
