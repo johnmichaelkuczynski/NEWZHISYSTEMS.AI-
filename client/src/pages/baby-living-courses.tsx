@@ -36,7 +36,7 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
-  "Voice Powered Know Thyself": {
+  "Voice Powered Know Thyself (Level 2)": {
     emoji: "🪞",
     tagline:
       "KnowThySelf -- Voice-Powered Self-Knowledge: A structured month of honest self-inquiry. You speak. AI listens -- and tells you something true.",
@@ -73,7 +73,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Personal Finance": {
+  "Personal Finance (Level 2)": {
     emoji: "💵",
     tagline:
       "Teach Yourself Personal Finance -- A Four-Unit Introductory Course on the Ideas Behind Money: From \"Gross vs. Net\" to Investing, Insurance, and Life Planning",
@@ -110,7 +110,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "AI Logic": {
+  "AI Logic (Level 2)": {
     emoji: "🤖",
     tagline:
       "A Four-Week Introductory Course on the Ideas Behind Artificial Intelligence -- From \"What Is AI?\" to Agents, Alignment, and the Future",
@@ -147,7 +147,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Spatial IQ Booster": {
+  "Spatial IQ Booster (Level 2)": {
     emoji: "🔎",
     tagline:
       "A rigorous, self-paced introduction to how spatial reasoning works -- and how to beat the tests that measure it -- that teaches, tutors, drills, and grades itself, built for researchers and professionals entering the field.",
@@ -196,7 +196,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "IQ Booster": {
+  "IQ Booster (Level 2)": {
     emoji: "🔎",
     tagline:
       "A rigorous, self-paced introduction to how reasoning and aptitude tests work -- and how to beat them -- that teaches, tutors, drills, and grades itself, built for researchers and professionals entering the field.",
@@ -1294,7 +1294,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Programming (Python-based CS 1 / Computational Thinking)": {
+  "Programming (Python-based CS 1 / Computational Thinking) (Level 2)": {
     emoji: "🐍",
     tagline:
       "Intro to Programming: Python and Computational Thinking -- The programming course that teaches you, tutors you, coaches you, and certifies you -- all in one place.",
@@ -1331,7 +1331,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Prompt Engineering": {
+  "Prompt Engineering (Level 2)": {
     emoji: "🔎",
     tagline:
       "Prompt Engineering -- A complete, four-week introduction to prompt engineering that teaches, tutors, drills, grades, and proofs itself -- for adults beginning the discipline.",
@@ -1356,7 +1356,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Sociology 101": {
+  "Sociology 101 (Level 2)": {
     emoji: "🔎",
     tagline:
       "Sociology 101 -- The sociology course that teaches you, tutors you, coaches you, and certifies you -- all in one place.",
@@ -1393,7 +1393,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Biology": {
+  "Biology (Level 2)": {
     emoji: "🧠",
     tagline:
       "Biology -- The Complete Four-Week Course That Teaches, Tutors, Drills, Grades -- and Polices -- Itself: 28 full lectures, an AI tutor scoped to the paragraph you're reading, adaptive practice, real written feedback, and two layers of AI-cheating detection. Zero instructors required.",
@@ -1424,7 +1424,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Computer Systems": {
+  "Computer Systems (Level 2)": {
     emoji: "🔎",
     tagline:
       "Computer Systems -- A complete introduction to computer systems that teaches, tutors, drills, and grades itself -- for adults beginning the discipline.",
@@ -1461,7 +1461,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Machine Learning and Applied AI": {
+  "Machine Learning and Applied AI (Level 2)": {
     emoji: "🔎",
     tagline:
       "Machine Learning and Applied AI -- A complete, four-week introduction to machine learning and applied AI that teaches, tutors, drills, and grades itself -- for adults beginning the discipline.",
@@ -1498,7 +1498,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Databases and SQL": {
+  "Databases and SQL (Level 2)": {
     emoji: "🔎",
     tagline:
       "Databases and SQL -- A complete, four-week introduction to relational databases and SQL that teaches, tutors, drills, and grades itself -- for adults beginning the discipline.",
@@ -1535,7 +1535,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "Data Structures and Algorithms": {
+  "Data Structures and Algorithms (Level 2)": {
     emoji: "🧠",
     tagline:
       "Data Structures and Algorithms -- The Complete Four-Week Course That Teaches, Tutors, Drills, Grades -- and Polices -- Itself: 28 full lectures, an AI tutor scoped to the paragraph you're reading, adaptive practice, real written feedback, and two layers of AI-cheating detection. Zero instructors required.",
@@ -1603,8 +1603,8 @@ export function CourseCatalog({
   showVirtues?: boolean;
 }) {
   const courses: Course[] = [
-    { title: "IQ Booster", url: "https://iqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=oVz0qZnGl20" },
-    { title: "Spatial IQ Booster", url: "https://spatialiqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=nfje84a3sps" },
+    { title: "IQ Booster (Level 2)", url: "https://iqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=oVz0qZnGl20" },
+    { title: "Spatial IQ Booster (Level 2)", url: "https://spatialiqbooster.xyz", videoUrl: "https://www.youtube.com/watch?v=nfje84a3sps" },
     { title: "Evolutionary Psychology (Level 2)", url: "https://babyevopsych.xyz", videoUrl: "https://youtu.be/hWJicnEpS6c" },
     {
       title: "AI (Level 2)",
@@ -1676,18 +1676,18 @@ export function CourseCatalog({
         label: "Basic Constructive Critical Reasoning -- Course Completed (issued to Douglas Zhi)",
       },
     },
-    { title: "AI Logic", url: "https://ailogiccourse.xyz", videoUrl: "https://youtu.be/NyrQs-__M-s" },
-    { title: "Personal Finance", url: "https://personalfinance101.xyz", videoUrl: "https://www.youtube.com/watch?v=GKZ5KciGFss" },
-    { title: "Voice Powered Know Thyself", url: "https://voicepoweredknowthyself.xyz", videoUrl: "https://www.youtube.com/watch?v=MgqTMa1J2fw" },
+    { title: "AI Logic (Level 2)", url: "https://ailogiccourse.xyz", videoUrl: "https://youtu.be/NyrQs-__M-s" },
+    { title: "Personal Finance (Level 2)", url: "https://personalfinance101.xyz", videoUrl: "https://www.youtube.com/watch?v=GKZ5KciGFss" },
+    { title: "Voice Powered Know Thyself (Level 2)", url: "https://voicepoweredknowthyself.xyz", videoUrl: "https://www.youtube.com/watch?v=MgqTMa1J2fw" },
     { title: "Criminal Psychology (Level 2)", url: "https://babycrimpsych.xyz", videoUrl: "https://youtu.be/J7OpTF3pK_I" },
-    { title: "Programming (Python-based CS 1 / Computational Thinking)", url: "https://python101.xyz", videoUrl: "https://youtu.be/wAHcQhr4w0o" },
-    { title: "Prompt Engineering", url: "https://promptengineering.ink", videoUrl: "https://www.youtube.com/watch?v=SfDheb0UR-Q" },
-    { title: "Data Structures and Algorithms", url: "https://datastructures101.xyz", videoUrl: "https://youtu.be/9Sj_xvDZZ6c" },
-    { title: "Databases and SQL", url: "https://databases101.xyz", videoUrl: "https://youtu.be/VF0WhpkuseI" },
-    { title: "Machine Learning and Applied AI", url: "https://machinelearning101.xyz", videoUrl: "https://youtu.be/7eot6NUgr2A" },
-    { title: "Computer Systems", url: "https://computersystems101.xyz", videoUrl: "https://youtu.be/E_qLdP5CEs0" },
-    { title: "Biology", url: "https://biology101.xyz", videoUrl: "https://youtu.be/6OBbSeQ7GUo" },
-    { title: "Sociology 101", url: "https://sociology101.ink", videoUrl: "https://youtu.be/yTDWIfuRrOc" },
+    { title: "Programming (Python-based CS 1 / Computational Thinking) (Level 2)", url: "https://python101.xyz", videoUrl: "https://youtu.be/wAHcQhr4w0o" },
+    { title: "Prompt Engineering (Level 2)", url: "https://promptengineering.ink", videoUrl: "https://www.youtube.com/watch?v=SfDheb0UR-Q" },
+    { title: "Data Structures and Algorithms (Level 2)", url: "https://datastructures101.xyz", videoUrl: "https://youtu.be/9Sj_xvDZZ6c" },
+    { title: "Databases and SQL (Level 2)", url: "https://databases101.xyz", videoUrl: "https://youtu.be/VF0WhpkuseI" },
+    { title: "Machine Learning and Applied AI (Level 2)", url: "https://machinelearning101.xyz", videoUrl: "https://youtu.be/7eot6NUgr2A" },
+    { title: "Computer Systems (Level 2)", url: "https://computersystems101.xyz", videoUrl: "https://youtu.be/E_qLdP5CEs0" },
+    { title: "Biology (Level 2)", url: "https://biology101.xyz", videoUrl: "https://youtu.be/6OBbSeQ7GUo" },
+    { title: "Sociology 101 (Level 2)", url: "https://sociology101.ink", videoUrl: "https://youtu.be/yTDWIfuRrOc" },
     {
       title: "Data Analytics (Level 2)",
       url: "https://babyanalytics.xyz",
