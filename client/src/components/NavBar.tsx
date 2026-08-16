@@ -21,7 +21,7 @@ export default function NavBar() {
   return (
     <div className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-3">
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex flex-wrap items-start justify-between gap-6">
           <div className="shrink-0 flex flex-col items-center gap-1">
             <a
               href="mailto:zhi@zhisystems.org"

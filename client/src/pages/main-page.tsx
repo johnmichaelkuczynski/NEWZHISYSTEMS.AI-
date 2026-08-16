@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import NavBar from "@/components/NavBar";
 import CopyButton from "@/components/CopyButton";
 
 interface App {
@@ -2829,7 +2828,6 @@ export default function MainPage() {
   return (
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
       {/* Navigation */}
-      <NavBar />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-8">

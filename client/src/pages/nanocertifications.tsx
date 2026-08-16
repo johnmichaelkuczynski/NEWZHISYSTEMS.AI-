@@ -1,5 +1,4 @@
 import { useState } from "react";
-import NavBar from "@/components/NavBar";
 
 interface CourseDescription {
   emoji: string;
@@ -103,7 +102,6 @@ export default function Nanocertifications() {
 
   return (
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
-      <NavBar />
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-10">

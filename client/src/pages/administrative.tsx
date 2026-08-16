@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import NavBar from "@/components/NavBar";
 import {
   ResponsiveContainer,
   BarChart,
@@ -71,7 +70,6 @@ export default function Administrative() {
   if (isLoading) {
     return (
       <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
-        <NavBar />
         <div className="max-w-6xl mx-auto px-4 py-16 text-center text-gray-600">
           Loading...
         </div>
@@ -82,7 +80,6 @@ export default function Administrative() {
   if (!me?.email) {
     return (
       <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
-        <NavBar />
         <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col items-center">
           <p className="text-gray-600 mb-6">Sign in to view visitor analytics.</p>
           <a
@@ -99,7 +96,6 @@ export default function Administrative() {
   if (!me.isAdmin) {
     return (
       <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
-        <NavBar />
         <div className="max-w-6xl mx-auto px-4 py-16 text-center">
           <p className="text-red-600 mb-4">
             {me.email} is not authorized to view analytics.
@@ -123,7 +119,6 @@ function AnalyticsDashboard({ onSignOut }: { onSignOut: () => void }) {
 
   return (
     <div className="font-sans bg-gray-50 text-gray-900 min-h-screen">
-      <NavBar />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-1">
           <h1 className="text-2xl font-bold">Administrative</h1>

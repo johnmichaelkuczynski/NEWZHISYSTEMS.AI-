@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import NavBar from "@/components/NavBar";
 
 interface App {
   title: string;
@@ -3371,7 +3370,6 @@ export default function Home() {
   return (
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
       {/* Navigation */}
-      <NavBar />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-8">

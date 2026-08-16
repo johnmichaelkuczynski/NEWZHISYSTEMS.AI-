@@ -17,6 +17,7 @@ import PrivacyPolicy from "@/pages/privacy-policy";
 import Terms from "@/pages/terms";
 import NotFound from "@/pages/not-found";
 import PasswordGate from "@/components/PasswordGate";
+import NavBar from "@/components/NavBar";
 import Administrative from "@/pages/administrative";
 import LivingBooks from "@/pages/living-books";
 import MainPage from "@/pages/main-page";
@@ -122,6 +123,8 @@ function Router() {
   useVisitTracking();
   useSeoMeta();
   return (
+    <>
+    <NavBar />
     <Switch>
       <Route path="/" component={Microcertifications} />
       <Route path="/utilities">
@@ -154,6 +157,7 @@ function Router() {
       </Route>
       <Route component={NotFound} />
     </Switch>
+    </>
   );
 }
 

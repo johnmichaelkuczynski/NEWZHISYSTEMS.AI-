@@ -1,4 +1,3 @@
-import NavBar from "@/components/NavBar";
 import CopyButton from "@/components/CopyButton";
 
 const livingBooksByKuczynski = [
@@ -66,7 +65,6 @@ function BookItem({ title, url }: { title: string; url: string }) {
 export default function LivingBooks() {
   return (
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
-      <NavBar />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <section className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6 border-b border-gray-200 pb-2">

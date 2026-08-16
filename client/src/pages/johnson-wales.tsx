@@ -1,5 +1,4 @@
 import { useState } from "react";
-import NavBar from "@/components/NavBar";
 import dataAnalyticsBadge from "@assets/BASIC_DATA_ANALYTICS_1781998712125.png";
 import workforceAnalyticsBadge from "@assets/WORKFORCE_ANALYTICS_1782001428926.png";
 
@@ -474,7 +473,6 @@ export default function JohnsonWales() {
 
   return (
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
-      <NavBar />
 
       <div className="max-w-4xl mx-auto px-4 py-12">
         {sortedCourses.length === 0 ? (

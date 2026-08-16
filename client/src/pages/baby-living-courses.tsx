@@ -1,5 +1,4 @@
 import { useState } from "react";
-import NavBar from "@/components/NavBar";
 import aiFundamentalsBadge from "@assets/ZHI_AI_FUNDAMENTALS_BADGE_1781725917586.png";
 import aiMathFundamentalsBadge from "@assets/ZHI_AI_MATH_FUNDAMENTALS_BADGE_1781730555335.png";
 import infiniteSeriesBadge from "@assets/BABY_INFINITE_SERIES_1781731315533.png";
@@ -1730,7 +1729,6 @@ export function CourseCatalog({
 
   return (
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
-      <NavBar />
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-10">
