@@ -36,11 +36,27 @@ export default function NavBar() {
                 ZHI SYSTEMS
               </span>
             </a>
-            <div className="flex flex-col items-center gap-0.5 mt-1 text-lg leading-none font-medium text-gray-800">
-              <span title="Education">教</span>
-              <span title="Intelligence">智</span>
-              <span title="Psychology">心</span>
-              <span title="Finance">财</span>
+            <div className="flex flex-col items-start gap-1 mt-1 leading-none">
+              <span className="flex items-center gap-1.5 whitespace-nowrap">
+                <span>🎓</span>
+                <span className="text-lg font-medium text-gray-800">教</span>
+                <span className="text-xs text-gray-600">Education</span>
+              </span>
+              <span className="flex items-center gap-1.5 whitespace-nowrap">
+                <span>🧠</span>
+                <span className="text-lg font-medium text-gray-800">智</span>
+                <span className="text-xs text-gray-600">Intelligence</span>
+              </span>
+              <span className="flex items-center gap-1.5 whitespace-nowrap">
+                <span>🧩</span>
+                <span className="text-lg font-medium text-gray-800">心</span>
+                <span className="text-xs text-gray-600">Psychology</span>
+              </span>
+              <span className="flex items-center gap-1.5 whitespace-nowrap">
+                <span>💰</span>
+                <span className="text-lg font-medium text-gray-800">财</span>
+                <span className="text-xs text-gray-600">Finance</span>
+              </span>
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-0.5">
