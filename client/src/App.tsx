@@ -14,6 +14,7 @@ import AiHigherEd from "@/pages/ai-higher-ed";
 import Courses from "@/pages/courses";
 import JohnsonWales from "@/pages/johnson-wales";
 import BabyLivingCourses from "@/pages/baby-living-courses";
+import Nanocertifications from "@/pages/nanocertifications";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import Terms from "@/pages/terms";
 import NotFound from "@/pages/not-found";
@@ -57,6 +58,11 @@ const SEO_META: Record<string, { title: string; description: string; noindex?: b
     title: "Living Courses | Zhi Systems — Self-Paced, AI-Taught College Coursework",
     description:
       "Self-paced, AI-taught, AI-graded college coursework with built-in academic-integrity enforcement: philosophy, logic, math, physics, finance, AI, and more.",
+  },
+  "/nanocertifications": {
+    title: "Nanocertifications | Zhi Systems — AI-Taught Micro Courses",
+    description:
+      "Nanocertifications from Zhi Systems: compact, rigorous AI-taught courses with built-in tutors, cheat-proof assessments, and verified mastery.",
   },
   "/baby-living-courses": {
     title: "Basic Living Courses | Zhi Systems — Short AI-Taught Courses",
@@ -151,6 +157,7 @@ function Router() {
       <Route path="/johnson-wales" component={JohnsonWales} />
       <Route path="/microcertifications" component={Microcertifications} />
       <Route path="/baby-living-courses" component={BabyLivingCourses} />
+      <Route path="/nanocertifications" component={Nanocertifications} />
       <Route path="/living-books">
         <PasswordGate storageKey="living-books-access"><LivingBooks /></PasswordGate>
       </Route>

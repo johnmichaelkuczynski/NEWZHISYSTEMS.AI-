@@ -1,4 +1,5 @@
 const links = [
+  { href: "/nanocertifications", label: "Nanocertifications" },
   { href: "/", label: "Microcertifications" },
   { href: "/courses", label: "Living Courses" },
   { href: "/baby-living-courses", label: "Basic Living Courses" },

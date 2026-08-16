@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://zhisystems.ai/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://zhisystems.ai/courses</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zhisystems.ai/nanocertifications</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://zhisystems.ai/baby-living-courses</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://zhisystems.ai/microcertifications</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://zhisystems.ai/johnson-wales</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
