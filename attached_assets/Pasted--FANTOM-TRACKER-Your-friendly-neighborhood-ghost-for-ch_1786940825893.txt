@@ -1,0 +1,29 @@
+👻 FANTOM TRACKER 👻
+Your friendly neighborhood ghost for chasing digital footprints.
+Point it at an IP, a phone number, or a username — and watch the clues appear. ✨
+
+🎉 Welcome, Ghost Hunter!
+FANTOM TRACKER is a playful little detective that lives in your browser. No spooky command lines, no confusing setup — just click a tab, type what you're curious about, and let the ghost do the digging. It gathers what's already floating around out in the open and lays it out in a clean, glowing dashboard.
+
+Think of it as a flashlight for the internet: it doesn't break into anything — it simply shines a light on the trails people leave behind. 🔦
+
+🌟 What Can It Do?
+🌐 "Where Am I?" IP Peek — Curious what your own address looks like from the outside? One click reveals your city, your internet provider, your timezone, and a little flag for good measure.
+🔎 IP Detective — Hand it any IP address and it comes back with a full postcard: country, city, map pin, network owner, and local time.
+📱 Phone Whisperer — Drop in a phone number (from anywhere in the world) and discover its country, carrier, timezone, and whether it's a real, dial-able number. It's forgiving, too — with or without the little "+" up front.
+🕵️ Username Hunt — Type a nickname and the ghost sweeps across a whole crowd of social platforms at once, waving a flag wherever that name shows up.
+🗺️ A Peek Around the Dashboard
+Everything lives on one calm, dark-themed page with four friendly tabs across the top. Pick a tab, type your clue, hit the button, and the results glide in as tidy glowing cards. Found a match? It's highlighted in green. Nothing there? The ghost gently lets you know. No manuals required. 😊
+
+🔐 Just for You
+FANTOM TRACKER is a private treehouse, not a public playground. It's locked behind a personal password, so only you (and whoever you trust with the secret knock) can wander in. Your investigations stay yours. 🤫
+
+🧭 The House Rules (a friendly note)
+This ghost is a good ghost. 👼 It only surfaces information that's already public and out in the open. Please use it kindly and legally — to check your own footprint, satisfy honest curiosity, and learn how visible we all are online. It's not a tool for snooping, stalking, or doing anyone harm. Be the kind of ghost that leaves people smiling, not spooked. 💛
+
+💫 Designed For
+🧑‍💻 The curious who love a good "how much is out there about me?" moment
+🛡️ The privacy-minded who want to see their own digital shadow
+🎈 The tinkerers who just think this stuff is delightfully cool
+Made with a wink and a spooky little smile. 👻💚
+Happy haunting!
