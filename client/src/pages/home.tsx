@@ -3231,6 +3231,201 @@ If YouTube returns an authentication error, use the YouTube Authentication panel
   ],
 };
 
+appDescriptions["Git Leak"] = {
+  emoji: "🔑",
+  tagline: "Scan Any Git Repository for Leaked Secrets — API Keys, Credentials, and Sensitive Data, Before an Attacker Finds Them First",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `Git Leak is a reconnaissance tool that scans git repositories for accidentally committed secrets: API keys, passwords, tokens, private certificates, and other sensitive credentials that should never have landed in version control.
+
+It works against any repository you point it at -- public or private -- and surfaces every high-confidence hit with the file path, line number, and the pattern that triggered the match.
+
+No command line. No setup. Paste a repo URL (or upload a local clone), press Scan, and read the results.`,
+    },
+    {
+      emoji: "⚙️",
+      title: "What It Scans For",
+      body: `**API Keys & Tokens** -- AWS access keys, OpenAI keys, Stripe secret keys, GitHub tokens, Twilio auth tokens, SendGrid API keys, and dozens of other provider-specific patterns.
+
+**Database Credentials** -- Connection strings, passwords in config files, hardcoded DSNs, and .env files committed by mistake.
+
+**Private Keys & Certificates** -- RSA private keys, SSH private keys, PEM certificates, and PKCS#12 bundles.
+
+**Generic High-Entropy Strings** -- Entropy analysis catches secrets that don't match a named pattern -- random-looking strings long enough to be credentials.
+
+**Commit History** -- Secrets deleted from the working tree but still present in git history are found and flagged. Deletion does not equal removal.`,
+    },
+    {
+      emoji: "📊",
+      title: "How Results Are Presented",
+      body: `Each finding shows:
+
+- **File path** -- exactly where in the repository the secret lives
+- **Line number** -- the precise line in that file
+- **Match preview** -- enough context to confirm the hit without exposing the full secret
+- **Pattern name** -- which rule triggered (e.g., "AWS Access Key", "Generic API Key")
+- **Severity** -- HIGH for named provider patterns, MEDIUM for high-entropy generic matches
+
+Results are sorted by severity so the most dangerous findings appear first.`,
+    },
+    {
+      emoji: "🎯",
+      title: "Designed For",
+      body: `**Developers** -- auditing their own repositories before pushing to a public host or sharing with a team.
+
+**Security engineers** -- running routine credential hygiene checks across an organization's codebase.
+
+**OSINT researchers** -- checking public repositories for exposed credentials before reporting them to the owner.
+
+**Anyone** -- who has ever accidentally pushed a .env file and needs to know exactly how bad it is.`,
+    },
+  ],
+};
+
+appDescriptions["MailInsight"] = {
+  emoji: "📧",
+  tagline: "Email Intelligence Platform — Decode Headers, Trace Delivery Paths, Verify Senders, and Expose Spoofing",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `MailInsight is an email forensics and reconnaissance platform. Paste a raw email header or a sending address and get a complete, annotated breakdown: the full delivery path hop by hop, authentication verdicts (SPF, DKIM, DMARC), sender geolocation, IP reputation, and spoofing risk assessment.
+
+It turns the dense, unreadable raw header that every email carries into a clear chain-of-custody record -- showing you exactly where the message came from, how it was routed, and whether any of it should be trusted.`,
+    },
+    {
+      emoji: "🔍",
+      title: "What It Analyzes",
+      body: `**Header Parsing** -- Every Received hop is extracted and ordered chronologically, showing the full mail relay chain from origin to inbox with timestamps and IP addresses at each step.
+
+**SPF / DKIM / DMARC** -- Authentication results from the header are extracted and explained in plain language: pass, fail, softfail, neutral -- and what each verdict means for whether the sender is who they claim to be.
+
+**Sender Geolocation** -- The originating IP is resolved to a country, region, and ASN so you can see where the message was actually sent from, not just the From: address it displays.
+
+**IP Reputation** -- Originating and relay IPs are checked against threat intelligence data to flag known spam senders, bulletproof hosting, and previously reported malicious infrastructure.
+
+**Spoofing Detection** -- Mismatches between the envelope sender, the From: header, and the Reply-To address are flagged explicitly. The three most common spoofing patterns are detected and explained.
+
+**Domain Intelligence** -- WHOIS data, MX records, and domain age for the sending domain, presented alongside the header analysis.`,
+    },
+    {
+      emoji: "⚙️",
+      title: "How to Use It",
+      body: `**Header Analysis** -- Open any email in your client, find the "Show original" or "View raw message" option, copy the full header block, and paste it into MailInsight. Results appear immediately.
+
+**Address Lookup** -- Enter any email address to get domain intelligence, MX record analysis, and a deliverability assessment without needing a full header.
+
+**Phishing Triage** -- Paste a suspicious message header to get a fast verdict on whether it is likely legitimate, spoofed, or relayed through unusual infrastructure.`,
+    },
+    {
+      emoji: "🎯",
+      title: "Designed For",
+      body: `**Security analysts** -- triaging phishing reports and tracing malicious sender infrastructure.
+
+**IT administrators** -- diagnosing mail delivery failures, misconfigured SPF records, and relay problems.
+
+**OSINT researchers** -- extracting origin IP, geolocation, and routing intelligence from email headers.
+
+**Anyone** -- who received a suspicious message and wants to know whether it is really from who it claims.`,
+    },
+  ],
+};
+
+appDescriptions["Project Merlin"] = {
+  emoji: "🔍",
+  tagline: "Find Usernames Across the Internet — 462 Sites Checked Per Search, Results Streaming Live",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `Project Merlin is a username reconnaissance tool that searches hundreds of social networks, forums, and platforms simultaneously and streams every match back to your browser in real time.
+
+There is no command line, no setup, and no technical knowledge required. Open the page, type a username, and results appear card by card as each site is checked -- live, as they are confirmed.`,
+    },
+    {
+      emoji: "⚙️",
+      title: "How It Works",
+      body: `**One-Box Search** -- A single input is the entire interface. Enter any username (up to 64 characters) and press Search or hit Enter.
+
+**462 Sites Per Search** -- Every query fans out across hundreds of social networks, forums, and platforms in parallel. A full scan finishes in seconds rather than minutes.
+
+**Live Streaming Results** -- Matches surface the instant they are confirmed using Server-Sent Events. You never wait for the whole scan to finish before seeing the first hit.
+
+**Clickable Result Cards** -- Each found account shows the site name, its favicon, and the direct profile URL. Click any card to open the profile in a new tab.
+
+**Honest Progress** -- A live progress bar reports exactly how many of the 462 sites have been checked, and only reaches 100% when the scan genuinely completes.
+
+**Firewall-Aware** -- Sites protected by Cloudflare or similar WAFs are detected and flagged separately, so a blocked check is never mistaken for a real result.
+
+**Graceful Failure** -- If the connection drops or a scan stalls, the app says so and preserves the results found so far, instead of falsely claiming completion.`,
+    },
+    {
+      emoji: "🎯",
+      title: "Designed For",
+      body: `**Anyone checking their own digital footprint** -- See at a glance where a username is registered across the web.
+
+**OSINT researchers** -- A fast, visual front end for reconnaissance work that would otherwise happen on the command line.
+
+**Non-technical users** -- No terminal, no flags, no install. Just a search box and clickable results.`,
+    },
+  ],
+};
+
+appDescriptions["Paradoxes"] = {
+  emoji: "♾️",
+  tagline: "Classic and Contemporary Paradoxes, Rigorously Analyzed — Where Logic Meets Its Limits",
+  sections: [
+    {
+      emoji: "🧩",
+      title: "Overview",
+      body: `Paradoxes is a reference site dedicated to the rigorous analysis of logical, philosophical, and mathematical paradoxes -- from ancient puzzles like the Liar and the Sorites to modern problems in probability, epistemology, and formal logic.
+
+Each paradox is presented in full: the setup, the apparent contradiction, the most serious proposed solutions in the literature, and a direct assessment of which solutions succeed and which merely relocate the problem. The analyses go beyond introductory summaries -- they engage the paradoxes at the level at which philosophers and logicians actually argue about them.`,
+    },
+    {
+      emoji: "📚",
+      title: "What's Inside",
+      body: `**Logical Paradoxes** -- The Liar, Russell's Paradox, Berry's Paradox, Grelling-Nelson, and the family of self-referential contradictions that forced the reconstruction of set theory and formal logic.
+
+**Epistemic Paradoxes** -- The Preface Paradox, the Lottery Paradox, the Surprise Examination, and Gettier cases -- paradoxes about the structure of rational belief and justified knowledge.
+
+**Decision-Theoretic Paradoxes** -- Newcomb's Problem, the Prisoner's Dilemma, the St. Petersburg Paradox, and Allais' Paradox -- cases where standard theories of rational choice produce counterintuitive or contradictory verdicts.
+
+**Mathematical Paradoxes** -- Zeno's paradoxes of motion, Banach-Tarski, the two-envelope problem, Gabriel's Horn -- paradoxes that challenge intuitions about infinity, measure, and geometric possibility.
+
+**Semantic Paradoxes** -- The Heap (Sorites), the Bald Man, and vagueness-based paradoxes that expose the gap between language and the world.`,
+    },
+    {
+      emoji: "🔬",
+      title: "How the Analyses Work",
+      body: `Each entry follows a consistent structure:
+
+**The Setup** -- The paradox stated precisely, with the exact premises that generate the contradiction made explicit.
+
+**Why It's a Paradox** -- What makes this genuinely hard, rather than a trick or an equivocation. What has to be given up if the contradiction is to be resolved.
+
+**Proposed Solutions** -- The main solutions in the philosophical and logical literature, each stated at its strongest.
+
+**Assessment** -- A direct verdict on which solutions work, which fail, and why. Solutions that merely relocate the problem are identified as such.
+
+No hand-waving. No "philosophers have long debated." Every analysis arrives at a conclusion.`,
+    },
+    {
+      emoji: "🎯",
+      title: "Designed For",
+      body: `**Philosophy students and researchers** -- working through paradoxes for coursework, papers, or genuine intellectual interest.
+
+**Logicians and mathematicians** -- interested in the foundational problems that paradoxes reveal about formal systems.
+
+**The intellectually serious** -- who want paradoxes engaged rigorously, not summarized away.
+
+**Anyone** -- who has encountered a paradox and wants to understand what is actually at stake -- not a reassuring explanation, but a real one.`,
+    },
+  ],
+};
+
 export default function Home() {
   const appCategories: Record<string, App[]> = {
     "📝 Writing & Books": [
