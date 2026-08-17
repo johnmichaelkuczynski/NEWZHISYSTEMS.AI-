@@ -2990,8 +2990,6 @@ Unlike retail screeners that surface "unusual options activity" without explaini
   ],
 };
 
-appDescriptions["Model Builder"] = appDescriptions["ModelWiz"];
-
 appDescriptions["Forensic Document Verifier"] = {
   emoji: "🔬",
   tagline: "Upload a PDF. Describe What It Claims to Be. Get a Court-Ready Forensic Verdict in Seconds",
@@ -3464,7 +3462,6 @@ export default function Home() {
     "🧠 Intelligence & Psychology": [
       { title: "Genius 101", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
       { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
-      { title: "Model Builder", url: "https://modelwiz.xyz" },
       { title: "Originality Meter", url: "https://originalitymeter.com" },
       { title: "Intelligence Meter", url: "https://iq101.ink", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
       { title: "Mind Profiler", url: "https://mindprofiler.ink" },
