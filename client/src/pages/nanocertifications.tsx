@@ -69,10 +69,70 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "AI-Assisted Grading and Assessment (Level 1)": {
+    emoji: "🔎",
+    tagline:
+      "A rigorous, self-paced introduction to AI-assisted grading and assessment that teaches, tutors, drills, and grades itself — built for researchers and professionals entering the field.",
+    sections: [
+      {
+        emoji: "🔎",
+        title: "What It Is",
+        body: `AI-Assisted Grading & Assessment is a self-paced web course on how AI grades student work and what a grade actually means -- taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. A complete one-day intensive curriculum builds the subject from first principles, one idea at a time: from what a grade actually asserts about a student's competence to how a model turns a rubric into a judgment, and where that judgment quietly drifts.`,
+      },
+      {
+        emoji: "✨",
+        title: "Product Features",
+        body: `**One-Day Intensive Curriculum** -- One intensive day, organized by session:
+
+**Morning session** -- Grades as claims: what a grade actually asserts. A grade is an inference about competence, not a measurement; validity; construct-irrelevant variance and construct under-representation; reliability, grader spread, and error bars; how a grade generalizes from a small sample of work.
+
+**Afternoon session** -- How AI grades: from rubric to model judgment. Operationalizing rubric criteria; model judgment as pattern-fit that reads semantic content; where it holds (short-inference criteria, superhuman consistency); silent drift (proxy drift toward length and polish, criterion drift, anchor sensitivity, rationale confabulation); calibrating against human-scored anchor papers; routing borderline and disputed work to humans.
+
+**Three-Depth Lectures** -- Every lecture reads at Short, Medium, or Long depth -- same ideas and examples, the reader's pace.
+
+**Real Examples Throughout** -- Every concept is grounded in worked real-world cases: two graders landing ten points apart on the same essay, a model scoring long fluent answers more generously than short correct ones, a rubric criterion that quietly turns into a proxy for polish.
+
+**Scenario Reasoning in Every Question** -- Every homework, test, exam, practice, and diagnostic question puts the student inside a concrete case and asks them to reason it out. No definition-recitation, no one-word answers.
+
+**Section-Scoped AI Tutor** -- Ask about the exact passage on screen and get a live, grounded answer, streamed word by word.
+
+**Adaptive Practice** -- Generated problem sets that get harder on a streak and ease off after a miss.
+
+**AI-Graded Coursework** -- Two homework sets, a timed course test, and a timed cumulative final, each scored with a written rationale and a percent score. Coursework is 100% of the grade.
+
+**Two-Layer Academic-Integrity Screening** -- Every submission is checked for AI authorship by an industry text classifier and by analysis of how the answer was actually typed, each producing a clear verdict.
+
+**Ungraded Diagnostic Instruments** -- Subject-reasoning and general-reasoning checks in three formats and three lengths, offered before, during, and after the course -- unlimited attempts, fresh questions every time, never affecting the grade.
+
+**Free Course Download** -- The full reader (every short lecture plus sample homework and exam problems) downloads as a PDF or TXT, no sign-in required.
+
+**Try Before Signing In** -- The entire course is browsable without an account; sign-in is only requested once a visitor's free AI usage allowance is used up.
+
+**Live Analytics** -- Dashboard KPIs, per-topic mastery, and a recent-activity feed for the student.
+
+**Built-In Product Demo Video** -- A short animated walkthrough of the live product ships alongside the course.`,
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body: `**Researchers & professionals entering the field** -- a complete, rigorous grounding in AI-assisted grading and assessment, compressed into one intensive day, with on-demand tutoring and adaptive practice.
+
+**Instructors & curriculum designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.
+
+**Academic-integrity researchers** -- a live demonstration of layered AI-authorship detection.
+
+**Product & engineering teams** -- a reference implementation of an end-to-end AI-taught course product.`,
+      },
+    ],
+  },
 };
 
 const courses: Course[] = [
   { title: "AI Math (Level 1)", url: "https://aimath1.xyz" },
+  {
+    title: "AI-Assisted Grading and Assessment (Level 1)",
+    url: "https://aigrading1.ink",
+  },
 ];
 
 function renderSectionBody(body: string) {
