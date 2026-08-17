@@ -14,6 +14,58 @@ interface AppDescription {
 }
 
 const appDescriptions: Record<string, AppDescription> = {
+  "Mail Man": {
+    emoji: "📬",
+    tagline: "Give it an email address. Get back the whole story.",
+    sections: [
+      {
+        emoji: "👋",
+        title: "Meet Mail Man",
+        body: `Mail Man is your friendly digital detective. Hand it a single email address and it fans out across breach databases, social networks, and the open web -- then hands you back a tidy, human-readable dossier: who's behind the address, where they show up online, what's been exposed, and how risky it all looks.
+
+No spreadsheets. No dead ends. Just type an email, hit Investigate, and watch the findings roll in live.`,
+      },
+      {
+        emoji: "✨",
+        title: "What Mail Man Does For You",
+        body: `**🕵️ Finds the person** -- pulls together names, usernames, and profiles scattered across the internet into one clear identity picture.
+
+**🌐 Follows the trail** -- checks 2,500+ platforms and social networks to see where an email (or the person behind it) has signed up.
+
+**🔓 Uncovers exposures** -- surfaces breach data, leaked passwords, and which breach each detail came from, so nothing hides.
+
+**📊 Scores the risk** -- turns everything into a plain 0-100 exposure score with a short, "here's-what-matters" summary.
+
+**🧩 Connects the dots** -- builds a visual identity graph linking accounts by shared usernames, photos, and details.
+
+**⚡ Works in real time** -- findings stream onto the screen as they're discovered -- no staring at a spinner.
+
+**📦 Exports beautifully** -- save any investigation as JSON, CSV, PDF, Markdown, STIX, or a Maltego graph.`,
+      },
+      {
+        emoji: "🎬",
+        title: "How It Works",
+        body: `**1.** Type an email into the big search box.
+
+**2.** Press Investigate and let Mail Man do the legwork.
+
+**3.** Read the story -- identity, accounts, exposures, and risk, all laid out for you. Export it if you like.
+
+That's it. Everything happens right in your browser.`,
+      },
+      {
+        emoji: "🎯",
+        title: "Who Mail Man Is For",
+        body: `**The curious** who want to know who's really behind an email.
+
+**Security-minded folks** checking how exposed an address (maybe their own!) really is.
+
+**Researchers and analysts** who need a fast, tidy, exportable snapshot.
+
+**🛡️ Play Nice** -- Mail Man only gathers information from public and breach-data sources. Use it responsibly and only on addresses you're authorized to investigate.`,
+      },
+    ],
+  },
   "Neoclassical Piano": {
     emoji: "🎹",
     tagline:
@@ -3202,6 +3254,7 @@ export default function Home() {
     ],
     "🕵️ Recon": [
       { title: "Git Leak", url: "https://gitleak.ink" },
+      { title: "Mail Man", url: "https://mailman.ink" },
       { title: "MailInsight", url: "https://mailinsight.xyz" },
       { title: "Project Merlin", url: "https://projectmerlin.ink" }
     ],

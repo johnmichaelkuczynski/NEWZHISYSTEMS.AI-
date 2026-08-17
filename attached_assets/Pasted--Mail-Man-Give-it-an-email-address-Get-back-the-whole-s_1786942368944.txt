@@ -1,0 +1,43 @@
+📬 Mail Man
+Give it an email address. Get back the whole story.
+
+Unsupported image
+ 
+Unsupported image
+ 
+Unsupported image
+
+👋 Meet Mail Man
+Mail Man is your friendly digital detective. Hand it a single email address and it fans out across breach databases, social networks, and the open web — then hands you back a tidy, human-readable dossier: who's behind the address, where they show up online, what's been exposed, and how risky it all looks.
+
+No spreadsheets. No dead ends. Just type an email, hit Investigate, and watch the findings roll in live.
+
+✨ What Mail Man Does For You
+🕵️ Finds the person — pulls together names, usernames, and profiles scattered across the internet into one clear identity picture.
+🌐 Follows the trail — checks 2,500+ platforms and social networks to see where an email (or the person behind it) has signed up.
+🔓 Uncovers exposures — surfaces breach data, leaked passwords, and which breach each detail came from, so nothing hides.
+📊 Scores the risk — turns everything into a plain 0–100 exposure score with a short, "here's-what-matters" summary.
+🧩 Connects the dots — builds a visual identity graph linking accounts by shared usernames, photos, and details.
+⚡ Works in real time — findings stream onto the screen as they're discovered — no staring at a spinner.
+📦 Exports beautifully — save any investigation as JSON, CSV, PDF, Markdown, STIX, or a Maltego graph.
+🎬 How It Works (in three happy steps)
+Type an email into the big search box.
+Press Investigate and let Mail Man do the legwork.
+Read the story — identity, accounts, exposures, and risk, all laid out for you. Export it if you like.
+That's it. Everything happens right in your browser.
+
+🔒 Secret Ingredients
+Mail Man works best with a few keys tucked safely into your Replit Secrets. It never shows or logs them — it just uses them to knock on the right doors.
+
+DEHASHED_API_KEY — unlocks breach records: leaked passwords, usernames, names, and where they leaked from.
+DEHASHED_ACCOUNT_EMAIL — the account that pairs with your DeHashed key.
+HUNTER_IO_API_KEY — adds deliverability checks, real names and job titles, company details, and email patterns.
+SESSION_SECRET — keeps your session cozy and secure.
+🎯 Who Mail Man Is For
+The curious who want to know who's really behind an email.
+Security-minded folks checking how exposed an address (maybe their own!) really is.
+Researchers and analysts who need a fast, tidy, exportable snapshot.
+🛡️ Play Nice
+Mail Man only gathers information from public and breach-data sources. Use it responsibly and only on addresses you're authorized to investigate. See DISCLAIMER.md for the ground rules.
+
+💡 Heads up: Mail Man can reveal real passwords and personal details, so keep your published app set to Private — it's a personal tool, not a public one.
