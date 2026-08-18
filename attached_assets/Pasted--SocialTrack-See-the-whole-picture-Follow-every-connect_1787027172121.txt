@@ -1,0 +1,36 @@
+🔍 SocialTrack
+See the whole picture. Follow every connection.
+
+SocialTrack is a visual investigation platform that turns scattered clues — usernames, emails, domains, phone numbers, crypto wallets — into a living map of connections you can explore, expand, and share.
+
+Stop juggling twenty browser tabs and a spreadsheet. Drop what you know onto the canvas, and watch the picture come together.
+
+✨ Why SocialTrack
+Everything is a map — Investigations aren't lists, they're webs. SocialTrack shows people, accounts, websites, and wallets as an interactive graph, so relationships jump out at you instead of hiding in rows of data.
+Start with almost nothing — One email address. One username. One domain. That's enough to begin — SocialTrack helps you branch outward from a single clue.
+One-click expansion — Select anything on your map and enrich it: discover related domains, IP addresses, network ranges, crypto transactions, and more, added straight to your graph.
+Built for real cases — Organize work into separate investigations, keep multiple sketches per case, and pick up exactly where you left off.
+Team-ready — Share investigations with colleagues and work the same case together.
+🚀 What You Can Do
+Map a person's digital footprint — Connect usernames, emails, and social profiles into one clear picture.
+Investigate websites & infrastructure — Trace domains to IP addresses, hosting networks, and related sites.
+Follow the money — Explore crypto wallets, their transactions, and connected assets.
+Design your own workflows — Chain discovery steps together into reusable flows, so your favorite investigation recipe runs with one click.
+Ask the built-in assistant — Chat with an AI helper that understands your investigation and helps you decide what to check next.
+Keep secrets safe — Store the API keys for your favorite data sources in a locked vault, encrypted end to end.
+🧭 How It Works
+Create an investigation — Give your case a name and open a fresh canvas.
+Drop in a clue — Add a username, email, domain, phone number, or wallet address.
+Expand — Run enrichments to discover connected information, automatically drawn onto your map.
+Explore — Pan, zoom, rearrange, and inspect any node to see its full story.
+Share — Invite teammates into the case or export your findings.
+🎓 Designed For
+Investigators & researchers verifying identities and mapping online activity
+Journalists connecting sources, companies, and web infrastructure
+Security teams tracing suspicious domains, IPs, and wallets
+Anyone curious about how the pieces of the public internet fit together
+🤝 Ethical by Design
+SocialTrack is built for ethical investigation, transparency, and verification using publicly available information. Use it responsibly, respect privacy laws in your region, and only investigate what you're authorized to investigate.
+
+🌐 Try It
+Live at socialtrack.ink — sign in with Google and start your first investigation in under a minute.
