@@ -3535,7 +3535,11 @@ export default function Home() {
       { title: "EZ Homework", url: "https://ezhw.ink" },
       { title: "EZGrader", url: "https://ezgrader.ai" },
       { title: "Judge Evaluator", url: "https://judge101.ink" },
-      { title: "Test Me", url: "https://testme101.com" },
+      {
+        title: "Test Me",
+        url: "https://testme101.com",
+        videoUrl: "https://www.youtube.com/watch?v=DLlcGl0GTgc",
+      },
       { title: "Texas Bar Prep", url: "https://texasbarprep.ink" }
     ],
     "🧠 Intelligence & Psychology": [
