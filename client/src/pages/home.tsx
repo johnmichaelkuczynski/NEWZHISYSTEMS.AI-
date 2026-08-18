@@ -3600,7 +3600,7 @@ export default function Home() {
       {
         title: "Social Track",
         url: "https://socialtrack.ink",
-        videoUrl: "https://www.youtube.com/watch?v=VvcpcnzTUdk",
+        videoUrl: "https://www.youtube.com/watch?v=82VyVWAIQxQ",
       }
     ],
     "🎓 Education & Learning": [
