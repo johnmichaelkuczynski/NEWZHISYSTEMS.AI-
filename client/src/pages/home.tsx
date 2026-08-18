@@ -3332,6 +3332,10 @@ export default function Home() {
       { title: "Paradoxes", url: "https://paradoxes.ink" },
       { title: "Zhi Microcertifications", url: "https://microcertifications.ai" }
     ],
+    "🔎 OSINT": [
+      { title: "Basic OSINT", url: "https://basicosint.xyz" },
+      { title: "OSINT Lister", url: "https://osintlister.xyz" }
+    ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
       { title: "College AI Match", url: "https://collegeaimatch.xyz" },
