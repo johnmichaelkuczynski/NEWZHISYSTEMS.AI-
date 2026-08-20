@@ -128,7 +128,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Microcertifications} />
       <Route path="/utilities">
-        <PasswordGate storageKey="utilities-access"><Home /></PasswordGate>
+        <Home />
       </Route>
       <Route path="/main-page">
         <PasswordGate storageKey="main-page-access"><MainPage /></PasswordGate>
