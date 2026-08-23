@@ -133,6 +133,14 @@ const courses: Course[] = [
     title: "AI-Assisted Grading and Assessment (Level 1)",
     url: "https://aigrading1.ink",
   },
+  {
+    title: "Generative AI Integration",
+    url: "https://generativeai.ink",
+  },
+  {
+    title: "Infinite Series",
+    url: "https://nanoinfiniteseries.xyz",
+  },
 ];
 
 function renderSectionBody(body: string) {
