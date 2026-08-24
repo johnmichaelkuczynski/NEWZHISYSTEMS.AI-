@@ -183,6 +183,58 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Prompt Engineering for AI Generative": {
+    emoji: "🔎",
+    tagline:
+      "A complete, four-week introduction to prompt engineering that teaches, tutors, drills, grades, and proofs itself — for adults beginning the discipline.",
+    sections: [
+      {
+        emoji: "🔎",
+        title: "What It Is",
+        body: `Prompt Engineering is a self-paced, single-user web course that delivers a thorough, plain-language introduction to prompt engineering — the craft of designing instructions that make language models produce accurate, consistent, useful output — taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. It assumes no prior background in the subject and develops every idea from first principles in plain words rather than dense formalism: how models read and continue text, how to be specific about what you want, how to steer role, tone, format, and length, and how to build reliable, testable prompts — from single instructions and worked examples to structured output, tool use, and full prompt-to-product systems.`,
+      },
+      {
+        emoji: "✨",
+        title: "Product Features",
+        body: `**Four Weeks, 28 Lectures** -- A complete plain-language syllabus across four weeks of seven topics each:
+
+**Foundations** -- What prompt engineering is; how models read and continue text; anatomy of a prompt; being specific; role and tone; format and length; and failure modes.
+
+**Core Techniques** -- Zero-shot versus few-shot prompting; writing good examples; chain-of-thought; decomposition; context and reference; delimiters and structure; and iterating and debugging.
+
+**Advanced Patterns and Reliability** -- Structured output and JSON; prompt chaining; self-critique; retrieval-augmented generation; tool use and function calling; temperature and sampling; and evaluation and testing.
+
+**Applications, Safety, and Systems** -- Writing, summarizing, and extraction; coding and data; analysis and decision support; prompt injection; hallucination and bias; templates; and moving from prompt to product.
+
+**Three-Depth Lessons** -- Every lesson reads at Short, Medium, or Long length, AI-rewritten while keeping the same examples and learning objectives.
+
+**Section-Scoped AI Tutor** -- Ask about the exact paragraph you're reading; answers stream back token-by-token, grounded in that lecture section.
+
+**Adaptive Practice** -- Generated problem sets get harder on a streak and ease off after a miss. Per-session difficulty persists, and questions ask students to explain their reasoning in plain words rather than memorize trivia.
+
+**AI-Graded Assignments** -- Four weekly homework sets, a timed 30-minute midterm after week 2, and a timed 45-minute cumulative final, each scored for semantic equivalence with a written rationale and a rolled-up percentage score.
+
+**Two-Layer AI-Authorship Detection** -- Every submission is screened by a static text classifier and a diachronic keystroke-pattern detector, each with a human-readable verdict.
+
+**Diagnostic Reasoning Checks** -- Two ungraded instruments — Prompt Engineering subject reasoning and General Reasoning — are offered in three formats and three lengths at four points in the journey. Attempts are unlimited, questions are fresh each time, and diagnostics never affect the grade; coursework is 100%.
+
+**Live Analytics** -- Dashboard KPIs for attempts, accuracy, and streak, plus per-topic mastery and a recent-activity feed.
+
+**Operator Diagnostics** -- One-click self-tests verify the full stack, including the database, OpenAI, GPTZero, detection, and the practice and grading loop.`,
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body: `**Newcomers to the discipline** -- a complete, plain-language introduction to prompt engineering with on-demand tutoring and adaptive practice, assuming no prior background.
+
+**Instructors and curriculum designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.
+
+**Academic-integrity researchers** -- a live testbed for layered AI-authorship detection using text classification and keystroke behavior.
+
+**Product and engineering teams** -- a reference implementation of contract-first full-stack architecture, streaming AI user experience, and self-diagnostic tooling.`,
+      },
+    ],
+  },
   "Ethical AI & Governance Technology": {
     emoji: "⚖️",
     tagline:
