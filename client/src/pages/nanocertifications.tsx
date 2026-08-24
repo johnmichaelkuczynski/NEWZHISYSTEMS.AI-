@@ -254,6 +254,14 @@ const courses: Course[] = [
     url: "https://generativeai.ink",
   },
   {
+    title: "Prompt Engineering for AI Generative",
+    url: "https://generativeai.ink/",
+  },
+  {
+    title: "Ethical AI & Governance Technology",
+    url: "https://aigovernance.ink",
+  },
+  {
     title: "Infinite Series",
     url: "https://nanoinfiniteseries.xyz",
   },
