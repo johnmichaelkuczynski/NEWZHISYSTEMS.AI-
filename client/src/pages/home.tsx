@@ -3364,6 +3364,7 @@ export default function Home() {
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
       { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
+      { title: "Find Yourself", url: "https://findyourself.ink" },
       { title: "FrameWise", url: "https://framewise.ink" }
     ],
     "🎬 Audio-Visual": [

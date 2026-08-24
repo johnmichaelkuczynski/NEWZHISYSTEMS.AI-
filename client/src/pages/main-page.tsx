@@ -2659,7 +2659,8 @@ export default function MainPage() {
       { title: "Text Genius", url: "https://textgenius.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
       { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
-      { title: "LLM Plus", url: "https://llmplus.ink" }
+      { title: "LLM Plus", url: "https://llmplus.ink" },
+      { title: "Find Yourself", url: "https://findyourself.ink" }
     ],
     "📸 Visual & Multimedia": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
