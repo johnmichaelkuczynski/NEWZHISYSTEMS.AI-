@@ -2663,7 +2663,7 @@ export default function MainPage() {
     ],
     "📸 Visual & Multimedia": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
-      { title: "Graphic Novel Creator", url: "https://graphicnovelcreator.xyz" },
+      { title: "Graphic Novel Creator", url: "https://graphicnovelcreator.ink" },
       { title: "OCR Pro", url: "https://ocrman.shop" },
       { title: "Photo Psychoanalysis", url: "https://photopsychoanalysis.xyz" },
       { title: "Multiple Video Viewer", url: "https://multivideo.ink" }
