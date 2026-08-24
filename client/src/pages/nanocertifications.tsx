@@ -183,6 +183,64 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Ethical AI & Governance Technology": {
+    emoji: "⚖️",
+    tagline:
+      "A rigorous, self-paced introduction to where AI goes wrong and how AI gets governed for adult researchers and professionals.",
+    sections: [
+      {
+        emoji: "⚖️",
+        title: "What It Is",
+        body: `AI Harms, Values, and Governance is a one-day web course taught, tutored, drilled, and graded by AI, with built-in academic-integrity enforcement. It covers inherited bias, competing fairness goals, opacity, privacy, confident wrongness, accountability, law and standards, and meaningful organizational governance.`,
+      },
+      {
+        emoji: "✨",
+        title: "Product Features",
+        body: `**One-Day Intensive Curriculum** -- One intensive day, organized by session:
+
+**Morning session** -- Where AI goes wrong. Bias in, bias out; competing fairness criteria; opacity and black-box explanation limits; privacy, consent, and training data; hallucination, automation bias, and over-reliance; hidden labor and environmental costs; and a hiring-screen case.
+
+**Afternoon session** -- How AI gets governed. Accountability; audits, impact assessments, model cards, and red-teaming; risk tiers and the EU AI Act structure; hard law, soft law, standards, and NIST AI RMF; meaningful human oversight; procurement, deployment gates, incident response; and a hospital diagnostic-model case.
+
+**Three-Depth Lectures** -- Every lecture reads at Short, Medium, or Long depth while preserving its examples and learning objectives.
+
+**Governance Reasoning Throughout** -- Questions present concrete AI harms and governance cases and require students to identify the deciding concept and evidence rather than recite definitions.
+
+**Two Reasoning Primers** -- The subject primer matches concrete governance scenarios to the right concept and resists the claim that an algorithm is neutral. The general primer applies analysis, inference, evaluation, deduction, and induction.
+
+**Section-Scoped AI Tutor** -- Ask about the exact passage on screen and receive a streamed, grounded answer.
+
+**Adaptive Practice** -- Generated problem sets adjust difficulty based on the student's recent answers.
+
+**AI-Graded Coursework** -- Two homework sets, a timed course test, and a cumulative final, each scored with written rationale and a percentage. Coursework is 100% of the grade.
+
+**Two-Layer Academic-Integrity Screening** -- Every submission is checked by a text classifier and by analysis of how the answer was typed, with a clear verdict from each layer.
+
+**Ungraded Diagnostic Instruments** -- AI-governance-case and general-reasoning checks in three formats and three lengths, offered before, during, and after the course with unlimited attempts and fresh questions.
+
+**Free Course Download** -- The course reader downloads as PDF or TXT without sign-in.
+
+**No Account Required** -- The course and its AI-powered features are available without creating an account.
+
+**Live Analytics** -- Dashboard KPIs, per-topic mastery, recent activity, and private visitor analytics.
+
+**Search Metadata** -- Structured metadata describes the course and its AI harms and governance curriculum for search engines.
+
+**Built-In Product Demo Video** -- A short walkthrough of the live product ships alongside the course.`,
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body: `**Researchers and professionals entering the field** -- a foundational but substantial treatment of AI harms, values, and governance, compressed into one intensive day.
+
+**Product and engineering teams** -- practical guidance on fairness, privacy, accountability, risk-tiering, meaningful oversight, and organizational controls.
+
+**Instructors and curriculum designers** -- a working reference for AI-taught, AI-graded, AI-detection-screened coursework.
+
+**Academic-integrity researchers** -- a live demonstration of layered AI-authorship detection.`,
+      },
+    ],
+  },
   "Infinite Series": {
     emoji: "♾️",
     tagline:
