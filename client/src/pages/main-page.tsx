@@ -2660,7 +2660,7 @@ export default function MainPage() {
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
       { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
-      { title: "Find Yourself", url: "https://findyourself.ink" }
+      { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" }
     ],
     "📸 Visual & Multimedia": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
