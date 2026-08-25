@@ -293,6 +293,62 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
+  "Cloud Architecture": {
+    emoji: "🚀",
+    tagline:
+      "A rigorous, self-paced, AI-powered cloud architecture course for researchers, professionals, and teams designing reliable, secure systems with AWS and Azure.",
+    sections: [
+      {
+        emoji: "🚀",
+        title: "What It Is",
+        body: `Cloud Architecture (AWS/Azure) is a one-day web course taught, tutored, drilled, and graded by AI. It turns cloud design decisions into a structured learning experience with concrete cases, adaptive practice, grounded tutoring, and built-in academic-integrity screening.
+
+The hard part of cloud architecture is not only choosing a service. It is connecting compute, storage, network, identity, resilience, security, cost, and human decisions into one system you can trust. Every assessment asks the learner to reason from evidence and make an architectural decision rather than recite definitions.`,
+      },
+      {
+        emoji: "✨",
+        title: "Product Features",
+        body: `**One-Day Intensive Curriculum** -- One intensive day organized around four core topics:
+
+**The building blocks** -- Renting instead of owning; compute, storage, network, and identity; virtual machines, containers, serverless functions, databases, regions, availability zones, virtual networks, subnets, and least privilege. The central question is which cloud primitives a system needs, and why.
+
+**Designing for real use** -- Scaling, load balancing, statelessness, failure design, redundancy, backup, cost, managed services, infrastructure as code, observability, encryption, secrets, and shared responsibility. The focus is whether an architecture remains reliable, secure, and practical under real conditions.
+
+**Two Reasoning Primers** -- An ungraded cloud-architecture primer identifies the architectural idea that decides a concrete deployment scenario. A general primer develops analysis, inference, evaluation, deduction, and induction in a domain-neutral format.
+
+**Three-Depth Lectures** -- Every lecture is available in Short, Medium, or Long depth while keeping the same examples and learning objectives.
+
+**Section-Scoped AI Tutor** -- Ask about the exact lecture passage on screen and receive a streamed, grounded answer.
+
+**Adaptive Practice** -- Generated scenario problems adjust difficulty based on recent answers, so practice responds to the learner.
+
+**Scenario-Based Assessments** -- Homework, tests, practice, and diagnostics require multi-step application to realistic production cases.
+
+**AI-Graded Coursework** -- Two homework sets, a timed course test, and a cumulative final receive semantic grading, per-problem results, and written rationale.
+
+**Two-Layer Academic-Integrity Screening** -- Every submission is checked by both a static text detector and diachronic keystroke-pattern analysis.
+
+**Live Analytics** -- Dashboard KPIs, topic mastery, activity, and weak-area tracking.
+
+**Free Course Downloads** -- PDF and TXT course downloads are available without sign-in.
+
+**Operator Diagnostics** -- Self-tests verify the database, course seed, model completion, JSON mode, detection pipeline, practice loop, grading loop, and analytics.
+
+**Built-In Product Walkthrough** -- A product demo video ships alongside the course.`,
+      },
+      {
+        emoji: "🎓",
+        title: "Designed For",
+        body: `**Researchers and professionals entering cloud architecture** -- a foundational but substantial introduction compressed into one focused day.
+
+**Product and engineering teams** -- a shared language for cloud primitives, resilience, security, cost, and operational design.
+
+**Instructors and curriculum designers** -- a working example of AI-taught, AI-graded coursework with integrity controls.
+
+**Academic-integrity researchers** -- a live demonstration of layered authorship screening in an educational product.`,
+      },
+    ],
+  },
   "Infinite Series": {
     emoji: "♾️",
     tagline:
@@ -374,6 +430,10 @@ const courses: Course[] = [
   {
     title: "Infinite Series",
     url: "https://nanoinfiniteseries.xyz",
+  },
+  {
+    title: "Cloud Architecture",
+    url: "https://cloudarchitecture.ink",
   },
 ];
 

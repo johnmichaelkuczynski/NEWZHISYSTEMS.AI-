@@ -2689,7 +2689,7 @@ export default function MainPage() {
     "🙏 Religion & Spiritual Growth": [
       { title: "Ask Emerson", url: "https://askemerson.ink" },
       { title: "Astrology Plus", url: "https://astrologyplus.xyz" },
-      { title: "Black Jesus", url: "https://blackjesus.xyz" },
+      { title: "Black Jesus", url: "https://blackjesus.ink" },
       { title: "What Would Jesus Do?", url: "https://whatwouldjesusdo.in" }
     ]
   };
