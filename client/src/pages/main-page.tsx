@@ -2658,7 +2658,7 @@ export default function MainPage() {
       { title: "Psychology Pro", url: "https://psychologypro.xyz" },
       { title: "Text Genius", url: "https://textgenius.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
-      { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
+      { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
       { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" }
     ],

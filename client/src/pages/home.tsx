@@ -3362,7 +3362,7 @@ export default function Home() {
       { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "Psychology Pro", url: "https://psychologypro.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
-      { title: "Model Transformer", url: "https://modeltransformer.xyz/" },
+      { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
       { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" },
       { title: "FrameWise", url: "https://framewise.ink" }
