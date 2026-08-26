@@ -728,7 +728,7 @@ export default function Courses() {
     { title: "Constructive Critical Reasoning (Level 3)", url: "https://constructivereasoning.xyz" },
     { title: "Quantitative Reasoning (Level 3)", url: "https://quantitativereasoning.ink" },
     { title: "Evolutionary Psychology (Level 3)", url: "https://evopsych.xyz" },
-    { title: "Know Thyself (Level 3)", url: "https://minikinowthyself.ink" },
+    { title: "Know Thyself (Level 3)", url: "https://knowthyself101.xyz" },
     { title: "Portfolio Analysis (Level 3)", url: "https://portfolioanalysis101.ink" },
     { title: "Public Speaking (Level 3)", url: "https://publicspeaking101.xyz" },
     { title: "Voice-Powered KnowThySelf (Level 3)", url: "https://voicepoweredknowthyself.xyz" },
