@@ -3365,6 +3365,7 @@ export default function Home() {
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
       { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" },
+      { title: "Metaethics", url: "https://metaethics.ink" },
       { title: "FrameWise", url: "https://framewise.ink" }
     ],
     "🎬 Audio-Visual": [
