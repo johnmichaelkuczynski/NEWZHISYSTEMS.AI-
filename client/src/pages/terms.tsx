@@ -123,8 +123,8 @@ export default function Terms() {
             <h2 className="text-xl font-semibold mb-2">10. Contact</h2>
             <p>
               Questions about these Terms can be sent to{" "}
-              <a href="mailto:zhi@zhisystems.org" className="underline">
-                zhi@zhisystems.org
+              <a href="mailto:jmkuczynski@yahoo.com" className="underline">
+                jmkuczynski@yahoo.com
               </a>
               .
             </p>
