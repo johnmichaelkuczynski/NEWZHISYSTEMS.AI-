@@ -742,7 +742,7 @@ export default function Courses() {
     { title: "AI (Level 3)", url: "https://ai101.ink" },
     { title: "Developmental Mathematics (Level 3)", url: "https://developmentalmath.ink" },
     { title: "Analytic Philosophy (Level 3)", url: "https://analyticphilosophy101.ink" },
-    { title: "Ethics (Level 3)", url: "https://ethics101.xyz" },
+    { title: "Ethics (Level 3)", url: "https://ethics101.ink" },
     { title: "Philosophy (Level 3)", url: "https://philosophy101.xyz" },
   ];
 
