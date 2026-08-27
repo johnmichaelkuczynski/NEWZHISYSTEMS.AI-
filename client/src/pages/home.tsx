@@ -3336,9 +3336,6 @@ export default function Home() {
       { title: "Basic OSINT", url: "https://basicosint.xyz" },
       { title: "OSINT Lister", url: "https://osintlister.xyz" }
     ],
-    "🏢 Office Use Only": [
-      { title: "Google Login Hub", url: "https://omniloginhub.xyz" }
-    ],
     "🎓 Education & Learning": [
       { title: "Chess Tutor", url: "https://chesstutor.xyz" },
       { title: "College AI Match", url: "https://collegeaimatch.xyz" },

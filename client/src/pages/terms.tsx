@@ -40,17 +40,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">3. Accounts and Sign-In</h2>
-            <p>
-              Some Services offer optional sign-in (for example, Sign in with
-              Google). You are responsible for activity that occurs under your
-              account. We may suspend or terminate accounts that violate these
-              Terms.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold mb-2">4. Intellectual Property</h2>
+            <h2 className="text-xl font-semibold mb-2">3. Intellectual Property</h2>
             <p>
               All content provided through the Services &mdash; including
               books, courses, lectures, articles, audio, video, and software
@@ -64,7 +54,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">5. AI-Generated Content</h2>
+            <h2 className="text-xl font-semibold mb-2">4. AI-Generated Content</h2>
             <p>
               Many Services generate content using artificial intelligence
               (for example, tutoring answers, grading feedback, analyses,
@@ -77,7 +67,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">6. Disclaimer of Warranties</h2>
+            <h2 className="text-xl font-semibold mb-2">5. Disclaimer of Warranties</h2>
             <p>
               The Services are provided &ldquo;as is&rdquo; and &ldquo;as
               available,&rdquo; without warranties of any kind, express or
@@ -88,7 +78,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">7. Limitation of Liability</h2>
+            <h2 className="text-xl font-semibold mb-2">6. Limitation of Liability</h2>
             <p>
               To the maximum extent permitted by law, Zhi Systems shall not be
               liable for any indirect, incidental, special, consequential, or
@@ -98,7 +88,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">8. Changes to the Services and Terms</h2>
+            <h2 className="text-xl font-semibold mb-2">7. Changes to the Services and Terms</h2>
             <p>
               We may modify, suspend, or discontinue any part of the Services
               at any time. We may also update these Terms from time to time;
@@ -109,7 +99,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">9. Privacy</h2>
+            <h2 className="text-xl font-semibold mb-2">8. Privacy</h2>
             <p>
               Your use of the Services is also governed by our{" "}
               <Link href="/privacy-policy" className="underline">
@@ -120,7 +110,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">10. Contact</h2>
+            <h2 className="text-xl font-semibold mb-2">9. Contact</h2>
             <p>
               Questions about these Terms can be sent to{" "}
               <a href="mailto:jmkuczynski@yahoo.com" className="underline">

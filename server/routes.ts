@@ -16,86 +16,8 @@ import {
   generateSuggestedReadings 
 } from "./ai-services";
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
-import geoip from "geoip-lite";
-import session from "express-session";
-
-const ADMIN_EMAIL = "johnmichaelkuczynski@gmail.com";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  app.set("trust proxy", 1);
-  app.use(
-    session({
-      secret: process.env.SESSION_SECRET || "dev-secret",
-      resave: false,
-      saveUninitialized: false,
-      cookie: {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        maxAge: 30 * 24 * 60 * 60 * 1000,
-      },
-    }),
-  );
-
-  const getRedirectUri = (req: any) =>
-    `https://${req.get("host")}/api/auth/google/callback`;
-
-  app.get("/api/auth/google", (req, res) => {
-    const params = new URLSearchParams({
-      client_id: process.env.GOOGLE_CLIENT_ID || "",
-      redirect_uri: getRedirectUri(req),
-      response_type: "code",
-      scope: "openid email",
-      prompt: "select_account",
-    });
-    res.redirect(`https://accounts.google.com/o/oauth2/v2/auth?${params}`);
-  });
-
-  app.get("/api/auth/google/callback", async (req, res) => {
-    try {
-      const code = req.query.code as string;
-      if (!code) return res.redirect("/administrative");
-      const tokenRes = await fetch("https://oauth2.googleapis.com/token", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          code,
-          client_id: process.env.GOOGLE_CLIENT_ID || "",
-          client_secret: process.env.GOOGLE_CLIENT_SECRET || "",
-          redirect_uri: getRedirectUri(req),
-          grant_type: "authorization_code",
-        }),
-      });
-      const tokens = await tokenRes.json();
-      if (!tokens.id_token) {
-        console.error("Google token exchange failed:", tokens);
-        return res.redirect("/administrative?auth=failed");
-      }
-      const payload = JSON.parse(
-        Buffer.from(tokens.id_token.split(".")[1], "base64url").toString(),
-      );
-      (req.session as any).email = (payload.email || "").toLowerCase();
-      res.redirect("/administrative");
-    } catch (err) {
-      console.error("Google auth error:", err);
-      res.redirect("/administrative?auth=failed");
-    }
-  });
-
-  app.get("/api/auth/me", (req, res) => {
-    const email = (req.session as any)?.email || null;
-    res.json({ email, isAdmin: email === ADMIN_EMAIL });
-  });
-
-  app.post("/api/auth/logout", (req, res) => {
-    req.session.destroy(() => res.json({ ok: true }));
-  });
-
-  const requireAdmin = (req: any, res: any, next: any) => {
-    const email = (req.session as any)?.email;
-    if (!email) return res.status(401).json({ error: "Not signed in" });
-    if (email !== ADMIN_EMAIL) return res.status(403).json({ error: "Not authorized" });
-    next();
-  };
   // Journal routes
   app.get("/api/journal", async (req, res) => {
     try {
@@ -471,38 +393,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.get("/api/voice-options", (req, res) => {
     res.json(VOICE_OPTIONS);
-  });
-
-  // Visitor tracking
-  app.post("/api/track", async (req, res) => {
-    try {
-      const path = typeof req.body?.path === "string" ? req.body.path.slice(0, 500) : "/";
-      const forwarded = req.headers["x-forwarded-for"];
-      const ip = (typeof forwarded === "string" ? forwarded.split(",")[0].trim() : req.socket.remoteAddress) || "unknown";
-      const geo = geoip.lookup(ip);
-      await storage.recordVisit({
-        path,
-        ip,
-        userAgent: (req.headers["user-agent"] || "").slice(0, 500) || null,
-        referer: (typeof req.headers["referer"] === "string" ? req.headers.referer.slice(0, 500) : null),
-        country: geo?.country || null,
-        region: geo?.region || null,
-        city: geo?.city || null,
-      });
-      res.json({ ok: true });
-    } catch (error) {
-      res.status(500).json({ error: "Failed to record visit" });
-    }
-  });
-
-  app.get("/api/analytics", requireAdmin, async (_req, res) => {
-    try {
-      const data = await storage.getAnalytics();
-      res.json(data);
-    } catch (error) {
-      console.error("Analytics error:", error);
-      res.status(500).json({ error: "Failed to load analytics" });
-    }
   });
 
   // Note: Audio files are now served as static assets from public/audio/

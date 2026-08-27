@@ -6,15 +6,14 @@ const links = [
   { href: "/courses", label: "Certifications" },
 ];
 
-const privateLinks = [
+const secondaryLinks = [
   { href: "/utilities", label: "Utilities" },
-  { href: "/living-books", label: "Memos" },
+  { href: "/living-books", label: "Living Books" },
   { href: "/main-page", label: "Reports" },
   { href: "/ai-higher-ed", label: "AI in Higher Ed" },
   { href: "/investor-notes", label: "Investor Notes" },
   { href: "/investor-briefings", label: "Investor Briefings" },
   { href: "/office-use", label: "Office Use" },
-  { href: "/administrative", label: "Administrative" },
 ];
 
 export default function NavBar() {
@@ -77,7 +76,7 @@ export default function NavBar() {
             ))}
           </div>
           <div className="flex flex-col items-end gap-1 shrink-0">
-            {privateLinks.map((link) => (
+            {secondaryLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}

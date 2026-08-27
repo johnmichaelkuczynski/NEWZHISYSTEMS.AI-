@@ -1,4 +1,4 @@
 - [Course double-listing sync](course-double-listing.md) — analytics courses live on both baby-living-courses.tsx and johnson-wales.tsx; mirror badge/video/title/removal changes to both.
 - [DB URL drift](db-url-drift.md) — server reads EXTERNAL_DATABASE_URL but drizzle.config uses DATABASE_URL; push with DATABASE_URL="$EXTERNAL_DATABASE_URL" npm run db:push.
 - [Secret paste whitespace](secret-paste-whitespace.md) — pasted secrets can carry invisible chars (NBSP); always trim env credentials before use.
-- [No auth by owner order](no-auth-by-owner-order.md) — owner ordered ALL login ripped out (2026-07-04); site is fully public; never reinstall auth without explicit request. Exception (2026-08-13, explicit): /administrative analytics uses direct Google OAuth (owner's own client ID/secret, session cookie), restricted to johnmichaelkuczynski@gmail.com; Clerk removed.
+- [No auth by owner order](no-auth-by-owner-order.md) — every page, tab, and API is intentionally public; never restore Google OAuth, sessions, password gates, or other auth without an explicit request.

@@ -33,13 +33,6 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc pl-6 space-y-1">
               <li>
-                <strong>Account information.</strong> Some Services offer
-                optional sign-in (for example, &ldquo;Sign in with
-                Google&rdquo;). When you sign in, we receive your name, email
-                address, and profile picture from your identity provider. We
-                never receive or store your password.
-              </li>
-              <li>
                 <strong>Content you submit.</strong> Answers, recordings, text,
                 and other material you submit to a Service (for example, course
                 answers, spoken responses, or documents you upload) are stored
@@ -82,29 +75,6 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-2">
-              Google User Data
-            </h2>
-            <p>
-              Where a Service offers Google sign-in, we access only your basic
-              profile information (name, email address, and profile picture)
-              to identify your account. We do not access your Gmail, Drive,
-              Contacts, or any other Google data. Google user data is never
-              sold, never used for advertising, and never shared with third
-              parties except as required to operate the Service. Our use of
-              information received from Google APIs adheres to the{" "}
-              <a
-                href="https://developers.google.com/terms/api-services-user-data-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-              >
-                Google API Services User Data Policy
-              </a>
-              , including the Limited Use requirements.
-            </p>
-          </section>
 
           <section>
             <h2 className="text-xl font-semibold mb-2">Data Storage and Security</h2>
