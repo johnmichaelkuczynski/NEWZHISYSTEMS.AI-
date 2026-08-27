@@ -2672,7 +2672,7 @@ export default function MainPage() {
     ],
     "🎧 Audio & Interactive Media": [
       { title: "Audio Transcriber", url: "https://audiotranscriber.ink" },
-      { title: "Podcast Creator", url: "https://ezpodcast.xyz" }
+      { title: "Podcast Creator", url: "https://ezpodcast.ink" }
     ],
     "⚙️ Utility & Conversion": [
       { title: "EZREDIRECT", url: "https://ezredirect.xyz" },

@@ -3375,7 +3375,7 @@ export default function Home() {
       { title: "Photo Psychoanalysis", url: "https://photopsychoanalysis.xyz" },
       { title: "Multiple Video Viewer", url: "https://multivideo.ink" },
       { title: "Audio Transcriber Plus", url: "https://audiotranscriber.ink" },
-      { title: "Podcast Creator", url: "https://ezpodcast.xyz" },
+      { title: "Podcast Creator", url: "https://ezpodcast.ink" },
       { title: "YouTube Video Downloader", url: "https://youtubedownloader.ink" }
     ],
     "💹 Finance": [
