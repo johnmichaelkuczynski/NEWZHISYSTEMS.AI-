@@ -2613,7 +2613,7 @@ export default function MainPage() {
       { title: "Text IQ", url: "https://textiq.xyz/" },
       { title: "Improve Your Writing", url: "https://improveyourwriting.xyz" },
       { title: "Cognitive Enhancer", url: "https://cognitiveenhancer.xyz" },
-      { title: "Psychology Pro", url: "https://psychologypro.xyz" },
+      { title: "Psychology Pro", url: "https://psychologypro.ink" },
       { title: "Text Genius", url: "https://textgenius.xyz" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
       { title: "Model Transformer", url: "https://modeltransformer.ink" },

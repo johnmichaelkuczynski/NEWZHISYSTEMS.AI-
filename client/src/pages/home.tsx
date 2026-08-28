@@ -3314,7 +3314,7 @@ export default function Home() {
       { title: "Mind Profiler", url: "https://mindprofiler.ink" },
       { title: "Mind Probe", url: "https://mindprobe.ink" },
       { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
-      { title: "Psychology Pro", url: "https://psychologypro.xyz" },
+      { title: "Psychology Pro", url: "https://psychologypro.ink" },
       { title: "ModelWiz", url: "https://modelwiz.xyz" },
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
