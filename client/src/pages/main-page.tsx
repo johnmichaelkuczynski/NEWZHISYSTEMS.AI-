@@ -2627,6 +2627,7 @@ export default function MainPage() {
   const appCategories: Record<string, App[]> = {
     "📝 Writing & Books": [
       { title: "Living Book Creator", url: "https://livingbookcreator.xyz" },
+      { title: "Living Book Maker", url: "https://livingbookmaker.ink" },
       { title: "Book Builder", url: "https://bookbuilder.ink" },
       { title: "Genius Dictation", url: "https://geniusdictation.com" },
       { title: "EZ Reader", url: "https://ezreader.ai" },
