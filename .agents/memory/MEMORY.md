@@ -2,3 +2,4 @@
 - [DB URL drift](db-url-drift.md) — server reads EXTERNAL_DATABASE_URL but drizzle.config uses DATABASE_URL; push with DATABASE_URL="$EXTERNAL_DATABASE_URL" npm run db:push.
 - [Secret paste whitespace](secret-paste-whitespace.md) — pasted secrets can carry invisible chars (NBSP); always trim env credentials before use.
 - [No auth by owner order](no-auth-by-owner-order.md) — every page, tab, and API is intentionally public; never restore Google OAuth, sessions, password gates, or other auth without an explicit request.
+- [Approved Zhi promo style](approved-zhi-promo-style.md) — use short, bright, lightweight videos with natural narration, real site footage, and explicit example-work framing.
