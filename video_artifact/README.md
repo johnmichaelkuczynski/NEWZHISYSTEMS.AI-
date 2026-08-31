@@ -17,3 +17,10 @@ To render again, generate `dist/videos/zhi_promo_work/voiceover.mp3` from `voice
 - **Visual source:** Captures of the running public site at `/main-page`, `/microcertifications`, and `/courses`, composited into the film; no UI was invented or changed.
 
 Render it with `python video_artifact/render_zhi_promo_bright.py` after creating `dist/videos/zhi_promo_bright_work/ava-voiceover.mp3` from `voiceover-light.txt`.
+
+## Short custom-apps cut
+
+- **Artifact:** `dist/videos/zhi-systems-custom-apps-short-16x9.mp4`
+- **Runtime / delivery:** 21.168 seconds, 1920 × 1080 H.264/AAC, approximately 745 KB.
+- **Narration:** Warm Ava Multilingual Neural voice, with conversational pacing.
+- **Message:** The public site captures are explicitly identified as real examples of applications Zhi Systems has already made—not a fixed-product menu.

@@ -14,3 +14,10 @@ uri = "file://dist/videos/zhi-systems-promo-light-site-16x9.mp4"
 type = "video"
 title = "Zhi Systems Promo — Bright Site Edition"
 description = "Rebuilt 47.6-second promotional video with a warmer conversational voice, brighter visual treatment, and real Zhi Systems website footage."
+
+[[outputs]]
+id = "4cHrtfqHcouCchbQqueIZ"
+uri = "file://dist/videos/zhi-systems-custom-apps-short-16x9.mp4"
+type = "video"
+title = "Zhi Systems — Custom Apps Short Promo"
+description = "A bright 21-second narrated video explaining that Zhi Systems builds custom AI applications and that the apps on ZhiSystems.ai are examples of completed work."
