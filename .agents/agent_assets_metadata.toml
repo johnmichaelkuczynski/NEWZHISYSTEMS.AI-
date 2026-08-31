@@ -1,0 +1,9 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "7MVP1Nbb0wTHcZVgb9m0g"
+uri = "file://dist/videos/zhi-systems-promo-16x9.mp4"
+type = "video"
+title = "Zhi Systems — AI-Powered Apps Promo"
+description = "A 46.7-second 16:9 promotional video with voice-over featuring customized AI-powered apps, FreudGPT, Genius 101, selected certifications, and ZhiSystems.ai."
