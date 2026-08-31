@@ -7,3 +7,10 @@ uri = "file://dist/videos/zhi-systems-promo-16x9.mp4"
 type = "video"
 title = "Zhi Systems — AI-Powered Apps Promo"
 description = "A 46.7-second 16:9 promotional video with voice-over featuring customized AI-powered apps, FreudGPT, Genius 101, selected certifications, and ZhiSystems.ai."
+
+[[outputs]]
+id = "ohUwdx5jBYIlx4rn4zuz7"
+uri = "file://dist/videos/zhi-systems-promo-light-site-16x9.mp4"
+type = "video"
+title = "Zhi Systems Promo — Bright Site Edition"
+description = "Rebuilt 47.6-second promotional video with a warmer conversational voice, brighter visual treatment, and real Zhi Systems website footage."
