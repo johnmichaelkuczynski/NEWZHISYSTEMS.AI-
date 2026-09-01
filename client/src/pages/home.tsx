@@ -3277,6 +3277,7 @@ export default function Home() {
       { title: "Book Builder", url: "https://bookbuilder.ink" },
       { title: "Genius Dictation", url: "https://geniusdictation.com" },
       { title: "EZ Reader", url: "https://ezreader.ai" },
+      { title: "Original EZ Reader", url: "https://originalezreader.ink" },
       { title: "Classic EZ Reader", url: "https://classicezreader.ink" },
       { title: "EZ Story", url: "https://ezstory.xyz" },
       { title: "NeuroText", url: "https://neurotext.ink" },
