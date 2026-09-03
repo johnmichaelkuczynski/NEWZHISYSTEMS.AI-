@@ -23,7 +23,7 @@ export default function NavBar() {
         <div className="flex flex-wrap items-start justify-between gap-6">
           <div className="shrink-0 flex flex-col items-center gap-1">
             <a
-              href="mailto:jmkuczynski@yahoo.com"
+              href="mailto:contact@zhisystems.ai"
               className="flex flex-col items-center gap-1"
             >
               <img
@@ -60,7 +60,7 @@ export default function NavBar() {
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-0.5">
             <a
-              href="mailto:jmkuczynski@yahoo.com"
+              href="mailto:contact@zhisystems.ai"
               className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-1.5 rounded mr-4"
             >
               ✉️ Contact Us

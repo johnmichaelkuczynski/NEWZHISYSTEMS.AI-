@@ -130,8 +130,8 @@ export default function PrivacyPolicy() {
             <p>
               Questions or requests regarding this Privacy Policy can be sent
               to{" "}
-              <a href="mailto:jmkuczynski@yahoo.com" className="underline">
-                jmkuczynski@yahoo.com
+              <a href="mailto:contact@zhisystems.ai" className="underline">
+                contact@zhisystems.ai
               </a>
               .
             </p>
