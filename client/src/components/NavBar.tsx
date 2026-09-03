@@ -7,7 +7,7 @@ const links = [
 ];
 
 const secondaryLinks = [
-  { href: "/utilities", label: "Utilities" },
+  { href: "/utilities", label: "Apps" },
   { href: "/living-books", label: "Living Books" },
   { href: "/main-page", label: "Reports" },
   { href: "/ai-higher-ed", label: "AI in Higher Ed" },
