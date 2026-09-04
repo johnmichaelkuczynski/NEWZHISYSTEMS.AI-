@@ -20,6 +20,7 @@ import NavBar from "@/components/NavBar";
 import LivingBooks from "@/pages/living-books";
 import MainPage from "@/pages/main-page";
 import Microcertifications from "@/pages/microcertifications";
+import TwoHourCertifications from "@/pages/two-hour-certifications";
 
 const SEO_META: Record<string, { title: string; description: string; noindex?: boolean }> = {
   "/": {
@@ -41,6 +42,10 @@ const SEO_META: Record<string, { title: string; description: string; noindex?: b
     title: "Nanocertifications | Zhi Systems — AI-Taught Micro Courses",
     description:
       "Nanocertifications from Zhi Systems: compact, rigorous AI-taught courses with built-in tutors, cheat-proof assessments, and verified mastery.",
+  },
+  "/two-hour-certifications": {
+    title: "Two Hour Certifications | Zhi Systems",
+    description: "Two Hour Certifications from Zhi Systems.",
   },
   "/journal": {
     title: "Journal | Zhi Systems",
@@ -116,6 +121,7 @@ function Router() {
       <Route path="/courses" component={Courses} />
       <Route path="/microcertifications" component={Microcertifications} />
       <Route path="/nanocertifications" component={Nanocertifications} />
+      <Route path="/two-hour-certifications" component={TwoHourCertifications} />
       <Route path="/living-books" component={LivingBooks} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={Terms} />
