@@ -1,13 +1,13 @@
 import zhiLogo from "@assets/zhi_logoc_1786844531458.png";
 
 const links = [
+  { href: "/utilities", label: "Apps" },
   { href: "/nanocertifications", label: "Nanocertifications" },
   { href: "/", label: "Microcertifications" },
   { href: "/courses", label: "Certifications" },
 ];
 
 const secondaryLinks = [
-  { href: "/utilities", label: "Apps" },
   { href: "/living-books", label: "Living Books" },
   { href: "/main-page", label: "Reports" },
   { href: "/ai-higher-ed", label: "AI in Higher Ed" },
