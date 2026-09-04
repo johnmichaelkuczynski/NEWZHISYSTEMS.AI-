@@ -13,6 +13,57 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  Psychoanalysis: {
+    emoji: "🛋️",
+    tagline:
+      "A formal, rigorous, self-paced course for adult learners entering psychoanalytic theory, history, technique, and debates about evidence.",
+    sections: [
+      {
+        emoji: "🧠",
+        title: "What It Is",
+        body: `Basic Tenets of Psychoanalysis is a rigorous, historically informed introduction to psychoanalytic theory and practice. The course distinguishes observation from interpretation, clinical pattern from metapsychological hypothesis, and therapeutic outcome from evidence for a proposed mechanism.
+
+Each lecture is available at Short, Medium, and Long depth, allowing adult learners to study the same concept at the level of detail that fits their needs.`,
+      },
+      {
+        emoji: "📚",
+        title: "Thirty-Topic Curriculum",
+        body: `The curriculum contains exactly thirty course topics spanning the foundations, clinical concepts, techniques, later developments, and scientific status of psychoanalysis.
+
+**Foundations of Mental Life** -- The unconscious, psychic determinism, repression, drives, the pleasure and reality principles, the structural model of id, ego, and superego, and the topographic model of conscious, preconscious, and unconscious.
+
+**Development and Conflict** -- Infantile sexuality, stages of development, the Oedipus complex, conscience formation, fixation, regression, defense mechanisms, symptom formation, anxiety, narcissism, object relations, ambivalence, mourning, melancholia, and identification.
+
+**Dreams and Everyday Evidence** -- Dreams as wish fulfillment; manifest and latent content; condensation, displacement, symbolization, and secondary revision; parapraxes; jokes; art; religion; and other expressions of unconscious life.
+
+**Psychoanalytic Technique** -- Free association, transference, countertransference, resistance, working through, interpretation, and insight as a proposed mechanism of cure.
+
+**Later Theory and Scientific Debate** -- The death drive, repetition compulsion, civilization and instinctual renunciation, post-Freudian revisions by Jung, Adler, Klein, and Lacan, the scientific status and testability of psychoanalysis, and its relationship to the modern mind sciences.`,
+      },
+      {
+        emoji: "🎓",
+        title: "Learning and Assessment",
+        body: `**Section-Scoped AI Tutoring** -- Tutoring is grounded in the exact lecture being read.
+
+**Adaptive Practice** -- Practice adjusts by topic and maintains persistent difficulty.
+
+**Formal Assessment** -- Two homework sets, a timed course test, and a cumulative final emphasize concrete, multi-sentence case analysis rather than definition recall.
+
+**Reasoning Diagnostics** -- Subject and General Reasoning diagnostics are available in multiple formats, lengths, and phases.
+
+**Semantic Grading** -- Each problem receives a grading rationale, while static and diachronic keystroke-pattern screening support academic integrity.
+
+**Public Course Readers and Analytics** -- PDF and TXT readers require no account, and analytics track assignment performance and topic mastery.`,
+      },
+      {
+        emoji: "⚙️",
+        title: "Technical Architecture",
+        body: `The course uses a contract-first Express API with OpenAPI-generated Zod validators and React Query hooks. PostgreSQL and Drizzle support the curriculum, attempts, practice, diagnostics, and analytics.
+
+Server-Sent Events power model-backed tutoring and generation. Curriculum reseeding is transactional and versioned, while GPTZero-backed static detection uses non-blocking fallbacks alongside keystroke-trace analysis. System diagnostics verify the fixed thirty-topic curriculum count.`,
+      },
+    ],
+  },
   "AI Math (Level 1)": {
     emoji: "🔎",
     tagline:
@@ -359,6 +410,8 @@ The hard part of cloud architecture is not only choosing a service. It is connec
 
 const courses: Course[] = [
   { title: "AI Math (Level 1)", url: "https://aimath1.xyz" },
+  { title: "Psychoanalysis", url: "https://nanofreud.xyz" },
+  { title: "IQ Booster", url: "https://nanofreud.xyz" },
   {
     title: "AI-Assisted Grading and Assessment (Level 1)",
     url: "https://aigrading1.ink",
