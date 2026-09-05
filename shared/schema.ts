@@ -61,6 +61,11 @@ export const siteVisits = pgTable("site_visits", {
 
 export type SiteVisit = typeof siteVisits.$inferSelect;
 
+export const uniqueVisitors = pgTable("unique_visitors", {
+  visitorId: varchar("visitor_id", { length: 64 }).primaryKey(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
 export const insertJournalIssueSchema = createInsertSchema(journalIssues).pick({
   title: true,
   body: true,

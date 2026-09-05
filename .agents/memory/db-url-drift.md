@@ -12,10 +12,13 @@ applies the schema to `DATABASE_URL`'s database while the app reads from
 
 **How to apply:** to push schema to the database the app actually uses, run
 `DATABASE_URL="$EXTERNAL_DATABASE_URL" npm run db:push`. After adding any new table,
-verify via an API call, not just the push "Changes applied" message.
+verify via an API call, not just the push "Changes applied" message. The database
+callback targets Replit's managed development database, not this app's external
+database; use `psql "$EXTERNAL_DATABASE_URL"` for direct SQL against the live app DB.
 
 **Push prompt hazard:** legacy orphan tables (`visits`, `users`, `session`) still exist
 in the DB, so `db:push` for any new table opens an interactive "create or rename?"
 prompt that hangs non-interactive shells (even with `--force`). Workaround: create the
 table with direct SQL (`CREATE TABLE IF NOT EXISTS ...`) matching the Drizzle schema,
-via a small node script using `@neondatabase/serverless`.
+through `psql "$EXTERNAL_DATABASE_URL"` or a small node script using
+`@neondatabase/serverless`.

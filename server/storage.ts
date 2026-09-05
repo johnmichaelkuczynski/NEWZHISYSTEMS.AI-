@@ -1,4 +1,4 @@
-import { type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, type HigherEdReport, type InsertHigherEdReport, journalIssues, officeDocuments, higherEdReports, siteVisits } from "@shared/schema";
+import { type JournalIssue, type InsertJournalIssue, type OfficeDocument, type InsertOfficeDocument, type HigherEdReport, type InsertHigherEdReport, journalIssues, officeDocuments, higherEdReports, siteVisits, uniqueVisitors } from "@shared/schema";
 import { db } from "./db";
 import { eq, desc, sql, or, ilike } from "drizzle-orm";
 
@@ -27,6 +27,8 @@ export interface IStorage {
   createHigherEdReport(report: InsertHigherEdReport): Promise<HigherEdReport>;
   updateHigherEdReport(id: string, report: Partial<InsertHigherEdReport>): Promise<HigherEdReport>;
   deleteHigherEdReport(id: string): Promise<void>;
+
+  recordUniqueVisitor(visitorId: string): Promise<number>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -131,6 +133,19 @@ export class DatabaseStorage implements IStorage {
 
   async deleteHigherEdReport(id: string): Promise<void> {
     await db.delete(higherEdReports).where(eq(higherEdReports.id, id));
+  }
+
+  async recordUniqueVisitor(visitorId: string): Promise<number> {
+    await db
+      .insert(uniqueVisitors)
+      .values({ visitorId })
+      .onConflictDoNothing();
+
+    const [result] = await db
+      .select({ count: sql<number>`count(*)::int` })
+      .from(uniqueVisitors);
+
+    return result.count;
   }
 
   // Visitor analytics

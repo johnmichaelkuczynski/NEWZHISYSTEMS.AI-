@@ -18,6 +18,24 @@ import {
 import { generateAudio, VOICE_OPTIONS } from "./speech-services";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  app.post("/api/visitor-count", async (req, res) => {
+    try {
+      const visitorId = req.body?.visitorId;
+      if (
+        typeof visitorId !== "string" ||
+        !/^[a-zA-Z0-9-]{16,64}$/.test(visitorId)
+      ) {
+        return res.status(400).json({ error: "Invalid visitor ID" });
+      }
+
+      const count = await storage.recordUniqueVisitor(visitorId);
+      res.json({ count });
+    } catch (error) {
+      console.error("Error recording unique visitor:", error);
+      res.status(500).json({ error: "Failed to load visitor count" });
+    }
+  });
+
   // Journal routes
   app.get("/api/journal", async (req, res) => {
     try {

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import zhiLogo from "@assets/zhi_logoc_1786844531458.png";
 
 const links = [
@@ -18,6 +19,33 @@ const secondaryLinks = [
 ];
 
 export default function NavBar() {
+  const [visitorCount, setVisitorCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    const storageKey = "zhi-anonymous-visitor-id";
+    let visitorId = localStorage.getItem(storageKey);
+    if (!visitorId) {
+      visitorId = crypto.randomUUID();
+      localStorage.setItem(storageKey, visitorId);
+    }
+
+    fetch("/api/visitor-count", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ visitorId }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Unable to load visitor count");
+        }
+        return response.json() as Promise<{ count: number }>;
+      })
+      .then((data) => setVisitorCount(data.count))
+      .catch((error) => {
+        console.error("Visitor counter error:", error);
+      });
+  }, []);
+
   return (
     <div className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-3">
@@ -34,6 +62,9 @@ export default function NavBar() {
               />
               <span className="text-xs font-medium text-gray-800 tracking-wide whitespace-nowrap">
                 ZHI SYSTEMS
+              </span>
+              <span className="text-xs text-gray-500 whitespace-nowrap">
+                Visitors: {visitorCount === null ? "…" : visitorCount.toLocaleString()}
               </span>
             </a>
             <div className="flex flex-col items-start gap-1 mt-1 leading-none">
