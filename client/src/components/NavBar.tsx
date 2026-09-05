@@ -3,6 +3,7 @@ import zhiLogo from "@assets/zhi_logoc_1786844531458.png";
 const links = [
   { href: "/utilities", label: "Apps" },
   { href: "/nanocertifications", label: "Nanocertifications" },
+  { href: "/four-hour-certifications", label: "Four Hour Certifications" },
   { href: "/", label: "Microcertifications" },
   { href: "/courses", label: "Certifications" },
 ];
