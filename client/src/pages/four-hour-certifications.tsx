@@ -67,7 +67,7 @@ const evolutionaryPsychologySections = [
   {
     emoji: "🔥",
     title: "What It Is",
-    body: `Nano Evolutionary Psychology is a focused, fascinating 4–6 hour experience exploring why humans compete, cooperate, fall in love, protect family, and pursue status.
+    body: `Four Hour Evolutionary Psychology is a focused, fascinating 4–6 hour experience exploring why humans compete, cooperate, fall in love, protect family, and pursue status.
 
 It provides a practical framework for investigating human behavior without reducing people to simple instincts or memorizing endless terminology. Learners build explanations, test predictions, compare alternatives, and ask what the evidence actually proves.`,
   },
