@@ -250,6 +250,102 @@ Concise instruction, fresh challenges, direct feedback, and focused recommendati
   },
 ];
 
+const personalFinanceSections = [
+  {
+    emoji: "💵",
+    title: "What It Is",
+    body: `Personal Finance Certification Course is a focused, practical introduction to the financial decisions people face throughout adult life.
+
+In approximately four to six hours, learners build a working foundation in cash flow, budgeting, saving, debt, credit, investing, insurance, taxes, behavioral finance, and long-term planning. The course emphasizes realistic situations, clear calculations, and reasoned decisions -- not rote memorization or one-size-fits-all financial advice.
+
+No previous financial training is required.`,
+  },
+  {
+    emoji: "🧭",
+    title: "The 4–6 Hour Learning Journey",
+    body: `**1. Foundations of Personal Finance** -- Understand income, expenses, cash flow, compound interest, the time value of money, and practical financial goal-setting.
+
+**2. Budgeting & Saving** -- Create a workable budget, prepare for unexpected expenses, and turn saving into a repeatable habit.
+
+**3. Debt Management** -- Evaluate different kinds of debt, understand the true cost of minimum payments, and compare avalanche and snowball payoff strategies.
+
+**4. Credit & Credit Scores** -- Learn what influences credit scores, how to build and maintain healthy credit, and how credit affects wider financial life.
+
+**5. Investing Fundamentals** -- Explore stocks, bonds, index funds, retirement accounts, asset allocation, diversification, risk, and the value of starting early.
+
+**6. Risk Management & Insurance** -- Match insurance to real financial risks, prepare for financial shocks, and balance premiums, deductibles, limits, and coverage.
+
+**7. Taxes & Tax-Advantaged Accounts** -- Understand marginal and effective tax rates, tax-advantaged savings vehicles, and the foundations of lawful tax planning.
+
+**8. Behavioral Finance & Long-Term Planning** -- Recognize loss aversion and present bias, strengthen sustainable habits, and keep short-term choices aligned with long-term goals.`,
+  },
+  {
+    emoji: "🎓",
+    title: "Learning and Assessment",
+    body: `**Flexible Lectures** -- Choose concise, standard, or extended lecture formats to match your time and preferred level of detail.
+
+**Built-In AI Tutors** -- Ask questions while learning or practicing and receive help grounded in the course material.
+
+**Fresh Scenario-Based Practice** -- Work through newly generated financial situations that require application and reasoning.
+
+**Immediate Feedback** -- Submit answers, receive percentage grading, and understand what was correct or needs improvement.
+
+**Assignments and Exams** -- Complete coursework, tests, diagnostics, and unlimited ungraded practice exams.
+
+**Progress and Analytics** -- Track lecture completion, assignment results, practice activity, and topic-level strengths.
+
+**Course Certification** -- Complete the required coursework and earn a ZHI Systems course certificate.
+
+**Complete Course Books** -- Download the full 24-topic course book in PDF or plain-text format for offline study.`,
+  },
+  {
+    emoji: "📚",
+    title: "Twenty-Four Topics Across Eight Connected Areas",
+    body: `**Foundations** -- Income, expenses and cash flow; time value of money and compound interest; setting financial goals.
+
+**Budgeting & Saving** -- Creating and maintaining a budget; emergency funds; automating savings.
+
+**Debt Management** -- Types of debt; cost of minimum payments; avalanche versus snowball.
+
+**Credit & Credit Scores** -- How credit scores work; building and maintaining good credit; credit's impact on financial life.
+
+**Investing Fundamentals** -- Stocks, bonds and index funds; 401(k) and IRA accounts; asset allocation and diversification.
+
+**Risk Management & Insurance** -- Types of insurance; protecting against financial shocks; balancing coverage and cost.
+
+**Taxes** -- How income taxes work; tax-advantaged savings vehicles; basic tax-planning strategies.
+
+**Behavior & Long-Term Planning** -- Common psychological traps; the importance of early investment; sustainable financial habits.`,
+  },
+  {
+    emoji: "🔓",
+    title: "How Access Works",
+    body: `Explore the public course information and download the course books.
+
+Try up to two AI-assisted learning actions before signing in. Sign in securely with Google for three additional AI-assisted actions.
+
+Subscribe for continued access to tutoring, feedback, practice, assignments, progress tracking, and certification. Login and subscription controls remain visible so learners can manage access at any time.`,
+  },
+  {
+    emoji: "👥",
+    title: "Who It Is For",
+    body: `**Students and Young Adults** -- Build a reliable financial foundation.
+
+**Working Adults** -- Organize saving, debt, credit, insurance, taxes, and retirement.
+
+**Independent Learners** -- Follow a structured alternative to scattered online advice.
+
+**Colleges, Banks, Businesses, and Community Organizations** -- Provide accessible financial-literacy education.
+
+**Educators and Institutions** -- Explore customized courses, certifications, or learning applications.`,
+  },
+  {
+    emoji: "ℹ️",
+    title: "Important Note",
+    body: `This course provides general financial education. It does not provide individualized financial, investment, tax, legal, or insurance advice.`,
+  },
+];
+
 function renderBody(body: string) {
   return body.split("\n\n").map((paragraph, index) => {
     const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
@@ -497,6 +593,61 @@ export default function FourHourCertifications() {
                 think.
               </p>
               {iqBoosterSections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">💰</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  Personal Finance
+                </h2>
+                <p className="text-sm text-gray-600">
+                  Practical Money Skills in Four to Six Hours
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "personal-finance" ? null : "personal-finance",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "personal-finance" ? "Hide" : "Details"}
+              </button>
+              <a
+                href="https://fourhourpersonalfinance.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          {expandedCourse === "personal-finance" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                Learn the concepts. Practice the decisions. Earn the
+                certification.
+              </p>
+              {personalFinanceSections.map((section) => (
                 <section key={section.title}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     <span className="mr-2">{section.emoji}</span>
