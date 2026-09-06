@@ -29,14 +29,14 @@ logical_id = "f7401dc9-170f-42c8-b0cd-62c254698365"
 id = "dhjJWrYiAOVrVOby-5UxC"
 uri = "file://dist/videos/zhi-systems-tiktok-9x16.mp4"
 type = "video"
-title = "Zhi Systems TikTok Promo"
-description = "50-second 9:16 TikTok video with actual Zhi Systems screenshots, friendly male narration, and no music."
+title = "Zhi Systems TikTok Promo — Rebuilt"
+description = "Completely rebuilt 32-second vertical promo with slower high-quality conversational male narration, distinct site sequences, real Zhi Systems screenshots, and no music."
 logical_id = "c633430d-e3d9-43a5-9219-28c73f508595"
-content_hash = "sha256:fe440b691c1b1ec4b497b294c7dca095b3c26c56a58995ea2b44cfb54c6a7688"
-size = 1785211
-mtime_ms = 1788665383212
-storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:79134980-9d99-429d-b786-cae8475de094/c633430d-e3d9-43a5-9219-28c73f508595/d8af1eb8-90e7-4ea6-9f57-b1fb4da789a6"
-storage_version_token = "1788665419750444"
+content_hash = "sha256:93eb11211c5e15863d88cfe8429075018e2ad0fcf5881d6ab126b46269672fb7"
+size = 2384141
+mtime_ms = 1788670593063
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:79134980-9d99-429d-b786-cae8475de094/c633430d-e3d9-43a5-9219-28c73f508595/2f8dd73b-9f35-4896-b3e5-df8396fedf32"
+storage_version_token = "1788670634175579"
 content_type = "video/mp4"
 
 [[outputs]]
@@ -52,3 +52,11 @@ mtime_ms = 1788664764692
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:79134980-9d99-429d-b786-cae8475de094/9ff1c918-0e94-4c6a-a69f-d49b42cbcded/b99b6dc4-9b12-46dc-924c-642cdfe9a65c"
 storage_version_token = "1788665420437022"
 content_type = "text/plain"
+
+[[outputs]]
+id = "1y28CoCuNhZP5sWnUrWkG"
+uri = "file://attached_assets/generated_audio/zhi-natural-male-v2.mp3"
+type = "audio"
+title = "natural conversational Zhi Systems male narration"
+description = "Text-to-speech audio: ZhiSystems dot A I. If you're building sharper minds... or smarter tools... start here. Zhi Systems makes focused A I learning and custom software for people and organizations. …"
+logical_id = "16ec347a-9ad3-4827-b8c7-987517bfeecf"

@@ -1,4 +1,4 @@
-"""Render the 9:16, narration-only Zhi Systems TikTok promotional film."""
+"""Render the 9:16 Zhi Systems TikTok film with a calm, natural voiceover."""
 from pathlib import Path
 import subprocess
 
@@ -7,7 +7,7 @@ OUT = ROOT / "dist" / "videos"
 WORK = OUT / "zhi_tiktok_work"
 OUT.mkdir(parents=True, exist_ok=True)
 WORK.mkdir(parents=True, exist_ok=True)
-W, H, FPS, DURATION = 1080, 1920, 30, 50
+W, H, FPS, DURATION = 1080, 1920, 30, 32
 FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
@@ -22,58 +22,71 @@ def main():
     four = ROOT / "attached_assets" / "zhi-four-hour-actual.jpg"
     apps = ROOT / "attached_assets" / "zhi-apps-actual.jpg"
     certs = ROOT / "attached_assets" / "zhi-certifications-actual.jpg"
-    audio = WORK / "zhi-male-narration.mp3"
+    audio = (
+        ROOT
+        / "attached_assets"
+        / "generated_audio"
+        / "zhi-natural-male-v2.mp3"
+    )
     url = textfile("url.txt", "ZHISYSTEMS.AI")
-    formats = textfile("formats.txt", "FOUR HOUR CERTIFICATIONS\nNANOCERTIFICATIONS  ·  MICROCERTIFICATIONS\nCERTIFICATIONS  ·  APPS")
-    topics = textfile("topics.txt", "CRYPTOGRAPHY  ·  EVOLUTIONARY PSYCHOLOGY\nFREUD IN FOUR HOURS  ·  IQ BOOSTER\nARTIFICIAL INTELLIGENCE  ·  ANALYTIC PHILOSOPHY\nPSYCHOLOGY  ·  FINANCE")
-    apps_text = textfile("apps.txt", "MODELWIZ  ·  GENIUS 101\nFREUD GPT  ·  GPT BYPASS\nINTELLIGENCE METER")
-    custom = textfile("custom.txt", "SHOWN: EXAMPLES OF CUSTOM WORK\nNOT THE LIMIT OF WHAT WE CAN BUILD.")
-    final = textfile("final.txt", "THE GO-TO FOR CUTTING-EDGE\nCONSUMER + COMMERCIAL AI")
-    # Site captures remain unaltered. They are framed in a vertical editorial camera.
+    kicker = textfile("kicker.txt", "HIGH-PERFORMANCE AI TOOLS FOR WRITERS, THINKERS, AND ANALYSTS")
+    learning = textfile("learning.txt", "FOCUSED AI LEARNING")
+    formats = textfile("formats.txt", "FOUR HOUR  /  NANO  /  MICRO\nCERTIFICATIONS")
+    topics = textfile("topics.txt", "AI  ·  FINANCE\nPSYCHOLOGY  ·  CRYPTOGRAPHY")
+    build = textfile("build.txt", "CUSTOM SOFTWARE\nFOR THE WORK IN FRONT OF YOU")
+    final = textfile("final.txt", "PRACTICAL.\nFLEXIBLE.\nBUILT AROUND YOUR WORK.")
+    # Five actual captures are presented as five different editorial treatments:
+    # full-bleed crop, framed browser panel, close-up crop, split-screen panels,
+    # then a final full-bleed return. This prevents the film reading as one
+    # repeated website backdrop with interchangeable cards.
     filt = f"""
-    [0:v]format=rgba,scale=2150:1210,setsar=1,split=2[homeA][homeB];
-    [1:v]format=rgba,scale=2150:1210,setsar=1[four];
-    [2:v]format=rgba,scale=2150:1210,setsar=1[apps];
-    [3:v]format=rgba,scale=2150:1210,setsar=1[certs];
-    [4:v]format=rgba,scale=240:-1[logo];
-    color=c=0xf3f4f6:s={W}x{H}:r={FPS}:d={DURATION},format=rgba,
-    geq=r='240+8*sin(0.08*T)':g='244+5*sin(0.11*T)':b='251+3*sin(0.06*T)':a='255'[bg];
-    [bg]drawbox=x=0:y=0:w={W}:h=18:color=0x2563eb:t=fill,
-    drawbox=x=0:y=1600:w={W}:h=320:color=0x111827:t=fill[base];
-    [base][homeA]overlay=x='-490+30*sin(t*0.25)':y='345+10*cos(t*0.30)':enable='between(t,0,8)'[s1];
-    [s1][four]overlay=x='-730+35*sin(t*0.21)':y='480+8*cos(t*0.25)':enable='between(t,8,18)'[s2];
-    [s2][certs]overlay=x='-350+32*sin(t*0.22)':y='470+10*cos(t*0.28)':enable='between(t,18,28)'[s3];
-    [s3][apps]overlay=x='-620+35*sin(t*0.20)':y='470+8*cos(t*0.24)':enable='between(t,28,39)'[s4];
-    [s4][homeB]overlay=x='-510+25*sin(t*0.2)':y='430+12*cos(t*0.26)':enable='between(t,39,50)'[s5];
-    [s5][logo]overlay=x=72:y=105[logoed];
-    [logoed]drawbox=x=62:y=275:w=11:h=1260:color=0x2563eb:t=fill,
-    drawbox=x=94:y=310:w=890:h=250:color=0xf3f4f6@0.94:t=fill:enable='between(t,0,8)',
-    drawtext=fontfile={FONT_BOLD}:textfile={url}:fontcolor=0x111827:fontsize=74:x=112:y=378:enable='between(t,0,8)',
-    drawtext=fontfile={FONT}:text='CUSTOM AI LEARNING + SOFTWARE':fontcolor=0x2563eb:fontsize=29:x=116:y=452:enable='between(t,0.5,8)'[a];
-    [a]drawbox=x=94:y=285:w=900:h=370:color=0x111827@0.94:t=fill:enable='between(t,8,18)',
-    drawtext=fontfile={FONT_BOLD}:text='CHOOSE YOUR FORMAT':fontcolor=0xf3f4f6:fontsize=47:x=120:y=345:enable='between(t,8,18)',
-    drawtext=fontfile={FONT}:textfile={formats}:fontcolor=0xf3f4f6:fontsize=29:line_spacing=24:x=120:y=418:enable='between(t,8.4,18)',
-    drawtext=fontfile={FONT_BOLD}:text='FEATURED FOUR HOUR COURSES':fontcolor=0x2563eb:fontsize=31:x=120:y=1450:enable='between(t,9,18)',
-    drawtext=fontfile={FONT}:text='TAKE FOUR TO SIX HOURS':fontcolor=0xf3f4f6:fontsize=34:x=120:y=1510:enable='between(t,9.4,18)'[b];
-    [b]drawbox=x=94:y=290:w=900:h=430:color=0xf3f4f6@0.96:t=fill:enable='between(t,18,28)',
-    drawtext=fontfile={FONT_BOLD}:text='LEARN WHAT MATTERS NOW.':fontcolor=0x111827:fontsize=43:x=120:y=345:enable='between(t,18,28)',
-    drawtext=fontfile={FONT}:textfile={topics}:fontcolor=0x111827:fontsize=23:line_spacing=19:x=120:y=425:enable='between(t,18.4,28)'[c];
-    [c]drawbox=x=94:y=290:w=900:h=310:color=0x2563eb@0.96:t=fill:enable='between(t,28,39)',
-    drawtext=fontfile={FONT_BOLD}:text='APPS, BUILT AROUND THE JOB.':fontcolor=0xf3f4f6:fontsize=42:x=120:y=347:enable='between(t,28,39)',
-    drawtext=fontfile={FONT}:textfile={apps_text}:fontcolor=0xf3f4f6:fontsize=28:line_spacing=18:x=120:y=435:enable='between(t,28.5,39)',
-    drawtext=fontfile={FONT_BOLD}:textfile={custom}:fontcolor=0xf3f4f6:fontsize=34:line_spacing=18:x=120:y=1450:enable='between(t,31,39)'[d];
-    [d]drawbox=x=70:y=280:w=940:h=430:color=0x111827@0.94:t=fill:enable='between(t,39,50)',
-    drawtext=fontfile={FONT_BOLD}:textfile={final}:fontcolor=0xf3f4f6:fontsize=38:line_spacing=22:x=112:y=355:enable='between(t,39,50)',
-    drawtext=fontfile={FONT}:text='FOR COLLEGES, INDIVIDUALS, BANKS, BUSINESSES + INSTITUTIONS':fontcolor=0xf3f4f6:fontsize=20:x=112:y=520:enable='between(t,40,50)',
-    drawbox=x=70:y=1450:w=940:h=170:color=0x2563eb:t=fill:enable='between(t,39,50)',
-    drawtext=fontfile={FONT_BOLD}:textfile={url}:fontcolor=0xf3f4f6:fontsize=68:x=130:y=1518:enable='between(t,39,50)'[outv]
+    [0:v]scale=3413:1920,crop=1080:1920:x='150+120*t':y=0,trim=duration=7.2,setpts=PTS-STARTPTS[a];
+    [1:v]scale=920:518,setsar=1,split=1[p2img];
+    color=c=0xf3f5f8:s=1080x1920:r=25:d=7.2,drawbox=x=44:y=298:w=992:h=574:color=0x246BFD@0.16:t=fill,drawbox=x=65:y=319:w=950:h=532:color=0x071526@0.12:t=fill[p2bg];
+    [p2bg][p2img]overlay=x=80:y='335+12*sin(t*0.7)'[b];
+    [2:v]scale=3413:1920,crop=1080:1920:x='490+120*t':y=0,trim=duration=7.2,setpts=PTS-STARTPTS[c];
+    [3:v]split=2[p4one][p4two];
+    [p4one]scale=820:461,setsar=1[p4a];
+    [p4two]scale=420:236,setsar=1[p4b];
+    color=c=0x071526:s=1080x1920:r=25:d=7.2,drawbox=x=0:y=0:w=1080:h=22:color=0x246BFD:t=fill[p4bg];
+    [p4bg][p4a]overlay=x=130:y='260+16*sin(t*0.55)'[p4top];
+    [p4top][p4b]overlay=x='570+20*sin(t*0.6)':y='965+10*cos(t*0.5)'[d];
+    [4:v]scale=3413:1920,crop=1080:1920:x='720+95*t':y=0,trim=duration=7.2,setpts=PTS-STARTPTS[e];
+    [a][b]xfade=transition=wipeleft:duration=0.7:offset=6.5[ab];
+    [ab][c]xfade=transition=slideup:duration=0.7:offset=13.0[abc];
+    [abc][d]xfade=transition=wipeleft:duration=0.7:offset=19.5[abcd];
+    [abcd][e]xfade=transition=slideup:duration=0.7:offset=26.0[cut];
+    [5:v]format=rgba,scale=290:-1[logo];
+    [cut]format=rgba,drawbox=x=0:y=0:w={W}:h={H}:color=0x071526@0.22:t=fill,
+    drawbox=x=0:y=0:w={W}:h=22:color=0x246BFD:t=fill,
+    drawbox=x=0:y=1810:w={W}:h=110:color=0x071526@0.82:t=fill[base];
+    [base][logo]overlay=x=58:y=62[brand];
+    [brand]drawtext=fontfile={FONT_BOLD}:textfile={url}:fontcolor=white:fontsize=58:x=58:y=165:enable='between(t,0,6.6)+between(t,26,32)',
+    drawtext=fontfile={FONT}:textfile={kicker}:fontcolor=0xdbeafe:fontsize=20:x=62:y=245:enable='between(t,0.5,6.6)',
+    drawbox=x=48:y=1130:w=895:h=365:color=0x071526@0.90:t=fill:enable='between(t,0.5,6.6)',
+    drawtext=fontfile={FONT_BOLD}:text='SHARPER MINDS.':fontcolor=white:fontsize=68:x=80:y=1215:enable='between(t,0.8,6.6)',
+    drawtext=fontfile={FONT_BOLD}:text='SMARTER TOOLS.':fontcolor=0x72a5ff:fontsize=68:x=80:y=1300:enable='between(t,1.4,6.6)',
+    drawtext=fontfile={FONT}:text='AI education + custom software':fontcolor=white:fontsize=29:x=82:y=1395:enable='between(t,2.0,6.6)'[s1];
+    [s1]drawbox=x=48:y=1090:w=900:h=435:color=white@0.94:t=fill:enable='between(t,6.7,13.1)',
+    drawtext=fontfile={FONT_BOLD}:textfile={learning}:fontcolor=0x071526:fontsize=59:x=78:y=1185:enable='between(t,6.9,13.1)',
+    drawtext=fontfile={FONT}:textfile={formats}:fontcolor=0x246BFD:fontsize=37:line_spacing=26:x=80:y=1285:enable='between(t,7.5,13.1)'[s2];
+    [s2]drawbox=x=48:y=1090:w=900:h=370:color=0x246BFD@0.94:t=fill:enable='between(t,13.2,19.6)',
+    drawtext=fontfile={FONT_BOLD}:text='LEARN WHAT MATTERS NOW.':fontcolor=white:fontsize=48:x=78:y=1185:enable='between(t,13.4,19.6)',
+    drawtext=fontfile={FONT}:textfile={topics}:fontcolor=white:fontsize=37:line_spacing=28:x=80:y=1282:enable='between(t,14.0,19.6)'[s3];
+    [s3]drawbox=x=48:y=1440:w=900:h=330:color=0x071526@0.94:t=fill:enable='between(t,19.7,26.1)',
+    drawtext=fontfile={FONT_BOLD}:textfile={build}:fontcolor=white:fontsize=43:line_spacing=18:x=78:y=1490:enable='between(t,19.9,26.1)',
+    drawtext=fontfile={FONT}:text='MODELWIZ  ·  GENIUS 101  ·  FREUD GPT':fontcolor=0x72a5ff:fontsize=23:x=80:y=1650:enable='between(t,20.7,26.1)'[s4];
+    [s4]drawbox=x=48:y=1055:w=900:h=525:color=0x246BFD@0.96:t=fill:enable='between(t,26.2,32)',
+    drawtext=fontfile={FONT_BOLD}:textfile={final}:fontcolor=white:fontsize=65:line_spacing=22:x=78:y=1160:enable='between(t,26.5,32)',
+    drawtext=fontfile={FONT_BOLD}:textfile={url}:fontcolor=white:fontsize=61:x=78:y=1510:enable='between(t,27.8,32)'[outv]
     """.replace("\n", "").replace("    ", "")
-    cmd = ["ffmpeg", "-y", "-loop", "1", "-t", str(DURATION), "-i", str(home),
-           "-loop", "1", "-t", str(DURATION), "-i", str(four),
-           "-loop", "1", "-t", str(DURATION), "-i", str(apps),
-           "-loop", "1", "-t", str(DURATION), "-i", str(certs),
-           "-loop", "1", "-t", str(DURATION), "-i", str(logo),
-           "-i", str(audio), "-filter_complex", filt, "-map", "[outv]", "-map", "5:a",
+    cmd = ["ffmpeg", "-y", "-loop", "1", "-t", "7.2", "-i", str(home),
+            "-loop", "1", "-t", "7.2", "-i", str(four),
+            "-loop", "1", "-t", "7.2", "-i", str(certs),
+            "-loop", "1", "-t", "7.2", "-i", str(apps),
+            "-loop", "1", "-t", "7.2", "-i", str(home),
+            "-loop", "1", "-t", str(DURATION), "-i", str(logo),
+            "-i", str(audio), "-filter_complex", filt, "-map", "[outv]", "-map", "6:a",
            "-t", str(DURATION), "-c:v", "libx264", "-preset", "medium", "-crf", "21",
            "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart",
            str(OUT / "zhi-systems-tiktok-9x16.mp4")]
