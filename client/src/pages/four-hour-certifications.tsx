@@ -759,7 +759,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🔎</span>
@@ -811,6 +811,27 @@ export default function FourHourCertifications() {
               ))}
             </div>
           )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  Aging with Borderline Personality Disorder
+                </h2>
+              </div>
+            </div>
+            <a
+              href="https://agingbpd.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+            >
+              Visit
+            </a>
+          </div>
         </div>
       </div>
     </div>
