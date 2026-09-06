@@ -136,53 +136,115 @@ Operator diagnostics verify the database, course seed, model completion, JSON mo
 
 const freudSections = [
   {
-    emoji: "🛋️",
+    emoji: "🎭",
     title: "What It Is",
-    body: `Freud in Four Hours is a formal, rigorous, self-paced introduction to psychoanalytic theory, history, technique, and debates about evidence for adult learners entering the field.
+    body: `Basic Tenets of Psychoanalysis is a rigorous but accessible introduction to the ideas that transformed our understanding of motivation, conflict, dreams, symptoms, relationships, art, and culture.
 
-The course is historically informed and conceptually exacting. It distinguishes observation from interpretation, clinical pattern from metapsychological hypothesis, and therapeutic outcome from evidence for a proposed mechanism.`,
+It moves beyond slogans and simplified summaries. Learners build a coherent foundation, apply ideas to recognizable human situations, and consider both psychoanalysis's lasting influence and the serious debates surrounding it. No previous training is required.`,
   },
   {
-    emoji: "🧭",
-    title: "The Curriculum",
-    body: `**Foundations of Mental Life** -- The unconscious, psychic determinism, repression, drives, the pleasure and reality principles, and Freud's structural and topographic models.
+    emoji: "🎉",
+    title: "The 4–6 Hour Learning Journey",
+    body: `**Part 1 — The Hidden Mind** -- Discover unconscious mental life, psychic conflict, repression, wishes, drives, and the competing demands that shape thought and action.
 
-**Development and Conflict** -- Infantile sexuality, the Oedipus complex, fixation, regression, defense mechanisms, anxiety, narcissism, object relations, and ambivalence.
+**Part 2 — Symptoms, Dreams, and Everyday Life** -- Explore defense, compromise formation, dreams, slips, errors, anxiety, and the indirect ways conflict can appear.
 
-**Symptoms and Everyday Evidence** -- Symptom formation, dreams and dream work, parapraxes, jokes, art, religion, mourning, melancholia, identification, and repetition compulsion.
+**Part 3 — The Analytic Encounter** -- Understand free association, resistance, transference, countertransference, interpretation, insight, and working through.
 
-**Psychoanalytic Technique** -- Free association, transference, countertransference, resistance, working through, interpretation, and insight.
-
-**Legacy and Critique** -- Civilization and instinctual renunciation, post-Freudian revisions from Jung to Lacan, psychoanalysis's scientific status, and its relationship to modern mind sciences.`,
+**Part 4 — Culture, Criticism, and the Modern Mind** -- Follow psychoanalysis beyond the consulting room through culture, later schools of thought, major criticisms, evidence, and contemporary mind sciences.`,
   },
   {
-    emoji: "🎓",
+    emoji: "✨",
     title: "Learning and Assessment",
-    body: `**Thirty Course Topics** -- A focused curriculum covers the central concepts, methods, historical developments, and current debates of psychoanalysis.
+    body: `**Three Lecture Depths** -- Choose a concise, standard, or extended treatment as your time and curiosity change.
 
-**Three Lecture Depths** -- Every lecture is available at Short, Medium, or Long depth.
+**Guided Learning Support** -- Ask questions and receive help connected to the material being studied.
 
-**Grounded AI Tutor** -- Section-scoped tutoring remains grounded in the lecture being read.
+**Scenario-Based Practice** -- Apply ideas to concrete situations instead of merely memorizing definitions.
 
-**Adaptive Practice** -- Topic practice adjusts and preserves difficulty as the learner progresses.
+**Assignments and Feedback** -- Test understanding and receive immediate guidance on the work.
 
-**Reasoned Case Analysis** -- Assessments require concrete, multi-sentence analysis rather than definition recall.
+**Progress Review** -- See where understanding is strong and where another look may help.
 
-**Four Graded Checkpoints** -- Two homework sets, a timed course test, and a cumulative final use semantic grading with per-problem rationale.
-
-**Diagnostics and Integrity** -- Subject and General Reasoning diagnostics are paired with static and diachronic keystroke-pattern AI-authorship screening.`,
+**Downloadable Readings** -- Continue studying away from the screen in convenient document formats.`,
   },
   {
-    emoji: "📦",
+    emoji: "🌈",
+    title: "Thirty Topics, One Coherent Foundation",
+    body: `**Mind and Conflict** -- The unconscious, psychic conflict, repression, drives, wishes, id, ego, superego, defense, and anxiety.
+
+**Meaning and Interpretation** -- Symptoms, dreams, dream work, slips and errors, free association, resistance, interpretation, and insight.
+
+**Relationship and Experience** -- Transference, countertransference, narcissism, object relations, mourning, identification, ambivalence, and repetition.
+
+**History and Debate** -- Culture, art, religion, civilization, post-Freudian developments, evidence, criticism, and modern mind sciences.`,
+  },
+  {
+    emoji: "👋",
+    title: "Who It Is For",
+    body: `**Independent Learners** -- People seeking a structured introduction to psychoanalysis.
+
+**Writers and Artists** -- Creative thinkers interested in motive, conflict, and interpretation.
+
+**Students and Humanities Scholars** -- Learners preparing for deeper study.
+
+**Helping Professionals** -- Practitioners seeking historical and conceptual context.
+
+**Curious Adults** -- Anyone who wants more than pop-psychology summaries.`,
+  },
+];
+
+const iqBoosterSections = [
+  {
+    emoji: "🧠",
+    title: "What It Is",
+    body: `IQ Booster is a fast-moving, self-paced four-to-six-hour course for people who want to think more clearly, recognize patterns faster, and approach unfamiliar problems with confidence.
+
+Concise instruction, fresh challenges, direct feedback, and focused recommendations keep learners working on the reasoning skills that matter most.`,
+  },
+  {
+    emoji: "⚡",
+    title: "Six Reasoning Skills",
+    body: `**Spatial Reasoning** -- Rotation, folding, routes, viewpoints, and objects in space.
+
+**Pattern Recognition** -- Sequences, grids, transformations, and hidden rules.
+
+**Logical Reasoning** -- Conditions, conclusions, assumptions, and counterexamples.
+
+**Working Memory** -- Holding, organizing, and updating information accurately.
+
+**Quantitative Reasoning** -- Ratios, rates, percentages, equations, and numerical relationships.
+
+**Verbal Reasoning** -- Inference, exact wording, evidence, and relationships between ideas.`,
+  },
+  {
+    emoji: "⏱️",
+    title: "The Four-to-Six-Hour Workout",
+    body: `**Focus Fast** -- Ultra-short lessons introduce the mental operation needed without unnecessary material.
+
+**Practice with Fresh Challenges** -- Newly generated reasoning problems prevent memorization of a fixed answer bank.
+
+**Adapt as You Improve** -- Practice responds to performance and moves toward the appropriate difficulty.
+
+**Measure What Matters** -- Homework, assessments, and diagnostics show performance across different reasoning formats.
+
+**Attack the Weak Point** -- Weakness detection and targeted retraining direct attention to the skill that needs it most.`,
+  },
+  {
+    emoji: "🎯",
     title: "What Is Included",
-    body: `Thirty psychoanalysis topics plus two diagnostic primers; three lecture depths; grounded AI tutoring; adaptive practice; two homework sets, a course test, and a cumulative final; public PDF and TXT course readers with no account required; and analytics for assignment performance and topic mastery.`,
+    body: `Ultra-short focus lessons; fresh adaptive practice; visual reasoning challenges; multiple-choice and written-response work; performance insights; skill-specific diagnostics; weakness detection; targeted retraining; and structured coursework and assessments.`,
   },
   {
-    emoji: "⚙️",
-    title: "Under the Hood",
-    body: `The course uses a contract-first Express API with OpenAPI-generated Zod validators and React Query hooks. PostgreSQL and Drizzle support curriculum, attempts, practice, diagnostics, and analytics, while Server-Sent Events deliver model-backed tutoring and generation.
+    emoji: "👥",
+    title: "Designed For",
+    body: `**Students and Professionals** -- Focused training for sharper problem-solving in study and work.
 
-Transactional curriculum reseeding uses a versioned content marker. GPTZero-backed static detection includes non-blocking fallbacks and is paired with keystroke-trace analysis.`,
+**Lifelong Learners** -- A compact mental challenge without a specialized background requirement.
+
+**Adults Returning to Structured Learning** -- Direct instruction and adaptive practice that meet the learner at the right level.
+
+**Curious Minds** -- Anyone willing to bring sustained attention and a desire to think more effectively.`,
   },
 ];
 
@@ -331,7 +393,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🛋️</span>
@@ -374,10 +436,65 @@ export default function FourHourCertifications() {
           {expandedCourse === "freud-in-four-hours" && (
             <div className="border-t border-gray-200 p-6 space-y-6">
               <p className="text-lg text-gray-700">
-                A formal, rigorous four-hour introduction to psychoanalytic
-                theory, history, technique, and debates about evidence.
+                Begin with the unconscious. Leave with a new way to read human
+                experience.
               </p>
               {freudSections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠⚡</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  IQ Booster
+                </h2>
+                <p className="text-sm text-gray-600">
+                  Six Reasoning Skills in Four to Six Hours
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "iq-booster" ? null : "iq-booster",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "iq-booster" ? "Hide" : "Details"}
+              </button>
+              <a
+                href="https://fourhouriqbooster.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          {expandedCourse === "iq-booster" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                Six reasoning skills, four to six hours, and a sharper way to
+                think.
+              </p>
+              {iqBoosterSections.map((section) => (
                 <section key={section.title}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     <span className="mr-2">{section.emoji}</span>
