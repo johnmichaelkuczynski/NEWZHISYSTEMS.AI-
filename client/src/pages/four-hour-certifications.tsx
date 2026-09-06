@@ -65,72 +65,74 @@ Operator diagnostics verify the database, course seed, model completion, JSON mo
 
 const evolutionaryPsychologySections = [
   {
-    emoji: "🧠",
+    emoji: "🔥",
     title: "What It Is",
-    body: `Evolutionary Psychology is a rigorous, self-paced, AI-powered introduction to evolutionary approaches to human behavior for adult researchers, professionals, and students entering the field.
+    body: `Nano Evolutionary Psychology is a focused, fascinating 4–6 hour experience exploring why humans compete, cooperate, fall in love, protect family, and pursue status.
 
-The course asks how evolutionary processes may help explain psychological traits and behavior while emphasizing testable predictions, alternative explanations, and careful treatment of probabilistic patterns.`,
+It provides a practical framework for investigating human behavior without reducing people to simple instincts or memorizing endless terminology. Learners build explanations, test predictions, compare alternatives, and ask what the evidence actually proves.`,
   },
   {
-    emoji: "🧭",
-    title: "The Learning Journey",
-    body: `**Evolution by Natural Selection** -- Variation, inheritance, differential reproduction, fitness, and levels of explanation.
+    emoji: "🚀",
+    title: "Eight Areas of Human Behavior",
+    body: `**Natural Selection** -- How evolutionary pressures can shape behavioral tendencies over time.
 
-**Adaptation and Evolutionary Inference** -- Adaptations, by-products, noise, hypothesis formation, alternatives, and standards of evidence.
+**Mating Strategies** -- Why attraction, competition, preferences, and relationship decisions vary.
 
-**Sexual Selection and Mating** -- Mate preferences, competition, trade-offs, and variation across people and contexts.
+**Parenting and Families** -- How investment, conflict, relatedness, and environment influence family behavior.
 
-**Parental Investment and Families** -- Investment, parent–offspring conflict, life-history trade-offs, and caregiving ecology.
+**Cooperation** -- How trust, reciprocity, reputation, and punishment can sustain cooperation.
 
-**Kin Selection and Inclusive Fitness** -- Relatedness, indirect fitness, kin recognition, and conditional helping.
+**Aggression and Warfare** -- How threats, incentives, coalitions, and competition can contribute to conflict.
 
-**Cooperation and Reciprocity** -- Reciprocal altruism, partner choice, punishment, reputation, and collective action.
+**Status and Prestige** -- Why people pursue influence, recognition, dominance, and social position.
 
-**Social Cognition, Status, and Groups** -- Coalitions, hierarchy, social learning, conflict, and intergroup psychology.
+**Evolutionary Cognition** -- How learning, attention, memory, emotion, and judgment can be investigated.
 
-**Culture, Development, and Critical Methods** -- Developmental calibration, culture–gene interactions, cross-cultural evidence, replication, and ethical interpretation.`,
+**Evidence and Inference** -- How to distinguish a testable explanation from a convincing-sounding story.`,
+  },
+  {
+    emoji: "💡",
+    title: "An Active Learning Experience",
+    body: `**Choose Your Learning Depth** -- Move quickly with Short lessons, explore the essentials at Medium depth, or go deeper with Long lessons.
+
+**Focused Lessons** -- Build a strong foundation without committing to a semester-long program.
+
+**Lesson-Grounded AI Tutor** -- Get clarification and help connected to the material currently being studied.
+
+**Realistic Scenarios** -- Apply principles through fresh behavioral problems that require reasoning rather than one-word recall.
+
+**Adaptive Practice** -- Strengthen understanding through practice that responds to recent performance.
+
+**Immediate Feedback** -- Receive percentage grades and written guidance while the reasoning process is still fresh.
+
+**Progress Tracking** -- Identify strong areas, revisit weak areas, and continue toward completion.`,
+  },
+  {
+    emoji: "🏅",
+    title: "Earn a Level 1 Certificate",
+    body: `Complete all required coursework and achieve a passing overall result to earn a personalized, downloadable ZHI Systems Evolutionary Psychology Level 1 certificate.
+
+The credential provides a clear record of successful work in evolutionary principles, behavioral reasoning, and evidence evaluation.`,
   },
   {
     emoji: "🎓",
-    title: "Learning and Assessment",
-    body: `**Three Lecture Depths** -- Every lecture is available at Short, Medium, or Long depth while preserving the same examples and learning objectives.
+    title: "Who It Is For",
+    body: `**Students** -- Build a serious foundation before or alongside formal study.
 
-**Grounded AI Tutor** -- The section-scoped tutor streams answers grounded in the exact lecture passage on screen.
+**Educators** -- Explore an engaging model for focused, scenario-based instruction.
 
-**Adaptive Practice** -- Generated scenario problems adjust their difficulty according to recent answers.
+**Researchers Entering the Field** -- Develop a practical framework for hypotheses, predictions, and evidence.
 
-**Reasoned Application** -- Homework, tests, practice, and diagnostics require learners to compare explanations, reason from evidence, and qualify conclusions.
+**Professionals** -- Gain new ways to think about incentives, decisions, groups, and behavior.
 
-**Four Graded Checkpoints** -- Two homework sets, a timed course test, and a cumulative final receive semantic grading, per-problem results, and written rationale.
-
-**Reasoning Primers** -- Two ungraded primers develop evolutionary-case analysis and core reasoning skills.
-
-**Academic Integrity** -- Every submission is checked by static text detection and diachronic keystroke-pattern analysis.`,
+**Psychology Enthusiasts and Independent Learners** -- Go beyond popular summaries and complete a substantial course on a flexible schedule. No specialized background is required.`,
   },
   {
-    emoji: "📦",
-    title: "What Is Included",
-    body: `A 4–6 hour course organized around eight evolutionary psychology topic areas; three lecture depths; section-scoped AI tutoring; adaptive practice; four graded checkpoints; ungraded diagnostic checks; live learning analytics; free PDF and TXT course downloads with no sign-in; and a built-in product walkthrough video.`,
-  },
-  {
-    emoji: "👥",
-    title: "Designed For",
-    body: `**Researchers and Professionals** -- A foundational but substantial introduction for people entering evolutionary psychology.
+    emoji: "🌟",
+    title: "What Will Change",
+    body: `Learners will be better prepared to recognize the difference between an observation and an explanation; translate evolutionary ideas into testable predictions; and compare evolutionary accounts with cultural, developmental, and situational alternatives.
 
-**Students and Interdisciplinary Teams** -- A shared language for evolutionary hypotheses, behavioral evidence, alternatives, and uncertainty.
-
-**Instructors and Curriculum Designers** -- A working example of AI-taught and AI-graded coursework with integrity controls.
-
-**Academic-Integrity Researchers** -- A live demonstration of layered authorship screening in an educational product.`,
-  },
-  {
-    emoji: "⚙️",
-    title: "Under the Hood",
-    body: `The course uses an OpenAPI contract as the source of truth, with React Query hooks and Zod validators generated from the same contract. Server-Sent Events deliver section-scoped tutor responses token by token.
-
-Its adaptive-practice engine preserves and adjusts per-session difficulty. GPTZero-backed text detection is blended with structural signals, while keystroke analysis evaluates paste-and-rewrite behavior and sustained input patterns.
-
-Operator diagnostics verify the database, course seed, model completion, JSON mode, detection, practice, grading, and analytics. A content marker detects subject changes and transactionally replaces stale curriculum.`,
+The course also builds the habit of avoiding fixed-rule interpretations of probabilistic patterns and asking sharper questions about evidence, incentives, trade-offs, and context.`,
   },
 ];
 
@@ -377,8 +379,8 @@ export default function FourHourCertifications() {
           {expandedCourse === "evolutionary-psychology" && (
             <div className="border-t border-gray-200 p-6 space-y-6">
               <p className="text-lg text-gray-700">
-                A rigorous 4–6 hour introduction to evolutionary approaches to
-                human behavior and careful, evidence-based explanation.
+                Learn the principles. Test the explanations. Follow the
+                evidence.
               </p>
               {evolutionaryPsychologySections.map((section) => (
                 <section key={section.title}>
