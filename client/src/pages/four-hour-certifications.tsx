@@ -134,6 +134,58 @@ Operator diagnostics verify the database, course seed, model completion, JSON mo
   },
 ];
 
+const freudSections = [
+  {
+    emoji: "🛋️",
+    title: "What It Is",
+    body: `Freud in Four Hours is a formal, rigorous, self-paced introduction to psychoanalytic theory, history, technique, and debates about evidence for adult learners entering the field.
+
+The course is historically informed and conceptually exacting. It distinguishes observation from interpretation, clinical pattern from metapsychological hypothesis, and therapeutic outcome from evidence for a proposed mechanism.`,
+  },
+  {
+    emoji: "🧭",
+    title: "The Curriculum",
+    body: `**Foundations of Mental Life** -- The unconscious, psychic determinism, repression, drives, the pleasure and reality principles, and Freud's structural and topographic models.
+
+**Development and Conflict** -- Infantile sexuality, the Oedipus complex, fixation, regression, defense mechanisms, anxiety, narcissism, object relations, and ambivalence.
+
+**Symptoms and Everyday Evidence** -- Symptom formation, dreams and dream work, parapraxes, jokes, art, religion, mourning, melancholia, identification, and repetition compulsion.
+
+**Psychoanalytic Technique** -- Free association, transference, countertransference, resistance, working through, interpretation, and insight.
+
+**Legacy and Critique** -- Civilization and instinctual renunciation, post-Freudian revisions from Jung to Lacan, psychoanalysis's scientific status, and its relationship to modern mind sciences.`,
+  },
+  {
+    emoji: "🎓",
+    title: "Learning and Assessment",
+    body: `**Thirty Course Topics** -- A focused curriculum covers the central concepts, methods, historical developments, and current debates of psychoanalysis.
+
+**Three Lecture Depths** -- Every lecture is available at Short, Medium, or Long depth.
+
+**Grounded AI Tutor** -- Section-scoped tutoring remains grounded in the lecture being read.
+
+**Adaptive Practice** -- Topic practice adjusts and preserves difficulty as the learner progresses.
+
+**Reasoned Case Analysis** -- Assessments require concrete, multi-sentence analysis rather than definition recall.
+
+**Four Graded Checkpoints** -- Two homework sets, a timed course test, and a cumulative final use semantic grading with per-problem rationale.
+
+**Diagnostics and Integrity** -- Subject and General Reasoning diagnostics are paired with static and diachronic keystroke-pattern AI-authorship screening.`,
+  },
+  {
+    emoji: "📦",
+    title: "What Is Included",
+    body: `Thirty psychoanalysis topics plus two diagnostic primers; three lecture depths; grounded AI tutoring; adaptive practice; two homework sets, a course test, and a cumulative final; public PDF and TXT course readers with no account required; and analytics for assignment performance and topic mastery.`,
+  },
+  {
+    emoji: "⚙️",
+    title: "Under the Hood",
+    body: `The course uses a contract-first Express API with OpenAPI-generated Zod validators and React Query hooks. PostgreSQL and Drizzle support curriculum, attempts, practice, diagnostics, and analytics, while Server-Sent Events deliver model-backed tutoring and generation.
+
+Transactional curriculum reseeding uses a versioned content marker. GPTZero-backed static detection includes non-blocking fallbacks and is paired with keystroke-trace analysis.`,
+  },
+];
+
 function renderBody(body: string) {
   return body.split("\n\n").map((paragraph, index) => {
     const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
@@ -220,7 +272,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🧠</span>
@@ -267,6 +319,65 @@ export default function FourHourCertifications() {
                 human behavior and careful, evidence-based explanation.
               </p>
               {evolutionaryPsychologySections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🛋️</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  Freud in Four Hours
+                </h2>
+                <p className="text-sm text-gray-600">
+                  Basic Tenets of Psychoanalysis
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "freud-in-four-hours"
+                      ? null
+                      : "freud-in-four-hours",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "freud-in-four-hours"
+                  ? "Hide"
+                  : "Details"}
+              </button>
+              <a
+                href="https://nanofreud.xyz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          {expandedCourse === "freud-in-four-hours" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                A formal, rigorous four-hour introduction to psychoanalytic
+                theory, history, technique, and debates about evidence.
+              </p>
+              {freudSections.map((section) => (
                 <section key={section.title}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     <span className="mr-2">{section.emoji}</span>

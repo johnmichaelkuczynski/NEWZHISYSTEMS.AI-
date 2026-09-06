@@ -1,0 +1,65 @@
+Basic Tenets of Psychoanalysis
+A formal, rigorous, self-paced course for adult learners entering psychoanalytic theory, history, technique, and debates about evidence.
+
+Curriculum
+The curriculum contains exactly thirty course topics:
+
+The unconscious: most of the mind is hidden from the mind
+Psychic determinism: nothing mental is accidental
+Repression: the mind actively keeps knowledge from itself
+Drives: wish, want, and the engine of mental life
+The pleasure principle and the reality principle
+Id, ego, superego: the structural model
+Conscious, preconscious, unconscious: the topographic model
+Infantile sexuality and the stages of development
+The Oedipus complex and the formation of conscience
+Fixation and regression
+Defense mechanisms: denial, projection, reaction formation, sublimation, rationalization
+Symptom formation: the symptom as compromise
+Dreams as wish fulfillment: manifest content and latent content
+Dream work: condensation, displacement, symbolization, secondary revision
+Parapraxes: slips, errors, and forgetting as evidence
+Free association and the fundamental rule
+Transference: the past replayed on the analyst
+Countertransference
+Resistance and working through
+Interpretation and insight as the mechanism of cure
+Anxiety: signal anxiety and its sources
+Narcissism and object relations
+Mourning, melancholia, and identification
+Ambivalence and the conflict of opposed wishes
+The death drive and repetition compulsion
+Civilization and the cost of instinctual renunciation
+The unconscious in everyday life: jokes, art, and religion
+Post-Freudian revisions: Jung, Adler, Klein, Lacan
+The scientific status of psychoanalysis: evidence, testability, critique
+Psychoanalysis and the modern mind sciences
+Each lecture is available at Short, Medium, and Long depth. The treatment is historically informed and conceptually exacting: it distinguishes observation from interpretation, clinical pattern from metapsychological hypothesis, and therapeutic outcome from evidence for a proposed mechanism.
+
+Learning and assessment
+Section-scoped AI tutoring grounded in the lecture being read
+Adaptive practice by topic and persistent difficulty
+Two homework sets, a timed course test, and a cumulative final
+Concrete, multi-sentence case analysis rather than definition recall
+Subject and General Reasoning diagnostics in multiple formats, lengths, and phases
+Semantic grading with per-problem rationale
+Static and diachronic keystroke-pattern AI-authorship screening
+Public PDF and TXT course readers with no account required
+Analytics for assignment performance and topic mastery
+All freeform answer and tutor inputs retain the existing math keyboard. Routes, public access, API data shapes, grading mechanics, and diagnostic mechanics remain unchanged.
+
+Technical architecture
+Contract-first Express API with OpenAPI-generated Zod validators and React Query hooks
+PostgreSQL and Drizzle for curriculum, attempts, practice, diagnostics, and analytics
+Server-Sent Events and model-backed tutoring/generation
+Transactional curriculum reseeding through a versioned seed_meta marker
+GPTZero-backed static detection with non-blocking fallbacks, plus keystroke-trace analysis
+The seed contains thirty curriculum topics plus two diagnostic-primer records. The system diagnostic verifies the fixed thirty-topic curriculum count.
+
+Run locally
+pnpm install
+pnpm run typecheck
+pnpm --filter @workspace/api-server run dev
+pnpm --filter @workspace/qr-course run dev
+
+The course and API require the environment variables documented in replit.md. Secrets are never committed to the repository.
