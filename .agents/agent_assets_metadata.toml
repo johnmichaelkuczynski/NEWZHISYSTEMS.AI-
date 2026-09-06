@@ -7,6 +7,7 @@ uri = "file://dist/videos/zhi-systems-promo-16x9.mp4"
 type = "video"
 title = "Zhi Systems — AI-Powered Apps Promo"
 description = "A 46.7-second 16:9 promotional video with voice-over featuring customized AI-powered apps, FreudGPT, Genius 101, selected certifications, and ZhiSystems.ai."
+logical_id = "31a2167f-18c1-415a-b81a-08fe48075a17"
 
 [[outputs]]
 id = "ohUwdx5jBYIlx4rn4zuz7"
@@ -14,6 +15,7 @@ uri = "file://dist/videos/zhi-systems-promo-light-site-16x9.mp4"
 type = "video"
 title = "Zhi Systems Promo — Bright Site Edition"
 description = "Rebuilt 47.6-second promotional video with a warmer conversational voice, brighter visual treatment, and real Zhi Systems website footage."
+logical_id = "fb9e37fc-048a-40a7-8659-3e05da14afc5"
 
 [[outputs]]
 id = "4cHrtfqHcouCchbQqueIZ"
@@ -21,3 +23,32 @@ uri = "file://dist/videos/zhi-systems-custom-apps-short-16x9.mp4"
 type = "video"
 title = "Zhi Systems — Custom Apps Short Promo"
 description = "A bright 21-second narrated video explaining that Zhi Systems builds custom AI applications and that the apps on ZhiSystems.ai are examples of completed work."
+logical_id = "f7401dc9-170f-42c8-b0cd-62c254698365"
+
+[[outputs]]
+id = "dhjJWrYiAOVrVOby-5UxC"
+uri = "file://dist/videos/zhi-systems-tiktok-9x16.mp4"
+type = "video"
+title = "Zhi Systems TikTok Promo"
+description = "50-second 9:16 TikTok video with actual Zhi Systems screenshots, friendly male narration, and no music."
+logical_id = "c633430d-e3d9-43a5-9219-28c73f508595"
+content_hash = "sha256:fe440b691c1b1ec4b497b294c7dca095b3c26c56a58995ea2b44cfb54c6a7688"
+size = 1785211
+mtime_ms = 1788665383212
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:79134980-9d99-429d-b786-cae8475de094/c633430d-e3d9-43a5-9219-28c73f508595/d8af1eb8-90e7-4ea6-9f57-b1fb4da789a6"
+storage_version_token = "1788665419750444"
+content_type = "video/mp4"
+
+[[outputs]]
+id = "5OKwEl5YB-P1NdOi5pEhp"
+uri = "file://video_artifact/zhi-tiktok-caption.txt"
+type = "text"
+title = "TikTok Description"
+description = "Paste-ready TikTok caption with ZHISYSTEMS.AI, offerings, topics, named apps, audiences, and hashtags."
+logical_id = "9ff1c918-0e94-4c6a-a69f-d49b42cbcded"
+content_hash = "sha256:ae201b7bcad7304cb6d243ad97888ab2a8b6715210d89ad269bacfbd1d1c7f98"
+size = 973
+mtime_ms = 1788664764692
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:79134980-9d99-429d-b786-cae8475de094/9ff1c918-0e94-4c6a-a69f-d49b42cbcded/b99b6dc4-9b12-46dc-924c-642cdfe9a65c"
+storage_version_token = "1788665420437022"
+content_type = "text/plain"
