@@ -2,6 +2,8 @@ import { type JournalIssue, type InsertJournalIssue, type OfficeDocument, type I
 import { db } from "./db";
 import { eq, desc, sql, or, ilike } from "drizzle-orm";
 
+const historicalUniqueVisitorBaseline = 249;
+
 // modify the interface with any CRUD methods
 // you might need
 
@@ -145,7 +147,7 @@ export class DatabaseStorage implements IStorage {
       .select({ count: sql<number>`count(*)::int` })
       .from(uniqueVisitors);
 
-    return result.count;
+    return historicalUniqueVisitorBaseline + result.count;
   }
 
   // Visitor analytics
