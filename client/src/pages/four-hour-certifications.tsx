@@ -445,6 +445,100 @@ Each certificate includes a unique credential number and can be independently ve
   },
 ];
 
+const agingBpdSections = [
+  {
+    emoji: "🧭",
+    title: "What It Is",
+    body: `Aging with BPD Certification Course is a focused four-to-six-hour learning experience taught, tutored, practiced, and graded with AI.
+
+The course explores the psychology of aging among people with borderline personality disorder. It presents research findings as group-level tendencies rather than predictions about any individual and emphasizes person-first language, diagnostic humility, compassionate support, and realistic hope.
+
+Learners move through clear lectures, concrete fictional cases, adaptive practice, grounded tutoring, immediate feedback, reasoning diagnostics, progress analytics, and four graded assignments.
+
+This course is educational. It does not provide diagnosis, treatment, therapy, clinical qualification, or licensure, and it does not ask learners to disclose personal symptoms, trauma, self-harm history, or current risk.`,
+  },
+  {
+    emoji: "🛤️",
+    title: "The Four-to-Six-Hour Learning Journey",
+    body: `**Foundations — BPD Across the Lifespan** -- Understand how core BPD features may change in intensity and impact over time, why presentations can differ across ages, and why neither inevitable deterioration nor guaranteed recovery is an accurate account of aging.
+
+**Early and Middle Adulthood — Intensity, Development, and Change** -- Examine early-adulthood patterns involving impulsivity, crisis, identity, and relationships, followed by the reductions in behavioral intensity, stronger impulse control, and accumulated coping experience often reported during middle adulthood.
+
+**Late Adulthood — Outcomes, Sensitivity, Loss, and Resilience** -- Explore remission findings, continuing emotional sensitivity and interpersonal patterns, and the possible effects of depression, loneliness, health changes, loss, social connection, and accumulated life consequences.
+
+**Biology, Treatment, Support, and Meaning** -- Consider normal aging and neurobiology without simplistic brain claims; age-appropriate psychotherapy; co-occurring mental and medical conditions; medication and polypharmacy; family and caregiving dynamics; stigma reduction; life narrative; and legacy.`,
+  },
+  {
+    emoji: "🎓",
+    title: "Learning and Assessment",
+    body: `**Four Lecture Depths** -- Study every topic as Bulletin Points, Short, Medium, or Long while preserving the same central principles and learning goals.
+
+**Grounded AI Tutor** -- Ask questions about the exact lecture being studied and receive conversational guidance rooted in that material.
+
+**Adaptive Practice** -- Work through newly generated fictional cases that adjust to recent performance and test application rather than recitation.
+
+**Immediate Feedback** -- Receive a percentage score and a substantive explanation after every submitted answer.
+
+**Four Graded Checkpoints** -- Complete two homework sets, a course test, and a cumulative final.
+
+**Reasoning Diagnostics** -- Compare subject-specific and general reasoning before, during, and after the course without affecting the course grade.
+
+**Progress and Analytics** -- Follow lecture completion, assignment performance, practice activity, recent work, and developing strengths.
+
+**Adjustable Learning Space** -- Resize the lecture and practice panels, connect lectures to related assignments, and use the math keyboard on every free-response and tutor input.`,
+  },
+  {
+    emoji: "🧩",
+    title: "Twenty-Four Topics in Eight Connected Areas",
+    body: `**Foundations: BPD Across the Lifespan** -- Core features over time, age-related differences in presentation, and common myths.
+
+**Early Adulthood** -- Symptom intensity, impulsivity, identity, relationships, treatment engagement, and early intervention.
+
+**Middle Adulthood** -- Changes in emotional intensity, impulse control, relationship stability, experience, and coping.
+
+**Late Adulthood** -- Long-term outcomes, remission, residual sensitivity, loneliness, depression, and accumulated consequences.
+
+**Biological and Neurological Changes** -- Prefrontal maturation, neurotransmitter changes, normal aging, and careful interpretation of neurobiology.
+
+**Psychosocial Factors** -- Relationships, social support, work, finances, satisfaction, trauma, loss, protective experiences, and resilience.
+
+**Treatment Across Age Groups** -- Adapted psychotherapy, co-occurring conditions, medical illness, medication review, and polypharmacy.
+
+**Supporting Aging Individuals** -- Family and caregiving, autonomy, boundaries, stigma reduction, hope, meaning, narrative, and legacy.`,
+  },
+  {
+    emoji: "📝",
+    title: "Fifty Fresh Graded Questions",
+    body: `The certification uses 30 multiple-choice questions with exactly two or three meaningful options, 15 one-sentence responses, four responses of one to three sentences, and one sustained paragraph of five to seven sentences.
+
+Questions are generated fresh for each attempt. They use concrete fictional situations, remain answerable from prior course material or information inside the prompt, and grade understanding rather than memorization. Multiple-choice responses bypass GPTZero analysis.`,
+  },
+  {
+    emoji: "🏅",
+    title: "Earn the Certification",
+    body: `Complete the required coursework and meet the passing standard to receive an Aging with BPD Certification Course — Educational Completion certificate from ZHI Systems.
+
+Each issued certificate includes a unique credential number and can be independently verified.
+
+Study lifespan patterns. Respect individual variation. Apply the principles with care.`,
+  },
+  {
+    emoji: "👥",
+    title: "Who It Is For",
+    body: `**Independent Learners** -- People interested in personality psychology and lifespan development.
+
+**Families, Supporters, and Caregivers** -- People seeking a more careful educational framework.
+
+**Students and Professionals** -- Learners who want a structured introduction to BPD and aging.
+
+**Educators** -- Those exploring person-first, non-stigmatizing approaches to later-life mental health.
+
+**Continuing Learners** -- People preparing to continue into Nano Aging with BPD.
+
+This course does not qualify anyone to diagnose or treat BPD and is not a substitute for individualized care from qualified professionals.`,
+  },
+];
+
 function renderBody(body: string) {
   return body.split("\n\n").map((paragraph, index) => {
     const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
@@ -823,15 +917,47 @@ export default function FourHourCertifications() {
                 </h2>
               </div>
             </div>
-            <a
-              href="https://agingbpd.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
-            >
-              Visit
-            </a>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "aging-bpd" ? null : "aging-bpd",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "aging-bpd" ? "Hide" : "Details"}
+              </button>
+              <a
+                href="https://agingbpd.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
           </div>
+
+          {expandedCourse === "aging-bpd" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                Understand change without reducing a person to a diagnosis.
+                Aging is individual. Evidence is probabilistic. Dignity is
+                constant.
+              </p>
+              {agingBpdSections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
