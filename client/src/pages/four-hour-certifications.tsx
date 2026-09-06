@@ -346,6 +346,105 @@ Subscribe for continued access to tutoring, feedback, practice, assignments, pro
   },
 ];
 
+const epistemologySections = [
+  {
+    emoji: "🔎",
+    title: "What It Is",
+    body: `Epistemology Certification Course is a focused four-to-six-hour learning experience taught, tutored, practiced, and graded with AI.
+
+The course turns difficult philosophical questions into a structured journey through clear explanations, concrete cases, adaptive practice, grounded tutoring, and immediate feedback.
+
+It begins with a deceptively simple question -- What is knowledge? -- and develops a connected account of propositions, truth, justification, observation, inference, theory, causal continuity, and the limits of skepticism.
+
+No previous philosophy training is required.`,
+  },
+  {
+    emoji: "🧭",
+    title: "The Four-Hour Learning Journey",
+    body: `**Hour 1 — What Knowledge Is—and Why True Belief Is Not Enough** -- Begin with truths and propositions, then examine belief and justification. Discover why justified true belief can still fall short of knowledge and what Gettier cases reveal about luck, structure, and genuine knowing.
+
+**Hour 2 — How Observation Becomes Knowledge** -- Explore the difference between analytic and empirical knowledge. See why observation does not arrive as ready-made propositions and how classification, concepts, and articulation transform experience into something that can be known.
+
+**Hour 3 — From Inference to Theory** -- Distinguish first-order observation from second-order inference. Learn how beliefs about the past, future, possibility, hidden structure, and systematic dependence grow into theoretical knowledge.
+
+**Hour 4 — Causation, Continuity, and the Challenge of Skepticism** -- Investigate persistence, spatial continuity, and causal processes. Confront skepticism about perception, induction, and causation, and compare skeptical alternatives with explanations grounded in coherence, continuity, and parsimony.`,
+  },
+  {
+    emoji: "🎓",
+    title: "Learning and Assessment",
+    body: `**Four Lecture Depths** -- Study every topic as Bulletin Points, Short, Medium, or Long while preserving the same central ideas and learning goals.
+
+**Grounded AI Tutor** -- Ask questions about the exact passage you are studying and receive conversational guidance rooted in the course.
+
+**Adaptive Practice** -- Work through fresh cases that adjust to recent performance and require application rather than recitation.
+
+**Reasoned Application** -- Analyze unfamiliar situations, distinguish competing claims, and explain why a belief does or does not count as knowledge.
+
+**Immediate Feedback** -- Receive a percentage score and a clear explanation after every submitted answer.
+
+**Four Graded Checkpoints** -- Complete two homework sets, a course test, and a cumulative final.
+
+**Reasoning Diagnostics** -- Compare subject-specific and general reasoning before, during, and after the course without affecting your grade.
+
+**Progress and Analytics** -- Follow lecture completion, assignment performance, practice activity, and developing strengths.`,
+  },
+  {
+    emoji: "📚",
+    title: "Twenty-Four Topics Across Eight Connected Areas",
+    body: `**Knowledge, Truth, and Propositions** -- What truths are, what propositions are, and why knowledge is knowledge of truths.
+
+**The Structure of Knowledge** -- Belief, justification, Gettier cases, luck, and structure-preserving processes.
+
+**Analytic and Empirical Knowledge** -- Conceptual truths, observational grounding, and the limits of pure observation.
+
+**Observation and Articulation** -- Raw experience, classification, properties, and propositional content.
+
+**Inference** -- Present observation, hidden structure, possibility, memory, and prediction.
+
+**Theory** -- Integrated explanations, dependence, and systematic understanding.
+
+**Causation and Continuity** -- Persistence, spatial occupancy, processes, and genuine causal connection.
+
+**Skepticism** -- Hallucination, induction, coherence, parsimony, and explanatory strength.`,
+  },
+  {
+    emoji: "📝",
+    title: "Fifty Fresh Graded Questions",
+    body: `The certification includes 30 multiple-choice questions with two or three meaningful options, 15 one-sentence responses, four responses of one to three sentences, and one sustained paragraph of five to seven sentences.
+
+Every question is freshly generated for the learner. The emphasis is always on understanding, application, and justified reasoning -- not memorized vocabulary.`,
+  },
+  {
+    emoji: "📖",
+    title: "The Foundational Paper",
+    body: `The course is based on "Outline of a Theory of Knowledge."
+
+Learners can download two separate documents: the complete Epistemology Certification Course Book and the complete foundational paper, "Outline of a Theory of Knowledge."
+
+Together, they provide both the guided learning experience and the deeper philosophical framework behind it.`,
+  },
+  {
+    emoji: "🏆",
+    title: "Earn the Certification",
+    body: `Complete the required coursework and meet the passing standard to receive an Epistemology Certification Course certificate from ZHI Systems.
+
+Each certificate includes a unique credential number and can be independently verified.`,
+  },
+  {
+    emoji: "👥",
+    title: "Who It Is For",
+    body: `**Independent Learners** -- People curious about knowledge, truth, and rational belief.
+
+**Students** -- Learners preparing for philosophy, critical-thinking, or reasoning coursework.
+
+**Professionals** -- People who want to sharpen conceptual analysis and judgment.
+
+**Educators** -- Instructors seeking a structured introduction to epistemology.
+
+**Continuing Learners** -- People preparing to continue into Nano Epistemology.`,
+  },
+];
+
 function renderBody(body: string) {
   return body.split("\n\n").map((paragraph, index) => {
     const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
@@ -550,7 +649,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🧠⚡</span>
@@ -605,7 +704,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">💰</span>
@@ -648,6 +747,60 @@ export default function FourHourCertifications() {
                 certification.
               </p>
               {personalFinanceSections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🔎</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  Epistemology
+                </h2>
+                <p className="text-sm text-gray-600">
+                  Knowledge, Truth, Justification, and the Structure of Knowing
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "epistemology" ? null : "epistemology",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "epistemology" ? "Hide" : "Details"}
+              </button>
+              <a
+                href="https://onedayepistemology.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          {expandedCourse === "epistemology" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                What can we know, and what makes it knowledge?
+              </p>
+              {epistemologySections.map((section) => (
                 <section key={section.title}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     <span className="mr-2">{section.emoji}</span>
