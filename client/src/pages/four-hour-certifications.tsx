@@ -539,6 +539,111 @@ This course does not qualify anyone to diagnose or treat BPD and is not a substi
   },
 ];
 
+const measurementTheorySections = [
+  {
+    emoji: "📏",
+    title: "What It Is",
+    body: `Measurement Theory Certification Course is a focused four-to-six-hour learning experience taught, tutored, practiced, and graded with AI.
+
+The course turns difficult questions about measurement into a structured journey through clear explanations, concrete cases, adaptive practice, grounded tutoring, and immediate feedback.
+
+It begins with a deceptively simple distinction—measurement is not enumeration—and develops a connected account of standards, ordering relations, transitivity, exclusivity, congruence, scalar and vector quantities, extensive and intensive magnitudes, rational and irrational measurement, and the role of physical laws.
+
+No previous measurement-theory or metrology training is required.`,
+  },
+  {
+    emoji: "🛤️",
+    title: "The Four-to-Six-Hour Learning Journey",
+    body: `**Hour 1 — Measurement, Enumeration, and Standards** -- Distinguish measuring from counting. Learn why continuous magnitudes do not require minimal units, when additivity is justified, and why every measurement is a comparison with a standard under specified procedures.
+
+**Hour 2 — The Axioms Behind Defensible Measurement** -- Study transitivity, exclusivity, and congruence. Examine what each relation contributes to a stable measurement system, what failures look like in practice, and why numerical assignments must preserve the underlying empirical structure.
+
+**Hour 3 — Quantities, Magnitudes, and Meaningful Operations** -- Compare scalar and vector quantities, then distinguish extensive from intensive magnitudes. Learn why some quantities can be added directly, why others cannot, and how empirical composition determines which mathematical operations are legitimate.
+
+**Hour 4 — Rational Measurement and Precision** -- Explore direct comparison, finite precision, rational numerical reports, approximation, and irrational values. See why an exact mathematical value and a physically obtainable reading are different kinds of claims.
+
+**Hours 5–6 — Laws, Inference, and Conventionalism** -- Investigate provisional standards, indirect measurement through geometry and physical law, metrical and nomic conventionalism, and the empirical constraints that prevent standards and laws from becoming arbitrary.`,
+  },
+  {
+    emoji: "🎓",
+    title: "Learning and Assessment",
+    body: `**Four Lecture Depths** -- Study every topic as Bulletin Points, Short, Medium, or Long while preserving the same central ideas and learning goals.
+
+**Grounded AI Tutors** -- Ask questions about the exact passage you are studying and receive conversational guidance rooted in the course.
+
+**Unlimited Practice Exams** -- Work through fresh cases that require application and reasoning rather than memorized definitions.
+
+**Adaptive Practice** -- Receive questions that respond to recent performance and focus attention where it is most useful.
+
+**Immediate Feedback** -- Receive a percentage score and a clear explanation after every submitted answer.
+
+**Four Graded Checkpoints** -- Complete two homework sets, a course test, and a cumulative final.
+
+**Reasoning Diagnostics** -- Compare subject-specific and general reasoning before, during, and after the course without affecting your grade.
+
+**Progress and Analytics** -- Follow lecture completion, assignment performance, practice activity, and developing strengths.`,
+  },
+  {
+    emoji: "🧩",
+    title: "Twenty-Four Topics in Eight Connected Areas",
+    body: `**Foundations: Measurement vs. Enumeration** -- Why measurement is not counting, continuous magnitudes, and the limits of assumed additivity.
+
+**Relativization to Standards** -- Comparative measurement, universal and local standards, traceability, and invariance.
+
+**Three Axioms of Measurement Theory** -- Transitivity, exclusivity, congruence, and the consequences of failed relations.
+
+**Scalar vs. Vector Quantities and Congruence** -- Direction, magnitude, comparison procedures, and structure-preserving numerical representation.
+
+**Provisional Standards and Physical Laws** -- Calibration, drift, independent methods, indirect measurement, and uncertainty.
+
+**Extensive vs. Intensive Magnitudes** -- Composition, additivity, equilibrium, and the limits of ordinary arithmetic.
+
+**Direct Measurement and Rational Numbers** -- Finite readings, precision, approximation, and irrational values.
+
+**Metrical and Nomic Conventionalism** -- Choices of units and laws, empirical consistency, reproducibility, and non-arbitrariness.`,
+  },
+  {
+    emoji: "📝",
+    title: "Fifty Fresh Graded Questions",
+    body: `The certification includes 30 multiple-choice questions with meaningful alternatives, 15 one-sentence responses, four responses of one to three sentences, and one sustained paragraph of five to seven sentences.
+
+Every learner-facing question is freshly generated. The emphasis is always on understanding, application, and justified reasoning—not memorized vocabulary.`,
+  },
+  {
+    emoji: "🚀",
+    title: "Preparing for Nano Measurement Theory",
+    body: `The course provides the conceptual foundation needed to continue into Nano Measurement Theory.
+
+Learners develop the distinctions required to examine numerical representation, scale construction, continuity, calibration, covariance, equivalence, model-based inference, and uncertainty at greater depth.
+
+The complete Measurement Theory Certification Course Book is available for download from the course.`,
+  },
+  {
+    emoji: "🏅",
+    title: "Earn the Certification",
+    body: `Complete the required coursework and meet the passing standard to receive a ZHI Certification of Completion for the Measurement Theory Certification Course.
+
+Each certificate includes a unique credential number and can be independently verified.
+
+Compare the magnitude. Test the structure. Justify the number.
+
+This is an educational completion credential and does not constitute professional metrology accreditation or licensure.`,
+  },
+  {
+    emoji: "👥",
+    title: "Who It Is For",
+    body: `**Independent Learners** -- People curious about what measurement numbers really represent.
+
+**Students** -- Learners preparing for physics, mathematics, philosophy of science, or metrology coursework.
+
+**Professionals** -- People who work with standards, quantities, data, models, or physical measurements.
+
+**Educators** -- Those seeking a structured introduction to measurement theory.
+
+**Continuing Learners** -- People preparing to continue into Nano Measurement Theory.`,
+  },
+];
+
 function renderBody(body: string) {
   return body.split("\n\n").map((paragraph, index) => {
     const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
@@ -907,7 +1012,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🧠</span>
@@ -948,6 +1053,64 @@ export default function FourHourCertifications() {
                 constant.
               </p>
               {agingBpdSections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">📏</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  Measurement Theory
+                </h2>
+                <p className="text-sm text-gray-600">
+                  Standards, Comparison, Quantities, and the Structure of
+                  Measurement
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "measurement-theory"
+                      ? null
+                      : "measurement-theory",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "measurement-theory" ? "Hide" : "Details"}
+              </button>
+              <a
+                href="https://measurement101.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          {expandedCourse === "measurement-theory" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                A rigorous but accessible introduction to the foundations of
+                measurement.
+              </p>
+              {measurementTheorySections.map((section) => (
                 <section key={section.title}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     <span className="mr-2">{section.emoji}</span>
