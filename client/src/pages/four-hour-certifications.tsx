@@ -747,6 +747,114 @@ Complete the required coursework and meet the passing standard to receive a Bord
   },
 ];
 
+const psychodynamicsBpdSections = [
+  {
+    emoji: "🧩",
+    title: "Overview",
+    body: `The Psychodynamics of BPD is a focused online course for people who want a deeper, more organized way to understand Borderline Personality Disorder.
+
+Rather than asking learners to memorize disconnected definitions, the course builds a working model of how personality organization, early fixation, trauma, splitting, repression, oscillating states, mature capacities, infantile states, and relationships may fit together. Every topic is taught through concrete situations, careful distinctions, and application-based questions.
+
+The experience is intellectually serious without becoming inaccessible. Learners can move quickly through concise bullet points, slow down for a long-form lecture, ask the built-in tutor for help, practice as often as needed, and receive immediate feedback on their reasoning.
+
+The course uses person-first, non-stigmatizing language and treats psychodynamic formulations as thoughtful interpretive tools—not universal facts about every person diagnosed with BPD.
+
+No previous psychoanalytic or clinical training is required.`,
+  },
+  {
+    emoji: "👥",
+    title: "Who It’s For",
+    body: `**Psychology and Counseling Students** -- Build a coherent framework connecting development, defenses, emotional states, and relationships.
+
+**Mental-Health Professionals and Trainees** -- Revisit familiar clinical patterns through a structured psychodynamic lens.
+
+**Educators and Support Professionals** -- Gain language for discussing difficult behavior without reducing a person to a diagnosis.
+
+**Independent Learners** -- Move beyond social-media summaries and develop a more disciplined understanding of BPD.
+
+**Families, Partners, and Curious Readers** -- Explore the concepts respectfully without being asked to diagnose anyone.
+
+**Continuing Learners** -- Prepare for Nano Psychodynamic Understanding of BPD.`,
+  },
+  {
+    emoji: "✨",
+    title: "Core Capabilities",
+    body: `**Four Lecture Formats** -- Read every lecture as Bullet Points, Short, Medium, or Long without losing the central ideas.
+
+**Adjustable Reading and Tutor Panel** -- Resize the workspace to fit the preferred way of studying.
+
+**Built-In AI Tutor** -- Ask questions about the exact lecture and receive conversational guidance grounded in the material.
+
+**Concrete Starter Questions** -- Begin each section with application questions built around situations rather than abstract definitions.
+
+**Unlimited Practice Exams** -- Generate fresh practice that does not lower the course grade.
+
+**Fresh Scenario-Based Questions** -- Practice interpretation, distinction, and reasoning instead of one-word recall.
+
+**Immediate Scores and Feedback** -- Receive a percentage and direct explanation after every answer.
+
+**Related Assignment Links** -- Move directly from a lecture to its related homework, test, final, or practice activity.
+
+**Progress, Analytics, and Diagnostics** -- Track completion, performance, mastery, practice, and changes in reasoning over time.`,
+  },
+  {
+    emoji: "🧭",
+    title: "The Eight-Topic Journey",
+    body: `**1. The Dual Operating System Model** -- Explore movement between a reflective adult or mature mode and an earlier, developmentally fixed mode as a conceptual model—not a claim that a person contains two minds.
+
+**2. Fixation and Trauma** -- Examine unmet needs, overwhelming experiences, repetition, and adaptation without claiming that one event explains every feature of BPD.
+
+**3. Splitting vs. Repression** -- Distinguish keeping contradictory self-and-other experiences apart from pushing a conflict out of awareness.
+
+**4. Oscillation Between States** -- Study rapid shifts in feeling, expectation, memory, attachment, and action.
+
+**5. Adult and Mature Capacities** -- Identify capacities supporting reflection, reciprocity, delay, complexity, responsibility, and mixed feelings.
+
+**6. Infantile and Fixated States** -- Understand developmentally earlier needs and defenses without reducing an adult person to a childish stereotype.
+
+**7. BPD vs. Psychopathy** -- Compare attachment, empathy, guilt, aggression, manipulation, emotional reactivity, and personality organization without sensationalism.
+
+**8. Clinical Implications** -- Explore transference, countertransference, boundaries, rupture and repair, diagnostic humility, psychotherapy, and the adjunctive role of medication.`,
+  },
+  {
+    emoji: "📝",
+    title: "Fifty Fresh Graded Questions",
+    body: `The certification includes exactly 30 multiple-choice questions with two or three meaningful options, 15 one-sentence responses, four responses of one to three sentences, and one sustained paragraph of five to seven sentences.
+
+The questions are distributed across two homework assignments, a course test, and a cumulative final. Multiple-choice answers are graded deterministically. Written answers are evaluated for whether the learner applies the course material to the situation presented.
+
+Every attempt uses fresh questions. The goal is to become more precise at recognizing structures, comparing explanations, and defending a reasoned interpretation.`,
+  },
+  {
+    emoji: "🎯",
+    title: "What Makes It Different",
+    body: `**A Model, Not a List** -- Connect states, defenses, development, attachment, and relationships beneath the diagnostic criteria.
+
+**Application Over Recitation** -- Work through concrete situations instead of repeating isolated vocabulary.
+
+**Depth Without Forced Pacing** -- Choose a fast map or a detailed lecture depending on the moment.
+
+**Tutoring Beside the Text** -- Turn a confusing passage into a grounded conversation.
+
+**Practice Without Punishment** -- Be wrong, revise, and try again before graded work.
+
+**Feedback That Explains the Percentage** -- See what was understood, what was missed, and how to improve.
+
+**Respectful Clinical Language** -- Avoid presenting trauma, aggression, psychopathy comparisons, or interpretations as universal truths.`,
+  },
+  {
+    emoji: "🏆",
+    title: "Earn a ZHI Systems Certificate of Completion",
+    body: `Complete the required coursework and meet the passing standard to earn the ZHI Systems Certificate of Completion in The Psychodynamics of BPD.
+
+Each certificate includes a unique credential number and an independent verification page.
+
+Understand the states. Distinguish the defenses. Follow the dynamics. Apply the model carefully.
+
+This certificate documents educational completion. It is not professional licensure, clinical qualification, diagnosis, treatment, therapy, or authorization to practice.`,
+  },
+];
+
 function renderBody(body: string) {
   return body.split("\n\n").map((paragraph, index) => {
     const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
@@ -1226,7 +1334,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🧠</span>
@@ -1270,6 +1378,64 @@ export default function FourHourCertifications() {
                 path forward.
               </p>
               {fourHourBpdSections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  The Psychodynamics of BPD
+                </h2>
+                <p className="text-sm text-gray-600">
+                  A Vivid, Practical Journey into the Inner Dynamics of
+                  Borderline Personality Disorder
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "psychodynamics-bpd"
+                      ? null
+                      : "psychodynamics-bpd",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "psychodynamics-bpd" ? "Hide" : "Details"}
+              </button>
+              <a
+                href="https://bpd101.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          {expandedCourse === "psychodynamics-bpd" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                Go beyond the symptom list. Learn to think dynamically about
+                states, defenses, development, relationships, and change.
+              </p>
+              {psychodynamicsBpdSections.map((section) => (
                 <section key={section.title}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     <span className="mr-2">{section.emoji}</span>
