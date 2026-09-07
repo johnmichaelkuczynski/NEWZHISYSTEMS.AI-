@@ -644,6 +644,109 @@ This is an educational completion credential and does not constitute professiona
   },
 ];
 
+const fourHourBpdSections = [
+  {
+    emoji: "🧩",
+    title: "Overview",
+    body: `Four Hour BPD is a complete four-to-six-hour educational certification course about Borderline Personality Disorder.
+
+BPD is frequently reduced to stereotypes or a short list of symptoms. This course offers something more useful: a connected explanation of how emotional sensitivity, difficulty returning to baseline, fear of abandonment, unstable self-image, impulsivity, relationship patterns, and environmental influences may interact.
+
+The course combines concise lectures, real-world scenarios, built-in tutoring, fresh practice questions, graded coursework, reasoning diagnostics, and progress analytics in one guided learning experience.
+
+Learners can choose how deeply they want to study each topic, ask questions while reading, practice as often as needed, and earn a verifiable certificate after completing the required coursework.
+
+No previous psychology training is required.
+
+This course is educational. It does not diagnose BPD, replace professional care, provide therapy, or confer clinical qualification or licensure.`,
+  },
+  {
+    emoji: "👥",
+    title: "Who It’s For",
+    body: `**People Who Want to Understand BPD** -- Learn without relying on social-media stereotypes, stigma, or oversimplified symptom lists.
+
+**Family Members, Partners, and Friends** -- Gain a more compassionate framework for understanding emotional and relationship patterns.
+
+**Students and Independent Learners** -- Get a structured introduction to BPD, treatment, recovery, and support.
+
+**Educators and Helping Professionals** -- Explore an accessible overview grounded in careful, person-first language.
+
+**Learners Preparing for Advanced Study** -- Build a foundation for the more detailed Nano Borderline Personality Disorder course.
+
+**Anyone Interested in Mental Health Education** -- Learn through concrete examples, active practice, and clear explanations.`,
+  },
+  {
+    emoji: "⚙️",
+    title: "Core Capabilities",
+    body: `**A Complete 4–6 Hour Course** -- Learn the foundations of BPD in an afternoon or study gradually over time.
+
+**Twenty-Four Connected Topics** -- Move through eight organized areas covering foundations, emotional dysregulation, relationships, identity, impulsivity, risk factors, treatment, recovery, and support.
+
+**Four Lecture Lengths** -- Read every topic as Bulletin Points, Short, Medium, or Long.
+
+**Built-In AI Tutors** -- Ask questions directly from the lecture and receive guidance grounded in the course material.
+
+**Unlimited Adaptive Practice** -- Work through fresh scenarios that respond to recent performance and emphasize application.
+
+**Fifty Fresh Graded Questions** -- Complete two homework sets, a timed course test, and a cumulative final.
+
+**Immediate, Explained Feedback** -- Receive a percentage score and a clear explanation after every submitted response.
+
+**Reasoning Diagnostics and Analytics** -- Compare reasoning over time and track lectures, assignments, practice, mastery, and recent progress.
+
+**Downloadable Course Materials** -- Access the course publicly and download its complete educational content in PDF or text format.
+
+**Verifiable Certification** -- Earn a uniquely numbered ZHI Systems certificate after meeting the passing standard.`,
+  },
+  {
+    emoji: "🎯",
+    title: "What Makes It Different",
+    body: `**It Explains Patterns Instead of Repeating Labels** -- See how emotions, relationships, identity, behavior, development, treatment, and recovery fit together.
+
+**It Is Educational Without Becoming Clinical or Diagnostic** -- Build understanding without disclosing private mental-health information.
+
+**It Uses Person-First, Non-Stigmatizing Language** -- BPD is presented with compassion, diagnostic humility, and attention to common misconceptions.
+
+**It Teaches Through Concrete Situations** -- Practice and graded questions use realistic fictional scenarios rather than mere terminology recall.
+
+**It Adapts to the Learner** -- Lecture depth, tutoring, and unlimited fresh practice support both quick orientation and serious study.
+
+**It Treats Psychotherapy as Central** -- Evidence-based treatment, including DBT, is explained responsibly, while medication is accurately presented as adjunctive and symptom-targeted.
+
+**It Includes Recovery, Not Only Symptoms** -- The course addresses skills, support, effective treatment, and meaningful improvement over time.
+
+**It Measures Understanding, Not Just Completion** -- Coursework, diagnostics, feedback, and analytics reveal strengths and areas for practice.`,
+  },
+  {
+    emoji: "📚",
+    title: "What You’ll Learn",
+    body: `**Foundations and Differential Diagnosis** -- What BPD is, how diagnosis is approached, common misconceptions, and overlap with other conditions.
+
+**Emotional Dysregulation** -- Emotional sensitivity, intense responses, triggers, and difficulty returning to baseline.
+
+**Interpersonal Patterns** -- Fear of abandonment, relationship instability, conflict, trust, and changing perceptions of others.
+
+**Identity and Self-Image** -- Unstable self-concept, chronic emptiness, values, goals, and shifts in self-perception.
+
+**Impulsivity and Self-Harm** -- High-risk behavior, distress, safety principles, and compassionate support without graphic or instructional content.
+
+**Etiology and Risk** -- Biological sensitivity, development, environment, attachment, trauma, and why no single factor explains every person.
+
+**Treatment** -- DBT and other psychotherapies, treatment goals, therapeutic skills, and the limited adjunctive role of medication.
+
+**Recovery and Support** -- Improvement over time, stability, responsible support, boundaries, hope, and long-term growth.`,
+  },
+  {
+    emoji: "📝",
+    title: "How Certification Works",
+    body: `The certification includes 30 multiple-choice questions with two or three meaningful options, 15 one-sentence responses, four responses of one to three sentences, and one sustained paragraph of five to seven sentences.
+
+Questions use fictional educational and support scenarios. They test understanding, judgment, and application—not personal disclosure, diagnosis, or memorized vocabulary.
+
+Complete the required coursework and meet the passing standard to receive a Borderline Personality Disorder Certification Course certificate from ZHI Systems.`,
+  },
+];
+
 function renderBody(body: string) {
   return body.split("\n\n").map((paragraph, index) => {
     const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
@@ -1065,7 +1168,7 @@ export default function FourHourCertifications() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-lg bg-white">
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
             <div className="flex items-center gap-3">
               <span className="text-2xl">📏</span>
@@ -1111,6 +1214,62 @@ export default function FourHourCertifications() {
                 measurement.
               </p>
               {measurementTheorySections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>
+                    {section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-lg bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  BPD in Four Hours
+                </h2>
+                <p className="text-sm text-gray-600">
+                  Understand Borderline Personality Disorder with Clarity,
+                  Compassion, and Practical Context
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCourse((value) =>
+                    value === "four-hour-bpd" ? null : "four-hour-bpd",
+                  )
+                }
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "four-hour-bpd" ? "Hide" : "Details"}
+              </button>
+              <a
+                href="https://fourhourbpd.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          {expandedCourse === "four-hour-bpd" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              <p className="text-lg text-gray-700">
+                Go beyond labels. Understand the person, the patterns, and the
+                path forward.
+              </p>
+              {fourHourBpdSections.map((section) => (
                 <section key={section.title}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     <span className="mr-2">{section.emoji}</span>
