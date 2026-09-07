@@ -466,7 +466,7 @@ Unlike consumer chatbots that produce generic, hedged, watered-down output, Livi
 - **Two-Document Mode** -- Side-by-side viewer with a full second-tier toolset: Compare & Contrast, Mentalities (analyzing the worldview behind each), Synthesize, Test Me (cross-document), Question Set, Create Dialogue (between the two authors), Rewrite, Two-Doc Podcast, and Comparative Diagram.
 - **Comparative Diagram** -- Multi-section argumentative comparison across two documents: theses, methodologies, evidence quality, assumptions, implications, strengths, weaknesses, philosophical foundations, practical applications, and synthesis.
 - **System Diagnostic** -- One-click self-check that verifies all API providers, the database, and the full functional pipeline are operational. Color-coded pass / fail / warn / skip report with per-check timing. Confirms formal properties (submit works, endpoints respond, sessions persist) without grading the AI's answers.
-- **Credit System & Auth** -- User accounts, persistent chat history, per-operation credit tracking, and Stripe-ready payment integration.`,
+- **Persistent Anonymous Workspace** -- The application is directly usable without login, payment, purchasable credits, or usage deductions.`,
       },
       {
         emoji: "🚀",
@@ -3356,12 +3356,11 @@ No hand-waving. No "philosophers have long debated." Every analysis arrives at a
 export default function Home() {
   const appCategories: Record<string, App[]> = {
     "📝 Writing & Books": [
-      { title: "Living Book Creator", url: "https://livingbookcreator.xyz" },
+      { title: "Living Book Creator", url: "https://livingbookcreator.xyz/" },
       {
         title: "Analytic Philosophy Living Book",
         url: "https://analyticphilosophy.net",
       },
-      { title: "Living Book Maker", url: "https://livingbookmaker.ink" },
       { title: "Book Builder", url: "https://bookbuilder.ink" },
       { title: "Genius Dictation", url: "https://geniusdictation.com" },
       { title: "EZ Reader", url: "https://ezreader.ai" },
