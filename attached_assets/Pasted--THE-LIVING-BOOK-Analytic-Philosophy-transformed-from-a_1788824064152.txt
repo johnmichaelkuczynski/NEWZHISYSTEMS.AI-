@@ -1,0 +1,102 @@
+📖 THE LIVING BOOK
+Analytic Philosophy — transformed from a text you read into a world you can explore.
+🧩 Overview
+The Living Book is an AI-augmented reading experience built around Analytic Philosophy by John-Michael Kuczynski.
+
+It begins as a serious work of philosophy: five parts, twenty-seven chapters, formal logic, technical terms, and hundreds of pages of closely connected arguments. But it does not stay trapped on the page.
+
+Select any passage and the book comes alive. Ask a question. Unpack the thesis. Visualize the argument. Turn the ideas into a study guide, a practice test, a podcast, or a map of their conceptual relationships. Find the readings that shaped the debate—and the modern works that carry it forward.
+
+This is not a generic chatbot sitting beside a PDF. It is a reading environment designed to help you follow arguments, clarify concepts, test understanding, and think more deeply about the text in front of you.
+
+👥 Who It’s For
+Students of philosophy — move from difficult prose to clear theses, definitions, arguments, and study materials without leaving the book.
+
+Independent learners — explore a major philosophical work at your own pace, with an intelligent guide ready whenever a passage becomes challenging.
+
+Instructors and tutors — turn selected sections into discussion prompts, study guides, quizzes, practice tests, and supplemental reading lists.
+
+Researchers and close readers — trace conceptual relationships, compare positions, and examine the structure beneath a dense argument.
+
+Curious thinkers — ask better questions of logic, knowledge, metaphysics, mind, language, ethics, and the nature of philosophical inquiry itself.
+
+Anyone who has ever underlined a paragraph and wished the book could answer back.
+
+✨ Core Capabilities
+Ask the Book — Chat with the text in plain language. Questions are answered using the ideas and passages inside the book rather than drifting into generic conversation.
+
+Discuss Any Passage — Select a sentence, paragraph, or section and begin a focused conversation about exactly what it says, assumes, or implies.
+
+Summary + Thesis — Reduce a difficult passage to its central claim and a clear account of how the surrounding reasoning supports it.
+
+Thesis Deep-Dive — Go beyond summary. Extract the thesis, identify its argumentative structure, examine its implications, connect it to modern thought, and compare it with other intellectual frameworks.
+
+Interactive Cognitive Maps — Turn an argument into a visual network of concepts, definitions, evidence, and logical dependencies. Drag, zoom, and explore how the ideas connect.
+
+Suggested Readings — Discover relevant books, essays, and academic works from across periods and perspectives, each accompanied by a concise explanation of why it belongs beside the selected passage.
+
+Complete Study Guides — Transform a chapter or selection into an organized review resource built around its important concepts and arguments.
+
+Practice Tests — Generate custom assessments, answer questions inside the app, and receive a score that reflects your understanding of the material.
+
+Quizzes on Demand — Turn the passage you are reading into a quick knowledge check while the ideas are still fresh.
+
+Rewrite for Clarity — Recast difficult prose in a more accessible form while preserving the substance of the original argument.
+
+Podcast Generation — Convert a selected passage into a structured audio discussion with overview, analysis, key insights, and notable quotations. Choose a voice, listen in the app, or download the audio.
+
+Voice Questions — Speak instead of type. Record a question and let the app transcribe it directly into the conversation.
+
+Highlights That Stay With the Text — Mark the lines that matter and keep your attention anchored to the original page.
+
+Flexible Mathematical Notation — Move between source-friendly and rendered mathematical notation when the text enters formal or symbolic territory.
+
+Export What You Create — Copy, print, save as PDF, email, or download many of the guides, analyses, tests, maps, rewrites, and conversations you generate.
+
+🎯 What Makes It Different
+The tools live where the thinking happens — You do not copy text into another window, explain which chapter you mean, or rebuild the context from scratch. Select the passage and choose what you want to do with it.
+
+It is grounded in the book — Ordinary AI chat can give a plausible answer that has little to do with the author’s actual argument. The Living Book searches the work itself and keeps the conversation tied to the text.
+
+It treats philosophy as structure, not just prose — A philosophical passage contains claims, premises, definitions, dependencies, objections, and consequences. The app is built to expose those relationships.
+
+It supports several ways of learning — Read the argument. Hear it discussed. See it mapped. Rewrite it. Test yourself on it. Find the scholarship around it. The same passage can become a different learning experience whenever you need one.
+
+It scales from a sentence to the whole work — Analyze a single claim, select a full section, or work across longer material. Large selections are divided intelligently so serious study is not limited to short snippets.
+
+It does not lock you into one AI perspective — Choose among leading AI models, including OpenAI, Anthropic, DeepSeek, Perplexity, and Grok, depending on how you want to explore the text.
+
+It makes related scholarship part of the reading process — Suggested Readings reaches beyond the book to find works that deepen, challenge, or extend the ideas under discussion.
+
+It turns passive reading into active inquiry — The goal is not to finish pages faster. It is to notice more, question more carefully, and leave with a stronger grasp of why the argument works—or where it does not.
+
+🧭 One Passage. Many Ways Forward.
+Highlight a paragraph about knowledge of the external world.
+
+You can ask the book to explain it in simpler language. Extract its thesis. Reveal the premises holding it up. Place its concepts on an interactive map. Generate a study guide. Test yourself. Hear the argument discussed as a podcast. Then find the classic and contemporary readings that continue the debate.
+
+The passage stays the same.
+
+Your way into it changes.
+
+🧠 Built for Serious Reading
+The Living Book does not replace the original work with summaries. It keeps the text at the center.
+
+The table of contents remains within reach. The page remains readable. Mathematical notation remains intact. Every tool begins with a passage you deliberately select or a question you deliberately ask.
+
+AI is not presented as an authority standing above the book. It acts as a set of lenses:
+
+one lens clarifies,
+one organizes,
+one visualizes,
+one tests,
+one connects,
+and one invites the next question.
+🌌 The Book Is No Longer Silent
+Traditional digital books make paper searchable.
+
+The Living Book goes further: it makes a demanding text responsive.
+
+It can explain without replacing, analyze without flattening, and generate new paths through an argument without pulling you away from the source. What was once a one-way encounter becomes a continuing conversation between reader, text, and ideas.
+
+Read closely. Ask freely. Follow the argument wherever it leads.

@@ -483,6 +483,90 @@ Unlike consumer chatbots that produce generic, hedged, watered-down output, Livi
       },
     ],
   },
+  "Analytic Philosophy Living Book": {
+    emoji: "📖",
+    tagline:
+      "Analytic Philosophy transformed from a text you read into a world you can explore.",
+    sections: [
+      {
+        emoji: "🧩",
+        title: "Overview",
+        body: `The Living Book is an AI-augmented reading experience built around Analytic Philosophy by John-Michael Kuczynski.
+
+It begins as a serious work of philosophy: five parts, twenty-seven chapters, formal logic, technical terms, and hundreds of pages of closely connected arguments. But it does not stay trapped on the page.
+
+Select any passage and the book comes alive. Ask a question. Unpack the thesis. Visualize the argument. Turn the ideas into a study guide, a practice test, a podcast, or a map of their conceptual relationships. Find the readings that shaped the debate—and the modern works that carry it forward.
+
+This is not a generic chatbot sitting beside a PDF. It is a reading environment designed to help you follow arguments, clarify concepts, test understanding, and think more deeply about the text in front of you.`,
+      },
+      {
+        emoji: "👥",
+        title: "Who It’s For",
+        body: `**Students of Philosophy** -- Move from difficult prose to clear theses, definitions, arguments, and study materials without leaving the book.
+
+**Independent Learners** -- Explore a major philosophical work at your own pace, with an intelligent guide ready whenever a passage becomes challenging.
+
+**Instructors and Tutors** -- Turn selected sections into discussion prompts, study guides, quizzes, practice tests, and supplemental reading lists.
+
+**Researchers and Close Readers** -- Trace conceptual relationships, compare positions, and examine the structure beneath a dense argument.
+
+**Curious Thinkers** -- Ask better questions of logic, knowledge, metaphysics, mind, language, ethics, and the nature of philosophical inquiry itself.
+
+It is for anyone who has ever underlined a paragraph and wished the book could answer back.`,
+      },
+      {
+        emoji: "✨",
+        title: "Core Capabilities",
+        body: `**Ask the Book** -- Chat with the text in plain language and receive answers grounded in the ideas and passages inside the book.
+
+**Discuss Any Passage** -- Select a sentence, paragraph, or section and begin a focused conversation about exactly what it says, assumes, or implies.
+
+**Summary + Thesis** -- Reduce a difficult passage to its central claim and see how the surrounding reasoning supports it.
+
+**Thesis Deep-Dive** -- Extract the thesis, identify its argumentative structure, examine its implications, connect it to modern thought, and compare it with other intellectual frameworks.
+
+**Interactive Cognitive Maps** -- Turn an argument into a visual network of concepts, definitions, evidence, and logical dependencies.
+
+**Suggested Readings** -- Discover relevant books, essays, and academic works with an explanation of why each belongs beside the selected passage.
+
+**Study and Assessment Tools** -- Generate complete study guides, practice tests with scoring, and quick quizzes from the passage being read.
+
+**Rewrite for Clarity** -- Recast difficult prose in a more accessible form while preserving the original argument.
+
+**Podcast and Voice Tools** -- Convert passages into downloadable audio discussions and ask questions by speaking instead of typing.
+
+**Highlights, Mathematical Notation, and Exports** -- Keep highlights anchored to the text, preserve formal notation, and copy, print, email, save, or download generated work.`,
+      },
+      {
+        emoji: "🎯",
+        title: "What Makes It Different",
+        body: `**The Tools Live Where the Thinking Happens** -- Select a passage and choose what to do with it without rebuilding the context in another window.
+
+**It Is Grounded in the Book** -- The Living Book searches the work itself and keeps conversations tied to the author’s actual argument.
+
+**It Treats Philosophy as Structure** -- Claims, premises, definitions, dependencies, objections, and consequences can be exposed and explored.
+
+**It Supports Several Ways of Learning** -- Read, hear, map, rewrite, test, and connect the same passage to related scholarship.
+
+**It Scales from a Sentence to the Whole Work** -- Analyze one claim, a full section, or a longer selection divided intelligently for serious study.
+
+**It Offers Multiple AI Perspectives** -- Choose among leading AI models from OpenAI, Anthropic, DeepSeek, Perplexity, and Grok.
+
+**It Turns Passive Reading into Active Inquiry** -- The goal is to notice more, question more carefully, and understand why an argument works—or where it does not.`,
+      },
+      {
+        emoji: "🧠",
+        title: "Built for Serious Reading",
+        body: `The Living Book does not replace the original work with summaries. It keeps the text at the center.
+
+The table of contents remains within reach. The page remains readable. Mathematical notation remains intact. Every tool begins with a passage you deliberately select or a question you deliberately ask.
+
+AI is not presented as an authority standing above the book. It acts as a set of lenses: one clarifies, one organizes, one visualizes, one tests, one connects, and one invites the next question.
+
+Traditional digital books make paper searchable. The Living Book goes further: it makes a demanding text responsive. What was once a one-way encounter becomes a continuing conversation between reader, text, and ideas.`,
+      },
+    ],
+  },
   "ModelWiz": {
     emoji: "🧠",
     tagline: "Cognitive Analysis Platform -- Multi-Model AI for Intelligence Analysis, Cognitive Profiling, and Argument Stress-Testing",
@@ -3273,6 +3357,10 @@ export default function Home() {
   const appCategories: Record<string, App[]> = {
     "📝 Writing & Books": [
       { title: "Living Book Creator", url: "https://livingbookcreator.xyz" },
+      {
+        title: "Analytic Philosophy Living Book",
+        url: "https://analyticphilosophy.net",
+      },
       { title: "Living Book Maker", url: "https://livingbookmaker.ink" },
       { title: "Book Builder", url: "https://bookbuilder.ink" },
       { title: "Genius Dictation", url: "https://geniusdictation.com" },
