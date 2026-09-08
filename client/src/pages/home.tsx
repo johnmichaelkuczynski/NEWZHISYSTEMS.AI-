@@ -3375,6 +3375,7 @@ export default function Home() {
     ],
     "🌐 Website-Apps": [
       { title: "JM Kuczynski", url: "https://jmkuczynski.xyz" },
+      { title: "AI Architect Showroom", url: "https://jmkuczynski.ai" },
       { title: "Neoclassical Piano", url: "https://neoclassicalpiano.com" },
       { title: "Paradoxes", url: "https://paradoxes.ink" },
       { title: "Zhi Microcertifications", url: "https://microcertifications.ai" }
