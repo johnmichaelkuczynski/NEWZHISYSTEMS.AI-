@@ -567,7 +567,7 @@ Traditional digital books make paper searchable. The Living Book goes further: i
       },
     ],
   },
-  "ModelWiz": {
+  "Treatise Pro": {
     emoji: "🧠",
     tagline: "Cognitive Analysis Platform -- Multi-Model AI for Intelligence Analysis, Cognitive Profiling, and Argument Stress-Testing",
     sections: [
@@ -3404,7 +3404,7 @@ export default function Home() {
       { title: "Mind Probe", url: "https://mindprobe.ink" },
       { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "Psychology Pro", url: "https://psychologypro.ink" },
-      { title: "ModelWiz", url: "https://modelwiz.xyz" },
+      { title: "Treatise Pro", url: "https://treatisepro.com" },
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
       { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" },

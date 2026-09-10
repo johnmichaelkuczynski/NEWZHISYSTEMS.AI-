@@ -236,7 +236,7 @@ Unlike consumer chatbots that produce generic, hedged, watered-down output, Livi
       },
     ],
   },
-  "ModelWiz": {
+  "Treatise Pro": {
     emoji: "🧠",
     tagline: "Cognitive Analysis Platform -- Multi-Model AI for Intelligence Analysis, Cognitive Profiling, and Argument Stress-Testing",
     sections: [
@@ -2579,7 +2579,7 @@ Unlike retail screeners that surface "unusual options activity" without explaini
   ],
 };
 
-appDescriptions["Model Builder"] = appDescriptions["ModelWiz"];
+appDescriptions["Model Builder"] = appDescriptions["Treatise Pro"];
 
 export default function MainPage() {
   const appCategories: Record<string, App[]> = {
@@ -2606,7 +2606,7 @@ export default function MainPage() {
       { title: "Ask A Philosopher", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
       { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
       { title: "Major Brain", url: "https://majorbrain.xyz" },
-      { title: "Model Builder", url: "https://modelwiz.xyz" },
+      { title: "Model Builder", url: "https://treatisepro.com" },
       { title: "Originality Meter", url: "https://originalitymeter.com" },
       { title: "Intelligence Meter", url: "https://iq101.ink", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
       { title: "Mind Profiler", url: "https://mindprofiler.ink" },
@@ -2616,7 +2616,7 @@ export default function MainPage() {
       { title: "Cognitive Enhancer", url: "https://cognitiveenhancer.xyz" },
       { title: "Psychology Pro", url: "https://psychologypro.ink" },
       { title: "Text Genius", url: "https://textgenius.xyz" },
-      { title: "ModelWiz", url: "https://modelwiz.xyz" },
+      { title: "Treatise Pro", url: "https://treatisepro.com" },
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
       { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" },
