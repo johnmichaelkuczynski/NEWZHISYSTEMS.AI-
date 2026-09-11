@@ -460,7 +460,7 @@ The hard part of cloud architecture is not only choosing a service. It is connec
 const courses: Course[] = [
   { title: "AI Math (Level 1)", url: "https://aimath1.xyz" },
   { title: "Psychoanalysis", url: "https://nanofreud.xyz" },
-  { title: "IQ Booster", url: "https://nanofreud.xyz" },
+  { title: "IQ Booster", url: "https://fourhouriqbooster.xyz" },
   {
     title: "AI-Assisted Grading and Assessment (Level 1)",
     url: "https://aigrading1.ink",
