@@ -3417,7 +3417,6 @@ export default function Home() {
       { title: "Multiple Video Viewer", url: "https://multivideo.ink" },
       { title: "Audio Transcriber Plus", url: "https://audiotranscriber.ink" },
       { title: "Podcast Creator", url: "https://ezpodcast.ink" },
-      { title: "YouTube Video Downloader", url: "https://youtubedownloader.ink" }
     ],
     "💹 Finance": [
       { title: "Forex Edge", url: "https://usdhkd.ink", videoUrl: "https://www.youtube.com/watch?v=By7pTjl5HZA" },
