@@ -200,7 +200,7 @@ const iqBoosterSections = [
   {
     emoji: "🧠",
     title: "What It Is",
-    body: `IQ Booster is a fast-moving, self-paced four-to-six-hour course for people who want to think more clearly, recognize patterns faster, and approach unfamiliar problems with confidence.
+    body: `Four Hour IQ Booster is a fast-moving, self-paced four-to-six-hour course for people who want to think more clearly, recognize patterns faster, and approach unfamiliar problems with confidence.
 
 Concise instruction, fresh challenges, direct feedback, and focused recommendations keep learners working on the reasoning skills that matter most.`,
   },
@@ -1065,7 +1065,7 @@ export default function FourHourCertifications() {
               <span className="text-2xl">🧠⚡</span>
               <div>
                 <h2 className="text-lg font-semibold text-gray-900">
-                  IQ Booster
+                  Four Hour IQ Booster
                 </h2>
                 <p className="text-sm text-gray-600">
                   Six Reasoning Skills in Four to Six Hours

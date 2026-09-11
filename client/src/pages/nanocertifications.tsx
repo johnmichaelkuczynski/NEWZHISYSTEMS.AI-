@@ -13,7 +13,7 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
-  "IQ Booster": {
+  "Intelligence Booster": {
     emoji: "🔎",
     tagline:
       "A rigorous, self-paced introduction to how reasoning and aptitude tests work -- and how to beat them -- that teaches, tutors, drills, and grades itself, built for researchers and professionals entering the field.",
@@ -460,7 +460,7 @@ The hard part of cloud architecture is not only choosing a service. It is connec
 const courses: Course[] = [
   { title: "AI Math (Level 1)", url: "https://aimath1.xyz" },
   { title: "Psychoanalysis", url: "https://nanofreud.xyz" },
-  { title: "IQ Booster", url: "https://fourhouriqbooster.xyz" },
+  { title: "Intelligence Booster", url: "https://iqbooster.xyz" },
   {
     title: "AI-Assisted Grading and Assessment (Level 1)",
     url: "https://aigrading1.ink",
