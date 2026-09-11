@@ -3406,7 +3406,6 @@ export default function Home() {
       { title: "Treatise Pro", url: "https://treatisepro.com" },
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
-      { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" },
       { title: "FrameWise", url: "https://framewise.ink" }
     ],
     "🎬 Audio-Visual": [

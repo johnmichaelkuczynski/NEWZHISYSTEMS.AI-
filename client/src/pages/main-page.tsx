@@ -2619,7 +2619,6 @@ export default function MainPage() {
       { title: "Treatise Pro", url: "https://treatisepro.com" },
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
-      { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" },
     ],
     "📸 Visual & Multimedia": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },
