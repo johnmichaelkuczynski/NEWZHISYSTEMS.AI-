@@ -2620,7 +2620,6 @@ export default function MainPage() {
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
       { title: "Cognitive Career Profiler", url: "https://cognitivecareer.xyz" },
-      { title: "Metaethics", url: "https://metaethics.ink" }
     ],
     "📸 Visual & Multimedia": [
       { title: "Frame Shot", url: "https://frameshot.xyz" },

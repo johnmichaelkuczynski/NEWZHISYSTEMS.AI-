@@ -777,6 +777,7 @@ function renderSectionBody(body: string) {
 
 export default function Courses() {
   const courses: Course[] = [
+    { title: "Metaethics", url: "https://metaethics.ink" },
     { title: "Prompt Engineering for AI Generative", url: "https://generativeai.ink/" },
     { title: "Constructive Critical Reasoning (Level 3)", url: "https://constructivereasoning.xyz" },
     { title: "Quantitative Reasoning (Level 3)", url: "https://quantitativereasoning.ink" },
