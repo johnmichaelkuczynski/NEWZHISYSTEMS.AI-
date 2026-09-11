@@ -3354,7 +3354,7 @@ No hand-waving. No "philosophers have long debated." Every analysis arrives at a
 };
 
 export default function Home() {
-  const appCategories: Record<string, App[]> = {
+  const appCatalog: Record<string, App[]> = {
     "📝 Writing & Books": [
       { title: "Living Book Creator", url: "https://livingbookcreator.xyz/" },
       {
@@ -3423,6 +3423,30 @@ export default function Home() {
       { title: "SOXL Options Edge", url: "https://soxledge.xyz", videoUrl: "https://www.youtube.com/watch?v=RJvzrX2X_F4" }
     ]
   };
+
+  const categoryAssignments: Record<string, string[]> = {
+    "🎬 Audio-Visual": ["Audio Transcriber Plus", "Frame Shot", "Graphic Novel Creator", "Multiple Video Viewer", "OCR Pro", "Podcast Creator"],
+    "🎓 Education & Learning": ["College AI Match", "EZ Homework", "EZGrader", "Test Me", "Texas Bar Prep"],
+    "💹 Finance": ["Forex Edge", "SOXL Options Edge", "SOXL Options Pro"],
+    "🔬 Interactive Research": ["Freud GPT", "Genius 101"],
+    "🔎 OSINT": ["Basic OSINT", "OSINT Lister"],
+    "🧠 Psychology": ["FrameWise", "Mind Probe", "Mind Profiler", "Photo Psychoanalysis", "Psychology Pro"],
+    "📖 Reading": ["Classic EZ Reader", "EZ Reader", "Original EZ Reader"],
+    "🌐 Reference": ["AI Architect Showroom", "JM Kuczynski", "Neoclassical Piano", "Paradoxes"],
+    "🛠 Utility": ["Forensic Document Verifier", "LLM Plus", "Model Transformer", "Smart Goal Tracker"],
+    "📝 Writing": ["Analytic Philosophy Living Book", "Book Builder", "EZ Story", "Genius Dictation", "GPTByPass", "Intelligence Meter", "Living Book Creator", "NeuroText", "Originality Meter", "Rewrite Plus", "Text Surgeon Plus", "Treatise Pro"],
+  };
+  const appsByTitle = new Map(Object.values(appCatalog).flat().map(app => [app.title, app]));
+  const appCategories: Record<string, App[]> = Object.fromEntries(
+    Object.entries(categoryAssignments).map(([category, titles]) => [
+      category,
+      [...titles].sort((a, b) => a.localeCompare(b)).map(title => {
+        const app = appsByTitle.get(title);
+        if (!app) throw new Error(`Missing app catalog entry: ${title}`);
+        return app;
+      }),
+    ]),
+  );
 
   const renderInline = (text: string) => {
     const parts = text.split(/(\*\*[^*]+\*\*)/g);
