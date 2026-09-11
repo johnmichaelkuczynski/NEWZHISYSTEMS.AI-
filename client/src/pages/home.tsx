@@ -3378,7 +3378,6 @@ export default function Home() {
       { title: "AI Architect Showroom", url: "https://jmkuczynski.ai" },
       { title: "Neoclassical Piano", url: "https://neoclassicalpiano.com" },
       { title: "Paradoxes", url: "https://paradoxes.ink" },
-      { title: "Zhi Microcertifications", url: "https://microcertifications.ai" }
     ],
     "🔎 OSINT": [
       { title: "Basic OSINT", url: "https://basicosint.xyz" },
