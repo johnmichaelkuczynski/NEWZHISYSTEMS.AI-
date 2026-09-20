@@ -3374,7 +3374,7 @@ export default function Home() {
       { title: "Forensic Document Verifier", url: "https://forensicdocumentverifier.com" }
     ],
     "🌐 Website-Apps": [
-      { title: "JM Kuczynski", url: "https://jmkuczynski.xyz" },
+      { title: "JM Kuczynski", url: "https://jmkuczynski.com" },
       { title: "AI Architect Showroom", url: "https://jmkuczynski.ai" },
       { title: "Neoclassical Piano", url: "https://neoclassicalpiano.com" },
       { title: "Paradoxes", url: "https://paradoxes.ink" },
