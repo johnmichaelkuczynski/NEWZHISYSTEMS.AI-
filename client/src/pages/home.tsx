@@ -3398,7 +3398,7 @@ export default function Home() {
       { title: "Genius 101", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
       { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
       { title: "Originality Meter", url: "https://originality.ink" },
-      { title: "Intelligence Meter", url: "https://intelmeter.ink", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
+      { title: "Intelligence Meter", url: "https://intelmeter.xyz", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
       { title: "Mind Profiler", url: "https://mindprofiler.ink" },
       { title: "Mind Probe", url: "https://mindprobe.ink" },
       { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
