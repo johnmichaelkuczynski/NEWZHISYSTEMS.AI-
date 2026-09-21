@@ -3359,7 +3359,7 @@ export default function Home() {
       { title: "Living Book Creator", url: "https://livingbookcreator.xyz/" },
       {
         title: "Analytic Philosophy Living Book",
-        url: "https://analyticphilosophy.net",
+        url: "https://analyticphilosophy.ai",
       },
       { title: "Book Builder", url: "https://bookbuilder.ink" },
       { title: "Genius Dictation", url: "https://geniusdictation.com" },
