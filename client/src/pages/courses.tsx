@@ -569,7 +569,7 @@ const courseDescriptions: Record<string, CourseDescription> = {
       },
     ],
   },
-  "AI (Level 3)": {
+  "AI": {
     emoji: "🤖",
     tagline:
       "Teach Yourself AI -- A Four-Week Introductory Course on the Ideas Behind Artificial Intelligence, From \"What Is AI?\" to Agents, Alignment, and the Future",
@@ -793,7 +793,7 @@ export default function Courses() {
     { title: "Conceptual Physics (Level 3)", url: "https://conceptualphysics.ink" },
     { title: "Critical Thinking (Level 3)", url: "https://criticalthinking.ink" },
     { title: "Formal Logic (Level 3)", url: "https://formallogic.xyz" },
-    { title: "AI (Level 3)", url: "https://ai101.ink" },
+    { title: "AI", url: "https://ai101.ink" },
     { title: "Developmental Mathematics (Level 3)", url: "https://developmentalmath.ink" },
     { title: "Analytic Philosophy (Level 3)", url: "https://analyticphilosophy101.ink" },
     { title: "Ethics (Level 3)", url: "https://ethics101.ink" },
