@@ -494,7 +494,7 @@ export default function JohnsonWales() {
                       {desc && <span className="text-2xl">{desc.emoji}</span>}
                       <div>
                         <h2 className="text-lg font-semibold text-gray-900">
-                          {course.title}
+                          {course.title.replace(/\s*\(Level \d+\)/gi, "")}
                         </h2>
                         {desc && (
                           <p className="text-sm text-gray-600">{desc.tagline}</p>

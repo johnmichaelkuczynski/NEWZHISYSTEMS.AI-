@@ -1,4 +1,5 @@
 - [Course double-listing sync](course-double-listing.md) — analytics courses live on both baby-living-courses.tsx and johnson-wales.tsx; mirror badge/video/title/removal changes to both.
+- [Course marketing labels](course-marketing-labels.md) — omit numbered level labels from public course names; they undermine promotional messaging.
 - [DB URL drift](db-url-drift.md) — server reads EXTERNAL_DATABASE_URL but drizzle.config uses DATABASE_URL; push with DATABASE_URL="$EXTERNAL_DATABASE_URL" npm run db:push.
 - [Secret paste whitespace](secret-paste-whitespace.md) — pasted secrets can carry invisible chars (NBSP); always trim env credentials before use.
 - [No auth by owner order](no-auth-by-owner-order.md) — every page, tab, and API is intentionally public; never restore Google OAuth, sessions, password gates, or other auth without an explicit request.
