@@ -1707,7 +1707,7 @@ export function CourseCatalog({
     { title: "Revenue Management & Pricing Analytics (Level 2)", url: "https://basicrevenuemanagement.xyz", videoUrl: "https://youtu.be/2Xpo610YqYc" },
     { title: "Psychodynamic Therapy 101 (Level 2)", url: "https://psychodynamictherapy.xyz", videoUrl: "https://youtu.be/UsUJ3oPdpiY" },
     { title: "Psychodynamic Treatment of BPD 101 (Level 2)", url: "https://psychodynamicbpdtherapy.xyz", videoUrl: "https://youtu.be/ZN2TGmrVzTw" },
-    { title: "Psychodynamic Treatment of OCD 101 (Level 2)", url: "https://psychodynamicocdtherapy.xyz", videoUrl: "https://youtu.be/5YZeCEsKKD8" },
+    { title: "Psychodynamic Treatment of OCD 101 (Level 2)", url: "https://ocd101.xyz", videoUrl: "https://youtu.be/5YZeCEsKKD8" },
     { title: "Restaurant & Hospitality Analytics (Level 2)", url: "https://babyrestaurantanalytics.xyz", videoUrl: "https://youtu.be/aM-ZePWbF_4" },
     {
       title: "Workforce Analytics (Level 2)",
