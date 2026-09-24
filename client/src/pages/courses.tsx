@@ -18,6 +18,82 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  "Economics 101": {
+    emoji: "📘",
+    tagline: "A free, four-week course for understanding the ideas behind everyday economic choices. Learn the idea. See the trade-off. Apply it.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "Overview",
+        body: `Economics 101 makes economics easier to explore at your own pace. Follow a clear course from scarcity and markets to public policy, trade, and economic growth—with examples, practice, and an AI tutor along the way.
+
+You do not need an economics background or an account to begin.`,
+      },
+      {
+        emoji: "👋",
+        title: "Who It’s For",
+        body: `- Curious beginners who want a clear introduction to economics.
+- Students who want to review core ideas and practise applying them.
+- Independent learners who want to understand how choices, incentives, and markets shape everyday life.
+- Anyone who prefers learning by doing, not just reading definitions.`,
+      },
+      {
+        emoji: "✨",
+        title: "What You Can Do",
+        body: `**Explore 29 lessons across four weeks.** Follow a connected path from individual choices to the wider economy.
+
+**Choose how much detail you want.** Read a lesson in short, medium, or long form.
+
+**Ask the AI tutor questions.** Get help connected to the lesson you are studying, and choose an available AI tutor from the course menu.
+
+**Practise with economics problems.** Work through ideas such as opportunity cost, supply and demand, and market equilibrium.
+
+**Review assignments and feedback.** See explanations that help you understand the reasoning behind an answer.
+
+**Track your progress.** Check course activity and topic-level mastery to see what you have learned and what to revisit.`,
+      },
+      {
+        emoji: "🗺️",
+        title: "Your Four-Week Learning Path",
+        body: `**Week 1 — Foundations of choice and markets:** Scarcity, opportunity cost, supply, demand, and equilibrium.
+
+**Week 2 — Firms, consumers, and market structure:** How households and businesses make decisions.
+
+**Week 3 — Macroeconomics and policy:** The economy as a whole and the choices that shape it.
+
+**Week 4 — Trade, development, and institutions:** How economies connect, grow, and organize exchange.`,
+      },
+      {
+        emoji: "🧭",
+        title: "How It Works",
+        body: `- Choose a week or lesson that interests you.
+- Learn at your own pace and adjust the reading length to suit you.
+- Ask questions and try a practice problem while the topic is fresh.
+- Review your feedback and progress before moving on.`,
+      },
+      {
+        emoji: "💡",
+        title: "What Makes It Different",
+        body: `**Ideas before jargon.** Lessons start with the economic question, then introduce the tools used to answer it.
+
+**Learning in context.** Examples and practice connect concepts to choices people, firms, and governments face.
+
+**Help stays close to the lesson.** Ask the tutor about what you are reading instead of starting from scratch.
+
+**A clear path, with room to explore.** Follow the four-week sequence or revisit a topic whenever you need it.`,
+      },
+      {
+        emoji: "🎉",
+        title: "Easy to Start",
+        body: "Economics 101 is free to use and does not require an account or subscription. Your progress is associated with the browser you use, so return in the same browser to continue where you left off.",
+      },
+      {
+        emoji: "📌",
+        title: "A Note About AI",
+        body: "The AI tutor is a study aid. It can make mistakes, so compare important answers with your course materials and use your own judgment. Economics 101 teaches economic concepts; it is not personalized financial advice.",
+      },
+    ],
+  },
   "Prompt Engineering for AI Generative": {
     emoji: "🔎",
     tagline:
@@ -777,6 +853,7 @@ function renderSectionBody(body: string) {
 
 export default function Courses() {
   const courses: Course[] = [
+    { title: "Economics 101", url: "https://economics101.ink" },
     { title: "Metaethics", url: "https://metaethics.ink" },
     { title: "Prompt Engineering for AI Generative", url: "https://generativeai.ink/" },
     { title: "Constructive Critical Reasoning (Level 3)", url: "https://constructivereasoning.xyz" },
