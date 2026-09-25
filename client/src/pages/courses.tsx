@@ -18,6 +18,82 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  "Precalculus": {
+    emoji: "📘",
+    tagline: "A free, four-week course on functions and the road to calculus. Read the function. Write the formula. See what changes.",
+    sections: [
+      {
+        emoji: "🌱",
+        title: "Overview",
+        body: `Precalculus follows a four-week course from the real number line and functions through polynomials, logarithms, trigonometry, and analytic geometry. Each of the 29 short lectures introduces one concept, its defining formula, and a real example. Practice and an AI tutor stay close to what you are reading.
+
+You do not need an account to begin.`,
+      },
+      {
+        emoji: "👋",
+        title: "Who It’s For",
+        body: `- Students preparing for calculus or reviewing core algebra and trigonometry.
+- Independent learners who want a connected account of functions and change.
+- Curious beginners who learn best from real examples and symbolic practice.
+- Anyone who prefers learning by doing, not just reading definitions.`,
+      },
+      {
+        emoji: "✨",
+        title: "What You Can Do",
+        body: `**Explore 29 lessons across four weeks.** Follow a connected path from functions and graphs to the road to calculus.
+
+**Choose how much detail you want.** Read a lesson in short, medium, or long form.
+
+**Ask the AI tutor questions.** Get help connected to the lesson you are studying, and choose an available AI tutor from the course menu.
+
+**Practise with precalculus problems.** Work through formulas for functions, graphs, polynomials, exponentials, trigonometry, and series.
+
+**Review assignments and feedback.** See explanations that help you understand the reasoning behind an answer.
+
+**Track your progress.** Check course activity and topic-level mastery to see what you have learned and what to revisit.`,
+      },
+      {
+        emoji: "🗺️",
+        title: "Your Four-Week Learning Path",
+        body: `**Week 1 — Functions and their graphs:** Real numbers, transformations, composition, inverses, and slope.
+
+**Week 2 — Polynomial and rational functions:** Quadratics, zeros, complex numbers, asymptotes, and inequalities.
+
+**Week 3 — Exponential, logarithmic, and trigonometric functions:** Growth and decay, radians, the unit circle, and sinusoidal graphs.
+
+**Week 4 — Trigonometry, analytic geometry, and the road to calculus:** Identities, inverse trigonometry, conics, vectors, series, and the difference quotient.`,
+      },
+      {
+        emoji: "🧭",
+        title: "How It Works",
+        body: `- Choose a week or lesson that interests you.
+- Learn at your own pace and adjust the reading length to suit you.
+- Ask questions and try a practice problem while the topic is fresh.
+- Review your feedback and progress before moving on.`,
+      },
+      {
+        emoji: "💡",
+        title: "What Makes It Different",
+        body: `**Ideas before memorization.** Lessons explain why a formula works before asking you to write it.
+
+**Learning in context.** Examples connect abstract functions to measurement, physics, astronomy, and daily life.
+
+**Help stays close to the lesson.** Ask the tutor about what you are reading instead of starting from scratch.
+
+**A clear path, with room to explore.** Follow the four-week sequence or revisit a topic whenever you need it.`,
+      },
+      {
+        emoji: "🎉",
+        title: "Easy to Start",
+        body: "Precalculus is free to use and does not require an account or subscription. Your progress is associated with the browser you use, so return in the same browser to continue where you left off.",
+      },
+      {
+        emoji: "📌",
+        title: "A Note About AI",
+        body: "The AI tutor is a study aid. It can make mistakes, so compare important answers with the course material and use your own judgment.",
+      },
+    ],
+  },
   "Metaethics": {
     emoji: "⚖️",
     tagline: "A Four-Unit College Ethics Course — From the Nature of Goodness to Moral Truth Itself",
@@ -947,6 +1023,7 @@ function renderSectionBody(body: string) {
 
 export default function Courses() {
   const courses: Course[] = [
+    { title: "Precalculus", url: "https://precalculus101.ink" },
     { title: "Economics 101", url: "https://economics101.ink" },
     { title: "Metaethics", url: "https://metaethics.ink" },
     { title: "Prompt Engineering for AI Generative", url: "https://generativeai.ink/" },
