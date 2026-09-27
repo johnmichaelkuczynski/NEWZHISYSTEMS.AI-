@@ -18,6 +18,62 @@ interface Course {
 }
 
 export const courseDescriptions: Record<string, CourseDescription> = {
+  "Geometry": {
+    emoji: "📐",
+    tagline: "A Four-Week Course — Build geometric intuition, then learn how to prove what you see.",
+    sections: [
+      {
+        emoji: "📐",
+        title: "Overview",
+        body: `4 weeks · 29 short lessons · Unlimited practice and tutor help
+
+Explore points, lines, angles, triangles, circles, measurement, and more in a free, self-paced course. Learn one idea at a time, try it out, and ask questions whenever you get stuck.
+
+No account needed. Start learning right away, work at your own pace, and return to practice whenever you like. Your progress is kept separate using an anonymous browser identifier.`,
+      },
+      {
+        emoji: "🌈",
+        title: "Your Four-Week Roadmap",
+        body: `**Week 1 — Foundations, reasoning, and proof:** Explore geometric building blocks, angles, parallel lines, constructions, and how to write proofs.
+
+**Week 2 — Triangles, congruence, and quadrilaterals:** Study triangle relationships, rigid motions, congruence, special triangle segments, and four-sided figures.
+
+**Week 3 — Similarity, right triangles, and circles:** Use proportions, the Pythagorean theorem, trigonometry, and circle relationships.
+
+**Week 4 — Area, volume, and beyond Euclid:** Measure flat and solid figures, explore symmetry and tilings, and compare Euclidean with non-Euclidean geometry.`,
+      },
+      {
+        emoji: "✨",
+        title: "Learn, Practice, and Ask Why",
+        body: `**29 short lessons** break the four-week course into approachable topics, each with a real-world example.
+
+**Unlimited practice** lets you keep working through generated problems and feedback.
+
+**An interactive tutor** can answer Geometry questions and offer another explanation.
+
+**Two homeworks** help you bring ideas together as you learn.
+
+**An 8-question midterm and a 10-question final** help you review your progress.
+
+**A built-in math keyboard** includes a Geometry tab for angles, degrees, parallel and perpendicular lines, congruence, triangles, and other symbols.`,
+      },
+      {
+        emoji: "🧭",
+        title: "Getting Started",
+        body: `- Open the course and choose a week—or jump straight to a topic that interests you.
+- Read a short lesson and try a practice problem.
+- Ask the tutor for help or review the feedback, then keep practicing.
+- Return to any topic whenever you want a refresher.
+
+There’s no sign-up step. The course is free to explore and designed for flexible, independent study. The switch from Algebra to Geometry intentionally reset Algebra-specific progress so old grades are not shown as Geometry results.`,
+      },
+      {
+        emoji: "💬",
+        title: "A Note About the Tutor",
+        body: "The tutor is a learning aid, not an infallible authority. AI can make mistakes, so check important steps against the lesson and use your own mathematical judgment.",
+      },
+    ],
+  },
   "Calculus": {
     emoji: "🌈",
     tagline: "A Four-Week Course — Discover how the world changes, one idea at a time.",
@@ -1114,6 +1170,7 @@ function renderSectionBody(body: string) {
 
 export default function Courses() {
   const courses: Course[] = [
+    { title: "Geometry", url: "https://basicgeometry.ink" },
     { title: "Calculus", url: "https://calculus101.ink" },
     { title: "Trigonometry", url: "https://trigonometry.ink" },
     { title: "Precalculus", url: "https://precalculus101.ink" },
