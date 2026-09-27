@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { courseDescriptions as certificationDescriptions } from "@/pages/courses";
 import dataAnalyticsBadge from "@assets/BASIC_DATA_ANALYTICS_1781998712125.png";
 import workforceAnalyticsBadge from "@assets/WORKFORCE_ANALYTICS_1782001428926.png";
 
@@ -23,6 +24,7 @@ interface Badge {
 interface Course {
   title: string;
   url: string;
+  certificationType?: "Certification" | "Microcertification";
   videoUrl?: string;
   badge?: Badge;
 }
@@ -437,6 +439,9 @@ function renderSectionBody(body: string) {
 
 export default function JohnsonWales() {
   const courses: Course[] = [
+    { title: "Business Ethics (Level 3)", url: "https://businessethics101.ink", certificationType: "Certification" },
+    { title: "Economics 101", url: "https://economics101.ink", certificationType: "Certification" },
+    { title: "Finance (Level 3)", url: "https://finance101.xyz", certificationType: "Certification" },
     {
       title: "Basic Data Analytics",
       url: "https://babyanalytics.xyz",
@@ -466,7 +471,7 @@ export default function JohnsonWales() {
   ];
 
   const sortedCourses = [...courses].sort((a, b) =>
-    a.title.localeCompare(b.title),
+    a.title.replace(/^Basic /, "").localeCompare(b.title.replace(/^Basic /, "")),
   );
 
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -483,7 +488,7 @@ export default function JohnsonWales() {
         ) : (
           <div className="space-y-4">
             {sortedCourses.map((course) => {
-              const desc = courseDescriptions[course.title];
+              const desc = courseDescriptions[course.title] ?? certificationDescriptions[course.title];
               const isOpen = expanded === course.title;
               return (
                 <div
@@ -495,8 +500,11 @@ export default function JohnsonWales() {
                       {desc && <span className="text-2xl">{desc.emoji}</span>}
                       <div>
                         <h2 className="text-lg font-semibold text-gray-900">
-                          {course.title.replace(/\s*\(Level \d+\)/gi, "")}
+                          {course.title.replace(/^Basic /, "").replace(/\s*\(Level \d+\)/gi, "")}
                         </h2>
+                        <p className="text-xs font-medium text-gray-500 mt-1 mb-1">
+                          {course.certificationType ?? "Microcertification"}
+                        </p>
                         {desc && (
                           <p className="text-sm text-gray-600">{desc.tagline}</p>
                         )}

@@ -17,7 +17,7 @@ interface Course {
   url: string;
 }
 
-const courseDescriptions: Record<string, CourseDescription> = {
+export const courseDescriptions: Record<string, CourseDescription> = {
   "Calculus": {
     emoji: "🌈",
     tagline: "A Four-Week Course — Discover how the world changes, one idea at a time.",
