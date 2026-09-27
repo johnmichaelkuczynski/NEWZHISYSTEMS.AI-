@@ -21,8 +21,13 @@ import LivingBooks from "@/pages/living-books";
 import MainPage from "@/pages/main-page";
 import Microcertifications from "@/pages/microcertifications";
 import FourHourCertifications from "@/pages/four-hour-certifications";
+import HospitalityIndustry from "@/pages/johnson-wales";
 
 const SEO_META: Record<string, { title: string; description: string; noindex?: boolean }> = {
+  "/hospitality-industry": {
+    title: "Hospitality Industry | Zhi Systems",
+    description: "Explore self-paced analytics courses for the hospitality industry.",
+  },
   "/": {
     title: "Microcertifications | Zhi Systems — AI-Taught, Cheat-Proof Courses",
     description:
@@ -123,6 +128,7 @@ function Router() {
       <Route path="/nanocertifications" component={Nanocertifications} />
       <Route path="/four-hour-certifications" component={FourHourCertifications} />
       <Route path="/living-books" component={LivingBooks} />
+      <Route path="/hospitality-industry" component={HospitalityIndustry} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={Terms} />
       <Route component={NotFound} />

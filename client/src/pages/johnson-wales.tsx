@@ -475,6 +475,7 @@ export default function JohnsonWales() {
     <div className="font-sans bg-white text-gray-900 leading-relaxed min-h-screen">
 
       <div className="max-w-4xl mx-auto px-4 py-12">
+        <h1 className="text-3xl font-bold mb-8">Hospitality Industry</h1>
         {sortedCourses.length === 0 ? (
           <div className="border border-dashed border-gray-300 rounded-lg p-10 text-center text-gray-500">
             Courses will be added here soon.
