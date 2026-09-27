@@ -18,6 +18,55 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  "Calculus": {
+    emoji: "🌈",
+    tagline: "A Four-Week Course — Discover how the world changes, one idea at a time.",
+    sections: [
+      {
+        emoji: "🚀",
+        title: "Overview",
+        body: "From the slope of a curve to the flight of a rocket: learn the ideas behind calculus through clear lessons, memorable real-world stories, and hands-on practice.",
+      },
+      {
+        emoji: "✨",
+        title: "Why Learn Here?",
+        body: `**29 connected lectures** make a friendly path from limits to Taylor series.
+
+**Choose your reading depth** with short, medium, and long lesson views.
+
+**Practice as you learn** with two homeworks, a midterm, and a final based on the course material.
+
+**Ask the AI tutor for help** when a concept needs another explanation.
+
+**See your progress** and revisit the topics you want to strengthen.
+
+**Start for free, without an account.** Return in the same browser to pick up where you left off.`,
+      },
+      {
+        emoji: "🗺️",
+        title: "Your Four-Week Journey",
+        body: `**Week 1 — Limits & derivatives:** Instantaneous velocity, continuity, tangent lines, and the rules of differentiation.
+
+**Week 2 — Derivatives in action:** The chain rule, related rates, Newton's method, curve sketching, and optimization.
+
+**Week 3 — Integration:** Riemann sums, the fundamental theorem, substitution, integration by parts, and numerical methods.
+
+**Week 4 — Beyond the basics:** Areas and volumes, differential equations, infinite series, and Taylor approximations.`,
+      },
+      {
+        emoji: "🎯",
+        title: "Made for Curious Minds",
+        body: `Whether you're meeting calculus for the first time, reviewing for class, or returning to a subject you once found intimidating, start wherever you are. Each lesson pairs a central idea with an example—from Galileo's falling bodies and Kepler's wine barrels to rocket flight and modern engineering.
+
+Learn the idea → try a problem → check your reasoning → keep exploring.`,
+      },
+      {
+        emoji: "📌",
+        title: "A Note About AI",
+        body: "The AI tutor is a study companion and can make mistakes. Compare important answers with the course lessons and use your own judgment.",
+      },
+    ],
+  },
   "Trigonometry": {
     emoji: "📐",
     tagline: "A Four-Week Course — From right triangles to waves, identities, and rotations.",
@@ -1065,6 +1114,7 @@ function renderSectionBody(body: string) {
 
 export default function Courses() {
   const courses: Course[] = [
+    { title: "Calculus", url: "https://calculus101.ink" },
     { title: "Trigonometry", url: "https://trigonometry.ink" },
     { title: "Precalculus", url: "https://precalculus101.ink" },
     { title: "Economics 101", url: "https://economics101.ink" },
