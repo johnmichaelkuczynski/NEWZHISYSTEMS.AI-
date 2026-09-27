@@ -18,6 +18,48 @@ interface Course {
 }
 
 const courseDescriptions: Record<string, CourseDescription> = {
+  "Trigonometry": {
+    emoji: "📐",
+    tagline: "A Four-Week Course — From right triangles to waves, identities, and rotations.",
+    sections: [
+      {
+        emoji: "📘",
+        title: "Overview",
+        body: `Four weeks · 29 lectures · Practice, homework, a midterm, and a final
+
+This self-paced course follows the course text through the ideas and applications of trigonometry. Lessons, adaptive practice, an AI tutor, and graded work help you build understanding step by step.`,
+      },
+      {
+        emoji: "🗺️",
+        title: "The Four-Week Path",
+        body: `**Week 1 — Angles and trigonometric functions:** Angle and radian measure; right-triangle ratios and applications; the unit circle; functions of any angle; reciprocal functions and identities; arc length, sector area, and angular speed.
+
+**Week 2 — Graphs and inverse functions:** Sine and cosine graphs; amplitude, period, and phase shift; graphs of the other four functions; sinusoidal modeling; inverse functions and compositions; harmonic motion.
+
+**Week 3 — Identities, equations, and triangles:** Verifying identities; sum and difference, double-angle, half-angle, and product-to-sum formulas; solving trigonometric equations; laws of sines and cosines and triangle area.
+
+**Week 4 — Vectors, polar coordinates, and complex numbers:** Vectors and dot products; polar coordinates and graphs; trigonometric form of complex numbers; De Moivre’s theorem and roots; parametric equations; course synthesis.
+
+The weeks contain 7, 7, 7, and 8 lectures, respectively.`,
+      },
+      {
+        emoji: "✨",
+        title: "Learn and Practise",
+        body: `- Read each lecture in short, medium, or long form where available.
+- Ask the AI tutor questions in the context of a lesson.
+- Work adaptive, topic-based practice that adjusts to your performance.
+- Complete graded homework and assessments, including a cumulative midterm and final.
+- Enter mathematical notation with the on-screen math keyboard.
+- Review feedback, activity, and topic progress. No sign-up is required to begin.
+- Use the diagnostics page for system checks and a synthetic practice-and-assignment run.`,
+      },
+      {
+        emoji: "🧭",
+        title: "Study at Your Own Pace",
+        body: "Choose a week or lesson, work through the explanation, then try practice or an assignment. Use hints and feedback to decide what to revisit. The AI tutor and grading feedback are learning aids and can make mistakes; check important steps against the course material.",
+      },
+    ],
+  },
   "Precalculus": {
     emoji: "📘",
     tagline: "A free, four-week course on functions and the road to calculus. Read the function. Write the formula. See what changes.",
@@ -1023,6 +1065,7 @@ function renderSectionBody(body: string) {
 
 export default function Courses() {
   const courses: Course[] = [
+    { title: "Trigonometry", url: "https://trigonometry.ink" },
     { title: "Precalculus", url: "https://precalculus101.ink" },
     { title: "Economics 101", url: "https://economics101.ink" },
     { title: "Metaethics", url: "https://metaethics.ink" },
