@@ -14,6 +14,61 @@ interface AppDescription {
 }
 
 const appDescriptions: Record<string, AppDescription> = {
+  "Noir Comic Generator": {
+    emoji: "🎬",
+    tagline: "Your words. A world of noir. Bring your writing to life in cinematic black and white.",
+    sections: [
+      {
+        emoji: "📝",
+        title: "Your Story Deserves a Scene",
+        body: `A late-night conversation. A missing clue. An argument that changes how someone sees the world.
+
+Noir Comic Generator turns your writing into a sequence of atmospheric comic panels: dramatic lighting, expressive faces, deep shadows, and the unmistakable mood of classic film noir.
+
+You bring the words. Choose how many frames you want. Let your story take shape.`,
+      },
+      {
+        emoji: "✨",
+        title: "Big Atmosphere. Your Original Meaning.",
+        body: `**Cinematic imagery** — Black-and-white, photographic-style scenes with rich contrast and a classic noir atmosphere.
+
+**Words you can actually read** — Clean speech balloons sit outside the photographs, keeping dialogue clear and faces visible.
+
+**A frame count that fits your story** — Choose anywhere from 1 to 24 panels, whether you want a single moment or a longer sequence.
+
+**More than fiction** — Bring a short story, an essay, a philosophical argument, or a conversation. The experience is designed to keep your original meaning at the center.`,
+      },
+      {
+        emoji: "🎥",
+        title: "Choose the Experience",
+        body: `**ChatGPT — SFW** — The default choice for safe-for-work stories, ideas, and everyday scenes.
+
+**Venice — Mature** — A choice for non-explicit mature themes, including strong language, darker stories, and non-graphic adult romance.
+
+**Automatic** — Prefer not to choose? Let the app select between the two based on your writing.
+
+Mature does not mean explicit. Explicit sexual content and graphic gore are not supported, and some non-explicit scenes may still be declined.`,
+      },
+      {
+        emoji: "🧭",
+        title: "From Writing to Comic in Three Steps",
+        body: `**1. Bring your words.** Paste your writing or import a text file.
+
+**2. Choose your frames.** Pick your panel count and preferred image option.
+
+**3. Generate your comic.** See your writing become a sequence of noir scenes with readable dialogue.`,
+      },
+      {
+        emoji: "💡",
+        title: "Made for People with Something to Say",
+        body: `For writers exploring a scene. For educators presenting an idea. For thinkers turning an argument into a conversation. For anyone curious to see their words in a different form.
+
+Bring a story. Pick your frames. Give it the noir treatment.
+
+Created by Dr. Kuczynski, AI-Architect.`,
+      },
+    ],
+  },
   "Test Me": {
     emoji: "🎯",
     tagline: "Stop re-reading. Start proving you know it.",
@@ -3409,6 +3464,7 @@ export default function Home() {
       { title: "FrameWise", url: "https://framewise.ink" }
     ],
     "🎬 Audio-Visual": [
+      { title: "Noir Comic Generator", url: "https://noircomics.ink" },
       { title: "Frame Shot", url: "https://frameshot.xyz" },
       { title: "Graphic Novel Creator", url: "https://graphicnovelcreator.ink" },
       { title: "OCR Pro", url: "https://ocrman.shop" },
@@ -3425,7 +3481,7 @@ export default function Home() {
   };
 
   const categoryAssignments: Record<string, string[]> = {
-    "🎬 Audio-Visual": ["Audio Transcriber Plus", "Frame Shot", "Graphic Novel Creator", "Multiple Video Viewer", "OCR Pro", "Podcast Creator"],
+    "🎬 Audio-Visual": ["Audio Transcriber Plus", "Frame Shot", "Graphic Novel Creator", "Multiple Video Viewer", "Noir Comic Generator", "OCR Pro", "Podcast Creator"],
     "🎓 Education & Learning": ["College AI Match", "EZ Homework", "EZGrader", "Test Me", "Texas Bar Prep"],
     "💹 Finance": ["Forex Edge", "SOXL Options Edge", "SOXL Options Pro"],
     "🔬 Interactive Research": ["Freud GPT", "Genius 101"],
