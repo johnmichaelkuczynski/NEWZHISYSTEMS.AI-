@@ -874,6 +874,90 @@ function renderBody(body: string) {
   });
 }
 
+const agingOcdSections = [
+  {
+    emoji: "✨",
+    title: "Why This Course?",
+    body: `Based on The Rigid Mind Over Time, Aging with OCD is a rigorous, self-paced, one-day web course taught, tutored, drilled, and graded by AI. It turns the course reader's concepts into a structured learning experience with concrete cases, adaptive practice, grounded tutoring, and built-in academic-integrity screening.
+
+Reason from the case, not from age alone. Distinguish symptom changes, memory support, family accommodation, and cognitive risk without claiming more than the evidence shows.
+
+No definition-only quizzes. Assessments ask the learner to reason from evidence. The course distinguishes association from causation and provides education, not personal diagnosis or treatment advice.`,
+  },
+  {
+    emoji: "🧭",
+    title: "The Learning Journey",
+    body: `**OCD across the lifespan** — OCD versus OCPD, changing symptoms, checking versus memory support, late onset, insight, accommodation, hoarding, and shrinking activity. Which case details support the interpretation, and what remains uncertain?
+
+**Comorbidity, risk, and self-optimization** — Dementia associations, flexibility, adapted ERP, geriatric medication cautions, treatment options, brain health, and reclaiming everyday life. What can be inferred, and what kinds of change remain possible?
+
+**The reasoning primers** — Two ungraded primers go beyond a checklist: reasoning about aging-with-OCD cases by identifying the concept and evidence that decide a concrete older-adult scenario; and core reasoning skills covering analysis, inference, evaluation, deduction, and induction in a domain-neutral format.`,
+  },
+  {
+    emoji: "🎯",
+    title: "Built for Real Learning",
+    body: `**Learn at your pace** — Every lecture is available in Short, Medium, or Long depth while keeping the same examples and learning objectives.
+
+**Ask a grounded tutor** — The section-scoped AI tutor streams answers grounded in the exact lecture passage on screen.
+
+**Practice adaptively** — Generated scenario problems adjust difficulty based on recent answers.
+
+**Reason, do not recite** — Homework, tests, practice, and diagnostics require reasoned application to realistic cases.
+
+**See what you know** — Two homework sets, a timed course test, and a cumulative final receive semantic grading, per-problem results, and written rationale.
+
+**Protect assessment integrity** — Every submission is checked by both a static text detector and diachronic keystroke-pattern analysis.`,
+  },
+  {
+    emoji: "📦",
+    title: "What Is Included",
+    body: `- One intensive day organized around four core topics
+- Three lecture depths: Short, Medium, and Long
+- Section-scoped AI tutoring with streamed responses
+- Adaptive topic practice with persistent difficulty
+- Four graded checkpoints: two homework sets, a course test, and a final
+- Ungraded diagnostic checks across multiple formats, lengths, and course phases
+- Live analytics for KPIs, topic mastery, activity, and weak areas
+- Free PDF and TXT course downloads with no sign-in
+- A built-in product walkthrough video`,
+  },
+  {
+    emoji: "👥",
+    title: "Designed For",
+    body: `**Researchers and professionals entering the subject** — A foundational but substantial introduction compressed into one focused day.
+
+**Adult learners studying aging with OCD** — A framework for symptoms, memory, accommodation, risk, treatment adaptation, and functioning.
+
+**Instructors and curriculum designers** — A working example of AI-taught, AI-graded coursework with integrity controls.
+
+**Academic-integrity researchers** — A live demonstration of layered authorship screening in an educational product.`,
+  },
+  {
+    emoji: "⚙️",
+    title: "Under the Hood",
+    body: `**Contract-first API** — OpenAPI is the source of truth; React Query hooks and Zod validators are generated from the same contract.
+
+**Streaming tutor** — Server-Sent Events deliver section-scoped tutor responses token by token.
+
+**Adaptive practice engine** — Per-session difficulty persists and changes after correct and incorrect attempts.
+
+**Two-layer detection** — GPTZero-backed text detection is blended with structural signals, while keystroke analysis evaluates paste-and-rewrite behavior and sustained input patterns.
+
+**Diagnostic self-tests** — Operator controls verify the database, course seed, model completion, JSON mode, detection pipeline, practice loop, grading loop, and analytics.
+
+**Auto-reseeded curriculum** — A content marker detects a subject change and replaces stale course material transactionally.`,
+  },
+  {
+    emoji: "🌈",
+    title: "The Promise",
+    body: `Learn to use the evidence, not just the label.
+
+Aging with OCD gives learners a framework for lifespan changes, symptom interpretation, family accommodation, cognitive risk, treatment adaptation, and everyday functioning.
+
+Start with the course. Build the habit of asking what the evidence actually proves.`,
+  },
+];
+
 export default function FourHourCertifications() {
   const [expandedCourse, setExpandedCourse] = useState<string | null>(null);
 
@@ -885,6 +969,43 @@ export default function FourHourCertifications() {
             Four Hour Certifications
           </h1>
         </header>
+
+        <div className="border border-gray-200 rounded-lg bg-white mb-6">
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠</span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900">Aging with OCD</h2>
+                <p className="text-sm text-gray-600">Based on The Rigid Mind Over Time — Learn to use the evidence, not just the label.</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => setExpandedCourse(value => value === "aging-ocd" ? null : "aging-ocd")}
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                {expandedCourse === "aging-ocd" ? "Hide" : "Details"}
+              </button>
+              <a href="https://agingwithocd.ink" target="_blank" rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded">
+                Visit
+              </a>
+            </div>
+          </div>
+          {expandedCourse === "aging-ocd" && (
+            <div className="border-t border-gray-200 p-6 space-y-6">
+              {agingOcdSections.map(section => (
+                <section key={section.title}>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <span className="mr-2">{section.emoji}</span>{section.title}
+                  </h3>
+                  <div className="space-y-3">{renderBody(section.body)}</div>
+                </section>
+              ))}
+            </div>
+          )}
+        </div>
 
         <div className="border border-gray-200 rounded-lg bg-white mb-6">
           <div className="flex flex-wrap items-center justify-between gap-4 p-4">
