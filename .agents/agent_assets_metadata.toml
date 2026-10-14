@@ -60,3 +60,17 @@ type = "audio"
 title = "natural conversational Zhi Systems male narration"
 description = "Text-to-speech audio: ZhiSystems dot A I. If you're building sharper minds... or smarter tools... start here. Zhi Systems makes focused A I learning and custom software for people and organizations. …"
 logical_id = "16ec347a-9ad3-4827-b8c7-987517bfeecf"
+
+[[outputs]]
+id = "OeSWHMLX2QBf6YfdZ2QGw"
+uri = "file://exports/complete-catalog.txt"
+type = "text"
+title = "Complete list — all 164 listings with URLs"
+description = "One uninterrupted alphabetical list of every app, course, and Living Book. No category breaks."
+logical_id = "4fcc4c95-507a-44a2-9e20-e659ddbb8a00"
+content_hash = "sha256:c7f16f1970fb1323368e936a8981312e4284a2bbc96430273c3054301106b3ea"
+size = 8348
+mtime_ms = 1792017422810
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:79134980-9d99-429d-b786-cae8475de094/4fcc4c95-507a-44a2-9e20-e659ddbb8a00/18888d61-c12b-45c6-8c64-71a2034f6128"
+storage_version_token = "1792017423565946"
+content_type = "text/plain"
