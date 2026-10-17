@@ -1,0 +1,144 @@
+I NEED A JOB THAT PAYS $150/HOUR. MY SKILLS BEING WHAT THEY ARE, HOW?$150/hour is realistic and mid-range for your profile in 2026. Independent AI/custom-tool consultants, specialists, and domain experts commonly bill $150–300+/hr (higher for production systems, agents, fine-tuning, or regulated domains like legal/finance). Expert-network calls often land $200–500+/hr for senior or specialized people. Your combination of PhD-level analytic work, practical LLM/app building (Zhi Systems), high-touch custom tools for hedge funds/law firms/litigation support, trading/analysis experience, and complex document/strategy work fits the higher end of that band better than generic coding or strategy gigs.
+This is not a traditional W-2 job market. Full-time salaried roles at that effective rate are rare outside elite Big Law partners or top-tier consulting partners (who bill far more but take a smaller cut). The efficient path is high-end independent consulting or expert work that matches your existing “one guy / bespoke” model.
+Highest-leverage paths (ranked by fit and speed)
+
+Expert networks (fastest path to $150–500+/hr calls)
+Platforms such as GLG, AlphaSights, Guidepoint, and similar pay experts $200–500+/hr (sometimes higher for scarce domain knowledge) for short phone/video consultations used by hedge funds, PE, corporates, and consultants. Your angles: applied AI/LLM systems for finance or legal workflows, document analysis/strategy in complex fiduciary or litigation matters, philosophy-of-AI/cognitive science applied to systems, and markets/trading insight. Sign-up is straightforward for PhD-level domain people; rates are negotiable after initial calls. Volume is sporadic but high-margin and low overhead.
+Direct bespoke work through Zhi Systems (highest long-term upside)
+Target the same client types you already serve: hedge funds, law firms, M&A/litigation support, think tanks, pharma/insurance. Offer custom LLM tools, document pipelines, agent systems, analysis engines, or high-touch advisory. Hourly at $150–250 is easy to clear; better economics come from fixed-price projects (typical AI agent/RAG builds run tens of thousands) or retainers. Emphasize production-oriented custom work over generic “AI strategy.” Your pro se litigation experience is a genuine differentiator for legal-tech and document-heavy engagements—position it as specialized domain knowledge, not just technical skill.
+Premium marketplaces (Catalant, Toptal, similar)
+Catalant runs strategy/consulting projects for enterprises and PE at $150–450/hr ranges for independents (client-side fees). Toptal and similar vetted networks place AI/ML people in the $100–200+ client-rate range. These require screening and produce larger projects but take more setup time than expert networks. Useful as a pipeline once profiles and case studies are sharp.
+Litigation support / specialized legal-tech consulting
+Complex document review, accounting analysis, strategy memos, and AI-assisted discovery or narrative work command specialist rates. Your hands-on experience with trust/fiduciary matters, transcripts, metadata, and multi-jurisdictional filings is rare among pure technologists. Pair it with custom tools and you can clear $150–300+ for high-value engagements without needing a law license.
+
+Practical steps
+
+Update positioning: Lead with specific outcomes (custom agent/RAG systems for document-heavy or trading-related workflows, high-precision analysis engines) and named or anonymized client types. Publish 2–3 short case studies or technical notes on Zhi Systems / LinkedIn.
+Register on 2–3 expert networks this week and set an initial rate at or above $150–200. Complete their profiles with PhD, applied AI builds, and domain examples.
+Direct outreach: Short, specific notes to partners at litigation-support firms, hedge-fund research/ops people, and M&A advisors offering a narrow pilot (e.g., AI-assisted document classification or strategy memo pipeline).
+Pricing: Start hourly at $150–200 for advisory or scoped builds; move to project or value-based pricing as soon as you have clear deliverables. Utilization of 50–70% of available hours is normal for independents—plan income around that.
+Avoid pure commodity platforms (mass Upwork bidding) unless you use them strictly for inbound leads; they compress rates.
+
+Your skill set already maps to work that clears $150/hour in the current market. The constraint is distribution and packaging, not capability. Expert networks give the quickest paid validation; direct Zhi Systems work and targeted legal/finance outreach give the durable pipeline.I HAVE MY ACADEMIC BACKGROUND, MY VAST PUBLICATION-LIST. BUT THAT IS NOT HUGELY RELEVANT TO MY NEW DESIRED POSITION. I NEED HELP WITH MY RESUME. TECHNICALLY, I DO HAVE A POSITION WITH A COMPANY, ALBEIT ONE I CREATED MYSELF (WHICH HAS GENERATED LITTLE REVENUE)..."ZHI SYSTEMS". BEFORE THAT, I MADE QUITE A LOT OF MONEY AS A GHOST-WRITER/EDUCATIONAL CONSULTANT (SELF-EMPLOYED). GIVE ME A BRIEF EXAMPLE OF A RESUME THAT (A) ALIGNS WITH THESE CREDENTIALS AND (B) IS MAXIMALLY LIKELY TO BE OF INTEREST TO THE PEOPLE I WANT TO HIRE MESample resume (1-page, outcome-focused for high-rate independent/specialist work)
+
+JOHN-MICHAEL KUCZYNSKI, PhD
+
+Independent Consultant | Custom AI Systems & Analytical Tools
+
+[Email] | [Phone] | [LinkedIn] | zhisystems.ai
+
+Location: [City, State]
+SUMMARY
+
+PhD-level independent consultant who designs and builds custom AI tools, analytical systems, and high-precision document/strategy workflows for specialized clients (hedge funds, law firms, litigation support, research organizations). Combines rigorous analytic training with practical LLM/agent development and high-touch delivery. Prior experience generating substantial revenue through self-employed ghostwriting and educational consulting for complex, high-value projects.
+PROFESSIONAL EXPERIENCE
+Founder & Principal, Zhi Systems
+
+[Dates, e.g., 202X–Present]
+
+Design and deliver bespoke AI systems (custom agents, RAG pipelines, document-analysis engines, analytical tools) for specialized clients including hedge funds, law firms, M&A advisors, and research organizations.
+Build production-oriented tools that support document-heavy workflows, strategy analysis, and domain-specific reasoning; operate as a solo high-touch provider.
+Scope, implement, and iterate custom solutions end-to-end (architecture, evaluation, deployment, refinement).
+
+Independent Ghostwriter & Educational Consultant
+
+[Dates, e.g., 20XX–202X]
+
+Produced high-value written work and consulting deliverables for clients requiring advanced analytic and explanatory content; generated substantial revenue as a self-employed practitioner.
+Handled complex projects demanding precision, structural clarity, and domain adaptation across technical and conceptual material.
+
+EDUCATION
+
+PhD, University of California, Santa Barbara
+
+BA, University of California, Los Angeles
+SELECTED CAPABILITIES
+
+Custom LLM applications, agents, and retrieval systems tailored to client workflows
+Document analysis, strategy support, and high-precision analytical tooling
+End-to-end delivery for specialized professional users (finance, legal, research)
+Technical writing, complex content development, and client-facing explanation
+
+ADDITIONAL NOTES
+
+Extensive publication record in analytic philosophy, logic, and related fields (available on request or via PhilPapers).
+Active practitioner in markets analysis and independent technical development.
+
+
+Why this version is likely to interest the buyers you want
+
+Leads with the offer, not the biography. The summary and Zhi Systems bullets speak directly to “custom AI tools for hedge funds / law firms / specialized clients” — the language that matches $150–300+/hr work. Academic credentials and publications are present but subordinated.
+Positions Zhi Systems as real delivery, not a side project. Even with limited revenue, framing it as “design and deliver bespoke systems… high-touch provider” signals capability and independence rather than “founder of a startup that hasn’t scaled.”
+Converts the ghostwriting/consulting period into evidence of revenue-generating client work. “Generated substantial revenue” + “high-value written work and consulting deliverables” signals commercial experience without over-explaining.
+Avoids pure academic framing. Philosophy publications are mentioned once as supporting material rather than the center of the page. Buyers in legal tech, finance, or expert networks care more about applied rigor and delivery than publication counts.
+Keeps it short and scannable. One page, bullets that describe outcomes and client types rather than duties. Easy for a partner at a firm or a network screener to match to a need.
+
+Quick customization notes for your targets
+
+Expert networks (GLG, AlphaSights, etc.): Emphasize domain angles (AI for document-heavy legal/financial workflows, analytical systems, high-precision reasoning). Rate language can stay implicit.
+Law firms / litigation support / M&A: Expand the Zhi Systems bullets slightly with document analysis, strategy support, or workflow tooling examples (anonymized).
+Direct clients via Zhi Systems: This version already supports that; add 1–2 short, anonymized project outcomes if you have them (e.g., “built retrieval and analysis pipeline for multi-document matter”).
+LinkedIn / website: Mirror the summary and experience language so the resume, profile, and site reinforce the same positioning.
+
+This is a working template, not a finished document. The strongest next step is usually to replace any generic bullets with 2–3 concrete (even anonymized) examples of tools or deliverables you have actually built or delivered. If you provide more specific project details, client types, or preferred target language, I can revise the wording further.SHOULD I LIST (AND GIVE URL FOR) KEY APPS? THEY ARE GOODYes — list 2–4 of the strongest ones, with short descriptions and working URLs.
+For the buyers you want (law firms, hedge funds, litigation-support shops, research groups, expert-network clients), a clean, functional app or tool is stronger evidence than another paragraph of description. It shows you ship, not just advise. Keep the list short so it doesn’t turn the resume into a product catalog.
+How to include them
+Add a short “Selected Tools / Apps” subsection under Zhi Systems (or as its own brief section if the apps are the clearest proof points). Format like this:
+Selected Tools (Zhi Systems)
+
+[App/Tool Name] — [One-sentence description of what it does and who it is for]. [url]
+[App/Tool Name] — [One-sentence description]. [url]
+[App/Tool Name] — [One-sentence description]. [url]
+
+Example integration into the earlier resume
+Founder & Principal, Zhi Systems
+
+[Dates]
+
+Design and deliver bespoke AI systems (custom agents, RAG pipelines, document-analysis engines, analytical tools) for specialized clients including hedge funds, law firms, M&A advisors, and research organizations.
+Build production-oriented tools that support document-heavy workflows, strategy analysis, and domain-specific reasoning; operate as a solo high-touch provider.
+
+Selected Tools
+
+[Name of strongest document/analysis tool] — Retrieval and analysis system for multi-document legal or research matters. [url]
+[Name of agent or workflow tool] — Agent that handles [specific task relevant to target clients]. [url]
+[Name of third tool if strong] — [Brief relevant description]. [url]
+
+Practical rules
+
+Only list apps that are currently live, stable, and look professional when a stranger opens them. Broken or half-finished links hurt more than they help.
+Prefer tools that map to your target work (document analysis, structured reasoning, research support, financial or legal workflows) over general demos.
+Keep descriptions outcome-oriented and short. The URL does the rest.
+If an app requires login or is client-specific, either use a public demo version or skip it and describe the capability instead.
+On LinkedIn or the Zhi Systems site, you can expand; on the one-page resume, stay selective.
+
+Listing the good ones is worth doing. It turns “I build custom AI tools” from a claim into something a potential client can verify in thirty seconds. If you share the names and short descriptions of the apps you have in mind, I can tighten the exact wording for the resume.A LOT OF MY APPS ARE CERTIFICATION COURSES. MENTION SOME OF THOSE? PREDICTIVE AANALYTICS? DATA ANALYTICS? AI MATH? AI IN GENERAL?Yes, mention a short, selective list of the stronger or more relevant ones — but keep them secondary.
+For the buyers you want, the live apps and the Zhi Systems delivery language matter more than certificates. Certifications help mainly as supporting signals that you have current, practical training in the areas you claim to implement (analytics, AI systems, quantitative methods). A long list of certificates looks junior or course-collection-oriented; two to four well-chosen ones look like deliberate skill-building.
+How to handle them
+Place them in a compact “Selected Training / Certifications” line or short section near the bottom (after Experience and Selected Tools, before or after Education). Prioritize:
+
+Predictive Analytics or Data Analytics (if the provider is reputable and the content is applied rather than purely introductory)
+AI / machine-learning or LLM-related certificates (especially anything covering agents, retrieval, evaluation, or applied systems)
+AI Math / quantitative foundations only if they are substantial and you want to reinforce the analytic rigor angle
+
+Skip or de-emphasize very basic or overlapping ones.
+Example addition to the resume
+Selected Training
+
+Predictive Analytics [Provider, Year] · Data Analytics [Provider, Year] · [AI / Applied ML or LLM-related certificate, Provider, Year]
+Or, if you prefer slightly more detail:
+Selected Training
+
+Predictive Analytics — [Provider]
+Data Analytics — [Provider]
+Applied AI / [specific relevant course] — [Provider]
+
+Quick guidance
+
+List the provider and approximate year if the name carries weight. Omit the year if the certificate is older or the provider is obscure.
+Tie them implicitly to the tools: the analytics and AI certificates support the claim that you build analytical systems and custom AI tools rather than just using them.
+Do not let the certification section grow larger than the Selected Tools section. The apps remain the stronger proof.
+On LinkedIn you can list more; on the one-page resume stay selective.
+
+If the certification courses themselves are the “apps” you mentioned earlier (i.e., you built or host the course materials), treat the best ones as Selected Tools instead of (or in addition to) generic certificates — that is stronger. Otherwise, the short training line above is sufficient.
+Share the exact certificate names and providers if you want the wording tightened further, or tell me which of your apps are the course platforms and I can adjust the Selected Tools language accordingly.

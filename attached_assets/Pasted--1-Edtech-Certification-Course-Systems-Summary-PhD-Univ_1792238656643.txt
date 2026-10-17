@@ -1,0 +1,110 @@
+
+1. Edtech / Certification Course Systems
+Summary
+PhD (University of California, Santa Barbara) independent developer who designs and ships complete certification and micro-credential platforms. Builds structured, high-quality course systems (four-hour, nano, and full certifications) across technical, quantitative, and professional topics, with production sites and delivery infrastructure.
+Experience highlight (Zhi Systems)
+•	Design and deliver end-to-end certification and learning products, including Predictive Analytics, Data Analytics, AI Math, AI, and domain-specific courses.
+•	Build course platforms with structured content, assessment elements, and clean delivery (examples: Predictive Analytics microcertification, AI Math, Generative AI Integration, Formal Logic).
+•	Operate as a solo high-touch provider of custom educational systems.
+Selected work
+•	Predictive Analytics — https://babypredictiveanalytics.xyz
+•	AI Math — https://aimath1.xyz
+•	Generative AI Integration — https://generativeai.ink
+•	Formal Logic — https://formallogic.xyz
+2. Finance / Trading Analytical Tools
+Summary
+Independent developer of custom analytical and options tools for trading and finance use cases. Builds production systems focused on options analysis, forex, and quantitative decision support.
+Experience highlight (Zhi Systems)
+•	Design and deliver specialized finance and options tools used for analysis and edge identification.
+•	Build production web applications for options and forex workflows (SOXL Options Edge, SOXL Options Pro, Forex Edge).
+•	Deliver high-touch custom analytical systems for specialized users.
+Selected work
+•	SOXL Options Edge — https://soxledge.xyz
+•	SOXL Options Pro — https://soxlpro.xyz
+•	Forex Edge — https://usdhkd.ink
+3. Writing / Content Systems
+Summary
+PhD-level developer of advanced writing, rewriting, and long-form content systems. Builds production tools for structured text generation, originality, treatise-style output, and living books.
+Experience highlight (Zhi Systems)
+•	Design and deliver writing and content systems including rewriting engines, originality tools, treatise builders, and living-book platforms.
+•	Build production applications used for high-quality text work (Text Surgeon Plus, Rewrite Plus, Treatise Pro, Analytic Philosophy Living Book, Living Book Creator).
+•	Operate as a solo provider of custom content and writing infrastructure.
+Selected work
+•	Text Surgeon Plus — https://textsurgeonplus.xyz/
+•	Treatise Pro — https://treatisepro.com
+•	Living Book Creator — https://livingbookcreator.xyz/
+•	Analytic Philosophy Living Book — https://analyticphilosophy.ai
+4. Document / Legal / Research Analysis
+Summary
+Independent developer of document analysis, OCR, verification, and research tools. Builds production systems for structured document handling, forensic-style verification, and analytical workflows relevant to legal and research use.
+Experience highlight (Zhi Systems)
+•	Design and deliver document-centric tools including OCR, forensic document verification, and structured analysis systems.
+•	Build production applications for document processing and research support (Forensic Document Verifier, OCR Pro, OSINT tools).
+•	Deliver high-touch custom systems for users who work with complex document sets.
+Selected work
+•	Forensic Document Verifier — https://forensicdocumentverifier.com
+•	OCR Pro — https://ocrman.shop
+•	Basic OSINT — https://basicosint.xyz
+
+
+SUMMARY
+PhD-level independent consultant who designs and builds custom AI tools, analytical systems, and high-precision document/strategy workflows for specialized clients (hedge funds, law firms, litigation support, research organizations). Combines rigorous analytic training with practical LLM/agent development and high-touch delivery. Prior experience generating substantial revenue through self-employed ghostwriting and educational consulting for complex, high-value projects.
+PROFESSIONAL EXPERIENCE
+Founder & Principal, Zhi Systems
+[Dates, e.g., 202X–Present]
+•	Design and deliver bespoke AI systems (custom agents, RAG pipelines, document-analysis engines, analytical tools) for specialized clients including hedge funds, law firms, M&A advisors, and research organizations.
+•	Build production-oriented tools that support document-heavy workflows, strategy analysis, and domain-specific reasoning; operate as a solo high-touch provider.
+•	Scope, implement, and iterate custom solutions end-to-end (architecture, evaluation, deployment, refinement).
+Independent Ghostwriter & Educational Consultant
+[Dates, e.g., 20XX–202X]
+•	Produced high-value written work and consulting deliverables for clients requiring advanced analytic and explanatory content; generated substantial revenue as a self-employed practitioner.
+•	Handled complex projects demanding precision, structural clarity, and domain adaptation across technical and conceptual material.
+EDUCATION
+PhD, University of California, Santa Barbara
+BA, University of California, Los Angeles
+SELECTED CAPABILITIES
+•	Custom LLM applications, agents, and retrieval systems tailored to client workflows
+•	Document analysis, strategy support, and high-precision analytical tooling
+•	End-to-end delivery for specialized professional users (finance, legal, research)
+•	Technical writing, complex content development, and client-facing explanation
+ADDITIONAL NOTES
+•	Extensive publication record in analytic philosophy, logic, and related fields (available on request or via PhilPapers).
+•	Active practitioner in markets analysis and independent technical development.
+
+
+PEER-REVIEWED BOOKS  
+[Conceptual atomism and the computational theory of mind: a defense of content-internalism and semantic externalism](https://philpapers.org/rec/KUCCAA)
+John Benjamins & Co. 2007.
+[Analytic Philosophy](https://philpapers.org/rec/KUCITA)
+Kendall Hunt Pub. Co. 2009.
+[Empiricism and the Foundations of Psychology.](https://philpapers.org/rec/KUCEAT)[John-Michael Kuczynski](https://philpapers.org/s/John-Michael%20Kuczynski) - 2012 - John Benjamins Pub. Co.
+
+
+PEER-REVIEWED ARTICLES
+
+[Implicit comparatives and the Sorites](https://philpapers.org/rec/JOHICA)
+History and Philosophy of Logic 27 (1): 1-8. 2006.
+
+[Two concepts of "form" and the so-called computational theory of mind](https://philpapers.org/rec/KUCTCO)
+Philosophical Psychology 19 (6): 795-821. 2006.
+
+[Formal operations and simulated thought](https://philpapers.org/rec/KUCFOA)
+Philosophical Explorations 9 (2): 221-234. 2006.
+[Counterfactuals: The Epistemic Analysis](https://philpapers.org/rec/KUCCTE-2)
+Philosophia Scientiae 1 (9-1): 83-126. 2005.
+[Does Possible World Semantics Turn all Propositions into Necessary ones?](https://philpapers.org/rec/KUCDPW)
+Journal of Pragmatics 39 (5): 972-916. 2007.
+[Intensionality, Modality, Rationality: Some Presemantic Considerations](https://philpapers.org/rec/KUCIMR)
+Journal of Pragmatics 42 (8): 2314-2346. 2010.
+[What is Literal Meaning?](https://philpapers.org/rec/KUCWIL)
+Communication and Cognition: An Interdisciplinary Quarterly Journal 46 (1-4). 2014.
+
+DISSERTATION
+[MORAL STRUCTURE OF LEGAL OBLIGATION](https://philpapers.org/rec/JOHMSO-5)
+Dissertation, University of California, Santa Barbara. 2006.
+
+
+
+
+
+
