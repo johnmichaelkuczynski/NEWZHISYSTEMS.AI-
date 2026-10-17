@@ -1,3 +1,4 @@
+- [Resume evidence boundaries](resume-evidence.md) — uploaded drafts contain suggestions, not only facts; distinguish deployed tools from adoption and commercial results.
 - [Course double-listing sync](course-double-listing.md) — analytics courses live on both baby-living-courses.tsx and johnson-wales.tsx; mirror badge/video/title/removal changes to both.
 - [Course marketing labels](course-marketing-labels.md) — omit numbered level labels from public course names; they undermine promotional messaging.
 - [DB URL drift](db-url-drift.md) — server reads EXTERNAL_DATABASE_URL but drizzle.config uses DATABASE_URL; push with DATABASE_URL="$EXTERNAL_DATABASE_URL" npm run db:push.

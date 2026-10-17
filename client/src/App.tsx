@@ -22,8 +22,13 @@ import MainPage from "@/pages/main-page";
 import Microcertifications from "@/pages/microcertifications";
 import FourHourCertifications from "@/pages/four-hour-certifications";
 import HospitalityIndustry from "@/pages/johnson-wales";
+import Resume from "@/pages/resume";
 
 const SEO_META: Record<string, { title: string; description: string; noindex?: boolean }> = {
+  "/resume": {
+    title: "Resume | Dr. Kuczynski, AI-Architect | Zhi Systems",
+    description: "Explore Dr. Kuczynski’s AI systems, selected deployed work, and professional background.",
+  },
   "/hospitality-industry": {
     title: "Hospitality Industry | Zhi Systems",
     description: "Explore self-paced analytics courses for the hospitality industry.",
@@ -129,6 +134,7 @@ function Router() {
       <Route path="/four-hour-certifications" component={FourHourCertifications} />
       <Route path="/living-books" component={LivingBooks} />
       <Route path="/hospitality-industry" component={HospitalityIndustry} />
+      <Route path="/resume" component={Resume} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={Terms} />
       <Route component={NotFound} />

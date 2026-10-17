@@ -13,6 +13,7 @@ const secondaryLinks = [
   { href: "/living-books", label: "Living Books" },
   { href: "/main-page", label: "Reports" },
   { href: "/hospitality-industry", label: "Hospitality Industry" },
+  { href: "/resume", label: "Resume" },
   { href: "/ai-higher-ed", label: "AI in Higher Ed" },
   { href: "/investor-notes", label: "Investor Notes" },
   { href: "/investor-briefings", label: "Investor Briefings" },
