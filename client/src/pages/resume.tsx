@@ -96,6 +96,21 @@ export default function Resume() {
             </ul>
           </section>
 
+          <section aria-labelledby="resume-something-different" className="mt-3 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-3 text-zinc-100">
+            <h3 id="resume-something-different" className="mb-2 text-sm font-medium text-zinc-400">Something different</h3>
+            <a
+              href="https://noircomics.ink"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-sm text-sm font-medium text-zinc-100 underline underline-offset-4 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
+            >
+              Noir Comic Generator<span className="sr-only"> (opens in a new tab)</span>
+            </a>
+            <p className="mt-1 text-sm leading-relaxed text-zinc-300">
+              Turns a script or a one-line idea into a film-noir comic. Upload a photo and the main character is drawn from it.
+            </p>
+          </section>
+
           <div className="mt-5 grid grid-cols-1 gap-7 border-t border-gray-200 pt-6 md:grid-cols-[1.5fr_1fr] md:gap-10">
             <section aria-labelledby="resume-experience">
               <h2 id="resume-experience" className="text-lg font-semibold mb-4">Prior experience</h2>
