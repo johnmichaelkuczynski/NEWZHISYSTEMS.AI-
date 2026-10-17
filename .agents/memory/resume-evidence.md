@@ -6,7 +6,13 @@ Resume content must distinguish tools built and deployed from client adoption or
 
 **Why:** The user requires totally accurate resumes and forbids invented clients, revenue, cost savings, or adoption figures.
 
-**How to apply:** Do not treat speculative advice or sample claims in uploaded material as established facts. Course platforms are products built, not credentials earned. Resume Q&A must use only supported source material and return “That isn't covered here — contact John-Michael directly.” for unsupported questions.
+**How to apply:** Do not treat speculative advice or sample claims in uploaded material as established facts. Course platforms are products built, not credentials earned. Resume Q&A must use only supported source material and use the owner's specified email-contact refusal only when nothing relevant exists.
+
+Resume Q&A must use semantic LLM retrieval across the entire portfolio, independent of the selected audience, with partial-name aliases.
+
+**Why:** Exact-match gating refused reasonable questions such as asking what Text Surgeon does; the user explicitly requested replacing it.
+
+**How to apply:** Keep provider failures distinct from genuine missing evidence. Never present canned or mocked answers as successful live LLM output.
 
 Resume app selections must be audience-specific, with Genius 101 and Noir Comic Generator featured in every version. AI-taught courses belong in every version.
 

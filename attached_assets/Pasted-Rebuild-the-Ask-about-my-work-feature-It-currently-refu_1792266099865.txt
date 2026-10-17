@@ -1,0 +1,15 @@
+Rebuild the "Ask about my work" feature. It currently refuses reasonable questions (e.g., "What does Text Surgeon do?" returned "That isn't covered here"). Fix as follows:
+
+1. KNOWLEDGE BASE: Build one knowledge file covering ALL of my material regardless of which resume version is displayed:
+- Every app on the site with name, URL, and a 2–4 sentence description of what it does and who it is for (pull descriptions from each app's live landing page or this site's own pages; include Text Surgeon/Text Surgeon Plus, Genius 101, Freud GPT, Forensic Document Verifier, OCR Pro, Treatise Pro, Audio Transcriber Plus, Noir Comic Generator, SOXL Options Edge, Forex Edge, Model Transformer, EZGrader, LLM Plus, EZ Reader, Living Book Creator, Test Me, College AI Match).
+- The full course catalog (name + URL + one line each), plus counts: 47 apps, 80+ AI-taught courses, 36 living books.
+- Full experience, education, and publications, including AI-related articles ("Evidence from Large Language Models: How AI Vindicates Classical Theories of Meaning," Communication and Cognition, 2025; "On AI and Some Epistemological Issues," Communication and Cognition, 2026).
+- Services I offer: designing and building custom AI systems for firms (document analysis, quantitative finance tools, retrieval-grounded research tools, AI-taught training courses).
+
+2. ANSWERING: Use an LLM with retrieval over that knowledge file. Match questions semantically, not by exact keyword; ignore case; treat partial names as matches ("Text Surgeon" = Text Surgeon Plus). Answer in 2–5 sentences, in third person ("John-Michael built..."), and include the relevant app link when one applies.
+
+3. REFUSAL: Only when the knowledge file has nothing relevant, reply: "I don't have that detail — email John-Michael at jmkuczynski@yahoo.com." Never invent clients, revenue, or results.
+
+4. TEST before showing me: run these and show me the answers — "What does Text Surgeon do?", "Has he built anything for lawyers?", "What finance tools has he built?", "What has he published on AI?", "Can he build a custom tool for my firm?", "What is Genius 101?"
+
+5. Also: remove the line "Comic sample page pending — no comic artwork has been supplied" from the Noir card (I will upload the sample page), and check Treatise Pro's screenshot — its live site returned a 404 during capture.

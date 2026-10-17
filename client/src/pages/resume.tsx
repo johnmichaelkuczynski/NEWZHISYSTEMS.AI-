@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
-import { answerResumeQuestion, organizations, resumes, projectsFor, coursesFor, type Organization, type ResumeProject } from "./resume-content";
+import { useEffect, useRef, useState } from "react";
+import { organizations, resumes, projectsFor, coursesFor, type Organization, type ResumeProject } from "./resume-content";
+import { askWorkQuestion } from "@/lib/work-qa";
+import type { WorkAnswer } from "@shared/work-qa";
 import { thumbnailNotes } from "./resume-thumbnails";
 import "./resume.css";
 
@@ -26,7 +28,6 @@ function ProjectCard({ project }: { project: ResumeProject }) {
         <h3>{project.name}</h3>
         <p>{project.description}</p>
         {image && !imageFailed && thumbnailNotes[project.id] && <p className="resume-capture-note">{thumbnailNotes[project.id]}</p>}
-        {noir && <p className="resume-sample-note">Live app screenshot{image && !imageFailed ? " shown above" : " unavailable"}. Comic sample page pending — no comic artwork has been supplied.</p>}
         <a className="resume-try" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`Try ${project.name} (opens in a new tab)`}>Try it <span aria-hidden="true">↗</span></a>
       </div>
     </article>
@@ -42,12 +43,57 @@ function readOrganization(): Organization {
 export default function Resume() {
   const [organization, setOrganization] = useState<Organization>(readOrganization);
   const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState<ReturnType<typeof answerResumeQuestion> | null>(null);
+  const [answer, setAnswer] = useState<WorkAnswer | null>(null);
   const [questionError, setQuestionError] = useState("");
+  const [asking, setAsking] = useState(false);
+  const request = useRef<AbortController | null>(null);
+  const requestVersion = useRef(0);
+  function cancelQuestion() {
+    requestVersion.current++;
+    request.current?.abort();
+    request.current = null;
+    setAsking(false);
+  }
+  useEffect(() => () => {
+    requestVersion.current++;
+    request.current?.abort();
+  }, []);
+
+  async function submitQuestion() {
+    if (request.current) return;
+    const text = question.trim();
+    if (!text) {
+      setAnswer(null);
+      setQuestionError("Enter a question about my work.");
+      return;
+    }
+    const controller = new AbortController();
+    request.current = controller;
+    const version = ++requestVersion.current;
+    const timeout = setTimeout(() => controller.abort(), 50_000);
+    setAsking(true);
+    setAnswer(null);
+    setQuestionError("");
+    try {
+      const result = await askWorkQuestion(text, controller.signal);
+      if (version === requestVersion.current) setAnswer(result);
+    } catch (error) {
+      if (version === requestVersion.current) setQuestionError(controller.signal.aborted ?
+        "The answer request timed out. Please try again." :
+        error instanceof Error ? error.message : "The answer service is unavailable. Please try again.");
+    } finally {
+      clearTimeout(timeout);
+      if (version === requestVersion.current) {
+        request.current = null;
+        setAsking(false);
+      }
+    }
+  }
   const audience = organizations.find((option) => option.value === organization)?.label ?? "General";
 
   useEffect(() => {
     const syncOrganization = () => {
+      cancelQuestion();
       setOrganization(readOrganization());
       setAnswer(null);
       setQuestionError("");
@@ -57,6 +103,7 @@ export default function Resume() {
   }, []);
 
   function selectOrganization(value: Organization) {
+    cancelQuestion();
     const url = new URL(window.location.href);
     url.searchParams.set("for", value);
     window.history.pushState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
@@ -178,21 +225,14 @@ export default function Resume() {
           <section aria-labelledby="resume-questions" className="mt-7 border-t border-gray-200 pt-6">
             <h2 id="resume-questions" className="text-lg font-semibold">Ask about my work</h2>
             <p id="resume-question-help" className="mt-2 text-sm leading-relaxed text-gray-600">
-              Answers use indexed resume and site material only.
+              Answers use the full app, course, publication, and professional-history knowledge base, regardless of the resume version shown. Enter to ask; Shift+Enter for a new line.
             </p>
             <form
               className="mt-4"
               noValidate
               onSubmit={(event) => {
                 event.preventDefault();
-                const text = question.trim();
-                if (!text) {
-                  setAnswer(null);
-                  setQuestionError("Enter a question about my work.");
-                  return;
-                }
-                setQuestionError("");
-                setAnswer(answerResumeQuestion(text));
+                void submitQuestion();
               }}
             >
               <label htmlFor="resume-question" className="block text-sm font-medium mb-2">Your question</label>
@@ -200,7 +240,9 @@ export default function Resume() {
                 id="resume-question"
                 value={question}
                 onChange={(event) => {
+                  cancelQuestion();
                   setQuestion(event.target.value);
+                  setAnswer(null);
                   setQuestionError("");
                 }}
                 onKeyDown={(event) => {
@@ -217,12 +259,13 @@ export default function Resume() {
               />
               <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
                 <span className="text-xs text-gray-500">{question.length}/500 characters</span>
-                <button type="submit" className="inline-flex min-h-11 items-center justify-center rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
-                  Ask
+                <button type="submit" disabled={asking} className="inline-flex min-h-11 items-center justify-center rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 disabled:cursor-wait disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
+                  {asking ? "Finding an answer…" : "Ask"}
                 </button>
               </div>
             </form>
             <div aria-live="polite" aria-atomic="true">
+              {asking && <p role="status" className="mt-3 text-sm text-gray-600">Searching the knowledge base and preparing a source-grounded answer…</p>}
               {questionError && <p id="resume-question-error" className="mt-3 text-sm text-red-700">{questionError}</p>}
               {answer && (
                 <div className="mt-5 rounded-md border border-gray-200 bg-gray-50 p-4">
@@ -235,9 +278,10 @@ export default function Resume() {
                           <li key={`${source.label}-${index}`} className="break-words">
                             {source.url ? (
                               <a href={source.url} target="_blank" rel="noopener noreferrer" className="rounded-sm text-blue-600 underline underline-offset-4 hover:text-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
-                                {source.label}<span className="sr-only"> (opens in a new tab)</span>
+                                 {source.label}<span className="sr-only"> (opens in a new tab)</span>
                               </a>
                             ) : source.label}
+                             <p className="mt-1 text-xs text-gray-500">{source.evidence}</p>
                           </li>
                         ))}
                       </ul>

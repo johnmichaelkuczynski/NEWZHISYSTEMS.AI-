@@ -1,8 +1,10 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic, log } from "./server-utils";
+import { registerWorkQa } from "./work-qa-route";
 
 const app = express();
+registerWorkQa(app);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
