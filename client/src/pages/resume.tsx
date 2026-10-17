@@ -203,6 +203,12 @@ export default function Resume() {
                   setQuestion(event.target.value);
                   setQuestionError("");
                 }}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" && !event.shiftKey && !event.nativeEvent.isComposing && event.keyCode !== 229) {
+                    event.preventDefault();
+                    if (!event.repeat) event.currentTarget.form?.requestSubmit();
+                  }
+                }}
                 maxLength={500}
                 rows={3}
                 aria-describedby={`resume-question-help${questionError ? " resume-question-error" : ""}`}
