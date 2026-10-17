@@ -1,15 +1,5 @@
 import { useEffect, useState } from "react";
-
-const organizations = [
-  { value: "law", label: "Law Firm / Litigation Support" },
-  { value: "finance", label: "Hedge Fund / Trading Firm" },
-  { value: "operations", label: "Corporate Operations" },
-  { value: "research", label: "Research Organization / Think Tank" },
-  { value: "education", label: "Educational Institution" },
-  { value: "general", label: "General" },
-] as const;
-
-type Organization = (typeof organizations)[number]["value"];
+import { answerResumeQuestion, organizations, resumes, type Organization } from "@shared/resume-content";
 
 function readOrganization(): Organization {
   if (typeof window === "undefined") return "general";
@@ -17,34 +7,19 @@ function readOrganization(): Organization {
   return organizations.find((organization) => organization.value === value)?.value ?? "general";
 }
 
-const projects = [
-  {
-    name: "Forensic Document Verifier",
-    url: "https://forensicdocumentverifier.com",
-    description: "Document verification",
-  },
-  {
-    name: "Model Transformer",
-    url: "https://modeltransformer.ink",
-    description: "Alternative formulations of formal models",
-  },
-  {
-    name: "Text Surgeon Plus",
-    url: "https://textsurgeonplus.xyz/",
-    description: "Text editing and rewriting",
-  },
-  {
-    name: "Predictive Analytics",
-    url: "https://babypredictiveanalytics.xyz",
-    description: "AI-taught course with tutoring and assessment",
-  },
-];
-
 export default function Resume() {
   const [organization, setOrganization] = useState<Organization>(readOrganization);
+  const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState<ReturnType<typeof answerResumeQuestion> | null>(null);
+  const [questionError, setQuestionError] = useState("");
+  const audience = organizations.find((option) => option.value === organization)?.label ?? "General";
 
   useEffect(() => {
-    const syncOrganization = () => setOrganization(readOrganization());
+    const syncOrganization = () => {
+      setOrganization(readOrganization());
+      setAnswer(null);
+      setQuestionError("");
+    };
     window.addEventListener("popstate", syncOrganization);
     return () => window.removeEventListener("popstate", syncOrganization);
   }, []);
@@ -54,6 +29,8 @@ export default function Resume() {
     url.searchParams.set("for", value);
     window.history.pushState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
     setOrganization(value);
+    setAnswer(null);
+    setQuestionError("");
   }
 
   return (
@@ -62,11 +39,8 @@ export default function Resume() {
         <header className="mb-7">
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="text-sm font-medium text-gray-500">Resume</span>
-            <span className="rounded border border-blue-200 bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-800">
-              Tentative draft
-            </span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Dr. Kuczynski</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">John-Michael Kuczynski, PhD</h1>
           <p className="mt-2 text-lg font-medium text-blue-700">AI-Architect</p>
         </header>
 
@@ -86,17 +60,15 @@ export default function Resume() {
             ))}
           </select>
           <p id="resume-version-notice" role="status" className="mt-3 text-sm leading-relaxed text-gray-600">
-            {organization === "general"
-              ? "Showing General."
-              : "This tailored draft is not available yet. General is shown below."}
+            Showing {audience}.
           </p>
         </div>
 
-        <article aria-label="General resume" className="rounded-lg border border-gray-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
+        <article aria-label={`${audience} resume`} className="rounded-lg border border-gray-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
           <section aria-label="Summary" className="mb-7">
             <p className="text-xl font-semibold leading-relaxed">I build AI systems that reason.</p>
             <p className="mt-2 text-base leading-relaxed text-gray-700">
-              Using AI-driven development, I design and ship production tools quickly to help organizations put AI to practical use.
+              {resumes[organization].summary}
             </p>
           </section>
 
@@ -108,7 +80,7 @@ export default function Resume() {
             </p>
             <h3 className="mt-5 text-sm font-semibold text-gray-900">Selected products built</h3>
             <ul className="mt-2 divide-y divide-gray-100">
-              {projects.map((project) => (
+              {resumes[organization].projects.map((project) => (
                 <li key={project.url} className="py-3">
                   <a
                     href={project.url}
@@ -131,7 +103,7 @@ export default function Resume() {
                 <li>
                   <h3 className="font-medium">Madison Educational Consulting</h3>
                   <p className="text-gray-500">2015–2025</p>
-                  <p className="text-gray-700">Ghostwriting and educational consulting</p>
+                  <p className="text-gray-700">Private advisory practice producing research reports and analytical writing for executives and professionals.</p>
                 </li>
                 <li>
                   <h3 className="font-medium">Bard College</h3>
@@ -156,6 +128,73 @@ export default function Resume() {
               </ul>
             </section>
           </div>
+
+          <section aria-labelledby="resume-questions" className="mt-7 border-t border-gray-200 pt-6">
+            <h2 id="resume-questions" className="text-lg font-semibold">Ask about my work</h2>
+            <p id="resume-question-help" className="mt-2 text-sm leading-relaxed text-gray-600">
+              Answers use indexed resume and site material only.
+            </p>
+            <form
+              className="mt-4"
+              noValidate
+              onSubmit={(event) => {
+                event.preventDefault();
+                const text = question.trim();
+                if (!text) {
+                  setAnswer(null);
+                  setQuestionError("Enter a question about my work.");
+                  return;
+                }
+                setQuestionError("");
+                setAnswer(answerResumeQuestion(text));
+              }}
+            >
+              <label htmlFor="resume-question" className="block text-sm font-medium mb-2">Your question</label>
+              <textarea
+                id="resume-question"
+                value={question}
+                onChange={(event) => {
+                  setQuestion(event.target.value);
+                  setQuestionError("");
+                }}
+                maxLength={500}
+                rows={3}
+                aria-describedby={`resume-question-help${questionError ? " resume-question-error" : ""}`}
+                aria-invalid={Boolean(questionError)}
+                className="block w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-base text-gray-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              />
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+                <span className="text-xs text-gray-500">{question.length}/500 characters</span>
+                <button type="submit" className="inline-flex min-h-11 items-center justify-center rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
+                  Ask
+                </button>
+              </div>
+            </form>
+            <div aria-live="polite" aria-atomic="true">
+              {questionError && <p id="resume-question-error" className="mt-3 text-sm text-red-700">{questionError}</p>}
+              {answer && (
+                <div className="mt-5 rounded-md border border-gray-200 bg-gray-50 p-4">
+                  <p className="whitespace-pre-line break-words text-sm leading-relaxed text-gray-700">{answer.answer}</p>
+                  {answer.sources.length > 0 && (
+                    <div className="mt-4">
+                      <h3 className="text-sm font-semibold">Sources</h3>
+                      <ul className="mt-2 space-y-2 text-sm">
+                        {answer.sources.map((source, index) => (
+                          <li key={`${source.label}-${index}`} className="break-words">
+                            {source.url ? (
+                              <a href={source.url} target="_blank" rel="noopener noreferrer" className="rounded-sm text-blue-600 underline underline-offset-4 hover:text-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
+                                {source.label}<span className="sr-only"> (opens in a new tab)</span>
+                              </a>
+                            ) : source.label}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </section>
 
           <footer className="mt-7 flex flex-col items-start gap-4 border-t border-gray-200 pt-6 md:flex-row md:items-center md:justify-between">
             <a href="mailto:jmkuczynski@yahoo.com" className="break-all rounded-sm text-sm text-blue-600 underline underline-offset-4 hover:text-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">

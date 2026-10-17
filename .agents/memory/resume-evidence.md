@@ -7,3 +7,9 @@ Resume content must distinguish tools built and deployed from client adoption or
 **Why:** The user requires totally accurate resumes and forbids invented clients, revenue, cost savings, or adoption figures.
 
 **How to apply:** Do not treat speculative advice or sample claims in uploaded material as established facts. Course platforms are products built, not credentials earned. Resume Q&A must use only supported source material and return “That isn't covered here — contact John-Michael directly.” for unsupported questions.
+
+Resume app selections must be audience-specific. Courses belong only in the Educational Institution version; the law version must contain document-analysis and verification tools only.
+
+**Why:** The user explicitly revised the initial broader General portfolio to keep each prospect's resume relevant.
+
+**How to apply:** Keep descriptions to one factual sentence explaining the function and intended audience, without converting intended use into claimed adoption.
