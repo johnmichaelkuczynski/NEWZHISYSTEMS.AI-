@@ -1,5 +1,37 @@
 import { useEffect, useState } from "react";
-import { answerResumeQuestion, organizations, resumes, type Organization } from "@shared/resume-content";
+import { answerResumeQuestion, organizations, resumes, projectsFor, coursesFor, type Organization, type ResumeProject } from "./resume-content";
+import { thumbnailNotes } from "./resume-thumbnails";
+import "./resume.css";
+
+const thumbnails = import.meta.glob<string>("../assets/resume/*.jpg", { eager: true, query: "?url", import: "default" });
+
+function ProjectCard({ project }: { project: ResumeProject }) {
+  const [imageFailed, setImageFailed] = useState(false);
+  const image = thumbnails[`../assets/resume/${project.id}.jpg`];
+  const noir = project.id === "noir";
+  return (
+    <article className={`resume-card${noir ? " resume-noir" : ""}`}>
+      <div className="resume-preview">
+        {image && !imageFailed ? (
+          <img src={image} alt={`${project.name} — screenshot of the live app`} width={1280} height={800} loading="lazy" onError={() => setImageFailed(true)} />
+        ) : (
+          <div className="resume-preview-fallback">
+            <strong>Live preview unavailable</strong>
+            <span>{imageFailed ? "The saved screenshot could not be loaded." : thumbnailNotes[project.id] ?? "A screenshot could not be captured."} The live-site link is still available below.</span>
+          </div>
+        )}
+      </div>
+      <div className="resume-card-body">
+        <span className="resume-card-label">{noir ? "Something different" : project.id === "genius" ? "Featured in every version" : "Zhi Systems / Deployed app"}</span>
+        <h3>{project.name}</h3>
+        <p>{project.description}</p>
+        {image && !imageFailed && thumbnailNotes[project.id] && <p className="resume-capture-note">{thumbnailNotes[project.id]}</p>}
+        {noir && <p className="resume-sample-note">Live app screenshot{image && !imageFailed ? " shown above" : " unavailable"}. Comic sample page pending — no comic artwork has been supplied.</p>}
+        <a className="resume-try" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`Try ${project.name} (opens in a new tab)`}>Try it <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+  );
+}
 
 function readOrganization(): Organization {
   if (typeof window === "undefined") return "general";
@@ -34,84 +66,83 @@ export default function Resume() {
   }
 
   return (
-    <main className="min-h-[100dvh] bg-gray-50 text-gray-900 font-sans">
-      <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 sm:py-12">
-        <header className="mb-7">
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="text-sm font-medium text-gray-500">Resume</span>
+    <main className="resume-page">
+      <header className="resume-band">
+        <div className="resume-shell">
+          <div className="resume-eyebrow">
+            <span>Resume / Zhi Systems</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">John-Michael Kuczynski, PhD</h1>
-          <p className="mt-2 text-lg font-medium text-blue-700">AI-Architect</p>
-        </header>
+          <h1>John-Michael Kuczynski, PhD</h1>
+          <p className="resume-role">AI-Architect</p>
+          <nav className="resume-scale" aria-label="Portfolio scale">
+            <a href="#resume-apps"><strong>47</strong>{" "}<span>deployed AI apps <span aria-hidden="true" className="!inline">↓</span></span></a>
+            <a href="#resume-courses"><strong>80+</strong>{" "}<span>AI-taught certification courses <span aria-hidden="true" className="!inline">↓</span></span></a>
+            <a href="/living-books"><strong>36</strong>{" "}<span>interactive living books <span aria-hidden="true" className="!inline">↗</span></span></a>
+          </nav>
+        </div>
+      </header>
 
-        <div className="mb-7 rounded-lg border border-gray-200 bg-white p-4 sm:p-5">
-          <label htmlFor="resume-organization" className="block text-sm font-medium mb-2">
+      <div className="resume-shell">
+        <div className="resume-selector">
+          <div>
+          <label htmlFor="resume-organization">
             What kind of organization are you?
           </label>
+          <p id="resume-version-notice" role="status">Showing {audience}.</p>
+          </div>
           <select
             id="resume-organization"
             value={organization}
             onChange={(event) => selectOrganization(event.target.value as Organization)}
             aria-describedby="resume-version-notice"
-            className="block w-full min-h-11 rounded-md border border-gray-300 bg-white px-3 py-2 text-base text-gray-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 md:max-w-md"
           >
             {organizations.map((option) => (
               <option key={option.value} value={option.value}>{option.label}</option>
             ))}
           </select>
-          <p id="resume-version-notice" role="status" className="mt-3 text-sm leading-relaxed text-gray-600">
-            Showing {audience}.
-          </p>
         </div>
 
-        <article aria-label={`${audience} resume`} className="rounded-lg border border-gray-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
-          <section aria-label="Summary" className="mb-7">
-            <p className="text-xl font-semibold leading-relaxed">I build AI systems that reason.</p>
-            <p className="mt-2 text-base leading-relaxed text-gray-700">
+        <article aria-label={`${audience} resume`}>
+          <section aria-label="Summary" className="resume-summary">
+            <h2>I build AI systems that reason.</h2>
+            <p>
               {resumes[organization].summary}
             </p>
           </section>
 
-          <section aria-labelledby="resume-zhi" className="border-t border-gray-200 pt-6">
-            <h2 id="resume-zhi" className="text-lg font-semibold">Zhi Systems</h2>
-            <p className="mt-1 text-sm font-medium text-blue-700">Founder · AI-Architect</p>
-            <p className="mt-3 text-sm leading-relaxed text-gray-700">
-              Built and deployed 90+ apps across document analysis, writing, research, finance, and education.
-            </p>
-            <h3 className="mt-5 text-sm font-semibold text-gray-900">Selected products built</h3>
-            <ul className="mt-2 divide-y divide-gray-100">
-              {resumes[organization].projects.map((project) => (
-                <li key={project.url} className="py-3">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block rounded-sm text-sm font-medium text-blue-600 underline underline-offset-4 hover:text-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
-                  >
-                    {project.name}<span className="sr-only"> (opens in a new tab)</span>
-                  </a>
-                  <p className="mt-1 text-sm leading-relaxed text-gray-600">{project.description}</p>
-                </li>
+          <section id="resume-apps" aria-labelledby="resume-zhi" className="resume-section">
+            <div className="resume-section-heading">
+              <div>
+                <h2 id="resume-zhi">Zhi Systems</h2>
+                <p>Founder · AI-Architect · Selected products built</p>
+              </div>
+              <a href="/utilities">Explore all apps <span aria-hidden="true">↗</span></a>
+            </div>
+            <div className="resume-grid">
+              {projectsFor(organization).map(project => <ProjectCard key={project.id} project={project} />)}
+            </div>
+          </section>
+
+          <section id="resume-courses" aria-labelledby="resume-courses-heading" className="resume-section resume-courses">
+            <div className="resume-section-heading">
+              <div>
+                <h2 id="resume-courses-heading">AI-taught courses</h2>
+                <p>Complete certification courses where AI teaches, tutors, and assesses the student.</p>
+              </div>
+              <a href="/courses">See full catalog <span aria-hidden="true">↗</span></a>
+            </div>
+            <div className="resume-course-grid">
+              {coursesFor(organization).map(course => (
+                <a key={course.id} className="resume-course" href={course.url} target="_blank" rel="noopener noreferrer">
+                  <span><small>AI-taught certification</small><strong>{course.name}</strong></span>
+                  <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span>
+                </a>
               ))}
-            </ul>
+            </div>
           </section>
 
-          <section aria-labelledby="resume-something-different" className="mt-3 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-3 text-zinc-100">
-            <h3 id="resume-something-different" className="mb-2 text-sm font-medium text-zinc-400">Something different</h3>
-            <a
-              href="https://noircomics.ink"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-sm text-sm font-medium text-zinc-100 underline underline-offset-4 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
-            >
-              Noir Comic Generator<span className="sr-only"> (opens in a new tab)</span>
-            </a>
-            <p className="mt-1 text-sm leading-relaxed text-zinc-300">
-              Turns a script or a one-line idea into a film-noir comic. Upload a photo and the main character is drawn from it.
-            </p>
-          </section>
-
-          <div className="mt-5 grid grid-cols-1 gap-7 border-t border-gray-200 pt-6 md:grid-cols-[1.5fr_1fr] md:gap-10">
+          <div className="resume-bottom">
+          <div className="grid grid-cols-1 gap-7 md:grid-cols-[1.5fr_1fr] md:gap-10">
             <section aria-labelledby="resume-experience">
               <h2 id="resume-experience" className="text-lg font-semibold mb-4">Prior experience</h2>
               <ul className="space-y-4 text-sm leading-relaxed">
@@ -222,6 +253,7 @@ export default function Resume() {
               Discuss a project
             </a>
           </footer>
+          </div>
         </article>
       </div>
     </main>

@@ -8,8 +8,8 @@ Resume content must distinguish tools built and deployed from client adoption or
 
 **How to apply:** Do not treat speculative advice or sample claims in uploaded material as established facts. Course platforms are products built, not credentials earned. Resume Q&A must use only supported source material and return “That isn't covered here — contact John-Michael directly.” for unsupported questions.
 
-Resume app selections must be audience-specific. Courses belong only in the Educational Institution version; the law version must contain document-analysis and verification tools only.
+Resume app selections must be audience-specific, with Genius 101 and Noir Comic Generator featured in every version. AI-taught courses belong in every version.
 
-**Why:** The user explicitly revised the initial broader General portfolio to keep each prospect's resume relevant.
+**Why:** The user superseded the earlier courses-only-in-Education restriction to show the scale and range of the portfolio, and reiterated that Genius 101 must be included.
 
 **How to apply:** Keep descriptions to one factual sentence explaining the function and intended audience, without converting intended use into claimed adoption.

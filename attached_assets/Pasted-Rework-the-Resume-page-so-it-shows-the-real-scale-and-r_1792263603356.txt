@@ -1,0 +1,30 @@
+Rework the Resume page so it shows the real scale and range of my work. Apply to every version.
+
+1. SCALE STRIP directly under the headline: three large figures — "47 deployed AI apps" · "80+ AI-taught certification courses" · "36 interactive living books" — each linking to the relevant section below.
+
+2. APP CARDS instead of plain text links: each app gets a card with a screenshot thumbnail (capture from the live URL), name, one-sentence description, and "Try it" button linking to the live site. Grid layout, 2–3 per row on desktop, 1 on mobile.
+
+3. FEATURED IN EVERY VERSION (in addition to audience-specific apps):
+- Genius 101 (https://genius101.xyz) — Converse with major thinkers; answers are grounded in retrieval from their actual texts, not free invention.
+- Noir Comic Generator (https://noircomics.ink) — Turns a script or a one-line idea into a film-noir comic; upload a photo and the main character is drawn from it. Keep the dark "Something different" styling and show a sample page.
+
+4. AUDIENCE-SPECIFIC APPS:
+- Law: Forensic Document Verifier, OCR Pro, Treatise Pro, Audio Transcriber Plus (https://audiotranscriber.ink).
+- Finance: SOXL Options Edge (https://soxledge.xyz), Forex Edge (https://usdhkd.ink), Model Transformer (https://modeltransformer.ink).
+- Corporate: LLM Plus, Text Surgeon Plus, Forensic Document Verifier, Smart Goal Tracker.
+- Research: Freud GPT, Treatise Pro, Model Transformer, Living Book Creator.
+- Education: EZGrader, Test Me, EZ Reader, College AI Match.
+- General: Forensic Document Verifier, SOXL Options Edge, Text Surgeon Plus, LLM Plus.
+
+5. NEW "AI-TAUGHT COURSES" SECTION (every version): short intro line — "Complete certification courses where AI teaches, tutors, and assesses the student." Show 6 course cards with links:
+- Machine Learning and Applied AI — https://machinelearning101.xyz
+- Generative AI Integration — https://generativeai.ink
+- Ethical AI & Governance Technology — https://aigovernance.ink
+- Predictive Analytics — https://babypredictiveanalytics.xyz
+- Data Analytics — https://babyanalytics.xyz
+- AI Math — https://aimath1.xyz
+For the Finance version swap in Portfolio Analysis (https://portfolioanalysis101.ink) and Financial & Managerial Analytics (https://babyfinancialanalytics.xyz) for the last two. For Education, add Restaurant & Hospitality Analytics and Revenue Management & Pricing Analytics. Add a "See full catalog" link.
+
+6. EXCLUDE everywhere: GPTBypass, Basic OSINT, OSINT Lister, Photo Psychoanalysis, and all living books by title (mention living books only as a count in the scale strip).
+
+7. Keep Prior Experience, Education, "Ask about my work," and contact as they are. Use my headshot-free layout but add a subtle header band so the page doesn't read as a plain document.
