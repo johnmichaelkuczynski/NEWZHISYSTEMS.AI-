@@ -13,3 +13,9 @@ Resume app selections must be audience-specific, with Genius 101 and Noir Comic 
 **Why:** The user superseded the earlier courses-only-in-Education restriction to show the scale and range of the portfolio, and reiterated that Genius 101 must be included.
 
 **How to apply:** Keep descriptions to one factual sentence explaining the function and intended audience, without converting intended use into claimed adoption.
+
+The user approved the expanded portfolio-style Resume direction as “much better.”
+
+**Why:** Showing the scale and range of work with app screenshots and courses addressed what the earlier short text-only resumes failed to convey.
+
+**How to apply:** Preserve that direction in future Resume revisions rather than returning to a sparse document-style list.
