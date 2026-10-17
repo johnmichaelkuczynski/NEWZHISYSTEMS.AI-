@@ -5,7 +5,7 @@ import { mkdir } from "node:fs/promises";
 const sites = {
   genius: "https://genius101.xyz", noir: "https://noircomics.ink",
   verifier: "https://forensicdocumentverifier.com", ocr: "https://ocrman.shop",
-  treatise: "https://treatisepro.com", audio: "https://audiotranscriber.ink",
+  neurotext: "https://neurotext.ink/", audio: "https://audiotranscriber.ink",
   soxl: "https://soxledge.xyz", forex: "https://usdhkd.ink",
   model: "https://modeltransformer.ink", llm: "https://llmplus.ink",
   text: "https://textsurgeonplus.xyz/", goals: "https://smartgoaltracker.xyz",

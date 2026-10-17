@@ -14,7 +14,7 @@ export const apps = {
   noir: app("noir", "Noir Comic Generator", "https://noircomics.ink", "Turns a script or a one-line idea into a film-noir comic; upload a photo and the main character is drawn from it."),
   verifier: app("verifier", "Forensic Document Verifier", "https://forensicdocumentverifier.com", "Examines PDF metadata and structural inconsistencies for legal, financial, and investigative document review."),
   ocr: app("ocr", "OCR Pro", "https://ocrman.shop", "Extracts text from scanned PDFs, images, and Word documents for document-review professionals."),
-  treatise: app("treatise", "Treatise Pro", "https://treatisepro.com", "Analyzes written arguments and checks their reasoning for researchers, lawyers, and analysts."),
+  treatise: app("neurotext", "Neuro Text", "https://neurotext.ink/", "Supports serious writing, analysis, and document transformation for academics, legal professionals, and researchers."),
   audio: app("audio", "Audio Transcriber Plus", "https://audiotranscriber.ink", "Transcribes audio recordings into text for review and analysis."),
   soxl: app("soxl", "SOXL Options Edge", "https://soxledge.xyz", "Provides SOXL options analysis and decision support for options traders."),
   forex: app("forex", "Forex Edge", "https://usdhkd.ink", "Models exchange-rate distributions and backtests forecasts for quantitative researchers and currency analysts."),

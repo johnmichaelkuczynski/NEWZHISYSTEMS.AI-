@@ -3,10 +3,10 @@ import { existsSync, readFileSync } from "node:fs";
 import { apps, coursesFor, organizations, projectsFor, resumes } from "./resume-content";
 
 const expected = {
-  law: ["Forensic Document Verifier", "OCR Pro", "Treatise Pro", "Audio Transcriber Plus"],
+  law: ["Forensic Document Verifier", "OCR Pro", "Neuro Text", "Audio Transcriber Plus"],
   finance: ["SOXL Options Edge", "Forex Edge", "Model Transformer"],
   operations: ["LLM Plus", "Text Surgeon Plus", "Forensic Document Verifier", "Smart Goal Tracker"],
-  research: ["Freud GPT", "Treatise Pro", "Model Transformer", "Living Book Creator"],
+  research: ["Freud GPT", "Neuro Text", "Model Transformer", "Living Book Creator"],
   education: ["EZGrader", "Test Me", "EZ Reader", "College AI Match"],
   general: ["Forensic Document Verifier", "SOXL Options Edge", "Text Surgeon Plus", "LLM Plus"],
 };

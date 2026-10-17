@@ -11,7 +11,7 @@ import { WORK_TEST_QUESTIONS, WORK_UNKNOWN } from "../shared/work-qa";
 
 const named = (name: string) => knowledge.find(passage => passage.name === name)!;
 const pairs = [
-  ["Text Surgeon Plus"], ["Forensic Document Verifier", "OCR Pro", "Treatise Pro"],
+  ["Text Surgeon Plus"], ["Forensic Document Verifier", "OCR Pro", "Neuro Text"],
   ["SOXL Options Edge", "SOXL Options Pro", "Forex Edge"],
   ["Evidence from Large Language Models: How AI Vindicates Classical Theories of Meaning", "On AI and Some Epistemological Issues"],
   ["Custom AI systems for firms"], ["Genius 101"],
@@ -23,7 +23,7 @@ function fixture(ids: string[], sentences = ["John-Michael built the tools descr
 }
 
 test("single corpus covers every current and older app URL, full course catalogs, and all living books", () => {
-  assert.equal(knowledge.filter(p => p.id.startsWith("app-")).length, 47);
+  assert.equal(knowledge.filter(p => p.id.startsWith("app-")).length, 46);
   assert.equal(knowledge.filter(p => p.kind === "course").length, 81);
   assert.equal(knowledge.filter(p => p.kind === "book").length, 36);
   assert.equal(new Set(knowledge.map(p => p.id)).size, knowledge.length);

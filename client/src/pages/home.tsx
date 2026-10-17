@@ -3458,7 +3458,6 @@ export default function Home() {
       { title: "Mind Probe", url: "https://mindprobe.ink" },
       { title: "Smart Goal Tracker", url: "https://smartgoaltracker.xyz" },
       { title: "Psychology Pro", url: "https://psychologypro.ink" },
-      { title: "Treatise Pro", url: "https://treatisepro.com" },
       { title: "Model Transformer", url: "https://modeltransformer.ink" },
       { title: "LLM Plus", url: "https://llmplus.ink" },
       { title: "FrameWise", url: "https://framewise.ink" }
@@ -3490,7 +3489,7 @@ export default function Home() {
     "📖 Reading": ["Classic EZ Reader", "EZ Reader", "Original EZ Reader"],
     "🌐 Reference": ["AI Architect Showroom", "JM Kuczynski", "Neoclassical Piano", "Paradoxes"],
     "🛠 Utility": ["Forensic Document Verifier", "LLM Plus", "Model Transformer", "Smart Goal Tracker"],
-    "📝 Writing": ["Analytic Philosophy Living Book", "Book Builder", "EZ Story", "Genius Dictation", "GPTByPass", "Intelligence Meter", "Living Book Creator", "NeuroText", "Originality Meter", "Rewrite Plus", "Text Surgeon Plus", "Treatise Pro"],
+    "📝 Writing": ["Analytic Philosophy Living Book", "Book Builder", "EZ Story", "Genius Dictation", "GPTByPass", "Intelligence Meter", "Living Book Creator", "NeuroText", "Originality Meter", "Rewrite Plus", "Text Surgeon Plus"],
   };
   const appsByTitle = new Map(Object.values(appCatalog).flat().map(app => [app.title, app]));
   const appCategories: Record<string, App[]> = Object.fromEntries(
