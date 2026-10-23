@@ -14,6 +14,35 @@ interface AppDescription {
 }
 
 const appDescriptions: Record<string, AppDescription> = {
+  "Career Finder": {
+    emoji: "🧭",
+    tagline: "Understand yourself. Identify the real problem. Find a practical next step.",
+    sections: [
+      {
+        emoji: "🧭",
+        title: "Career Discovery & Practical Decisions",
+        body: `Career Finder offers AI-guided conversations for people at a career crossroads, whose work no longer fits, or who want to understand their strengths. Discuss your interests, experience, income needs, urgency, and constraints to explore a practical next step.
+
+The assistant asks focused questions, investigates the obstacle, and proposes a course of action once enough information is available.`,
+      },
+      {
+        emoji: "🧠",
+        title: "Career Interests & Personality",
+        body: `**Career interests — 60 questions:** A RIASEC-style assessment explores Realistic, Investigative, Artistic, Social, Enterprising, and Conventional interests, with trait scores, a three-letter Holland code, and occupation suggestions.
+
+**Personality — 50 questions:** An IPIP Big Five–style assessment explores Extraversion, Agreeableness, Conscientiousness, Emotional Stability, and Intellect/Imagination.
+
+Separate short interest and work-style check-ins offer a lighter alternative. Generated assessments provide exploratory estimates, not official standardized results, clinical diagnoses, or guarantees of career suitability.`,
+      },
+      {
+        emoji: "🎙️",
+        title: "Conversation, Voice & Continuity",
+        body: `Type your thoughts or use microphone dictation, then review the transcription before sending. Recorded audio is sent to ElevenLabs for transcription and requires browser permission.
+
+Saved conversations, profiles, assessment history, and personalized book and activity recommendations let you return to earlier work. The published app requires Google sign-in; saved information is associated with that account.`,
+      },
+    ],
+  },
   "Noir Comic Generator": {
     emoji: "🎬",
     tagline: "Your words. A world of noir. Bring your writing to life in cinematic black and white.",
@@ -3450,6 +3479,7 @@ export default function Home() {
       { title: "Texas Bar Prep", url: "https://texasbarprep.ink" }
     ],
     "🧠 Intelligence & Psychology": [
+      { title: "Career Finder", url: "https://careeridentifier.ink" },
       { title: "Genius 101", url: "https://genius101.xyz", videoUrl: "https://youtu.be/tYCrhJPptqo" },
       { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
       { title: "Originality Meter", url: "https://originality.ink" },
@@ -3485,7 +3515,7 @@ export default function Home() {
     "💹 Finance": ["Forex Edge", "SOXL Options Edge", "SOXL Options Pro"],
     "🔬 Interactive Research": ["Freud GPT", "Genius 101"],
     "🔎 OSINT": ["Basic OSINT", "OSINT Lister"],
-    "🧠 Psychology": ["FrameWise", "Mind Probe", "Mind Profiler", "Photo Psychoanalysis", "Psychology Pro"],
+    "🧠 Psychology": ["Career Finder", "FrameWise", "Mind Probe", "Mind Profiler", "Photo Psychoanalysis", "Psychology Pro"],
     "📖 Reading": ["Classic EZ Reader", "EZ Reader", "Original EZ Reader"],
     "🌐 Reference": ["AI Architect Showroom", "JM Kuczynski", "Neoclassical Piano", "Paradoxes"],
     "🛠 Utility": ["Forensic Document Verifier", "LLM Plus", "Model Transformer", "Smart Goal Tracker"],

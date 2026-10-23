@@ -23,6 +23,7 @@ export interface KnowledgePassage {
 
 const rows = (text: string) => text.trim().split("\n").map(line => line.split("|"));
 const appRows = rows(`
+Career Finder|https://careeridentifier.ink|An AI-guided career-discovery and personal-insight app for people at a career crossroads, exploring strengths, or facing practical work decisions. It combines action-oriented conversation with a 60-question RIASEC-style interests assessment, a 50-question Big Five–style personality assessment, shorter check-ins, voice dictation, and saved profiles and recommendations. The published app requires Google sign-in; generated assessments are exploratory, not official standardized scores, clinical diagnoses, or guarantees of career suitability.
 Living Book Creator|https://livingbookcreator.xyz/|A multi-model workbench for academic writing, document analysis, and argument reconstruction. It helps academics, authors, and researchers create study guides, outlines, podcasts, and interactive book material.
 Analytic Philosophy Living Book|https://analyticphilosophy.ai|An interactive reading environment built around John-Michael Kuczynski's Analytic Philosophy. Philosophy students and readers can ask passage-level questions and generate study guides, tests, podcasts, and conceptual maps.
 Book Builder|https://bookbuilder.ink|A multi-model writing and analysis engine with document rewriting, cognitive profiling, and text transformation. It is intended for serious writers, academics, and researchers working with substantial documents.
