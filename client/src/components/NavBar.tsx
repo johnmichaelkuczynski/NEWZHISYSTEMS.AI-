@@ -6,6 +6,7 @@ const links = [
   { href: "/nanocertifications", label: "Nanocertifications" },
   { href: "/", label: "Microcertifications" },
   { href: "/courses", label: "Certifications" },
+  { href: "/spoken-courses", label: "Spoken Courses" },
   { href: "/utilities", label: "Apps" },
 ];
 
