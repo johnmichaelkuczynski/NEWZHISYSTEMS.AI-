@@ -23,7 +23,7 @@ function fixture(ids: string[], sentences = ["John-Michael built the tools descr
 }
 
 test("single corpus covers every current and older app URL, full course catalogs, and all living books", () => {
-  assert.equal(knowledge.filter(p => p.id.startsWith("app-")).length, 47);
+  assert.equal(knowledge.filter(p => p.id.startsWith("app-")).length, 48);
   assert.equal(knowledge.filter(p => p.kind === "course").length, 81);
   assert.equal(knowledge.filter(p => p.kind === "book").length, 36);
   assert.equal(new Set(knowledge.map(p => p.id)).size, knowledge.length);

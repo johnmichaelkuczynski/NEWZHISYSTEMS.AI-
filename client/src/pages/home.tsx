@@ -14,6 +14,33 @@ interface AppDescription {
 }
 
 const appDescriptions: Record<string, AppDescription> = {
+  "Screen Play Writer": {
+    emoji: "🎬",
+    tagline: "From an idea or an existing document to a screenplay you can shape.",
+    sections: [
+      {
+        emoji: "📝",
+        title: "Draft, Adapt & Revise",
+        body: `Develop a screenplay from a premise or adapt an existing text. Separate inputs for instructions, source documents, style samples, and reference material let screenwriters, authors, and filmmakers guide both content and voice.
+
+Upload TXT, Markdown, PDF, or DOCX files up to 8 MB, subject to extracted-text limits. Follow live output, edit the draft, request follow-up revisions, copy it, or download a plain-text file.`,
+      },
+      {
+        emoji: "💾",
+        title: "Keep Control of Your Work",
+        body: `Suspend and save generation, resume from the last completed checkpoint, or stop and start again without erasing your instructions. Browser drafts and database checkpoints help recover interrupted work.
+
+Longer jobs use a shared plan, section drafts, continuity records, and consistency audits. Separate controls let you erase one tab or reset the whole page.`,
+      },
+      {
+        emoji: "📖",
+        title: "Long-Form Writing: Current Limits",
+        body: `Long-form generation is experimental. Requests and source fields support up to 30,000 words, but dependable, coherent completion of a 30,000-word screenplay has not yet been verified.
+
+Drafts that fail length or continuity checks remain marked incomplete and resumable. Supported limits do not guarantee final length, narrative quality, or successful audit approval. Review generated work before using or sharing it.`,
+      },
+    ],
+  },
   "Career Finder": {
     emoji: "🧭",
     tagline: "Understand yourself. Identify the real problem. Find a practical next step.",
@@ -3440,6 +3467,7 @@ No hand-waving. No "philosophers have long debated." Every analysis arrives at a
 export default function Home() {
   const appCatalog: Record<string, App[]> = {
     "📝 Writing & Books": [
+      { title: "Screen Play Writer", url: "https://screenplaywriter.xyz" },
       { title: "Living Book Creator", url: "https://livingbookcreator.xyz/" },
       {
         title: "Analytic Philosophy Living Book",
@@ -3519,7 +3547,7 @@ export default function Home() {
     "📖 Reading": ["Classic EZ Reader", "EZ Reader", "Original EZ Reader"],
     "🌐 Reference": ["AI Architect Showroom", "JM Kuczynski", "Neoclassical Piano", "Paradoxes"],
     "🛠 Utility": ["Forensic Document Verifier", "LLM Plus", "Model Transformer", "Smart Goal Tracker"],
-    "📝 Writing": ["Analytic Philosophy Living Book", "Book Builder", "EZ Story", "Genius Dictation", "GPTByPass", "Intelligence Meter", "Living Book Creator", "NeuroText", "Originality Meter", "Rewrite Plus", "Text Surgeon Plus"],
+    "📝 Writing": ["Analytic Philosophy Living Book", "Book Builder", "EZ Story", "Genius Dictation", "GPTByPass", "Intelligence Meter", "Living Book Creator", "NeuroText", "Originality Meter", "Rewrite Plus", "Screen Play Writer", "Text Surgeon Plus"],
   };
   const appsByTitle = new Map(Object.values(appCatalog).flat().map(app => [app.title, app]));
   const appCategories: Record<string, App[]> = Object.fromEntries(
