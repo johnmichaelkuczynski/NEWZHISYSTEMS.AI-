@@ -3477,7 +3477,7 @@ export default function Home() {
       { title: "Genius Dictation", url: "https://geniusdictation.com" },
       { title: "EZ Reader", url: "https://ezreader.ai" },
       { title: "Original EZ Reader", url: "https://originalezreader.ink" },
-      { title: "Classic EZ Reader", url: "https://classicezreader.ink" },
+      { title: "Classic EZ Reader", url: "https://classicezreader.com" },
       { title: "EZ Story", url: "https://ezstory.xyz" },
       { title: "NeuroText", url: "https://neurotext.ink" },
       { title: "Text Surgeon Plus", url: "https://textsurgeonplus.xyz/" },
