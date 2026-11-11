@@ -2607,7 +2607,7 @@ export default function MainPage() {
       { title: "Freud GPT", url: "https://freudgpt.me", videoUrl: "https://youtu.be/-wlueHlZjZc" },
       { title: "Major Brain", url: "https://majorbrain.xyz" },
       { title: "Originality Meter", url: "https://originalitymeter.com" },
-      { title: "Intelligence Meter", url: "https://intelmeter.xyz", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
+      { title: "Intelligence Meter", url: "https://iq101.ink/", videoUrl: "https://www.youtube.com/watch?v=b3X7XeVfs18" },
       { title: "Mind Profiler", url: "https://mindprofiler.ink" },
       { title: "Text Evaluator", url: "https://textevaluator.xyz" },
       { title: "Text IQ", url: "https://textiq.xyz/" },
